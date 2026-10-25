@@ -1,0 +1,1333 @@
+{
+  "program_hashes": {
+    "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+    "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG": "967ff9fb161eec2e62f66d2c899100739fb747c445f697b8625c86b31b9a2022"
+  },
+  "source_snapshot": "analysis/daos_fun/fee_share_trader_dao-claim_meteora_fees-snapshot.json",
+  "source_snapshot_sha256": "e055e289fb78b096bd48556123c2ffc00f120028008e8e175d7361a3fa3f9227",
+  "signed_surfpool_reference": "analysis/daos_fun/fee-share-external-claim-signed-surfpool.json",
+  "signed_surfpool_reference_sha256": "4053c1e61e0585b074ec21ce0a4724fe6da55c76b4991581a82a9c33705a5055",
+  "rust_source_sha256": "893ab93b0cc2d130d8d2dc9a9d4a5c3c94e90134bab4a63ffedbf32faf33d369",
+  "signed_local": true,
+  "live_rpc_used": false,
+  "case_count": 15,
+  "cases": [
+    {
+      "case": "baseline",
+      "variation": "baseline",
+      "success": true,
+      "error": null,
+      "error_code": null,
+      "compute_units": 67102,
+      "log_tail": [
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [2]",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 129134 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [3]",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 81 of 126658 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 18597 of 144349 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 66952 of 189850 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "before": {
+        "state": {
+          "total_fees": 1618680370361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc",
+          "funding_ata": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+      },
+      "after": {
+        "state": {
+          "total_fees": 1618760199006,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 79828646,
+        "pool_funding_vault_amount": 211050346382,
+        "position_sha256": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "26d9b8a85a851c878de5ae70018f2ce096581964aa1124a5bac2f0ea7f16fdd0",
+          "funding_ata": "98fc4ab3bb8df89321c0c6a02988af7fb52e5559dbd543acc77619646aed4c5d",
+          "pool_funding_vault": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+          "position": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "26d9b8a85a851c878de5ae70018f2ce096581964aa1124a5bac2f0ea7f16fdd0"
+      },
+      "tested_guard_flags": {
+        "state_owner": true,
+        "funding_ata_authority": true,
+        "position_owner": true,
+        "funding_ata_mint": true
+      },
+      "cpi_claimed_units": 79828645,
+      "rust_prediction": {
+        "success": true,
+        "total_fees": 1618760199006,
+        "funding_ata_amount": 79828646
+      }
+    },
+    {
+      "case": "repeat_after_positive",
+      "variation": "baseline",
+      "success": true,
+      "error": null,
+      "error_code": null,
+      "compute_units": 64862,
+      "log_tail": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [2]",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [3]",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 81 of 128899 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 16357 of 144350 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 64712 of 189851 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "before": {
+        "state": {
+          "total_fees": 1618760199006,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 79828646,
+        "pool_funding_vault_amount": 211050346382,
+        "position_sha256": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "26d9b8a85a851c878de5ae70018f2ce096581964aa1124a5bac2f0ea7f16fdd0",
+          "funding_ata": "98fc4ab3bb8df89321c0c6a02988af7fb52e5559dbd543acc77619646aed4c5d",
+          "pool_funding_vault": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+          "position": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "26d9b8a85a851c878de5ae70018f2ce096581964aa1124a5bac2f0ea7f16fdd0"
+      },
+      "after": {
+        "state": {
+          "total_fees": 1618760199006,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 79828646,
+        "pool_funding_vault_amount": 211050346382,
+        "position_sha256": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "26d9b8a85a851c878de5ae70018f2ce096581964aa1124a5bac2f0ea7f16fdd0",
+          "funding_ata": "98fc4ab3bb8df89321c0c6a02988af7fb52e5559dbd543acc77619646aed4c5d",
+          "pool_funding_vault": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+          "position": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "26d9b8a85a851c878de5ae70018f2ce096581964aa1124a5bac2f0ea7f16fdd0"
+      },
+      "tested_guard_flags": {
+        "state_owner": true,
+        "funding_ata_authority": true,
+        "position_owner": true,
+        "funding_ata_mint": true
+      },
+      "cpi_claimed_units": 0,
+      "rust_prediction": {
+        "success": true,
+        "total_fees": 1618760199006,
+        "funding_ata_amount": 79828646
+      }
+    },
+    {
+      "case": "some_referrer",
+      "variation": "some_referrer",
+      "success": true,
+      "error": null,
+      "error_code": null,
+      "compute_units": 67425,
+      "log_tail": [
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [2]",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 128859 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [3]",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 81 of 126383 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 18597 of 144074 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 67275 of 189850 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "before": {
+        "state": {
+          "total_fees": 1618680370361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 1,
+          "referrer": "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK",
+          "counter_offset": 145,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "252e2c90019fa96aa9acba764c000d20ade6b803588c4db8a892876da81bcdd2",
+          "funding_ata": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "252e2c90019fa96aa9acba764c000d20ade6b803588c4db8a892876da81bcdd2"
+      },
+      "after": {
+        "state": {
+          "total_fees": 1618760199006,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 1,
+          "referrer": "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK",
+          "counter_offset": 145,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 79828646,
+        "pool_funding_vault_amount": 211050346382,
+        "position_sha256": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "987706104f522cdf23959dcba5e22be0d9b92ec9be295d7457a2bb82c613f6ad",
+          "funding_ata": "98fc4ab3bb8df89321c0c6a02988af7fb52e5559dbd543acc77619646aed4c5d",
+          "pool_funding_vault": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+          "position": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "987706104f522cdf23959dcba5e22be0d9b92ec9be295d7457a2bb82c613f6ad"
+      },
+      "tested_guard_flags": {
+        "state_owner": true,
+        "funding_ata_authority": true,
+        "position_owner": true,
+        "funding_ata_mint": true
+      },
+      "cpi_claimed_units": 79828645,
+      "rust_prediction": {
+        "success": true,
+        "total_fees": 1618760199006,
+        "funding_ata_amount": 79828646
+      }
+    },
+    {
+      "case": "total_fees_zero",
+      "variation": "total_fees_zero",
+      "success": true,
+      "error": null,
+      "error_code": null,
+      "compute_units": 67102,
+      "log_tail": [
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [2]",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 129134 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [3]",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 81 of 126658 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 18597 of 144349 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 66952 of 189850 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "before": {
+        "state": {
+          "total_fees": 0,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "1feeffa4335b0d94a3a4a414108b100296c14b2ffbc3c7176a6358d81fb1e2f7",
+          "funding_ata": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "1feeffa4335b0d94a3a4a414108b100296c14b2ffbc3c7176a6358d81fb1e2f7"
+      },
+      "after": {
+        "state": {
+          "total_fees": 79828645,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 79828646,
+        "pool_funding_vault_amount": 211050346382,
+        "position_sha256": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "67ef6814a27826272a510a7e7dca94b7acccf6cb9719ce2ce87e9954726dc7c8",
+          "funding_ata": "98fc4ab3bb8df89321c0c6a02988af7fb52e5559dbd543acc77619646aed4c5d",
+          "pool_funding_vault": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+          "position": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "67ef6814a27826272a510a7e7dca94b7acccf6cb9719ce2ce87e9954726dc7c8"
+      },
+      "tested_guard_flags": {
+        "state_owner": true,
+        "funding_ata_authority": true,
+        "position_owner": true,
+        "funding_ata_mint": true
+      },
+      "cpi_claimed_units": 79828645,
+      "rust_prediction": {
+        "success": true,
+        "total_fees": 79828645,
+        "funding_ata_amount": 79828646
+      }
+    },
+    {
+      "case": "total_fees_exact_max",
+      "variation": "total_fees_exact_max",
+      "success": true,
+      "error": null,
+      "error_code": null,
+      "compute_units": 67102,
+      "log_tail": [
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [2]",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 129134 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [3]",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 81 of 126658 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 18597 of 144349 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 66952 of 189850 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "before": {
+        "state": {
+          "total_fees": 18446744073629722970,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "f453449ace9338ade9b205782a45dc2c7ed5458cbd448039d19170786cd19550",
+          "funding_ata": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "f453449ace9338ade9b205782a45dc2c7ed5458cbd448039d19170786cd19550"
+      },
+      "after": {
+        "state": {
+          "total_fees": 18446744073709551615,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 79828646,
+        "pool_funding_vault_amount": 211050346382,
+        "position_sha256": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "ec3ce8be59c367d5def1fd30899e66255e945b5c86c338052de434018225fde8",
+          "funding_ata": "98fc4ab3bb8df89321c0c6a02988af7fb52e5559dbd543acc77619646aed4c5d",
+          "pool_funding_vault": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+          "position": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "ec3ce8be59c367d5def1fd30899e66255e945b5c86c338052de434018225fde8"
+      },
+      "tested_guard_flags": {
+        "state_owner": true,
+        "funding_ata_authority": true,
+        "position_owner": true,
+        "funding_ata_mint": true
+      },
+      "cpi_claimed_units": 79828645,
+      "rust_prediction": {
+        "success": true,
+        "total_fees": 18446744073709551615,
+        "funding_ata_amount": 79828646
+      }
+    },
+    {
+      "case": "total_fees_overflow",
+      "variation": "total_fees_overflow",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Fieldless(ProgramFailedToComplete)))",
+      "error_code": null,
+      "compute_units": 67671,
+      "log_tail": [
+        "Program log: Instruction: ClaimPositionFee",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 129134 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [3]",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 81 of 126658 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 18597 of 144349 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+        "Program log: panicked at programs/fee_share_trader_dao/src/instructions/claim_meteora_fees.rs:52:5:\nattempt to add with overflow",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 67521 of 189850 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: SBF program panicked"
+      ],
+      "before": {
+        "state": {
+          "total_fees": 18446744073629722971,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "be20c4bef4aca9e0ceb469ccfa443c75a7cdbf0bb21e2b8c0244fa0219399801",
+          "funding_ata": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "be20c4bef4aca9e0ceb469ccfa443c75a7cdbf0bb21e2b8c0244fa0219399801"
+      },
+      "after": {
+        "state": {
+          "total_fees": 18446744073629722971,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "be20c4bef4aca9e0ceb469ccfa443c75a7cdbf0bb21e2b8c0244fa0219399801",
+          "funding_ata": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "be20c4bef4aca9e0ceb469ccfa443c75a7cdbf0bb21e2b8c0244fa0219399801"
+      },
+      "tested_guard_flags": {
+        "state_owner": true,
+        "funding_ata_authority": true,
+        "position_owner": true,
+        "funding_ata_mint": true
+      },
+      "tracked_rollback": true,
+      "rust_prediction": {
+        "success": false,
+        "model_error": "overflow",
+        "error_code": null
+      }
+    },
+    {
+      "case": "vault_zero",
+      "variation": "vault_zero",
+      "success": true,
+      "error": null,
+      "error_code": null,
+      "compute_units": 67102,
+      "log_tail": [
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [2]",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 129134 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [3]",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 81 of 126658 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 18597 of 144349 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 66952 of 189850 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "before": {
+        "state": {
+          "total_fees": 1618680370361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 0,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc",
+          "funding_ata": "774010f1fa828b0ba4640c9e70488942f2655d0d82bc78a4d15daaeb1c1b18e4",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+      },
+      "after": {
+        "state": {
+          "total_fees": 1618760199006,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 79828645,
+        "pool_funding_vault_amount": 211050346382,
+        "position_sha256": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "26d9b8a85a851c878de5ae70018f2ce096581964aa1124a5bac2f0ea7f16fdd0",
+          "funding_ata": "5041cf58b3b9399fe3278d5329ead2e841f5623289f3f128acf715d97b84daff",
+          "pool_funding_vault": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+          "position": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "26d9b8a85a851c878de5ae70018f2ce096581964aa1124a5bac2f0ea7f16fdd0"
+      },
+      "tested_guard_flags": {
+        "state_owner": true,
+        "funding_ata_authority": true,
+        "position_owner": true,
+        "funding_ata_mint": true
+      },
+      "cpi_claimed_units": 79828645,
+      "rust_prediction": {
+        "success": true,
+        "total_fees": 1618760199006,
+        "funding_ata_amount": 79828645
+      }
+    },
+    {
+      "case": "vault_1001",
+      "variation": "vault_1001",
+      "success": true,
+      "error": null,
+      "error_code": null,
+      "compute_units": 67102,
+      "log_tail": [
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [2]",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 129134 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [3]",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 81 of 126658 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 18597 of 144349 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 66952 of 189850 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "before": {
+        "state": {
+          "total_fees": 1618680370361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1001,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc",
+          "funding_ata": "f7be5d190a2ed49696d1ef6429965d819eb0dc9ad20cdbfd836c562a378ab0a9",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+      },
+      "after": {
+        "state": {
+          "total_fees": 1618760199006,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 79829646,
+        "pool_funding_vault_amount": 211050346382,
+        "position_sha256": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "26d9b8a85a851c878de5ae70018f2ce096581964aa1124a5bac2f0ea7f16fdd0",
+          "funding_ata": "63eaed852cfc31e27751cc9b5c264743cf48a6434549cd058d3b29fc577f2a45",
+          "pool_funding_vault": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+          "position": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "26d9b8a85a851c878de5ae70018f2ce096581964aa1124a5bac2f0ea7f16fdd0"
+      },
+      "tested_guard_flags": {
+        "state_owner": true,
+        "funding_ata_authority": true,
+        "position_owner": true,
+        "funding_ata_mint": true
+      },
+      "cpi_claimed_units": 79828645,
+      "rust_prediction": {
+        "success": true,
+        "total_fees": 1618760199006,
+        "funding_ata_amount": 79829646
+      }
+    },
+    {
+      "case": "wrong_vault_authority",
+      "variation": "wrong_vault_authority",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "error_code": 2015,
+      "compute_units": 19786,
+      "log_tail": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: funding_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program log: Left:",
+        "Program log: CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK",
+        "Program log: Right:",
+        "Program log: CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19636 of 189850 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ],
+      "before": {
+        "state": {
+          "total_fees": 1618680370361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc",
+          "funding_ata": "d6fc560bac56c731dbc3bd9bb507400565460dd1c1d84badc6317b0aea5acebb",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+      },
+      "after": {
+        "state": {
+          "total_fees": 1618680370361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc",
+          "funding_ata": "d6fc560bac56c731dbc3bd9bb507400565460dd1c1d84badc6317b0aea5acebb",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+      },
+      "tested_guard_flags": {
+        "state_owner": true,
+        "funding_ata_authority": false,
+        "position_owner": true,
+        "funding_ata_mint": true
+      },
+      "tracked_rollback": true,
+      "rust_prediction": {
+        "success": false,
+        "model_error": "fee_share",
+        "error_code": 2015
+      }
+    },
+    {
+      "case": "wrong_vault_mint",
+      "variation": "wrong_vault_mint",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3))))",
+      "error_code": 3,
+      "compute_units": 61063,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [2]",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program log: Error: Account not associated with this Mint",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 197 of 129134 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x3",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 15412 of 144349 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG failed: custom program error: 0x3",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 60913 of 189850 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x3"
+      ],
+      "before": {
+        "state": {
+          "total_fees": 1618680370361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc",
+          "funding_ata": "c592b33c00bb77e8c9e7f26014a888ddd5ff18ad38ebe1b473335d67ecce18f3",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+      },
+      "after": {
+        "state": {
+          "total_fees": 1618680370361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc",
+          "funding_ata": "c592b33c00bb77e8c9e7f26014a888ddd5ff18ad38ebe1b473335d67ecce18f3",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+      },
+      "tested_guard_flags": {
+        "state_owner": true,
+        "funding_ata_authority": true,
+        "position_owner": true,
+        "funding_ata_mint": false
+      },
+      "tracked_rollback": true,
+      "rust_prediction": {
+        "success": false,
+        "model_error": "cpi",
+        "error_code": 3
+      }
+    },
+    {
+      "case": "wrong_state_owner",
+      "variation": "wrong_state_owner",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "error_code": 3007,
+      "compute_units": 10226,
+      "log_tail": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 10076 of 189850 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "before": {
+        "state": {
+          "total_fees": 1618680370361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc",
+          "funding_ata": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+      },
+      "after": {
+        "state": {
+          "total_fees": 1618680370361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc",
+          "funding_ata": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+      },
+      "tested_guard_flags": {
+        "state_owner": false,
+        "funding_ata_authority": true,
+        "position_owner": true,
+        "funding_ata_mint": true
+      },
+      "tracked_rollback": true,
+      "rust_prediction": {
+        "success": false,
+        "model_error": "fee_share",
+        "error_code": 3007
+      }
+    },
+    {
+      "case": "wrong_position_owner",
+      "variation": "wrong_position_owner",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "error_code": 3007,
+      "compute_units": 53177,
+      "log_tail": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [2]",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program log: AnchorError caused by account: position. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 7526 of 144349 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 53027 of 189850 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "before": {
+        "state": {
+          "total_fees": 1618680370361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc",
+          "funding_ata": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+      },
+      "after": {
+        "state": {
+          "total_fees": 1618680370361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc",
+          "funding_ata": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+      },
+      "tested_guard_flags": {
+        "state_owner": true,
+        "funding_ata_authority": true,
+        "position_owner": false,
+        "funding_ata_mint": true
+      },
+      "tracked_rollback": true,
+      "rust_prediction": {
+        "success": false,
+        "model_error": "cpi",
+        "error_code": 3007
+      }
+    },
+    {
+      "case": "wrong_state_and_vault_authority",
+      "variation": "wrong_state_and_vault_authority",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "error_code": 3007,
+      "compute_units": 10226,
+      "log_tail": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 10076 of 189850 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "before": {
+        "state": {
+          "total_fees": 1618680370361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc",
+          "funding_ata": "d6fc560bac56c731dbc3bd9bb507400565460dd1c1d84badc6317b0aea5acebb",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+      },
+      "after": {
+        "state": {
+          "total_fees": 1618680370361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc",
+          "funding_ata": "d6fc560bac56c731dbc3bd9bb507400565460dd1c1d84badc6317b0aea5acebb",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+      },
+      "tested_guard_flags": {
+        "state_owner": false,
+        "funding_ata_authority": false,
+        "position_owner": true,
+        "funding_ata_mint": true
+      },
+      "tracked_rollback": true,
+      "rust_prediction": {
+        "success": false,
+        "model_error": "fee_share",
+        "error_code": 3007
+      }
+    },
+    {
+      "case": "wrong_vault_authority_and_position_owner",
+      "variation": "wrong_vault_authority_and_position_owner",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "error_code": 2015,
+      "compute_units": 19786,
+      "log_tail": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: funding_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program log: Left:",
+        "Program log: CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK",
+        "Program log: Right:",
+        "Program log: CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19636 of 189850 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ],
+      "before": {
+        "state": {
+          "total_fees": 1618680370361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc",
+          "funding_ata": "d6fc560bac56c731dbc3bd9bb507400565460dd1c1d84badc6317b0aea5acebb",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+      },
+      "after": {
+        "state": {
+          "total_fees": 1618680370361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc",
+          "funding_ata": "d6fc560bac56c731dbc3bd9bb507400565460dd1c1d84badc6317b0aea5acebb",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+      },
+      "tested_guard_flags": {
+        "state_owner": true,
+        "funding_ata_authority": false,
+        "position_owner": false,
+        "funding_ata_mint": true
+      },
+      "tracked_rollback": true,
+      "rust_prediction": {
+        "success": false,
+        "model_error": "fee_share",
+        "error_code": 2015
+      }
+    },
+    {
+      "case": "wrong_position_owner_and_vault_mint",
+      "variation": "wrong_position_owner_and_vault_mint",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "error_code": 3007,
+      "compute_units": 53177,
+      "log_tail": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [2]",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program log: AnchorError caused by account: position. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 7526 of 144349 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 53027 of 189850 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "before": {
+        "state": {
+          "total_fees": 1618680370361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc",
+          "funding_ata": "c592b33c00bb77e8c9e7f26014a888ddd5ff18ad38ebe1b473335d67ecce18f3",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+      },
+      "after": {
+        "state": {
+          "total_fees": 1618680370361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "funding_ata_amount": 1,
+        "pool_funding_vault_amount": 211130175027,
+        "position_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+        "pool_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342",
+        "tracked_sha256": {
+          "fee_share_state": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc",
+          "funding_ata": "c592b33c00bb77e8c9e7f26014a888ddd5ff18ad38ebe1b473335d67ecce18f3",
+          "pool_funding_vault": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "position": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da",
+          "pool": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "state_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+      },
+      "tested_guard_flags": {
+        "state_owner": true,
+        "funding_ata_authority": true,
+        "position_owner": false,
+        "funding_ata_mint": false
+      },
+      "tracked_rollback": true,
+      "rust_prediction": {
+        "success": false,
+        "model_error": "cpi",
+        "error_code": 3007
+      }
+    }
+  ],
+  "qualification": "Fresh signed LiteSVM execution of pinned deployed FeeShare and Meteora CP ELFs against later captured account bytes. Local mutations vary state totals, fee-vault balance or invalid accounts. Rust covers only validated-account FeeShare post-CPI accounting and takes actual CP-claimed amount as input; it does not reconstruct CP position math, CPI invocation, full Anchor parsing or the exact historical transaction prestate. No live transaction."
+}

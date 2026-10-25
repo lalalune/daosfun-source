@@ -1,0 +1,266 @@
+{
+  "current_dao_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+  "qualification": "One selected bounded-success local path per handler. Exact-source callsites and fixture loader hashes separate target DAO ELF from custom CPI dependencies; SPL Token/Token-2022/System/ATA are treated as builtins. An arbitrary ExecuteInvoke CPI target or different account state can use other programs, so this is not universal handler compatibility or live reachability.",
+  "rows": [
+    {
+      "instruction": "add_delegate_authority",
+      "selected_receipt": "analysis/daos_fun/dao-v1-delegate-signed-matrix.json",
+      "selected_receipt_sha256": "371ccf9710ffd0c3b7c6b210cfee17e1ceba0fdbf294adf808dcf9b7d26dd91c",
+      "current_dao_root_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "selected_custom_dependencies": [],
+      "version_mismatches": [],
+      "unmanifested_custom_dependencies": [],
+      "selected_current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "burn_dao_tokens",
+      "selected_receipt": "analysis/daos_fun/dao-v1-burn-amount-matrix.json",
+      "selected_receipt_sha256": "bd99c28ed6fa29a8cc4cd845b7ac4c44e2b329fcbb89cab9bcbc6b74d0d00a4a",
+      "current_dao_root_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "selected_custom_dependencies": [],
+      "version_mismatches": [],
+      "unmanifested_custom_dependencies": [],
+      "selected_current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "claim_dbc_trading_fees",
+      "selected_receipt": "analysis/daos_fun/dao_v1-claim_dbc_trading_fees-replay.json",
+      "selected_receipt_sha256": "86e8f55df6b16de3a742f36cc60ac7a66e0e9253b7d33e1b5df0351e59c7aa91",
+      "current_dao_root_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "selected_custom_dependencies": [
+        {
+          "program": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+          "loaded_sha256": "e2bfc853c1a1778dd8ee40ea9a0f3edf5587442360c57c685e7e3024ad0cad47",
+          "current_manifest_sha256": "e2bfc853c1a1778dd8ee40ea9a0f3edf5587442360c57c685e7e3024ad0cad47"
+        }
+      ],
+      "version_mismatches": [],
+      "unmanifested_custom_dependencies": [],
+      "selected_current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "close_fund",
+      "selected_receipt": "analysis/daos_fun/dao-v1-close-fund-matrix.json",
+      "selected_receipt_sha256": "39a82a5a2caed8c986ab6a4f23a4780ed6a0fefadd247283a4162beeb6907fe7",
+      "current_dao_root_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "selected_custom_dependencies": [],
+      "version_mismatches": [],
+      "unmanifested_custom_dependencies": [],
+      "selected_current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "cosign_init",
+      "selected_receipt": "analysis/daos_fun/dao-v1-cosign-lifecycle.json",
+      "selected_receipt_sha256": "a8de44da6f6ecbf3eea546cd2cd08102e0065e64857a458aab9f22b5092038fd",
+      "current_dao_root_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "selected_custom_dependencies": [],
+      "version_mismatches": [],
+      "unmanifested_custom_dependencies": [],
+      "selected_current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "cosign_update_signer",
+      "selected_receipt": "analysis/daos_fun/dao-v1-cosign-lifecycle.json",
+      "selected_receipt_sha256": "a8de44da6f6ecbf3eea546cd2cd08102e0065e64857a458aab9f22b5092038fd",
+      "current_dao_root_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "selected_custom_dependencies": [],
+      "version_mismatches": [],
+      "unmanifested_custom_dependencies": [],
+      "selected_current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "execute_invoke",
+      "selected_receipt": "analysis/daos_fun/dao_v1-execute_invoke-synthetic-replay.json",
+      "selected_receipt_sha256": "39db66385dff27ebb7b506245c50d59ccd7a9d12d651b7cff97ebf2bf19cd06f",
+      "current_dao_root_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "selected_custom_dependencies": [],
+      "version_mismatches": [],
+      "unmanifested_custom_dependencies": [],
+      "selected_current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "finalize_meteora_bonding",
+      "selected_receipt": "analysis/daos_fun/dao-bm1-cross-pool-current-config.json",
+      "selected_receipt_sha256": "40c935fcd36e2628e54b6cb3180f8afec6646ce2190c3e78aef3167f63d92727",
+      "current_dao_root_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "selected_custom_dependencies": [
+        {
+          "program": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+          "loaded_sha256": "e2bfc853c1a1778dd8ee40ea9a0f3edf5587442360c57c685e7e3024ad0cad47",
+          "current_manifest_sha256": "e2bfc853c1a1778dd8ee40ea9a0f3edf5587442360c57c685e7e3024ad0cad47"
+        }
+      ],
+      "version_mismatches": [],
+      "unmanifested_custom_dependencies": [],
+      "selected_current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "init_bonding_on_meteora",
+      "selected_receipt": "analysis/daos_fun/dao-v1-init-bonding-synthetic-probes.json",
+      "selected_receipt_sha256": "3b6b2cff1b806198b7aa64363f83ba31cb4744ec2ab94f0d0d2f72fa9545199f",
+      "current_dao_root_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "selected_custom_dependencies": [
+        {
+          "program": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+          "loaded_sha256": "e2bfc853c1a1778dd8ee40ea9a0f3edf5587442360c57c685e7e3024ad0cad47",
+          "current_manifest_sha256": "e2bfc853c1a1778dd8ee40ea9a0f3edf5587442360c57c685e7e3024ad0cad47"
+        },
+        {
+          "program": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "loaded_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+          "current_manifest_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8"
+        }
+      ],
+      "version_mismatches": [],
+      "unmanifested_custom_dependencies": [],
+      "selected_current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "init_curve",
+      "selected_receipt": "analysis/daos_fun/dao-v1-init-curve-source-era-cp-replay.json",
+      "selected_receipt_sha256": "d18c1a17578413af9029a20f6c5b969e002ba0b1f4d1b0d9d1ce8e98086b3382",
+      "current_dao_root_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "selected_custom_dependencies": [
+        {
+          "program": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "loaded_sha256": "3aaa0882b1ea0af771de9c2f96d84e4cc085cd5e59475c56fb6a7de542c56852",
+          "current_manifest_sha256": "967ff9fb161eec2e62f66d2c899100739fb747c445f697b8625c86b31b9a2022"
+        }
+      ],
+      "version_mismatches": [
+        {
+          "program": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "loaded_sha256": "3aaa0882b1ea0af771de9c2f96d84e4cc085cd5e59475c56fb6a7de542c56852",
+          "current_sha256": "967ff9fb161eec2e62f66d2c899100739fb747c445f697b8625c86b31b9a2022"
+        }
+      ],
+      "unmanifested_custom_dependencies": [],
+      "selected_current_custom_stack_local_success": false
+    },
+    {
+      "instruction": "init_redemption",
+      "selected_receipt": "analysis/daos_fun/dao-v1-init-redemption-matrix.json",
+      "selected_receipt_sha256": "6697333ced848379bd2f96bbe9deb13533100b1c2bc09089cf56949b7380d354",
+      "current_dao_root_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "selected_custom_dependencies": [],
+      "version_mismatches": [],
+      "unmanifested_custom_dependencies": [],
+      "selected_current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "initialize",
+      "selected_receipt": "analysis/daos_fun/dao-v1-initialize-synthetic-probes.json",
+      "selected_receipt_sha256": "211545c5865674aa09ee80c294058a67829b4f4ee0158a3ac6f8edfe1fe31781",
+      "current_dao_root_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "selected_custom_dependencies": [
+        {
+          "program": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "loaded_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+          "current_manifest_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8"
+        }
+      ],
+      "version_mismatches": [],
+      "unmanifested_custom_dependencies": [],
+      "selected_current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "migrate_bonding_to_meteora",
+      "selected_receipt": "analysis/daos_fun/dao-v1-migrate-bonding-current-dao-restored-replay.json",
+      "selected_receipt_sha256": "f863695450830760ac8bf0283299d6a1c58116a52824c95a3751837fde5d856f",
+      "current_dao_root_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "selected_custom_dependencies": [
+        {
+          "program": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "loaded_sha256": "f8df16bf5d47965f0a75ec61788ec96521ba854da7672035a371da189acec145",
+          "current_manifest_sha256": "967ff9fb161eec2e62f66d2c899100739fb747c445f697b8625c86b31b9a2022"
+        },
+        {
+          "program": "HedgENAip7ZEzRj6T3ZbY1PmDFXU5XKx1BFSKbxvVD7V",
+          "loaded_sha256": "17ebadd438fae8bc6c9ea2a2731953225ba3f269a2c62c9ab380a853495e99b0",
+          "current_manifest_sha256": null
+        }
+      ],
+      "version_mismatches": [
+        {
+          "program": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "loaded_sha256": "f8df16bf5d47965f0a75ec61788ec96521ba854da7672035a371da189acec145",
+          "current_sha256": "967ff9fb161eec2e62f66d2c899100739fb747c445f697b8625c86b31b9a2022"
+        }
+      ],
+      "unmanifested_custom_dependencies": [
+        "HedgENAip7ZEzRj6T3ZbY1PmDFXU5XKx1BFSKbxvVD7V"
+      ],
+      "selected_current_custom_stack_local_success": false
+    },
+    {
+      "instruction": "redeem_sol",
+      "selected_receipt": "analysis/daos_fun/dao-v1-redeem-sol-amount-matrix.json",
+      "selected_receipt_sha256": "e66344a5ef5bef1a3c72a1df48bce6f1a238b5f3b5a5647a2a32932320474166",
+      "current_dao_root_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "selected_custom_dependencies": [],
+      "version_mismatches": [],
+      "unmanifested_custom_dependencies": [],
+      "selected_current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "redeem_tokens",
+      "selected_receipt": "analysis/daos_fun/dao_v1-redeem_tokens-synthetic-replay.json",
+      "selected_receipt_sha256": "db3ff1388c7c3ad0aa78b220d6d86a5868cc9e79489ac75e4fc246230b3dbe18",
+      "current_dao_root_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "selected_custom_dependencies": [],
+      "version_mismatches": [],
+      "unmanifested_custom_dependencies": [],
+      "selected_current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "revoke_delegate_authority",
+      "selected_receipt": "analysis/daos_fun/dao-v1-delegate-signed-matrix.json",
+      "selected_receipt_sha256": "371ccf9710ffd0c3b7c6b210cfee17e1ceba0fdbf294adf808dcf9b7d26dd91c",
+      "current_dao_root_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "selected_custom_dependencies": [],
+      "version_mismatches": [],
+      "unmanifested_custom_dependencies": [],
+      "selected_current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "start_raise",
+      "selected_receipt": "analysis/daos_fun/dao-v1-start-raise-synthetic-probes.json",
+      "selected_receipt_sha256": "94aab9846bb0cbd9a2dfc7972e1345a7b2828cd6077fca1ba160d6570efdcff1",
+      "current_dao_root_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "selected_custom_dependencies": [
+        {
+          "program": "ETK5PUmiqVDRsd1TPFqCu84bsrLNG4YySZND96PEjW97",
+          "loaded_sha256": "00bdbee1546f2087bfa845cb4144561ebaaf00a2af231399fa3269d82c30af28",
+          "current_manifest_sha256": "00bdbee1546f2087bfa845cb4144561ebaaf00a2af231399fa3269d82c30af28"
+        }
+      ],
+      "version_mismatches": [],
+      "unmanifested_custom_dependencies": [],
+      "selected_current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "transfer_position_nft_to_fee_share",
+      "selected_receipt": "analysis/daos_fun/dao-v1-transfer-position-nft-probes.json",
+      "selected_receipt_sha256": "db072ec4c7120daed3c856ea0ad8ff54c015ad7057be53d56a37e2f403dde2a8",
+      "current_dao_root_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "selected_custom_dependencies": [],
+      "version_mismatches": [],
+      "unmanifested_custom_dependencies": [],
+      "selected_current_custom_stack_local_success": true
+    }
+  ],
+  "totals": {
+    "selected_handlers": 18,
+    "current_dao_root_elf_local_success": 18,
+    "selected_current_custom_stack_local_success": 16,
+    "dependency_mixed_successes": 2,
+    "strict_full_behavior": 0
+  },
+  "current_cp_migration_negative_control": {
+    "receipt": "analysis/daos_fun/dao-v1-migrate-bonding-current-stack-restored-replay.json",
+    "dao_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+    "cp_sha256": "967ff9fb161eec2e62f66d2c899100739fb747c445f697b8625c86b31b9a2022",
+    "error": "TransactionErrorInstructionError((2, Tagged(InstructionErrorCustom(6067))))",
+    "qualification": "Same restored source fixture with current CP binary; failure is downstream CP6067, not a live execution or general impossibility proof."
+  }
+}

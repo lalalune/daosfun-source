@@ -1,0 +1,1253 @@
+{
+  "environment": "isolated-offline-surfpool",
+  "loopback_rpc": "http://127.0.0.1:19741",
+  "genesis_hashes": [
+    "Gh7tTyvcfD9mefw3dLwXPPbRTwZhB3ZVJFerh27LUBw2",
+    "Gh7tTyvcfD9mefw3dLwXPPbRTwZhB3ZVJFerh27LUBw2"
+  ],
+  "program": "5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv",
+  "pinned_current_virtual_xyk_elf_sha256": "c151c6b15b84d8bfc47a5f2e0e5b9e04babff0263a1125a9e8dcb07df6144377",
+  "source_token_mint_sha256": "674cb2cb6fa8cf892faf09d4140a211ff045399ae81ae212b9414020ba2fef29",
+  "fixture": "Copied public Token-2022 mint bytes with synthetic transfer fee and disposable authority; program-created LP mint and ATAs; signed deposits, wrapped-SOL funding, LP add/remove and local MintTo top-up.",
+  "cases": [
+    {
+      "bps": 0,
+      "fee_max": 1000000000000,
+      "setup": {
+        "created_atas": [
+          {
+            "address": "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia",
+            "signature": "3EHiN6vdRc4BZ1h3utU4N3R9hLRwPndKRj9mfJaKGMe6dXn64dUkULjsx8JzUkxK3HP4mNyiapRgKSF5eSQEeURN"
+          },
+          {
+            "address": "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc",
+            "signature": "2uDYzqm84gGquokdeVBcPL8XCnZQBd8vVrfV98GFBuX18eCc42GZULZyXCAksUudnYAZHxU2XT3aPppyWH1PteJb"
+          },
+          {
+            "address": "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D",
+            "signature": "3hPEse79WKErBsbnVDLr8iSEyk9fDHBP2uyqrUwMnbgVpGA2hzuqYAzK6BfZWLnELFshQtBYTUu7zvJB1nXK5J4o"
+          },
+          {
+            "address": "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE",
+            "signature": "2yXpqbyHkBPTWRuMsnQxbKXvcNaHMV7uo4pus8N8wQfZPM2KZebV96ioSjb2rJvKyBhRiofda82Xb1bNK1y6FsaE"
+          },
+          {
+            "address": "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3",
+            "signature": "s8HkWUqwHF8qyaTa9WS9BVvvb5Y22qJNkHCLVyCXvcUkjQXvRnrNhMbBGBciNrH2kZwLRCeFToPzJrxutbG24Lx"
+          },
+          {
+            "address": "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb",
+            "signature": "3gr3QPQzn42JBgbYBC4Lcqvr3c1hEhU49HJMFMbPFFVqf5F9uTR8UHXA1Y2dvtCbiETKaCxMJAyD8TMDRk6FCXiM"
+          }
+        ],
+        "mint_signatures": [
+          "DoKfCvdUiUxktbmqb6VDP91u65VHTSfiD1JsrCazhowZJxkmU6DVRJr6imYuwbPWCjSYfBs7BsbKiqGn8AEFQDm",
+          "4mwQ7gjAobt4tjDVY1PjtaY5bCiEtRxLDmTCYdyNrxRAneTpKwEyBUZGXcdpqBeMfcRdne9PSGfKB4SaCpDqqxvJ"
+        ],
+        "funding_signatures": [
+          "2HuhtZggEiiVHZCNsUm9rh8GwpQxjmEjVYjHsGj8diN2GdC3Q2Th9sTh35ZRTtZFRPwvRvGudo4oFTSZZfsTLE9L",
+          "T36mCyrho83r8XsCkNf7ZoFhedX5ueW7zNXAYX8MVFrmDAMRmoZ54N9Fiv8xwXy8UaeWVcRXjqpAb3b8PXbvjTU",
+          "NCiQBcPo3NSFwSqvXAikPuaUvSERn8K4e5F4RiTZsLknSn1SqKkbJVMUUd1tFSy95TZeUHpCLLaeiNRkshu3gqZ",
+          "5JmobWtARgGF381WHxuz4Fxj4pWe9LooSbNW5XUToDmqaas5CUys8bxJZ9dA7yvWD3KXSV9svtSzv4oPfnVa2xL5"
+        ]
+      },
+      "initialize": {
+        "label": "initialize",
+        "signature": "2MXULW57Spa8Z1C8ekJPAhueme2FEMF2kAQXT2tYdK2RUamm3LNXZHXhSVavAEeV9PvsnbUJgUCUcPMAPoEkGEjG",
+        "signature_verified": true,
+        "committed_local_ledger_error": null,
+        "simulation_error": null,
+        "simulation_units": 51733,
+        "logs_tail": [
+          "Program log: Instruction: Initialize",
+          "Program 11111111111111111111111111111111 invoke [2]",
+          "Program 11111111111111111111111111111111 success",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+          "Program log: Instruction: TransferChecked",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3185 of 158520 compute units",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 152773 compute units",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+          "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv consumed 51583 of 202850 compute units",
+          "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv success"
+        ],
+        "before": {
+          "token_supply": 101000000000,
+          "token_spendable": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 1000000000,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 100000000000,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 0
+          },
+          "token_withheld": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 0
+          },
+          "funding_spendable": {
+            "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 10000000,
+            "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 1000000000000,
+            "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 0
+          },
+          "lp_mint_supply": null,
+          "curve": null
+        },
+        "after": {
+          "token_supply": 101000000000,
+          "token_spendable": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 100000000000,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 1000000000
+          },
+          "token_withheld": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 0
+          },
+          "funding_spendable": {
+            "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+            "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 1000000000000,
+            "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 10000000
+          },
+          "lp_mint_supply": null,
+          "curve": {
+            "T": 1000000000,
+            "F": 10000000,
+            "V": 0,
+            "lp_option": 0,
+            "deactivated": false,
+            "token_reserve_shortfall": 0,
+            "gross_T_minus_vault_even_if_migrated": 0,
+            "token_vault_spendable": 1000000000,
+            "token_vault_withheld": 0,
+            "curve_data_sha256": "af27625dbae7d6dc26db1239ab5325da17c13ccbd13b8102aefeeee7e505d06a"
+          }
+        }
+      },
+      "init_lp": {
+        "label": "init_lp",
+        "signature": "34CsL9JzQNWx9ZUaVEijcczkkrHmne14fhSjo6v3DZugfoGm2ced6g1QcB4kBJXv5Uvmi7huoQpPMnBLTA5VftLe",
+        "signature_verified": true,
+        "committed_local_ledger_error": null,
+        "simulation_error": null,
+        "simulation_units": 66845,
+        "logs_tail": [
+          "Program 11111111111111111111111111111111 invoke [2]",
+          "Program 11111111111111111111111111111111 success",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+          "Program log: TokenMetadataInstruction: Initialize",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3346 of 146850 compute units",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+          "Program log: Instruction: MintTo",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1696 of 139065 compute units",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+          "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv consumed 66695 of 202850 compute units",
+          "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv success"
+        ],
+        "before": {
+          "token_supply": 101000000000,
+          "token_spendable": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 100000000000,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 1000000000
+          },
+          "token_withheld": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 0
+          },
+          "funding_spendable": {
+            "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+            "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 1000000000000,
+            "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 10000000
+          },
+          "lp_mint_supply": null,
+          "curve": {
+            "T": 1000000000,
+            "F": 10000000,
+            "V": 0,
+            "lp_option": 0,
+            "deactivated": false,
+            "token_reserve_shortfall": 0,
+            "gross_T_minus_vault_even_if_migrated": 0,
+            "token_vault_spendable": 1000000000,
+            "token_vault_withheld": 0,
+            "curve_data_sha256": "af27625dbae7d6dc26db1239ab5325da17c13ccbd13b8102aefeeee7e505d06a"
+          }
+        },
+        "after": {
+          "token_supply": 101000000000,
+          "token_spendable": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 100000000000,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 1000000000
+          },
+          "token_withheld": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 0
+          },
+          "funding_spendable": {
+            "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+            "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 1000000000000,
+            "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 10000000
+          },
+          "lp_mint_supply": 100000000,
+          "curve": {
+            "T": 1000000000,
+            "F": 10000000,
+            "V": 0,
+            "lp_option": 1,
+            "deactivated": false,
+            "token_reserve_shortfall": 0,
+            "gross_T_minus_vault_even_if_migrated": 0,
+            "token_vault_spendable": 1000000000,
+            "token_vault_withheld": 0,
+            "curve_data_sha256": "8e55ccfaec845e66aefeffa8f9a1b4ac4d8080efb07d260895757a4ad2390811"
+          }
+        }
+      },
+      "trader_lp_ata": {
+        "address": "CC3UVETmdnXQxUz7FwQBnhrRSSSatFo9zN8f6xicJTk5",
+        "signature": "51cg18rePNDikhjUesTnvym1L6hhTJAZPLJN7SGuoZzjqbsVMKmBrmQQEmhs9NsWdhqV1BgWhqeAQJ4YCRUwNA4D"
+      },
+      "add_liquidity": {
+        "transaction": {
+          "label": "add_liquidity",
+          "signature": "3Y8qJLfnbWtGdED1fmHssGskwSzua45k15WzBqXYknZGx42yWcYu2qE7e4RjeMzkjVzrwkgo6UL1iJaprDkKDFWV",
+          "signature_verified": true,
+          "committed_local_ledger_error": null,
+          "simulation_error": null,
+          "simulation_units": 47252,
+          "logs_tail": [
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 167617 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: TransferChecked",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3185 of 164943 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: MintTo",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1696 of 158901 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv consumed 47102 of 202850 compute units",
+            "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv success"
+          ],
+          "before": {
+            "token_supply": 101000000000,
+            "token_spendable": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 100000000000,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 1000000000
+            },
+            "token_withheld": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 0
+            },
+            "funding_spendable": {
+              "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+              "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 1000000000000,
+              "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 10000000
+            },
+            "lp_mint_supply": 100000000,
+            "curve": {
+              "T": 1000000000,
+              "F": 10000000,
+              "V": 0,
+              "lp_option": 1,
+              "deactivated": false,
+              "token_reserve_shortfall": 0,
+              "gross_T_minus_vault_even_if_migrated": 0,
+              "token_vault_spendable": 1000000000,
+              "token_vault_withheld": 0,
+              "curve_data_sha256": "8e55ccfaec845e66aefeffa8f9a1b4ac4d8080efb07d260895757a4ad2390811"
+            }
+          },
+          "after": {
+            "token_supply": 101000000000,
+            "token_spendable": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 101000000000
+            },
+            "token_withheld": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 0
+            },
+            "funding_spendable": {
+              "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+              "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 999000000000,
+              "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 1010000000
+            },
+            "lp_mint_supply": 10100000000,
+            "curve": {
+              "T": 101000000000,
+              "F": 1010000000,
+              "V": 0,
+              "lp_option": 1,
+              "deactivated": false,
+              "token_reserve_shortfall": 0,
+              "gross_T_minus_vault_even_if_migrated": 0,
+              "token_vault_spendable": 101000000000,
+              "token_vault_withheld": 0,
+              "curve_data_sha256": "464a7759ae4f6f4faf0c6f06a02861812902335a955d5b1bac1e64cc87d449db"
+            }
+          }
+        },
+        "before": {
+          "ledger": {
+            "token_supply": 101000000000,
+            "token_spendable": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 100000000000,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 1000000000
+            },
+            "token_withheld": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 0
+            },
+            "funding_spendable": {
+              "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+              "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 1000000000000,
+              "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 10000000
+            },
+            "lp_mint_supply": 100000000,
+            "curve": {
+              "T": 1000000000,
+              "F": 10000000,
+              "V": 0,
+              "lp_option": 1,
+              "deactivated": false,
+              "token_reserve_shortfall": 0,
+              "gross_T_minus_vault_even_if_migrated": 0,
+              "token_vault_spendable": 1000000000,
+              "token_vault_withheld": 0,
+              "curve_data_sha256": "8e55ccfaec845e66aefeffa8f9a1b4ac4d8080efb07d260895757a4ad2390811"
+            }
+          },
+          "lp_vault": 100000000,
+          "trader_lp": 0,
+          "curve_data_sha256": "8e55ccfaec845e66aefeffa8f9a1b4ac4d8080efb07d260895757a4ad2390811"
+        },
+        "after": {
+          "ledger": {
+            "token_supply": 101000000000,
+            "token_spendable": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 101000000000
+            },
+            "token_withheld": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 0
+            },
+            "funding_spendable": {
+              "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+              "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 999000000000,
+              "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 1010000000
+            },
+            "lp_mint_supply": 10100000000,
+            "curve": {
+              "T": 101000000000,
+              "F": 1010000000,
+              "V": 0,
+              "lp_option": 1,
+              "deactivated": false,
+              "token_reserve_shortfall": 0,
+              "gross_T_minus_vault_even_if_migrated": 0,
+              "token_vault_spendable": 101000000000,
+              "token_vault_withheld": 0,
+              "curve_data_sha256": "464a7759ae4f6f4faf0c6f06a02861812902335a955d5b1bac1e64cc87d449db"
+            }
+          },
+          "lp_vault": 100000000,
+          "trader_lp": 10000000000,
+          "curve_data_sha256": "464a7759ae4f6f4faf0c6f06a02861812902335a955d5b1bac1e64cc87d449db"
+        },
+        "token_input_gross": 100000000000,
+        "token_input_transfer_fee": 0,
+        "lp_minted": 10000000000,
+        "funding_in": 1000000000
+      },
+      "full_lp_exit_initial_rollback": null,
+      "gross_token_payout": 100000000000,
+      "funding_payout": 1000000000,
+      "vault_spendable_before_exit": 101000000000,
+      "exact_missing_payout_for_full_exit": 0,
+      "signed_vault_topup": null,
+      "full_lp_exit": {
+        "transaction": {
+          "label": "full_lp_exit",
+          "signature": "5JLdY9VDRW1RmWkN2Xsg5NnAwumvJHhzfvntjsk1JsJPNDkNNKPYkRU5ewVatmkQSJynivmXzacKdrwbKv1BPRwM",
+          "signature_verified": true,
+          "committed_local_ledger_error": null,
+          "simulation_error": null,
+          "simulation_units": 50665,
+          "logs_tail": [
+            "Program log: Instruction: TransferChecked",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3185 of 163899 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 158132 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: Burn",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1951 of 155726 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv consumed 50515 of 202850 compute units",
+            "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv success"
+          ],
+          "before": {
+            "token_supply": 101000000000,
+            "token_spendable": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 101000000000
+            },
+            "token_withheld": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 0
+            },
+            "funding_spendable": {
+              "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+              "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 999000000000,
+              "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 1010000000
+            },
+            "lp_mint_supply": 10100000000,
+            "curve": {
+              "T": 101000000000,
+              "F": 1010000000,
+              "V": 0,
+              "lp_option": 1,
+              "deactivated": false,
+              "token_reserve_shortfall": 0,
+              "gross_T_minus_vault_even_if_migrated": 0,
+              "token_vault_spendable": 101000000000,
+              "token_vault_withheld": 0,
+              "curve_data_sha256": "464a7759ae4f6f4faf0c6f06a02861812902335a955d5b1bac1e64cc87d449db"
+            }
+          },
+          "after": {
+            "token_supply": 101000000000,
+            "token_spendable": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 100000000000,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 1000000000
+            },
+            "token_withheld": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 0
+            },
+            "funding_spendable": {
+              "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+              "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 1000000000000,
+              "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 10000000
+            },
+            "lp_mint_supply": 100000000,
+            "curve": {
+              "T": 1000000000,
+              "F": 10000000,
+              "V": 0,
+              "lp_option": 1,
+              "deactivated": false,
+              "token_reserve_shortfall": 0,
+              "gross_T_minus_vault_even_if_migrated": 0,
+              "token_vault_spendable": 1000000000,
+              "token_vault_withheld": 0,
+              "curve_data_sha256": "8e55ccfaec845e66aefeffa8f9a1b4ac4d8080efb07d260895757a4ad2390811"
+            }
+          }
+        },
+        "before": {
+          "ledger": {
+            "token_supply": 101000000000,
+            "token_spendable": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 101000000000
+            },
+            "token_withheld": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 0
+            },
+            "funding_spendable": {
+              "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+              "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 999000000000,
+              "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 1010000000
+            },
+            "lp_mint_supply": 10100000000,
+            "curve": {
+              "T": 101000000000,
+              "F": 1010000000,
+              "V": 0,
+              "lp_option": 1,
+              "deactivated": false,
+              "token_reserve_shortfall": 0,
+              "gross_T_minus_vault_even_if_migrated": 0,
+              "token_vault_spendable": 101000000000,
+              "token_vault_withheld": 0,
+              "curve_data_sha256": "464a7759ae4f6f4faf0c6f06a02861812902335a955d5b1bac1e64cc87d449db"
+            }
+          },
+          "lp_vault": 100000000,
+          "trader_lp": 10000000000,
+          "curve_data_sha256": "464a7759ae4f6f4faf0c6f06a02861812902335a955d5b1bac1e64cc87d449db"
+        },
+        "after": {
+          "ledger": {
+            "token_supply": 101000000000,
+            "token_spendable": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 100000000000,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 1000000000
+            },
+            "token_withheld": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 0
+            },
+            "funding_spendable": {
+              "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+              "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 1000000000000,
+              "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 10000000
+            },
+            "lp_mint_supply": 100000000,
+            "curve": {
+              "T": 1000000000,
+              "F": 10000000,
+              "V": 0,
+              "lp_option": 1,
+              "deactivated": false,
+              "token_reserve_shortfall": 0,
+              "gross_T_minus_vault_even_if_migrated": 0,
+              "token_vault_spendable": 1000000000,
+              "token_vault_withheld": 0,
+              "curve_data_sha256": "8e55ccfaec845e66aefeffa8f9a1b4ac4d8080efb07d260895757a4ad2390811"
+            }
+          },
+          "lp_vault": 100000000,
+          "trader_lp": 0,
+          "curve_data_sha256": "8e55ccfaec845e66aefeffa8f9a1b4ac4d8080efb07d260895757a4ad2390811"
+        },
+        "minimum_token": 100000000000,
+        "spendable_token_received": 100000000000,
+        "withheld_token_fee": 0
+      }
+    },
+    {
+      "bps": 100,
+      "fee_max": 1000000000000,
+      "setup": {
+        "created_atas": [
+          {
+            "address": "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia",
+            "signature": "5AnQQJwhjyWbeAi8ZSSnGPgvd6yXjH7a9G7GCwGaEJFNNkCSSFViPmHFtK9cJBzbxKheNjYCwVY77BLev8o39Jrh"
+          },
+          {
+            "address": "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc",
+            "signature": "2Hmf4zyRwseqTpqvG5VcPiGnwYKW9B3r16qiSi2v2zvECJAf4dsiYbz9SyMtPGitzMWFPTBfjibuAT4qhvW1PcKz"
+          },
+          {
+            "address": "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D",
+            "signature": "3mtEXD8mPcR6xcsEvgfNtCvz8wa9LwxbhFFUHMEXMtpZUS3VBUcjkwGPRvCYvwsPPJmgfxQpjyoF9b8wa9HZccKB"
+          },
+          {
+            "address": "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE",
+            "signature": "V2BZN1VAPPXR5n6M6dy4roFThVRyDPhqaU1VRZ1htshTi9mtbHAyoh1F239C9ksH2Zgxe7J8pKLPMuGrfXpNiZK"
+          },
+          {
+            "address": "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3",
+            "signature": "4UTQoczYHXb9Ci7rbCZLTwGmB9HMQbeCnmjKdzsZx9qnnFMQ3o6EfnNAgZ3BcLSLTEotu53TWAwyAT5LaU3iahmy"
+          },
+          {
+            "address": "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb",
+            "signature": "2RSRptXJH61ayvHKxE9iJkEpvX9nwDshbGU3JXAKVu3qEBma1tdvmg5EVqkP2cMbLRtkMXjRj2Zb3Em7iZkxy4qr"
+          }
+        ],
+        "mint_signatures": [
+          "4FqWmA1AaVDjwZvuCGYKu9HscSeao1WncUFkMsUj6WQ1S3te3XfVLPxu4yuQi2TjcBB693mA7KbbhpFnTCLdtCWB",
+          "5mWWSKLt2R4FLCg1PocaM5o4p1gLsHejxVMbZMPxFUqnRow97Yh5MqZNioMkeLKJeVy9hfJs5BqKqdprajuqmjSU"
+        ],
+        "funding_signatures": [
+          "3kpmuZ15XKhF6HxV5vCvCwh1a2sT3zQ3x8QP3Jq6REUbMLynC5EwXGLnAaXQvGBmTJEQpWk8pUcfkhdLbQELHaX6",
+          "4HsXJunMY6sc6ojKy4ucVzmxWtKhjLm9sJcWo5wcTmSXnjiCeGo7ULb4PtFxM2V6NkcpDpFZawpSku4kSg7nesZi",
+          "5mKrjKCLSjcZVsUZuJDun4N7Aqv2trQBiUXCuhaT3qDSprG5khDKoWzWBQ3jPmff7dgRdocApcE8RCbDHfLtTbCg",
+          "5X58GLR5bxYneWKSkXnEcw4JCQN3DMLs43EexNYXbFtYwPS5Hx3qcAADpufkiPrXczWgM6XnstnVzocbRAc4igDT"
+        ]
+      },
+      "initialize": {
+        "label": "initialize",
+        "signature": "3MymxpfSwYqj3Ad5s1pTQFkcGyb9B1mfeZ2qrrE3s3bRdGJaAjKzHJjjMgswzvXdGBUKeUnnbuwu4k7X2xwtzuxo",
+        "signature_verified": true,
+        "committed_local_ledger_error": null,
+        "simulation_error": null,
+        "simulation_units": 52090,
+        "logs_tail": [
+          "Program log: Instruction: Initialize",
+          "Program 11111111111111111111111111111111 invoke [2]",
+          "Program 11111111111111111111111111111111 success",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+          "Program log: Instruction: TransferChecked",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3542 of 158520 compute units",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 152416 compute units",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+          "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv consumed 51940 of 202850 compute units",
+          "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv success"
+        ],
+        "before": {
+          "token_supply": 101000000000,
+          "token_spendable": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 1000000000,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 100000000000,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 0
+          },
+          "token_withheld": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 0
+          },
+          "funding_spendable": {
+            "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 10000000,
+            "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 1000000000000,
+            "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 0
+          },
+          "lp_mint_supply": null,
+          "curve": null
+        },
+        "after": {
+          "token_supply": 101000000000,
+          "token_spendable": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 100000000000,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 990000000
+          },
+          "token_withheld": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 10000000
+          },
+          "funding_spendable": {
+            "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+            "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 1000000000000,
+            "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 10000000
+          },
+          "lp_mint_supply": null,
+          "curve": {
+            "T": 1000000000,
+            "F": 10000000,
+            "V": 0,
+            "lp_option": 0,
+            "deactivated": false,
+            "token_reserve_shortfall": 10000000,
+            "gross_T_minus_vault_even_if_migrated": 10000000,
+            "token_vault_spendable": 990000000,
+            "token_vault_withheld": 10000000,
+            "curve_data_sha256": "af27625dbae7d6dc26db1239ab5325da17c13ccbd13b8102aefeeee7e505d06a"
+          }
+        }
+      },
+      "init_lp": {
+        "label": "init_lp",
+        "signature": "3DhQNzAafrPqgmB1xNyrs1iviZVmYQo99gWashgtGmBzBts7AZEjmNspy2VU36Ws2iYQt4cVxcdPiHbM4WjPKaF3",
+        "signature_verified": true,
+        "committed_local_ledger_error": null,
+        "simulation_error": null,
+        "simulation_units": 66845,
+        "logs_tail": [
+          "Program 11111111111111111111111111111111 invoke [2]",
+          "Program 11111111111111111111111111111111 success",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+          "Program log: TokenMetadataInstruction: Initialize",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3346 of 146850 compute units",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+          "Program log: Instruction: MintTo",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1696 of 139065 compute units",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+          "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv consumed 66695 of 202850 compute units",
+          "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv success"
+        ],
+        "before": {
+          "token_supply": 101000000000,
+          "token_spendable": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 100000000000,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 990000000
+          },
+          "token_withheld": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 10000000
+          },
+          "funding_spendable": {
+            "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+            "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 1000000000000,
+            "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 10000000
+          },
+          "lp_mint_supply": null,
+          "curve": {
+            "T": 1000000000,
+            "F": 10000000,
+            "V": 0,
+            "lp_option": 0,
+            "deactivated": false,
+            "token_reserve_shortfall": 10000000,
+            "gross_T_minus_vault_even_if_migrated": 10000000,
+            "token_vault_spendable": 990000000,
+            "token_vault_withheld": 10000000,
+            "curve_data_sha256": "af27625dbae7d6dc26db1239ab5325da17c13ccbd13b8102aefeeee7e505d06a"
+          }
+        },
+        "after": {
+          "token_supply": 101000000000,
+          "token_spendable": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 100000000000,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 990000000
+          },
+          "token_withheld": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 10000000
+          },
+          "funding_spendable": {
+            "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+            "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 1000000000000,
+            "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 10000000
+          },
+          "lp_mint_supply": 100000000,
+          "curve": {
+            "T": 1000000000,
+            "F": 10000000,
+            "V": 0,
+            "lp_option": 1,
+            "deactivated": false,
+            "token_reserve_shortfall": 10000000,
+            "gross_T_minus_vault_even_if_migrated": 10000000,
+            "token_vault_spendable": 990000000,
+            "token_vault_withheld": 10000000,
+            "curve_data_sha256": "8e55ccfaec845e66aefeffa8f9a1b4ac4d8080efb07d260895757a4ad2390811"
+          }
+        }
+      },
+      "trader_lp_ata": {
+        "address": "CC3UVETmdnXQxUz7FwQBnhrRSSSatFo9zN8f6xicJTk5",
+        "signature": "3nSHZaPUUnEK5YDyfCaUYPtZJyfnWstBaDfX19wKTZzEiEi44k8wwtDvHAnfhqttAGNMoX7V3ewiGiHJXQ97cXAh"
+      },
+      "add_liquidity": {
+        "transaction": {
+          "label": "add_liquidity",
+          "signature": "3cHytoEuhZkBbxvV8YdmxRaEVWWZZjxBL65DG7zcpk9Azbumwizz1wvkf6EYePduzr21L2xiUPaudQ5uDkaCbR6e",
+          "signature_verified": true,
+          "committed_local_ledger_error": null,
+          "simulation_error": null,
+          "simulation_units": 47609,
+          "logs_tail": [
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 167617 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: TransferChecked",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3542 of 164943 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: MintTo",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1696 of 158544 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv consumed 47459 of 202850 compute units",
+            "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv success"
+          ],
+          "before": {
+            "token_supply": 101000000000,
+            "token_spendable": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 100000000000,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 990000000
+            },
+            "token_withheld": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 10000000
+            },
+            "funding_spendable": {
+              "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+              "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 1000000000000,
+              "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 10000000
+            },
+            "lp_mint_supply": 100000000,
+            "curve": {
+              "T": 1000000000,
+              "F": 10000000,
+              "V": 0,
+              "lp_option": 1,
+              "deactivated": false,
+              "token_reserve_shortfall": 10000000,
+              "gross_T_minus_vault_even_if_migrated": 10000000,
+              "token_vault_spendable": 990000000,
+              "token_vault_withheld": 10000000,
+              "curve_data_sha256": "8e55ccfaec845e66aefeffa8f9a1b4ac4d8080efb07d260895757a4ad2390811"
+            }
+          },
+          "after": {
+            "token_supply": 101000000000,
+            "token_spendable": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 99990000000
+            },
+            "token_withheld": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 1010000000
+            },
+            "funding_spendable": {
+              "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+              "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 999000000000,
+              "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 1010000000
+            },
+            "lp_mint_supply": 10100000000,
+            "curve": {
+              "T": 101000000000,
+              "F": 1010000000,
+              "V": 0,
+              "lp_option": 1,
+              "deactivated": false,
+              "token_reserve_shortfall": 1010000000,
+              "gross_T_minus_vault_even_if_migrated": 1010000000,
+              "token_vault_spendable": 99990000000,
+              "token_vault_withheld": 1010000000,
+              "curve_data_sha256": "464a7759ae4f6f4faf0c6f06a02861812902335a955d5b1bac1e64cc87d449db"
+            }
+          }
+        },
+        "before": {
+          "ledger": {
+            "token_supply": 101000000000,
+            "token_spendable": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 100000000000,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 990000000
+            },
+            "token_withheld": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 10000000
+            },
+            "funding_spendable": {
+              "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+              "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 1000000000000,
+              "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 10000000
+            },
+            "lp_mint_supply": 100000000,
+            "curve": {
+              "T": 1000000000,
+              "F": 10000000,
+              "V": 0,
+              "lp_option": 1,
+              "deactivated": false,
+              "token_reserve_shortfall": 10000000,
+              "gross_T_minus_vault_even_if_migrated": 10000000,
+              "token_vault_spendable": 990000000,
+              "token_vault_withheld": 10000000,
+              "curve_data_sha256": "8e55ccfaec845e66aefeffa8f9a1b4ac4d8080efb07d260895757a4ad2390811"
+            }
+          },
+          "lp_vault": 100000000,
+          "trader_lp": 0,
+          "curve_data_sha256": "8e55ccfaec845e66aefeffa8f9a1b4ac4d8080efb07d260895757a4ad2390811"
+        },
+        "after": {
+          "ledger": {
+            "token_supply": 101000000000,
+            "token_spendable": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 99990000000
+            },
+            "token_withheld": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 1010000000
+            },
+            "funding_spendable": {
+              "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+              "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 999000000000,
+              "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 1010000000
+            },
+            "lp_mint_supply": 10100000000,
+            "curve": {
+              "T": 101000000000,
+              "F": 1010000000,
+              "V": 0,
+              "lp_option": 1,
+              "deactivated": false,
+              "token_reserve_shortfall": 1010000000,
+              "gross_T_minus_vault_even_if_migrated": 1010000000,
+              "token_vault_spendable": 99990000000,
+              "token_vault_withheld": 1010000000,
+              "curve_data_sha256": "464a7759ae4f6f4faf0c6f06a02861812902335a955d5b1bac1e64cc87d449db"
+            }
+          },
+          "lp_vault": 100000000,
+          "trader_lp": 10000000000,
+          "curve_data_sha256": "464a7759ae4f6f4faf0c6f06a02861812902335a955d5b1bac1e64cc87d449db"
+        },
+        "token_input_gross": 100000000000,
+        "token_input_transfer_fee": 1000000000,
+        "lp_minted": 10000000000,
+        "funding_in": 1000000000
+      },
+      "full_lp_exit_initial_rollback": {
+        "label": "full_lp_exit_insufficient_vault_rollback",
+        "signature": "5X5xSwwRUdpshjxReYEmpWBQXdNRb3uCPgLxQGRUiAKt3429iKaR771jqMJmDZ86hMfNCkdoeG8FUAr6wu141pKa",
+        "signature_verified": true,
+        "committed_local_ledger_error": {
+          "InstructionError": [
+            1,
+            {
+              "Custom": 1
+            }
+          ]
+        },
+        "simulation_error": {
+          "InstructionError": [
+            1,
+            {
+              "Custom": 1
+            }
+          ]
+        },
+        "simulation_units": 40512,
+        "logs_tail": [
+          "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+          "Program ComputeBudget111111111111111111111111111111 success",
+          "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv invoke [1]",
+          "Program log: Instruction: RemoveLiquidity",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+          "Program log: Instruction: TransferChecked",
+          "Program log: Error: insufficient funds",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1411 of 163899 compute units",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: custom program error: 0x1",
+          "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv consumed 40362 of 202850 compute units",
+          "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv failed: custom program error: 0x1"
+        ],
+        "before": {
+          "token_supply": 101000000000,
+          "token_spendable": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 99990000000
+          },
+          "token_withheld": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 1010000000
+          },
+          "funding_spendable": {
+            "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+            "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 999000000000,
+            "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 1010000000
+          },
+          "lp_mint_supply": 10100000000,
+          "curve": {
+            "T": 101000000000,
+            "F": 1010000000,
+            "V": 0,
+            "lp_option": 1,
+            "deactivated": false,
+            "token_reserve_shortfall": 1010000000,
+            "gross_T_minus_vault_even_if_migrated": 1010000000,
+            "token_vault_spendable": 99990000000,
+            "token_vault_withheld": 1010000000,
+            "curve_data_sha256": "464a7759ae4f6f4faf0c6f06a02861812902335a955d5b1bac1e64cc87d449db"
+          }
+        },
+        "after": {
+          "token_supply": 101000000000,
+          "token_spendable": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 99990000000
+          },
+          "token_withheld": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 1010000000
+          },
+          "funding_spendable": {
+            "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+            "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 999000000000,
+            "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 1010000000
+          },
+          "lp_mint_supply": 10100000000,
+          "curve": {
+            "T": 101000000000,
+            "F": 1010000000,
+            "V": 0,
+            "lp_option": 1,
+            "deactivated": false,
+            "token_reserve_shortfall": 1010000000,
+            "gross_T_minus_vault_even_if_migrated": 1010000000,
+            "token_vault_spendable": 99990000000,
+            "token_vault_withheld": 1010000000,
+            "curve_data_sha256": "464a7759ae4f6f4faf0c6f06a02861812902335a955d5b1bac1e64cc87d449db"
+          }
+        }
+      },
+      "gross_token_payout": 100000000000,
+      "funding_payout": 1000000000,
+      "vault_spendable_before_exit": 99990000000,
+      "exact_missing_payout_for_full_exit": 10000000,
+      "signed_vault_topup": {
+        "label": "mint_to_8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3_10000000",
+        "signature": "3w7gHy3SJmwwk6WiRxHtWrbXQT7PcMs72yxtzMB9gJk6B5NWA3KqHiR72evffd55Q3PHhfge9nbygbrak6prm5Qx",
+        "signature_verified": true,
+        "committed_local_ledger_error": null,
+        "simulation_error": null,
+        "simulation_units": 2008,
+        "logs_tail": [
+          "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+          "Program ComputeBudget111111111111111111111111111111 success",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+          "Program log: Instruction: MintTo",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1858 of 202850 compute units",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success"
+        ],
+        "before": {
+          "token_supply": 101000000000,
+          "token_spendable": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 99990000000
+          },
+          "token_withheld": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 1010000000
+          },
+          "funding_spendable": {
+            "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+            "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 999000000000,
+            "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 1010000000
+          },
+          "lp_mint_supply": 10100000000,
+          "curve": {
+            "T": 101000000000,
+            "F": 1010000000,
+            "V": 0,
+            "lp_option": 1,
+            "deactivated": false,
+            "token_reserve_shortfall": 1010000000,
+            "gross_T_minus_vault_even_if_migrated": 1010000000,
+            "token_vault_spendable": 99990000000,
+            "token_vault_withheld": 1010000000,
+            "curve_data_sha256": "464a7759ae4f6f4faf0c6f06a02861812902335a955d5b1bac1e64cc87d449db"
+          }
+        },
+        "after": {
+          "token_supply": 101010000000,
+          "token_spendable": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 100000000000
+          },
+          "token_withheld": {
+            "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+            "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+            "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 1010000000
+          },
+          "funding_spendable": {
+            "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+            "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 999000000000,
+            "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 1010000000
+          },
+          "lp_mint_supply": 10100000000,
+          "curve": {
+            "T": 101000000000,
+            "F": 1010000000,
+            "V": 0,
+            "lp_option": 1,
+            "deactivated": false,
+            "token_reserve_shortfall": 1000000000,
+            "gross_T_minus_vault_even_if_migrated": 1000000000,
+            "token_vault_spendable": 100000000000,
+            "token_vault_withheld": 1010000000,
+            "curve_data_sha256": "464a7759ae4f6f4faf0c6f06a02861812902335a955d5b1bac1e64cc87d449db"
+          }
+        }
+      },
+      "full_lp_exit": {
+        "transaction": {
+          "label": "full_lp_exit",
+          "signature": "5uhZTDK5NqkCbdf83h7oFTorS4U55jxXsbCbZonLrjgYPpVAtyUQrpw99uGzyGfJpifmZeNBNhuCQaCsPTDNgD9b",
+          "signature_verified": true,
+          "committed_local_ledger_error": null,
+          "simulation_error": null,
+          "simulation_units": 51022,
+          "logs_tail": [
+            "Program log: Instruction: TransferChecked",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3542 of 163899 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 157775 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: Burn",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1951 of 155369 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv consumed 50872 of 202850 compute units",
+            "Program 5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv success"
+          ],
+          "before": {
+            "token_supply": 101010000000,
+            "token_spendable": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 100000000000
+            },
+            "token_withheld": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 1010000000
+            },
+            "funding_spendable": {
+              "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+              "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 999000000000,
+              "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 1010000000
+            },
+            "lp_mint_supply": 10100000000,
+            "curve": {
+              "T": 101000000000,
+              "F": 1010000000,
+              "V": 0,
+              "lp_option": 1,
+              "deactivated": false,
+              "token_reserve_shortfall": 1000000000,
+              "gross_T_minus_vault_even_if_migrated": 1000000000,
+              "token_vault_spendable": 100000000000,
+              "token_vault_withheld": 1010000000,
+              "curve_data_sha256": "464a7759ae4f6f4faf0c6f06a02861812902335a955d5b1bac1e64cc87d449db"
+            }
+          },
+          "after": {
+            "token_supply": 101010000000,
+            "token_spendable": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 99000000000,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 0
+            },
+            "token_withheld": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 1000000000,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 1010000000
+            },
+            "funding_spendable": {
+              "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+              "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 1000000000000,
+              "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 10000000
+            },
+            "lp_mint_supply": 100000000,
+            "curve": {
+              "T": 1000000000,
+              "F": 10000000,
+              "V": 0,
+              "lp_option": 1,
+              "deactivated": false,
+              "token_reserve_shortfall": 1000000000,
+              "gross_T_minus_vault_even_if_migrated": 1000000000,
+              "token_vault_spendable": 0,
+              "token_vault_withheld": 1010000000,
+              "curve_data_sha256": "8e55ccfaec845e66aefeffa8f9a1b4ac4d8080efb07d260895757a4ad2390811"
+            }
+          }
+        },
+        "before": {
+          "ledger": {
+            "token_supply": 101010000000,
+            "token_spendable": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 100000000000
+            },
+            "token_withheld": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 0,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 1010000000
+            },
+            "funding_spendable": {
+              "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+              "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 999000000000,
+              "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 1010000000
+            },
+            "lp_mint_supply": 10100000000,
+            "curve": {
+              "T": 101000000000,
+              "F": 1010000000,
+              "V": 0,
+              "lp_option": 1,
+              "deactivated": false,
+              "token_reserve_shortfall": 1000000000,
+              "gross_T_minus_vault_even_if_migrated": 1000000000,
+              "token_vault_spendable": 100000000000,
+              "token_vault_withheld": 1010000000,
+              "curve_data_sha256": "464a7759ae4f6f4faf0c6f06a02861812902335a955d5b1bac1e64cc87d449db"
+            }
+          },
+          "lp_vault": 100000000,
+          "trader_lp": 10000000000,
+          "curve_data_sha256": "464a7759ae4f6f4faf0c6f06a02861812902335a955d5b1bac1e64cc87d449db"
+        },
+        "after": {
+          "ledger": {
+            "token_supply": 101010000000,
+            "token_spendable": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 99000000000,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 0
+            },
+            "token_withheld": {
+              "GYauZsu9USgB6GN1ckhkCotQsEpwpEhYe4JTgRMyxia": 0,
+              "4BUQTR4A845okUUAqyyYFCh6RzTDpbyDWzeUZyJ37w7D": 1000000000,
+              "8xdGAZ2TtpNF7N1iEt7GkDyrdEgE3w96uvcph9DFDcV3": 1010000000
+            },
+            "funding_spendable": {
+              "AGx7KnNDSNySWYQasJbysw8tS9GRcz4D4c7Qb8qRruSc": 0,
+              "2gkg3uteosrKVMtgtVjVFyPamTrVDJFdCHFdhvc5oFSE": 1000000000000,
+              "F2KmQtyrDnHWkTS2fBxqmT4vJWMYiDNpazDFEZHd4hBb": 10000000
+            },
+            "lp_mint_supply": 100000000,
+            "curve": {
+              "T": 1000000000,
+              "F": 10000000,
+              "V": 0,
+              "lp_option": 1,
+              "deactivated": false,
+              "token_reserve_shortfall": 1000000000,
+              "gross_T_minus_vault_even_if_migrated": 1000000000,
+              "token_vault_spendable": 0,
+              "token_vault_withheld": 1010000000,
+              "curve_data_sha256": "8e55ccfaec845e66aefeffa8f9a1b4ac4d8080efb07d260895757a4ad2390811"
+            }
+          },
+          "lp_vault": 100000000,
+          "trader_lp": 0,
+          "curve_data_sha256": "8e55ccfaec845e66aefeffa8f9a1b4ac4d8080efb07d260895757a4ad2390811"
+        },
+        "minimum_token": 100000000000,
+        "spendable_token_received": 99000000000,
+        "withheld_token_fee": 1000000000
+      }
+    }
+  ],
+  "conclusion": "With 100 bps, an LP's full withdrawal of its own minted shares fails because the spendable vault is 10 million raw tokens short of that LP's gross payout. The rejected transaction rolls back. A signed local 10 million raw token top-up lets it exit, but the remaining Curve reserve is still unbacked by 1 billion raw tokens and the minimum-token check accepts a gross amount above the LP's spendable receipt. The otherwise identical 0 bps control exits without a top-up.",
+  "qualification": "All signing keys, transfer-fee configuration, LP position, and tokens are synthetic on two fresh offline ledgers. This is a conditional compatibility and liquidity-exit risk, not proof of an affected live Curve, unauthorized withdrawal, or current user loss."
+}

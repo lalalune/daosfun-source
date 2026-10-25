@@ -1,0 +1,131 @@
+{
+  "scope": "FeeShareTraderDAO candidate compiler-format probe; source completeness not claimed",
+  "toolchain": {
+    "release": "official Anza platform-tools v1.41 Linux x86_64",
+    "rustc": "1.75.0-dev",
+    "verified_component_count": 47,
+    "manifest": "third_party/daosfun-source/repro/toolchain-components.json"
+  },
+  "dependency_lock": {
+    "format": 3,
+    "temporary_lock_sha256": "c4375eb9733302f151d233090c71bd8b87e8a4ff0b0d2e6071046efe47bc6724",
+    "pinned_registry_packages": 257,
+    "all_are_exact_shaw_pins": true,
+    "shaw_registry_packages": 264,
+    "candidate_original_lock_format": 4,
+    "candidate_original_lock_incompatible_with_cargo_1_75": true
+  },
+  "source_manifest": [
+    {
+      "path": "Cargo.toml",
+      "sha256": "b74c98618c6f9c45d47b0d2370f62e2a497402aed450af824c5f8d8a4db229fa"
+    },
+    {
+      "path": "src/instructions/change_creator.rs",
+      "sha256": "08abdd0ba044f85cb4f1990ce5ce758a896afd1807a4b1157b2e55b833c3459b"
+    },
+    {
+      "path": "src/instructions/external.rs",
+      "sha256": "33bae2798c789bd12a2ddb752f57a9a59a6e41cf30cc753eb786b4880abb675c"
+    },
+    {
+      "path": "src/instructions/init_with_legacy.rs",
+      "sha256": "75c0cadb9ab36376dca92fae0115c8026a43c792c1847b10d54988ee459db56d"
+    },
+    {
+      "path": "src/instructions/initialize.rs",
+      "sha256": "046cc48049bcde82767b9c4b71b004d824bf5e3939d821447fe222c2f489a042"
+    },
+    {
+      "path": "src/instructions/payout.rs",
+      "sha256": "0d461a6bf34309586fe0c1088283a1ea36c969ae18a0f21576c75f1bb20c658c"
+    },
+    {
+      "path": "src/instructions/state.rs",
+      "sha256": "ab3830c7af5744aa90621a7a6cd31045c5e1bb6333ac6a8b22fc5cbb343a682a"
+    },
+    {
+      "path": "src/lib.rs",
+      "sha256": "5b866a8750a154ddd45345ed28d15a198f0aa2ed98b2dc36ed66aec134ba38fd"
+    }
+  ],
+  "build": {
+    "container": "node:24-bookworm, --platform linux/amd64",
+    "target": "sbf-solana-solana",
+    "profile": "release",
+    "rustflags": "-Zremap-cwd-prefix=",
+    "linker": "official rust-lld",
+    "strip": "official llvm-objcopy --strip-all",
+    "command": "cargo build --release --target sbf-solana-solana --locked --offline -j4",
+    "unstripped_bytes": 610136,
+    "unstripped_sha256": "2ab52b4568f7207fbba14b2450394854036848fd60ae889624a379f649ddb580",
+    "stripped_bytes": 419304,
+    "stripped_sha256": "d504dce809f1cf8d971677c2e436a7b8235baf215dbab7bf37bd7ee01a0127cd"
+  },
+  "reference": {
+    "bytes": 522216,
+    "sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+    "machine": "EM_BPF",
+    "entry_point": 274392
+  },
+  "candidate": {
+    "machine": "EM_BPF",
+    "entry_point": 224288,
+    "sections": [
+      {
+        "name": "",
+        "bytes": 0,
+        "sha256": null
+      },
+      {
+        "name": ".text",
+        "bytes": 369872,
+        "sha256": "76e561889dfd4c6e6b5aebb6faa4df8be9663d46be5b37f8af9178289706be85"
+      },
+      {
+        "name": ".rodata",
+        "bytes": 14175,
+        "sha256": "fcca065a208bc79f362b3d8e026843a81680e85869e5b7ec8db542622a58eb48"
+      },
+      {
+        "name": ".data.rel.ro",
+        "bytes": 5560,
+        "sha256": "3d2a9e2ce4863f0c3f243ffb4339f498ca5432ec5a1d2cd2be34de342c05cd11"
+      },
+      {
+        "name": ".dynamic",
+        "bytes": 176,
+        "sha256": "f02c98ec494ff7d67c460cd982c0fb831863085e91e79afb75c6bfb91dc1bb25"
+      },
+      {
+        "name": ".dynsym",
+        "bytes": 312,
+        "sha256": "1f9d9b6afffe33b2dc67624dfc06a2d7e6dad40b77c5e57badf0ef9ea9308e2e"
+      },
+      {
+        "name": ".dynstr",
+        "bytes": 174,
+        "sha256": "3f3955ffe345ecfae0a2c76f95ec047193566f928f75f896e04e92f25a22da0a"
+      },
+      {
+        "name": ".rel.dyn",
+        "bytes": 28096,
+        "sha256": "16c74afc552e0805335b6901a2b6c51bd5d224866eaa9cdf2677845b65146910"
+      },
+      {
+        "name": ".shstrtab",
+        "bytes": 72,
+        "sha256": "d981263d501f120e0990544791b6647d652caea4613d7fe87ca90431c71f4911"
+      }
+    ]
+  },
+  "comparison": {
+    "whole_file_equal": false,
+    "first_difference_offset": 24,
+    "section_layout_equal_count": 1,
+    "section_contents_equal_count": 3,
+    "section_count": 9,
+    "text_bytes_reference": 468912,
+    "text_bytes_candidate": 369872
+  }
+}

@@ -1,0 +1,1607 @@
+{
+  "scope": "FeeShare Raydium claim on one later captured pool, signed offline target/candidate comparison",
+  "target_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+  "cpmm_sha256": "b6dbea8cefc2e7d490775ce6115e34a2ba480c0853c359e0bb4043b9381ef09a",
+  "lock_sha256": "efd657a986796e1b204ebae198e691d4137d5f89a401693b83f7fb1a142f802d",
+  "snapshot_sha256": "b68231ac95753ff27c6117a5681e467958d7b1facb1c2714c0397cd18916a155",
+  "source_sha256": "155c7a578df30de7e82e578c810bbf21a4f9ee06e4242268bd12b967e1d7147e",
+  "candidate_sha256": "206037dea0ba2c1628a7f5f7495dcfe34f25feab49114679b4b7d9f7d249d9ec",
+  "sampled_lock_cpi": {
+    "source_signature": "59d59sGHo1gbue7pQH5TA1wX1g7y5Cy5AKZ87GGR8a6b4Zndxx8n7KSNcWxHY4jTZxZwdt3HJy1Bwz7zHvqF17h5",
+    "source_slot": 460469268,
+    "sample_sha256": "1703e68bc6cd62dd3e5ae7e2bdf98e8ef934fd86cf8f9a77d871c2e19e19fd0d",
+    "inner_data_hex": "081e33c7d1b8f785ffffffffffffffff",
+    "account_keys_sha256": "c95cf00c3379ef4a28a09899dbfd2cd2ba63afbd8e4f85788c7f0e5ead718a3c",
+    "account_count": 18
+  },
+  "candidate_build": "cargo build-sbf --manifest-path reconstruction/fee-share-full-candidate/Cargo.toml --sbf-out-dir reconstruction/fee-share-full-candidate/out --tools-version v1.54 --offline --jobs 4",
+  "offline_only": true,
+  "signed_local": true,
+  "all_outcomes_equal": true,
+  "all_poststates_equal": true,
+  "cases": [
+    {
+      "case": "baseline",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "locked_liquidity",
+        "locked_lp_vault",
+        "lp_mint",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "candidate_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "locked_liquidity",
+        "locked_lp_vault",
+        "lp_mint",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 5701049,
+        "token_ata": 1761233394246,
+        "pool_funding_vault": -5701049,
+        "pool_token_vault": -1761233394246,
+        "locked_lp_vault": -1701908570
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 5701049,
+        "token_ata": 1761233394246,
+        "pool_funding_vault": -5701049,
+        "pool_token_vault": -1761233394246,
+        "locked_lp_vault": -1701908570
+      },
+      "target_total_fees_delta": 5701049,
+      "candidate_total_fees_delta": 5701049,
+      "target_compute_units": 171277,
+      "candidate_compute_units": 149703,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "repeat_after_positive",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "locked_liquidity",
+        "locked_lp_vault",
+        "lp_mint",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "candidate_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "locked_liquidity",
+        "locked_lp_vault",
+        "lp_mint",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 5701049,
+        "token_ata": 1761233394246,
+        "pool_funding_vault": -5701049,
+        "pool_token_vault": -1761233394246,
+        "locked_lp_vault": -1701908570
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 5701049,
+        "token_ata": 1761233394246,
+        "pool_funding_vault": -5701049,
+        "pool_token_vault": -1761233394246,
+        "locked_lp_vault": -1701908570
+      },
+      "target_total_fees_delta": 5701049,
+      "candidate_total_fees_delta": 5701049,
+      "target_compute_units": 171277,
+      "candidate_compute_units": 149703,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "repeat_after_committed_claim",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 130425,
+      "candidate_compute_units": 108851,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees"
+      ]
+    },
+    {
+      "case": "total_fees_zero",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "locked_liquidity",
+        "locked_lp_vault",
+        "lp_mint",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "candidate_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "locked_liquidity",
+        "locked_lp_vault",
+        "lp_mint",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 5701049,
+        "token_ata": 1761233394246,
+        "pool_funding_vault": -5701049,
+        "pool_token_vault": -1761233394246,
+        "locked_lp_vault": -1701908570
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 5701049,
+        "token_ata": 1761233394246,
+        "pool_funding_vault": -5701049,
+        "pool_token_vault": -1761233394246,
+        "locked_lp_vault": -1701908570
+      },
+      "target_total_fees_delta": 5701049,
+      "candidate_total_fees_delta": 5701049,
+      "target_compute_units": 171277,
+      "candidate_compute_units": 149703,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "total_fees_exact_max",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "locked_liquidity",
+        "locked_lp_vault",
+        "lp_mint",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "candidate_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "locked_liquidity",
+        "locked_lp_vault",
+        "lp_mint",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 5701049,
+        "token_ata": 1761233394246,
+        "pool_funding_vault": -5701049,
+        "pool_token_vault": -1761233394246,
+        "locked_lp_vault": -1701908570
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 5701049,
+        "token_ata": 1761233394246,
+        "pool_funding_vault": -5701049,
+        "pool_token_vault": -1761233394246,
+        "locked_lp_vault": -1701908570
+      },
+      "target_total_fees_delta": 5701049,
+      "candidate_total_fees_delta": 5701049,
+      "target_compute_units": 171277,
+      "candidate_compute_units": 149703,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "total_fees_overflow",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Fieldless(ProgramFailedToComplete)))",
+      "candidate_error": "TransactionErrorInstructionError((1, Fieldless(ProgramFailedToComplete)))",
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 171623,
+      "candidate_compute_units": 149023,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked",
+        "Program log: panicked at programs/fee_share_trader_dao/src/instructions/claim_raydium_fees.rs:89:5:\nattempt to add with overflow",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: SBF program panicked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked",
+        "Program log: panicked at src/instructions/external.rs:343:5:\nattempt to add with overflow",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: SBF program panicked"
+      ]
+    },
+    {
+      "case": "pool_reversed_orientation",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2003))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2003))))",
+      "target_error_code": 2003,
+      "candidate_error_code": 2003,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 101840,
+      "candidate_compute_units": 81232,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: AnchorError caused by account: token_0_vault. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0x7d3",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7d3"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: AnchorError caused by account: token_0_vault. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0x7d3",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7d3"
+      ]
+    },
+    {
+      "case": "pool_withdraw_disabled",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6000))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6000))))",
+      "target_error_code": 6000,
+      "candidate_error_code": 6000,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 152544,
+      "candidate_compute_units": 131936,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError thrown in programs/cp-swap/src/instructions/withdraw.rs:110. Error Code: NotApproved. Error Number: 6000. Error Message: Not approved.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x1770",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0x1770",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1770"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError thrown in programs/cp-swap/src/instructions/withdraw.rs:110. Error Code: NotApproved. Error Number: 6000. Error Message: Not approved.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x1770",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0x1770",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "case": "locked_lp_vault_zero",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2506))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2506))))",
+      "target_error_code": 2506,
+      "candidate_error_code": 2506,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 153664,
+      "candidate_compute_units": 133056,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError thrown in programs/cp-swap/src/instructions/withdraw.rs:106. Error Code: RequireGteViolated. Error Number: 2506. Error Message: A require_gte expression was violated.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9ca",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0x9ca",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x9ca"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError thrown in programs/cp-swap/src/instructions/withdraw.rs:106. Error Code: RequireGteViolated. Error Number: 2506. Error Message: A require_gte expression was violated.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9ca",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0x9ca",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x9ca"
+      ]
+    },
+    {
+      "case": "wrong_state_funding_mint",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6000))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6000))))",
+      "target_error_code": 6000,
+      "candidate_error_code": 6000,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 26896,
+      "candidate_compute_units": 12068,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: BadMint. Error Number: 6000. Error Message: Invalid token mint.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1770"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: BadMint. Error Number: 6000. Error Message: Invalid token mint.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "case": "wrong_state_dao_mint",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "locked_liquidity",
+        "locked_lp_vault",
+        "lp_mint",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "candidate_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "locked_liquidity",
+        "locked_lp_vault",
+        "lp_mint",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 5701049,
+        "token_ata": 1761233394246,
+        "pool_funding_vault": -5701049,
+        "pool_token_vault": -1761233394246,
+        "locked_lp_vault": -1701908570
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 5701049,
+        "token_ata": 1761233394246,
+        "pool_funding_vault": -5701049,
+        "pool_token_vault": -1761233394246,
+        "locked_lp_vault": -1701908570
+      },
+      "target_total_fees_delta": 5701049,
+      "candidate_total_fees_delta": 5701049,
+      "target_compute_units": 171277,
+      "candidate_compute_units": 149703,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "wrong_state_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 11366,
+      "candidate_compute_units": 9741,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_funding_ata_authority",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "target_error_code": 2015,
+      "candidate_error_code": 2015,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 29257,
+      "candidate_compute_units": 14326,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: funding_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: funding_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ]
+    },
+    {
+      "case": "wrong_token_ata_authority",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "target_error_code": 2015,
+      "candidate_error_code": 2015,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 32431,
+      "candidate_compute_units": 18390,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: token_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ]
+    },
+    {
+      "case": "wrong_funding_ata_mint",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2014))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2014))))",
+      "target_error_code": 2014,
+      "candidate_error_code": 2014,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 101220,
+      "candidate_compute_units": 80612,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenMint. Error Number: 2014. Error Message: A token mint constraint was violated.",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0x7de",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7de"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenMint. Error Number: 2014. Error Message: A token mint constraint was violated.",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0x7de",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7de"
+      ]
+    },
+    {
+      "case": "wrong_token_ata_mint",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2014))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2014))))",
+      "target_error_code": 2014,
+      "candidate_error_code": 2014,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 101250,
+      "candidate_compute_units": 80642,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenMint. Error Number: 2014. Error Message: A token mint constraint was violated.",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0x7de",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7de"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenMint. Error Number: 2014. Error Message: A token mint constraint was violated.",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0x7de",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7de"
+      ]
+    },
+    {
+      "case": "wrong_funding_ata_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 15454,
+      "candidate_compute_units": 11690,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: funding_ata. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: funding_ata. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_token_ata_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 17168,
+      "candidate_compute_units": 12108,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: token_ata. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: token_ata. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_fee_nft_account_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 19064,
+      "candidate_compute_units": 66353,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: fee_nft_account. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: AnchorError caused by account: fee_nft_account. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_fee_nft_amount",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2003))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2003))))",
+      "target_error_code": 2003,
+      "candidate_error_code": 2003,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 36803,
+      "candidate_compute_units": 76363,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: fee_nft_account. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7d3"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: AnchorError caused by account: fee_nft_account. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0x7d3",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7d3"
+      ]
+    },
+    {
+      "case": "wrong_fee_nft_authority",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "target_error_code": 2015,
+      "candidate_error_code": 2015,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 35828,
+      "candidate_compute_units": 75867,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: fee_nft_account. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0x7df",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ]
+    },
+    {
+      "case": "wrong_fee_nft_mint",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2014))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2014))))",
+      "target_error_code": 2014,
+      "candidate_error_code": 2014,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 96466,
+      "candidate_compute_units": 75858,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenMint. Error Number: 2014. Error Message: A token mint constraint was violated.",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0x7de",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7de"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenMint. Error Number: 2014. Error Message: A token mint constraint was violated.",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0x7de",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7de"
+      ]
+    },
+    {
+      "case": "wrong_fee_nft_mint_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 14604,
+      "candidate_compute_units": 11393,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: fee_nft_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: fee_nft_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_funding_mint_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 10571,
+      "candidate_compute_units": 10433,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: funding_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: funding_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_token_mint_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 11405,
+      "candidate_compute_units": 10701,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: token_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: token_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_locked_liquidity_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 19212,
+      "candidate_compute_units": 65596,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: locked_liquidity. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: AnchorError caused by account: locked_liquidity. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_pool_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 86930,
+      "candidate_compute_units": 66322,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: AnchorError caused by account: pool_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: AnchorError caused by account: pool_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_lp_mint_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 21880,
+      "candidate_compute_units": 68487,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: lp_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: AnchorError caused by account: lp_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_locked_lp_vault_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 25773,
+      "candidate_compute_units": 76208,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: locked_lp_vault. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: AnchorError caused by account: locked_lp_vault. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_pool_funding_vault_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 22679,
+      "candidate_compute_units": 71841,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: pool_funding_vault. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: AnchorError caused by account: token_0_vault. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_pool_token_vault_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 25,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0,
+        "locked_lp_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 24158,
+      "candidate_compute_units": 73172,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: AnchorError caused by account: pool_token_vault. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimRaydiumFees",
+        "Program log: Instruction: CollectCpFees",
+        "Program log: AnchorError caused by account: token_1_vault. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    }
+  ],
+  "qualification": "One later captured pool state with immediately claimable fees; not its historical prestate. The pinned Raydium CPMM and Lock ELFs execute the inner math and withdrawals. This outer-handler candidate is not byte-identical source, and tested mutations do not cover all account parsing, token extensions, pool orientations, or reachable fee states. No live transaction or funds."
+}

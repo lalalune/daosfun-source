@@ -1,0 +1,149 @@
+{
+  "program": "5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv",
+  "virtual_current_binary_sha256": "c151c6b15b84d8bfc47a5f2e0e5b9e04babff0263a1125a9e8dcb07df6144377",
+  "qualification": "Selected local successes are signed direct virtual_xyk paths. Their fixture builders load only the exact current virtual custom ELF; successful transactions use Solana builtins and SPL Token/Token-2022/Associated Token CPI as needed. Account states include synthetic restorations and local funds. This is custom-executable version provenance, not full behavior or live reachability.",
+  "rows": [
+    {
+      "instruction": "add_liquidity",
+      "selected_receipt": "analysis/root_virtual_xyk/signed-local-lifecycle.json",
+      "selected_receipt_sha256": "2109d689d64ec5e9ba95c26842d43cefe99b5d58e60a6f8a116fdd2950231ed1",
+      "custom_programs_loaded": [
+        {
+          "program": "5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv",
+          "sha256": "c151c6b15b84d8bfc47a5f2e0e5b9e04babff0263a1125a9e8dcb07df6144377",
+          "current": true
+        }
+      ],
+      "current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "buy_token",
+      "selected_receipt": "analysis/root_virtual_xyk/signed-local-lifecycle.json",
+      "selected_receipt_sha256": "2109d689d64ec5e9ba95c26842d43cefe99b5d58e60a6f8a116fdd2950231ed1",
+      "custom_programs_loaded": [
+        {
+          "program": "5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv",
+          "sha256": "c151c6b15b84d8bfc47a5f2e0e5b9e04babff0263a1125a9e8dcb07df6144377",
+          "current": true
+        }
+      ],
+      "current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "init_lp",
+      "selected_receipt": "analysis/root_virtual_xyk/signed-local-lifecycle.json",
+      "selected_receipt_sha256": "2109d689d64ec5e9ba95c26842d43cefe99b5d58e60a6f8a116fdd2950231ed1",
+      "custom_programs_loaded": [
+        {
+          "program": "5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv",
+          "sha256": "c151c6b15b84d8bfc47a5f2e0e5b9e04babff0263a1125a9e8dcb07df6144377",
+          "current": true
+        }
+      ],
+      "current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "initialize",
+      "selected_receipt": "analysis/root_virtual_xyk/signed-local-lifecycle.json",
+      "selected_receipt_sha256": "2109d689d64ec5e9ba95c26842d43cefe99b5d58e60a6f8a116fdd2950231ed1",
+      "custom_programs_loaded": [
+        {
+          "program": "5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv",
+          "sha256": "c151c6b15b84d8bfc47a5f2e0e5b9e04babff0263a1125a9e8dcb07df6144377",
+          "current": true
+        }
+      ],
+      "current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "migrate_curve",
+      "selected_receipt": "analysis/root_virtual_xyk/signed-migrate-curve.json",
+      "selected_receipt_sha256": "d51f07a48b033d9818e744acb914065b303f5a077408848b56332354b0157147",
+      "custom_programs_loaded": [
+        {
+          "program": "5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv",
+          "sha256": "c151c6b15b84d8bfc47a5f2e0e5b9e04babff0263a1125a9e8dcb07df6144377",
+          "current": true
+        }
+      ],
+      "current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "migrate_liquidity",
+      "selected_receipt": "analysis/root_virtual_xyk/signed-local-lifecycle.json",
+      "selected_receipt_sha256": "2109d689d64ec5e9ba95c26842d43cefe99b5d58e60a6f8a116fdd2950231ed1",
+      "custom_programs_loaded": [
+        {
+          "program": "5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv",
+          "sha256": "c151c6b15b84d8bfc47a5f2e0e5b9e04babff0263a1125a9e8dcb07df6144377",
+          "current": true
+        }
+      ],
+      "current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "redeem_fees",
+      "selected_receipt": "analysis/root_virtual_xyk/signed-local-lifecycle.json",
+      "selected_receipt_sha256": "2109d689d64ec5e9ba95c26842d43cefe99b5d58e60a6f8a116fdd2950231ed1",
+      "custom_programs_loaded": [
+        {
+          "program": "5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv",
+          "sha256": "c151c6b15b84d8bfc47a5f2e0e5b9e04babff0263a1125a9e8dcb07df6144377",
+          "current": true
+        }
+      ],
+      "current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "remove_liquidity",
+      "selected_receipt": "analysis/root_virtual_xyk/signed-local-lifecycle.json",
+      "selected_receipt_sha256": "2109d689d64ec5e9ba95c26842d43cefe99b5d58e60a6f8a116fdd2950231ed1",
+      "custom_programs_loaded": [
+        {
+          "program": "5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv",
+          "sha256": "c151c6b15b84d8bfc47a5f2e0e5b9e04babff0263a1125a9e8dcb07df6144377",
+          "current": true
+        }
+      ],
+      "current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "sell_token",
+      "selected_receipt": "analysis/root_virtual_xyk/signed-local-lifecycle.json",
+      "selected_receipt_sha256": "2109d689d64ec5e9ba95c26842d43cefe99b5d58e60a6f8a116fdd2950231ed1",
+      "custom_programs_loaded": [
+        {
+          "program": "5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv",
+          "sha256": "c151c6b15b84d8bfc47a5f2e0e5b9e04babff0263a1125a9e8dcb07df6144377",
+          "current": true
+        }
+      ],
+      "current_custom_stack_local_success": true
+    },
+    {
+      "instruction": "withdraw_raydium_lps",
+      "selected_receipt": "analysis/root_virtual_xyk/signed-lp-withdraw.json",
+      "selected_receipt_sha256": "9c21b6ab1f05a120014aae405570ad35eaf6b090c0b315a1c086eee70d6b136a",
+      "custom_programs_loaded": [
+        {
+          "program": "5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv",
+          "sha256": "c151c6b15b84d8bfc47a5f2e0e5b9e04babff0263a1125a9e8dcb07df6144377",
+          "current": true
+        }
+      ],
+      "current_custom_stack_local_success": true
+    }
+  ],
+  "totals": {
+    "selected_handlers": 10,
+    "current_custom_stack_local_success": 10,
+    "strict_full_behavior": 0
+  },
+  "supplemental_redeem_fee_wrapper": {
+    "receipt": "analysis/root_virtual_xyk/signed-legacy-redeem-cpi.json",
+    "legacy_fee_program": "8qQwPgMtbjKUcPo8YVh8kbHSgK82P66bTjiGTZ6WPQBK",
+    "legacy_fee_current_sha256": "59a7008cc1b9d5b81bc1483d5a62fa08a0bbd2153e7e330885ac83140d7c3c6e",
+    "virtual_current_sha256": "c151c6b15b84d8bfc47a5f2e0e5b9e04babff0263a1125a9e8dcb07df6144377",
+    "qualification": "This current-binary legacy FeeShare-to-virtual inner CPI is separate from the ten selected direct-handler receipts and has bounded authority/account-state coverage."
+  }
+}

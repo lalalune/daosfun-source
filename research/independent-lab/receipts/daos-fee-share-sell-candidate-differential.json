@@ -1,0 +1,1705 @@
+{
+  "scope": "FeeShare claim_raydium_fees then sell_token; signed offline target/candidate differential",
+  "target_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+  "cpmm_sha256": "b6dbea8cefc2e7d490775ce6115e34a2ba480c0853c359e0bb4043b9381ef09a",
+  "lock_sha256": "efd657a986796e1b204ebae198e691d4137d5f89a401693b83f7fb1a142f802d",
+  "candidate_sha256": "bf9efa8cd4cdd40995d7d2c4a2d096a2eae7c9bfb488aa523e80cfdb63997e4a",
+  "source_sha256": "1615faf083bc80e14a7f26e37df8c5a7e9c16ec4b04b5e15d87d30a5492937bc",
+  "claim_snapshot_sha256": "b68231ac95753ff27c6117a5681e467958d7b1facb1c2714c0397cd18916a155",
+  "sell_snapshot_sha256": "080b1277619f2279bbb1e0a172341981fcaa9cf7257f6ca9f26a4c406e3a3088",
+  "sampled_cpi": {
+    "source_signature": "59d59sGHo1gbue7pQH5TA1wX1g7y5Cy5AKZ87GGR8a6b4Zndxx8n7KSNcWxHY4jTZxZwdt3HJy1Bwz7zHvqF17h5",
+    "source_slot": 460469268,
+    "source_block_time": 1792764065,
+    "sample_sha256": "1703e68bc6cd62dd3e5ae7e2bdf98e8ef934fd86cf8f9a77d871c2e19e19fd0d",
+    "inner_cpi_data_hex": "8fbe5adac41e33de1a0718396f0300000000000000000000",
+    "inner_cpi_account_count": 13,
+    "inner_cpi_keys_sha256": "0c7b6f66bbff00632a94b814f06eea992af64622120a4d07a4c56d89253616ab"
+  },
+  "offline_only": true,
+  "signed_local": true,
+  "unsigned_authority_simulation": {
+    "signature_verification_enabled": false,
+    "simulation_only": true,
+    "target_candidate_equal": true,
+    "cases": [
+      {
+        "case": "sampled_operator",
+        "signer": "AuthMPCS6y32jS4NddFXxwkVAjAJNa4doEFvAwovkQCG",
+        "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6000))))",
+        "error_code": 6000,
+        "reached_cpmm_swap": true
+      },
+      {
+        "case": "current_creator",
+        "signer": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6000))))",
+        "error_code": 6000,
+        "reached_cpmm_swap": true
+      },
+      {
+        "case": "change_creator_operator",
+        "signer": "6ZNfAtWS1C1aPQkrgyPrkWmXuFgnNRTSNYjyxgu5yU7D",
+        "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6001))))",
+        "error_code": 6001,
+        "reached_cpmm_swap": false
+      },
+      {
+        "case": "outsider",
+        "signer": "96zjgAsxgas5QHbQMEPYE19JXXSsApJhCtZdaUp8cPph",
+        "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6001))))",
+        "error_code": 6001,
+        "reached_cpmm_swap": false
+      }
+    ],
+    "qualification": "Default placeholder signatures are intentionally used only in this supplementary local authority probe. These cases are not part of the 28 signed sends or proof of access to the sampled operator key."
+  },
+  "all_claim_poststates_equal": true,
+  "all_outcomes_equal": true,
+  "all_poststates_equal": true,
+  "cases": [
+    {
+      "case": "baseline",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "candidate_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 5686649,
+        "token_ata": -1761233394246,
+        "pool_funding_vault": -5686649,
+        "pool_token_vault": 1761233394246
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 5686649,
+        "token_ata": -1761233394246,
+        "pool_funding_vault": -5686649,
+        "pool_token_vault": 1761233394246
+      },
+      "target_total_fees_delta": 5686649,
+      "candidate_total_fees_delta": 5686649,
+      "target_compute_units": 73684,
+      "candidate_compute_units": 58682,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "minimum_exact",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "candidate_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 5686649,
+        "token_ata": -1761233394246,
+        "pool_funding_vault": -5686649,
+        "pool_token_vault": 1761233394246
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 5686649,
+        "token_ata": -1761233394246,
+        "pool_funding_vault": -5686649,
+        "pool_token_vault": 1761233394246
+      },
+      "target_total_fees_delta": 5686649,
+      "candidate_total_fees_delta": 5686649,
+      "target_compute_units": 73684,
+      "candidate_compute_units": 58682,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "minimum_one_above",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6005))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6005))))",
+      "target_error_code": 6005,
+      "candidate_error_code": 6005,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 65603,
+      "candidate_compute_units": 51717,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:150. Error Code: ExceededSlippage. Error Number: 6005. Error Message: Exceeds desired slippage limit.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x1775",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1775"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:150. Error Code: ExceededSlippage. Error Number: 6005. Error Message: Exceeds desired slippage limit.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x1775",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1775"
+      ]
+    },
+    {
+      "case": "default_clock",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6000))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6000))))",
+      "target_error_code": 6000,
+      "candidate_error_code": 6000,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 60812,
+      "candidate_compute_units": 46926,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:82. Error Code: NotApproved. Error Number: 6000. Error Message: Not approved.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x1770",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1770"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:82. Error Code: NotApproved. Error Number: 6000. Error Message: Not approved.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x1770",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "case": "total_fees_zero",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "candidate_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 5686649,
+        "token_ata": -1761233394246,
+        "pool_funding_vault": -5686649,
+        "pool_token_vault": 1761233394246
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 5686649,
+        "token_ata": -1761233394246,
+        "pool_funding_vault": -5686649,
+        "pool_token_vault": 1761233394246
+      },
+      "target_total_fees_delta": 5686649,
+      "candidate_total_fees_delta": 5686649,
+      "target_compute_units": 73684,
+      "candidate_compute_units": 58682,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "total_fees_exact_max",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "candidate_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 5686649,
+        "token_ata": -1761233394246,
+        "pool_funding_vault": -5686649,
+        "pool_token_vault": 1761233394246
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 5686649,
+        "token_ata": -1761233394246,
+        "pool_funding_vault": -5686649,
+        "pool_token_vault": 1761233394246
+      },
+      "target_total_fees_delta": 5686649,
+      "candidate_total_fees_delta": 5686649,
+      "target_compute_units": 73684,
+      "candidate_compute_units": 58682,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "total_fees_overflow",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Fieldless(ProgramFailedToComplete)))",
+      "candidate_error": "TransactionErrorInstructionError((1, Fieldless(ProgramFailedToComplete)))",
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 74193,
+      "candidate_compute_units": 58456,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked",
+        "Program log: panicked at programs/fee_share_trader_dao/src/instructions/sell_token.rs:59:5:\nattempt to add with overflow",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: SBF program panicked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked",
+        "Program log: panicked at src/instructions/external.rs:438:5:\nattempt to add with overflow",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: SBF program panicked"
+      ]
+    },
+    {
+      "case": "token_balance_zero",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2505))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2505))))",
+      "target_error_code": 2505,
+      "candidate_error_code": 2505,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 62264,
+      "candidate_compute_units": 48378,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:89. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x9c9"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:89. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x9c9"
+      ]
+    },
+    {
+      "case": "token_balance_one",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2505))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2505))))",
+      "target_error_code": 2505,
+      "candidate_error_code": 2505,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 65298,
+      "candidate_compute_units": 51412,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x9c9"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x9c9"
+      ]
+    },
+    {
+      "case": "input_balance_half",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "candidate_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 2843324,
+        "token_ata": -880616697123,
+        "pool_funding_vault": -2843324,
+        "pool_token_vault": 880616697123
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 2843324,
+        "token_ata": -880616697123,
+        "pool_funding_vault": -2843324,
+        "pool_token_vault": 880616697123
+      },
+      "target_total_fees_delta": 2843324,
+      "candidate_total_fees_delta": 2843324,
+      "target_compute_units": 73684,
+      "candidate_compute_units": 58682,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "input_balance_double",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "candidate_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 11373299,
+        "token_ata": -3522466788492,
+        "pool_funding_vault": -11373299,
+        "pool_token_vault": 3522466788492
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 11373299,
+        "token_ata": -3522466788492,
+        "pool_funding_vault": -11373299,
+        "pool_token_vault": 3522466788492
+      },
+      "target_total_fees_delta": 11373299,
+      "candidate_total_fees_delta": 11373299,
+      "target_compute_units": 73684,
+      "candidate_compute_units": 58682,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "outsider_signer",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6001))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6001))))",
+      "target_error_code": 6001,
+      "candidate_error_code": 6001,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 20016,
+      "candidate_compute_units": 9839,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+      ]
+    },
+    {
+      "case": "signer_as_referrer_only",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6001))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6001))))",
+      "target_error_code": 6001,
+      "candidate_error_code": 6001,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 20016,
+      "candidate_compute_units": 9839,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+      ]
+    },
+    {
+      "case": "outsider_and_wrong_state_funding_mint",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6001))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6001))))",
+      "target_error_code": 6001,
+      "candidate_error_code": 6001,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 20016,
+      "candidate_compute_units": 9839,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+      ]
+    },
+    {
+      "case": "outsider_and_wrong_funding_ata_authority",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6001))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6001))))",
+      "target_error_code": 6001,
+      "candidate_error_code": 6001,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 20016,
+      "candidate_compute_units": 9839,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+      ]
+    },
+    {
+      "case": "wrong_state_funding_mint",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6000))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6000))))",
+      "target_error_code": 6000,
+      "candidate_error_code": 6000,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 20026,
+      "candidate_compute_units": 9851,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: BadMint. Error Number: 6000. Error Message: Invalid token mint.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1770"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: BadMint. Error Number: 6000. Error Message: Invalid token mint.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "case": "wrong_state_dao_mint",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "candidate_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool_funding_vault",
+        "pool_state",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 5686649,
+        "token_ata": -1761233394246,
+        "pool_funding_vault": -5686649,
+        "pool_token_vault": 1761233394246
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 5686649,
+        "token_ata": -1761233394246,
+        "pool_funding_vault": -5686649,
+        "pool_token_vault": 1761233394246
+      },
+      "target_total_fees_delta": 5686649,
+      "candidate_total_fees_delta": 5686649,
+      "target_compute_units": 73684,
+      "candidate_compute_units": 58682,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "wrong_state_owner",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 9614,
+      "candidate_compute_units": 7830,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_funding_ata_authority",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "target_error_code": 2015,
+      "candidate_error_code": 2015,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 20789,
+      "candidate_compute_units": 10526,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: funding_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: funding_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ]
+    },
+    {
+      "case": "wrong_token_ata_authority",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "target_error_code": 2015,
+      "candidate_error_code": 2015,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 23962,
+      "candidate_compute_units": 14590,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: token_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ]
+    },
+    {
+      "case": "wrong_funding_ata_mint",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3))))",
+      "target_error_code": 3,
+      "candidate_error_code": 3,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 69567,
+      "candidate_compute_units": 55681,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Error: Account not associated with this Mint",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x3",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x3",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x3"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Error: Account not associated with this Mint",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x3",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x3",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x3"
+      ]
+    },
+    {
+      "case": "wrong_token_ata_mint",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3))))",
+      "target_error_code": 3,
+      "candidate_error_code": 3,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 66412,
+      "candidate_compute_units": 52526,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Error: Account not associated with this Mint",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: custom program error: 0x3",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x3",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x3"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Error: Account not associated with this Mint",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: custom program error: 0x3",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x3",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x3"
+      ]
+    },
+    {
+      "case": "wrong_funding_ata_owner",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 12835,
+      "candidate_compute_units": 9487,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: funding_ata. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: funding_ata. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_token_ata_owner",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 14548,
+      "candidate_compute_units": 9927,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: token_ata. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: token_ata. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_amm_config_owner",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 15075,
+      "candidate_compute_units": 35666,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: amm_config. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: AnchorError caused by account: amm_config. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_pool_owner",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 50046,
+      "candidate_compute_units": 36160,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: AnchorError caused by account: pool_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: AnchorError caused by account: pool_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "pool_swap_disabled",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6000))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6000))))",
+      "target_error_code": 6000,
+      "candidate_error_code": 6000,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 60810,
+      "candidate_compute_units": 46924,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:82. Error Code: NotApproved. Error Number: 6000. Error Message: Not approved.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x1770",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1770"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:82. Error Code: NotApproved. Error Number: 6000. Error Message: Not approved.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x1770",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "case": "wrong_observation_owner",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 52668,
+      "candidate_compute_units": 38782,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: AnchorError caused by account: observation_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: AnchorError caused by account: observation_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_pool_funding_vault_owner",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 17465,
+      "candidate_compute_units": 38844,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: pool_funding_vault. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: AnchorError caused by account: output_vault. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_pool_token_vault_owner",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 18946,
+      "candidate_compute_units": 38406,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: pool_token_vault. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: Instruction: SwapBaseInput",
+        "Program log: AnchorError caused by account: input_vault. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_funding_mint_owner",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 8818,
+      "candidate_compute_units": 8522,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: funding_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: funding_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_token_mint_owner",
+      "claim_target_success": true,
+      "claim_candidate_success": true,
+      "claim_poststates_equal": true,
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 27,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "candidate_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_compute_units": 9652,
+      "candidate_compute_units": 8790,
+      "target_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: token_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: SellToken",
+        "Program log: AnchorError caused by account: token_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    }
+  ],
+  "qualification": "Saved sampled CPI bytes and clock, but two later account captures four slots apart form a hybrid local prestate. Every case first executes a signed claim to fund the token ATA; the captured creator is then replaced locally with the disposable signing key to exercise the sell authority path. This is an authorized synthetic state, not a signature by the historical creator or operator. CPMM and Lock internals run from pinned deployed ELFs. Synthetic account and slippage variants do not establish historical reachability or full source/ELF equivalence. No live transaction or funds."
+}

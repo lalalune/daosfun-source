@@ -1,0 +1,108 @@
+{
+  "scope": "DAO and CP AMM version cross-product on restored historical InitCurve fixture; read-only chain inputs and local LiteSVM only.",
+  "current_dao_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+  "current_cp_sha256": "967ff9fb161eec2e62f66d2c899100739fb747c445f697b8625c86b31b9a2022",
+  "source_era_cp_sha256": "3aaa0882b1ea0af771de9c2f96d84e4cc085cd5e59475c56fb6a7de542c56852",
+  "exact_dao_source_commit": "5837c6b34575841590d694f7d539918d193b6ba0",
+  "official_cp_source": {
+    "repository": "https://github.com/MeteoraAg/damm-v2",
+    "commit": "5398b5c7c534de014091132da37c6478cce671a8",
+    "fee_parameters_path": "programs/cp-amm/src/params/fee_parameters.rs",
+    "fee_parameters_sha256": "566f183800945abf4091cb97bf249869ba57776c87ed5209da695cc2ee32d89a",
+    "handler_path": "programs/cp-amm/src/instructions/initialize_pool/ix_initialize_pool_with_dynamic_config.rs",
+    "handler_sha256": "86fa1fffc0f1ec018515d6a2bf22fa07e81bcd5b860b1090e00faef810c0a95b",
+    "collect_mode_enum_path": "programs/cp-amm/src/state/pool.rs",
+    "collect_mode_enum_sha256": "f4f057b192a364344bcd7cc8a0654cd2db4583fc44a20dffb82d3c86759beca2",
+    "qualification": "Official current-repository source is primary design evidence, not a proven bit-for-bit reconstruction of the deployed CP ELF. The deployed binary independently emits InvalidCompoundingFeeBps at fee_parameters.rs:265."
+  },
+  "old_dao_cpi_fee_abi": {
+    "base_fee_borsh_bytes": 27,
+    "next_three_bytes_hex": "140014",
+    "old_field_names": [
+      "protocol_fee_percent",
+      "partner_fee_percent",
+      "referral_fee_percent"
+    ],
+    "old_field_values": [
+      20,
+      0,
+      20
+    ],
+    "collect_fee_mode": 1
+  },
+  "current_cp_interpretation": {
+    "field_at_old_protocol_and_partner_bytes": "compounding_fee_bps:u16 little-endian",
+    "value": 20,
+    "collect_fee_mode_1": "OnlyB",
+    "required_compounding_fee_bps_for_non_compounding_mode": 0,
+    "current_handler_validates_params_before_loading_config": true
+  },
+  "cross_version_controls": [
+    {
+      "dao": "current",
+      "cp": "current",
+      "receipt": "dao-v1-init-curve-local-replay.json",
+      "outcome": "CP6067"
+    },
+    {
+      "dao": "source_era",
+      "cp": "current",
+      "receipt": "dao-v1-init-curve-historical-dao-replay.json",
+      "outcome": "CP6067"
+    },
+    {
+      "dao": "current",
+      "cp": "source_era_356",
+      "receipt": "dao-v1-init-curve-source-era-cp-replay.json",
+      "outcome": "success_11_lamport_9_token_matches"
+    },
+    {
+      "dao": "current_valid_local_admin_signature",
+      "cp": "source_era_356",
+      "receipt": "dao-v1-init-curve-signed-current-dao-source-era-cp.json",
+      "outcome": "success"
+    },
+    {
+      "dao": "current_valid_local_admin_signature",
+      "cp": "current",
+      "receipt": "dao-v1-init-curve-branch-signed_alternate_admin.json",
+      "outcome": "CP6067"
+    },
+    {
+      "dao": "current",
+      "cp": "older_332",
+      "receipt": "dao-v1-init-curve-historical-cp-replay.json",
+      "outcome": "CP_fallback101"
+    }
+  ],
+  "current_cp_config_variants_same_error": {
+    "count": 21,
+    "receipts": [
+      "dao-v1-init-curve-config-160-10000-replay.json",
+      "dao-v1-init-curve-config-162-10000-replay.json",
+      "dao-v1-init-curve-config-164-10000-replay.json",
+      "dao-v1-init-curve-config-166-10000-replay.json",
+      "dao-v1-init-curve-config-168-10000-replay.json",
+      "dao-v1-init-curve-config-170-10000-replay.json",
+      "dao-v1-init-curve-config-172-10000-replay.json",
+      "dao-v1-init-curve-config-174-10000-replay.json",
+      "dao-v1-init-curve-config-176-10000-replay.json",
+      "dao-v1-init-curve-config-178-10000-replay.json",
+      "dao-v1-init-curve-config-180-10000-replay.json",
+      "dao-v1-init-curve-config-182-10000-replay.json",
+      "dao-v1-init-curve-config-184-10000-replay.json",
+      "dao-v1-init-curve-config-186-10000-replay.json",
+      "dao-v1-init-curve-config-188-10000-replay.json",
+      "dao-v1-init-curve-config-190-10000-replay.json",
+      "dao-v1-init-curve-config-192-10000-replay.json",
+      "dao-v1-init-curve-config-194-10000-replay.json",
+      "dao-v1-init-curve-config-196-10000-replay.json",
+      "dao-v1-init-curve-config-198-10000-replay.json",
+      "dao-v1-init-curve-config-fees-9m3uWcWo37E7eUz9MQubmx28H3PUrir7FfLyQfZzADY-replay.json"
+    ],
+    "observed_error": "InvalidCompoundingFeeBps 6067",
+    "qualification": "Synthetic current config fee-field mutations and one fee-section transplant on the same restored source fixture; none changes the DAO's CPI argument bytes."
+  },
+  "inference": "The unchanged old DAO CPI argument bytes are rejected by the current CP fee-parameter interpretation before dynamic config is read. The source-era CP success and signed current-DAO cross-version pair separate protocol ABI incompatibility from fixture drift on these inputs.",
+  "limitation": "No current-CP success is established; current official CP source is not independently bit-matched to the captured deployed CP ELF. This does not establish impossibility across every conceivable deployment version or account state."
+}

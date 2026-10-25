@@ -1,0 +1,703 @@
+{
+  "binary_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+  "fixtures": {
+    "no_referrer": {
+      "source_snapshot": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "capture_slot": 460726264,
+      "state_key": "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V",
+      "state": {
+        "total_fees": 1618680370361,
+        "funding_mint": "So11111111111111111111111111111111111111112",
+        "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+        "creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "referrer_tag": 0,
+        "referrer": null,
+        "counter_offset": 113,
+        "creator_distributed": 809340185180,
+        "referrer_distributed": 0,
+        "platform_distributed": 809340185180,
+        "trailing_padding_nonzero": false
+      },
+      "vault_key": "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq",
+      "vault_amount": 1
+    },
+    "self_referrer": {
+      "source_snapshot": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+      "capture_slot": 460726261,
+      "state_key": "ATcKXyYVrMc7DwyDuWHL3xdZYVGDnYuGQpgnWu7TnKjd",
+      "state": {
+        "total_fees": 876081870188,
+        "funding_mint": "So11111111111111111111111111111111111111112",
+        "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+        "creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "referrer_tag": 1,
+        "referrer": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "counter_offset": 145,
+        "creator_distributed": 429118181496,
+        "referrer_distributed": 0,
+        "platform_distributed": 438040935094,
+        "trailing_padding_nonzero": false
+      },
+      "vault_key": "HfafGQp3hqXbt8AteEXSFyYdFmTuGUN89Rn9wdvpexuW",
+      "vault_amount": 8922753598
+    }
+  },
+  "source_transaction": {
+    "source_signature": "3KPP3KfD6AkPJF9zYq8bVDf8rTY5bsMRs4ADCQoE9pD6hWSuiCC2nDF934maWLRGNaN5zANu1AeBa3LxHbTzk9J4",
+    "source_slot": 459824238,
+    "source_pre_vault": 950376831,
+    "source_post_vault": 1,
+    "source_pre_platform_recipient": 442047310733,
+    "source_post_platform_recipient": 442522499148,
+    "inner_token_transfers": [
+      {
+        "outer_index": 4,
+        "kind": "TransferChecked",
+        "amount": 475188415,
+        "source": "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq",
+        "destination": "C2ckYuikxJh52bhj6214graQPM7AzpwMaK4hkwRWfmeN"
+      },
+      {
+        "outer_index": 8,
+        "kind": "TransferChecked",
+        "amount": 475188415,
+        "source": "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq",
+        "destination": "DKuEjbHP3kyvaKvCKcdd7S3Y2WUf11mtq5hmvUQN3ckS"
+      }
+    ],
+    "qualification": "Exact source transaction metadata, but source-slot FeeShareState bytes were not captured. A temporary wrapped-SOL creator recipient was created and closed within the transaction, so it has no pre/post token-balance row."
+  },
+  "cases": [
+    {
+      "fixture": "no_referrer",
+      "case": "none",
+      "amount_option": null,
+      "local_accrual": 1000,
+      "signer": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+      "signer_meta": true,
+      "success": true,
+      "error": null,
+      "cu": 22133,
+      "before_counters": {
+        "total_fees": 1618680371361,
+        "creator_distributed": 809340185180,
+        "referrer_distributed": 0,
+        "platform_distributed": 809340185180
+      },
+      "after_counters": {
+        "total_fees": 1618680371361,
+        "creator_distributed": 809340185680,
+        "referrer_distributed": 0,
+        "platform_distributed": 809340185180
+      },
+      "vault_before": 1001,
+      "vault_after": 501,
+      "recipient_before": 0,
+      "recipient_after": 500,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: Redeem",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 178909 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22133 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ]
+    },
+    {
+      "fixture": "no_referrer",
+      "case": "one",
+      "amount_option": 1,
+      "local_accrual": 1000,
+      "signer": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+      "signer_meta": true,
+      "success": true,
+      "error": null,
+      "cu": 22141,
+      "before_counters": {
+        "total_fees": 1618680371361,
+        "creator_distributed": 809340185180,
+        "referrer_distributed": 0,
+        "platform_distributed": 809340185180
+      },
+      "after_counters": {
+        "total_fees": 1618680371361,
+        "creator_distributed": 809340185181,
+        "referrer_distributed": 0,
+        "platform_distributed": 809340185180
+      },
+      "vault_before": 1001,
+      "vault_after": 1000,
+      "recipient_before": 0,
+      "recipient_after": 1,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: Redeem",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 178901 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22141 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ]
+    },
+    {
+      "fixture": "no_referrer",
+      "case": "at_cap",
+      "amount_option": 500,
+      "local_accrual": 1000,
+      "signer": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+      "signer_meta": true,
+      "success": true,
+      "error": null,
+      "cu": 22141,
+      "before_counters": {
+        "total_fees": 1618680371361,
+        "creator_distributed": 809340185180,
+        "referrer_distributed": 0,
+        "platform_distributed": 809340185180
+      },
+      "after_counters": {
+        "total_fees": 1618680371361,
+        "creator_distributed": 809340185680,
+        "referrer_distributed": 0,
+        "platform_distributed": 809340185180
+      },
+      "vault_before": 1001,
+      "vault_after": 501,
+      "recipient_before": 0,
+      "recipient_after": 500,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: Redeem",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 178901 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22141 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ]
+    },
+    {
+      "fixture": "no_referrer",
+      "case": "above_cap",
+      "amount_option": 501,
+      "local_accrual": 1000,
+      "signer": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+      "signer_meta": true,
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6002))))",
+      "cu": 20804,
+      "before_counters": {
+        "total_fees": 1618680371361,
+        "creator_distributed": 809340185180,
+        "referrer_distributed": 0,
+        "platform_distributed": 809340185180
+      },
+      "after_counters": null,
+      "vault_before": 1001,
+      "vault_after": null,
+      "recipient_before": 0,
+      "recipient_after": null,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: Redeem",
+        "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:29. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20804 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+      ]
+    },
+    {
+      "fixture": "no_referrer",
+      "case": "wrong_creator",
+      "amount_option": null,
+      "local_accrual": 1000,
+      "signer": "6JhaGdekBjU2RfiYWSjYdQAibx4LfSfTNFEeMUHnUVz7",
+      "signer_meta": true,
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6001))))",
+      "cu": 19154,
+      "before_counters": {
+        "total_fees": 1618680371361,
+        "creator_distributed": 809340185180,
+        "referrer_distributed": 0,
+        "platform_distributed": 809340185180
+      },
+      "after_counters": null,
+      "vault_before": 1001,
+      "vault_after": null,
+      "recipient_before": 0,
+      "recipient_after": null,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: Redeem",
+        "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:14. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19154 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+      ]
+    },
+    {
+      "fixture": "no_referrer",
+      "case": "unsigned_creator",
+      "amount_option": null,
+      "local_accrual": 1000,
+      "signer": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+      "signer_meta": false,
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3010))))",
+      "cu": 4334,
+      "before_counters": {
+        "total_fees": 1618680371361,
+        "creator_distributed": 809340185180,
+        "referrer_distributed": 0,
+        "platform_distributed": 809340185180
+      },
+      "after_counters": null,
+      "vault_before": 1001,
+      "vault_after": null,
+      "recipient_before": 0,
+      "recipient_after": null,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: Redeem",
+        "Program log: AnchorError caused by account: signer. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 4334 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbc2"
+      ]
+    },
+    {
+      "fixture": "no_referrer",
+      "case": "wrong_state_owner",
+      "amount_option": null,
+      "local_accrual": 1000,
+      "signer": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+      "signer_meta": true,
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "cu": 7384,
+      "before_counters": {
+        "total_fees": 1618680371361,
+        "creator_distributed": 809340185180,
+        "referrer_distributed": 0,
+        "platform_distributed": 809340185180
+      },
+      "after_counters": null,
+      "vault_before": 1001,
+      "vault_after": null,
+      "recipient_before": 0,
+      "recipient_after": null,
+      "log_tail": [
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 7384 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "fixture": "no_referrer",
+      "case": "wrong_vault_owner",
+      "amount_option": null,
+      "local_accrual": 1000,
+      "signer": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+      "signer_meta": true,
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "cu": 12067,
+      "before_counters": {
+        "total_fees": 1618680371361,
+        "creator_distributed": 809340185180,
+        "referrer_distributed": 0,
+        "platform_distributed": 809340185180
+      },
+      "after_counters": null,
+      "vault_before": 1001,
+      "vault_after": null,
+      "recipient_before": 0,
+      "recipient_after": null,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: Redeem",
+        "Program log: AnchorError caused by account: vault_funding_ata. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 12067 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "fixture": "no_referrer",
+      "case": "wrong_token_program",
+      "amount_option": null,
+      "local_accrual": 1000,
+      "signer": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+      "signer_meta": true,
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(2023))))",
+      "cu": 13138,
+      "before_counters": {
+        "total_fees": 1618680371361,
+        "creator_distributed": 809340185180,
+        "referrer_distributed": 0,
+        "platform_distributed": 809340185180
+      },
+      "after_counters": null,
+      "vault_before": 1001,
+      "vault_after": null,
+      "recipient_before": 0,
+      "recipient_after": null,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: Redeem",
+        "Program log: AnchorError occurred. Error Code: ConstraintAssociatedTokenTokenProgram. Error Number: 2023. Error Message: An associated token account token program constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 13138 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7e7"
+      ]
+    },
+    {
+      "fixture": "no_referrer",
+      "case": "wrong_recipient_pda",
+      "amount_option": null,
+      "local_accrual": 1000,
+      "signer": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+      "signer_meta": true,
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(2009))))",
+      "cu": 17173,
+      "before_counters": {
+        "total_fees": 1618680371361,
+        "creator_distributed": 809340185180,
+        "referrer_distributed": 0,
+        "platform_distributed": 809340185180
+      },
+      "after_counters": null,
+      "vault_before": 1001,
+      "vault_after": null,
+      "recipient_before": 0,
+      "recipient_after": null,
+      "log_tail": [
+        "Program log: AnchorError caused by account: signer_funding_ata. Error Code: ConstraintAssociated. Error Number: 2009. Error Message: An associated constraint was violated.",
+        "Program log: Left:",
+        "Program log: 6JhaGdekBjU2RfiYWSjYdQAibx4LfSfTNFEeMUHnUVz7",
+        "Program log: Right:",
+        "Program log: C2ckYuikxJh52bhj6214graQPM7AzpwMaK4hkwRWfmeN",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 17173 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7d9"
+      ]
+    },
+    {
+      "fixture": "self_referrer",
+      "case": "none",
+      "amount_option": null,
+      "local_accrual": 0,
+      "signer": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+      "signer_meta": true,
+      "success": true,
+      "error": null,
+      "cu": 25456,
+      "before_counters": {
+        "total_fees": 876081870188,
+        "creator_distributed": 429118181496,
+        "referrer_distributed": 0,
+        "platform_distributed": 438040935094
+      },
+      "after_counters": {
+        "total_fees": 876081870188,
+        "creator_distributed": 438040935094,
+        "referrer_distributed": 0,
+        "platform_distributed": 438040935094
+      },
+      "vault_before": 8922753598,
+      "vault_after": 0,
+      "recipient_before": 0,
+      "recipient_after": 8922753598,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: Redeem",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 175634 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 25456 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ]
+    },
+    {
+      "fixture": "self_referrer",
+      "case": "one",
+      "amount_option": 1,
+      "local_accrual": 0,
+      "signer": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+      "signer_meta": true,
+      "success": true,
+      "error": null,
+      "cu": 25464,
+      "before_counters": {
+        "total_fees": 876081870188,
+        "creator_distributed": 429118181496,
+        "referrer_distributed": 0,
+        "platform_distributed": 438040935094
+      },
+      "after_counters": {
+        "total_fees": 876081870188,
+        "creator_distributed": 429118181497,
+        "referrer_distributed": 0,
+        "platform_distributed": 438040935094
+      },
+      "vault_before": 8922753598,
+      "vault_after": 8922753597,
+      "recipient_before": 0,
+      "recipient_after": 1,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: Redeem",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 175626 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 25464 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ]
+    },
+    {
+      "fixture": "self_referrer",
+      "case": "at_cap",
+      "amount_option": 8922753598,
+      "local_accrual": 0,
+      "signer": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+      "signer_meta": true,
+      "success": true,
+      "error": null,
+      "cu": 25464,
+      "before_counters": {
+        "total_fees": 876081870188,
+        "creator_distributed": 429118181496,
+        "referrer_distributed": 0,
+        "platform_distributed": 438040935094
+      },
+      "after_counters": {
+        "total_fees": 876081870188,
+        "creator_distributed": 438040935094,
+        "referrer_distributed": 0,
+        "platform_distributed": 438040935094
+      },
+      "vault_before": 8922753598,
+      "vault_after": 0,
+      "recipient_before": 0,
+      "recipient_after": 8922753598,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: Redeem",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 175626 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 25464 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ]
+    },
+    {
+      "fixture": "self_referrer",
+      "case": "above_cap",
+      "amount_option": 8922753599,
+      "local_accrual": 0,
+      "signer": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+      "signer_meta": true,
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6002))))",
+      "cu": 24079,
+      "before_counters": {
+        "total_fees": 876081870188,
+        "creator_distributed": 429118181496,
+        "referrer_distributed": 0,
+        "platform_distributed": 438040935094
+      },
+      "after_counters": null,
+      "vault_before": 8922753598,
+      "vault_after": null,
+      "recipient_before": 0,
+      "recipient_after": null,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: Redeem",
+        "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:29. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 24079 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+      ]
+    },
+    {
+      "fixture": "self_referrer",
+      "case": "wrong_creator",
+      "amount_option": null,
+      "local_accrual": 0,
+      "signer": "6JhaGdekBjU2RfiYWSjYdQAibx4LfSfTNFEeMUHnUVz7",
+      "signer_meta": true,
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6001))))",
+      "cu": 19429,
+      "before_counters": {
+        "total_fees": 876081870188,
+        "creator_distributed": 429118181496,
+        "referrer_distributed": 0,
+        "platform_distributed": 438040935094
+      },
+      "after_counters": null,
+      "vault_before": 8922753598,
+      "vault_after": null,
+      "recipient_before": 0,
+      "recipient_after": null,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: Redeem",
+        "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:14. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19429 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+      ]
+    },
+    {
+      "fixture": "self_referrer",
+      "case": "unsigned_creator",
+      "amount_option": null,
+      "local_accrual": 0,
+      "signer": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+      "signer_meta": false,
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3010))))",
+      "cu": 4334,
+      "before_counters": {
+        "total_fees": 876081870188,
+        "creator_distributed": 429118181496,
+        "referrer_distributed": 0,
+        "platform_distributed": 438040935094
+      },
+      "after_counters": null,
+      "vault_before": 8922753598,
+      "vault_after": null,
+      "recipient_before": 0,
+      "recipient_after": null,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: Redeem",
+        "Program log: AnchorError caused by account: signer. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 4334 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbc2"
+      ]
+    },
+    {
+      "fixture": "self_referrer",
+      "case": "wrong_state_owner",
+      "amount_option": null,
+      "local_accrual": 0,
+      "signer": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+      "signer_meta": true,
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "cu": 7384,
+      "before_counters": {
+        "total_fees": 876081870188,
+        "creator_distributed": 429118181496,
+        "referrer_distributed": 0,
+        "platform_distributed": 438040935094
+      },
+      "after_counters": null,
+      "vault_before": 8922753598,
+      "vault_after": null,
+      "recipient_before": 0,
+      "recipient_after": null,
+      "log_tail": [
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 7384 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "fixture": "self_referrer",
+      "case": "wrong_vault_owner",
+      "amount_option": null,
+      "local_accrual": 0,
+      "signer": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+      "signer_meta": true,
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "cu": 12342,
+      "before_counters": {
+        "total_fees": 876081870188,
+        "creator_distributed": 429118181496,
+        "referrer_distributed": 0,
+        "platform_distributed": 438040935094
+      },
+      "after_counters": null,
+      "vault_before": 8922753598,
+      "vault_after": null,
+      "recipient_before": 0,
+      "recipient_after": null,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: Redeem",
+        "Program log: AnchorError caused by account: vault_funding_ata. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 12342 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "fixture": "self_referrer",
+      "case": "wrong_token_program",
+      "amount_option": null,
+      "local_accrual": 0,
+      "signer": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+      "signer_meta": true,
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(2023))))",
+      "cu": 13413,
+      "before_counters": {
+        "total_fees": 876081870188,
+        "creator_distributed": 429118181496,
+        "referrer_distributed": 0,
+        "platform_distributed": 438040935094
+      },
+      "after_counters": null,
+      "vault_before": 8922753598,
+      "vault_after": null,
+      "recipient_before": 0,
+      "recipient_after": null,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: Redeem",
+        "Program log: AnchorError occurred. Error Code: ConstraintAssociatedTokenTokenProgram. Error Number: 2023. Error Message: An associated token account token program constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 13413 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7e7"
+      ]
+    },
+    {
+      "fixture": "self_referrer",
+      "case": "wrong_recipient_pda",
+      "amount_option": null,
+      "local_accrual": 0,
+      "signer": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+      "signer_meta": true,
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(2009))))",
+      "cu": 20448,
+      "before_counters": {
+        "total_fees": 876081870188,
+        "creator_distributed": 429118181496,
+        "referrer_distributed": 0,
+        "platform_distributed": 438040935094
+      },
+      "after_counters": null,
+      "vault_before": 8922753598,
+      "vault_after": null,
+      "recipient_before": 0,
+      "recipient_after": null,
+      "log_tail": [
+        "Program log: AnchorError caused by account: signer_funding_ata. Error Code: ConstraintAssociated. Error Number: 2009. Error Message: An associated constraint was violated.",
+        "Program log: Left:",
+        "Program log: 6JhaGdekBjU2RfiYWSjYdQAibx4LfSfTNFEeMUHnUVz7",
+        "Program log: Right:",
+        "Program log: DvWPqaaTWd393E5Tp6H2e3AYs1mwkLQK9VqVeAMWJGzS",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20448 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7d9"
+      ]
+    }
+  ],
+  "qualification": "All VM cases use current pinned program and later account bytes; no-referrer positive payout increments total_fees and vault amount by 1,000 locally. Recipient ATAs are synthesized. Signer privileges are simulated with sigverify disabled; no transaction sent."
+}

@@ -1,0 +1,99 @@
+{
+  "target": "daos-founder",
+  "reference": {
+    "path": "inputs/daos_fun/founder_dao-mainnet.so",
+    "whole_sha256": "816bc6d42ffea7d63bd7b1287589413aef04d8f7dceb34dd274a0f7872d40aa2",
+    "whole_bytes": 574360,
+    "machine": "EM_BPF",
+    "elf_flags": 0,
+    "entry_point": 194584,
+    "elf_bytes": 573384,
+    "elf_sha256": "714a167dd5a6677638a274d0cdadb6b003077417a9020ed1c5989dc8a5a8fdb9",
+    "allocation_padding_bytes": 976,
+    "allocation_padding_all_zero": true,
+    "sections": [
+      {
+        "name": "",
+        "type": "SHT_NULL",
+        "file_offset": 0,
+        "virtual_address": 0,
+        "size": 0,
+        "alignment": 0,
+        "sha256": null
+      },
+      {
+        "name": ".text",
+        "type": "SHT_PROGBITS",
+        "file_offset": 288,
+        "virtual_address": 288,
+        "size": 506152,
+        "alignment": 8,
+        "sha256": "8703eeef54dc49e74a57309b29022930c647c1b065ca4a456960cfa7864ccd5f"
+      },
+      {
+        "name": ".rodata",
+        "type": "SHT_PROGBITS",
+        "file_offset": 506448,
+        "virtual_address": 506448,
+        "size": 17983,
+        "alignment": 16,
+        "sha256": "bb2d1f12436ff7a840d538892aa8545fc3c9ea7cf79d53bafb19cd082ad0b4aa"
+      },
+      {
+        "name": ".data.rel.ro",
+        "type": "SHT_PROGBITS",
+        "file_offset": 524432,
+        "virtual_address": 524432,
+        "size": 9160,
+        "alignment": 8,
+        "sha256": "13b808a847a454bc987aae8150bd9e4b39461b9aa97ec8c95c3a2180c79c50c2"
+      },
+      {
+        "name": ".dynamic",
+        "type": "SHT_DYNAMIC",
+        "file_offset": 533592,
+        "virtual_address": 533592,
+        "size": 176,
+        "alignment": 8,
+        "sha256": "e678743018d95881fce5bc8bf54eb61c546f9eb66d5713a3c08872f38e423e3b"
+      },
+      {
+        "name": ".dynsym",
+        "type": "SHT_DYNSYM",
+        "file_offset": 533768,
+        "virtual_address": 533768,
+        "size": 336,
+        "alignment": 8,
+        "sha256": "b17d486150b653155b5933665ee1e8693b5db899c7f198478cdcce584e45d87e"
+      },
+      {
+        "name": ".dynstr",
+        "type": "SHT_STRTAB",
+        "file_offset": 534104,
+        "virtual_address": 534104,
+        "size": 195,
+        "alignment": 1,
+        "sha256": "7076b7f9d8c2ee4162545708572a26d0b175cd65faacd7cd6a1a128b68461911"
+      },
+      {
+        "name": ".rel.dyn",
+        "type": "SHT_REL",
+        "file_offset": 534304,
+        "virtual_address": 534304,
+        "size": 38432,
+        "alignment": 8,
+        "sha256": "4290676a9f9cf0cd7f87f75fea2f248eea1e74a59bcae6cc88cb77fb9688aabb"
+      },
+      {
+        "name": ".shstrtab",
+        "type": "SHT_STRTAB",
+        "file_offset": 572736,
+        "virtual_address": 0,
+        "size": 72,
+        "alignment": 1,
+        "sha256": "d981263d501f120e0990544791b6647d652caea4613d7fe87ca90431c71f4911"
+      }
+    ]
+  },
+  "source_reconstruction_status": "no candidate supplied"
+}

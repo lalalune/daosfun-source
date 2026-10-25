@@ -1,0 +1,40 @@
+{
+  "captured_at": "2026-10-24T19:11:01.549224+00:00",
+  "endpoint": "https://api.mainnet-beta.solana.com",
+  "commitment": "finalized",
+  "dao_program": "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM",
+  "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+  "cosign_state": "EFkf2jFnAcUp8n8sohP8X9yqVPKaaZWdk4X8wuCG7PBN",
+  "cosign_state_slot": 460964196,
+  "cosign_state_data_sha256": "7924db24118f8cebbb7e847f2151e80d8723e2a4d451c80874778cedaf7004eb",
+  "cosigner": "AeqZQwJTg6ikeCfXR7Xh1VCVH5QgTwGi933sZiF7KNUu",
+  "cosigner_account_slot": 460964197,
+  "cosigner_account": {
+    "data": [
+      "",
+      "base64"
+    ],
+    "executable": false,
+    "lamports": 3910061294,
+    "owner": "11111111111111111111111111111111",
+    "rentEpoch": 18446744073709551615,
+    "space": 0
+  },
+  "token_account_slots": {
+    "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA": 460964198,
+    "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb": 460964199
+  },
+  "token_accounts_by_program": {
+    "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA": [],
+    "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb": []
+  },
+  "summary": {
+    "cosigner_lamports": 3910061294,
+    "cosigner_owner_program": "11111111111111111111111111111111",
+    "classic_token_accounts": 0,
+    "token2022_token_accounts": 0,
+    "classic_token_balance_sum_atoms_mixed_mints": 0,
+    "token2022_token_balance_sum_atoms_mixed_mints": 0
+  },
+  "qualification": "Read-only finalized RPC owner enumeration and account info for the currently configured shared DAO cosigner. Mixed-mint raw atom sums are not a monetary valuation. This does not enumerate unrelated program authorities, token-account delegates, mint authorities, off-chain custody or future balances, and cannot evaluate the cosigning service policy."
+}

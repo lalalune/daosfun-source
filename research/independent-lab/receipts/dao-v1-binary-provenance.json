@@ -1,0 +1,197 @@
+{
+  "current_dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+  "exact_source_commit": "5837c6b34575841590d694f7d539918d193b6ba0",
+  "qualification": "All successes are bounded local executions on synthetic or later/restored account state. InitCurve requires a source-era CP AMM dependency despite exact-current DAO success; no current-CP compatibility or full behavior proof is claimed.",
+  "rows": [
+    {
+      "instruction": "add_delegate_authority",
+      "receipt": "analysis/daos_fun/dao-v1-delegate-signed-matrix.json",
+      "receipt_sha256": "371ccf9710ffd0c3b7c6b210cfee17e1ceba0fdbf294adf808dcf9b7d26dd91c",
+      "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "current_binary_local_success": true,
+      "source_era_only_local_success": false,
+      "prestate_kind": "synthetic_or_later_restored",
+      "qualification": "State admin and delegate slots are controlled local mutations of a finalized State. This exhausts the handler loop decisions for distinct valid pubkeys and three well-formed slots, but not every Anchor parser, token mint, malformed account, runtime/environmental or historical-version variant. It is bounded semantic coverage, not a full-behavior certification."
+    },
+    {
+      "instruction": "revoke_delegate_authority",
+      "receipt": "analysis/daos_fun/dao-v1-delegate-signed-matrix.json",
+      "receipt_sha256": "371ccf9710ffd0c3b7c6b210cfee17e1ceba0fdbf294adf808dcf9b7d26dd91c",
+      "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "current_binary_local_success": true,
+      "source_era_only_local_success": false,
+      "prestate_kind": "synthetic_or_later_restored",
+      "qualification": "State admin and delegate slots are controlled local mutations of a finalized State. This exhausts the handler loop decisions for distinct valid pubkeys and three well-formed slots, but not every Anchor parser, token mint, malformed account, runtime/environmental or historical-version variant. It is bounded semantic coverage, not a full-behavior certification."
+    },
+    {
+      "instruction": "cosign_init",
+      "receipt": "analysis/daos_fun/dao-v1-cosign-lifecycle.json",
+      "receipt_sha256": "a8de44da6f6ecbf3eea546cd2cd08102e0065e64857a458aab9f22b5092038fd",
+      "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "current_binary_local_success": true,
+      "source_era_only_local_success": false,
+      "prestate_kind": "synthetic_or_later_restored",
+      "qualification": "Synthetic absent cosigner PDA and local signer privileges, current rent setting; no historical transaction comparator or live submission."
+    },
+    {
+      "instruction": "cosign_update_signer",
+      "receipt": "analysis/daos_fun/dao-v1-cosign-lifecycle.json",
+      "receipt_sha256": "a8de44da6f6ecbf3eea546cd2cd08102e0065e64857a458aab9f22b5092038fd",
+      "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "current_binary_local_success": true,
+      "source_era_only_local_success": false,
+      "prestate_kind": "synthetic_or_later_restored",
+      "qualification": "Synthetic absent cosigner PDA and local signer privileges, current rent setting; no historical transaction comparator or live submission."
+    },
+    {
+      "instruction": "close_fund",
+      "receipt": "analysis/daos_fun/dao-v1-close-fund-matrix.json",
+      "receipt_sha256": "39a82a5a2caed8c986ab6a4f23a4780ed6a0fefadd247283a4162beeb6907fe7",
+      "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "current_binary_local_success": true,
+      "source_era_only_local_success": false,
+      "prestate_kind": "synthetic_or_later_restored",
+      "qualification": "Offline LiteSVM on current finalized State/mint snapshots. Admin signer privilege simulated; no historical CloseFund comparator or live transaction."
+    },
+    {
+      "instruction": "init_redemption",
+      "receipt": "analysis/daos_fun/dao-v1-init-redemption-matrix.json",
+      "receipt_sha256": "6697333ced848379bd2f96bbe9deb13533100b1c2bc09089cf56949b7380d354",
+      "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "current_binary_local_success": true,
+      "source_era_only_local_success": false,
+      "prestate_kind": "synthetic_or_later_restored",
+      "qualification": "Current but separate finalized snapshots; account and clock variants local only, signature verification disabled. No live transaction."
+    },
+    {
+      "instruction": "redeem_tokens",
+      "receipt": "analysis/daos_fun/dao_v1-redeem_tokens-synthetic-replay.json",
+      "receipt_sha256": "db3ff1388c7c3ad0aa78b220d6d86a5868cc9e79489ac75e4fc246230b3dbe18",
+      "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "current_binary_local_success": true,
+      "source_era_only_local_success": false,
+      "prestate_kind": "synthetic_or_later_restored",
+      "qualification": "Offline replay on current account state; success can differ from historical transaction."
+    },
+    {
+      "instruction": "redeem_sol",
+      "receipt": "analysis/daos_fun/dao-v1-redeem-sol-amount-matrix.json",
+      "receipt_sha256": "e66344a5ef5bef1a3c72a1df48bce6f1a238b5f3b5a5647a2a32932320474166",
+      "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "current_binary_local_success": true,
+      "source_era_only_local_success": false,
+      "prestate_kind": "synthetic_or_later_restored",
+      "qualification": "Historical instruction and absent tracker receipt, later current state/wallet; offline synthetic tracker reset only. Signature verification disabled, no live transaction."
+    },
+    {
+      "instruction": "burn_dao_tokens",
+      "receipt": "analysis/daos_fun/dao-v1-burn-amount-matrix.json",
+      "receipt_sha256": "bd99c28ed6fa29a8cc4cd845b7ac4c44e2b329fcbb89cab9bcbc6b74d0d00a4a",
+      "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "current_binary_local_success": true,
+      "source_era_only_local_success": false,
+      "prestate_kind": "synthetic_or_later_restored",
+      "qualification": "Historical instruction and zero-prebalance tracker, inferred signer token balance, later account state. Offline LiteSVM, signature verification disabled; no live transaction."
+    },
+    {
+      "instruction": "execute_invoke",
+      "receipt": "analysis/daos_fun/dao_v1-execute_invoke-synthetic-replay.json",
+      "receipt_sha256": "39db66385dff27ebb7b506245c50d59ccd7a9d12d651b7cff97ebf2bf19cd06f",
+      "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "current_binary_local_success": true,
+      "source_era_only_local_success": false,
+      "prestate_kind": "synthetic_or_later_restored",
+      "qualification": "Offline replay on current account state; success can differ from historical transaction."
+    },
+    {
+      "instruction": "claim_dbc_trading_fees",
+      "receipt": "analysis/daos_fun/dao_v1-claim_dbc_trading_fees-replay.json",
+      "receipt_sha256": "86e8f55df6b16de3a742f36cc60ac7a66e0e9253b7d33e1b5df0351e59c7aa91",
+      "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "current_binary_local_success": true,
+      "source_era_only_local_success": false,
+      "prestate_kind": "synthetic_or_later_restored",
+      "qualification": "Offline replay on current account state; success can differ from historical transaction."
+    },
+    {
+      "instruction": "initialize",
+      "receipt": "analysis/daos_fun/dao-v1-initialize-synthetic-probes.json",
+      "receipt_sha256": "211545c5865674aa09ee80c294058a67829b4f4ee0158a3ac6f8edfe1fe31781",
+      "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "current_binary_local_success": true,
+      "source_era_only_local_success": false,
+      "prestate_kind": "synthetic_or_later_restored",
+      "qualification": "Offline synthetic DAO mint and absent PDAs, locally initialized FeeShareState prerequisite, current pinned DAO/FeeShare binaries, no historical Initialize transaction or live submission."
+    },
+    {
+      "instruction": "start_raise",
+      "receipt": "analysis/daos_fun/dao-v1-start-raise-synthetic-probes.json",
+      "receipt_sha256": "94aab9846bb0cbd9a2dfc7972e1345a7b2828cd6077fca1ba160d6570efdcff1",
+      "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "current_binary_local_success": true,
+      "source_era_only_local_success": false,
+      "prestate_kind": "synthetic_or_later_restored",
+      "qualification": "Synthetic state generated by prior offline Initialize probe; fundraise PDA and ATA candidates constructed from IDL/source fixture. No historical StartRaise comparator or live transaction."
+    },
+    {
+      "instruction": "transfer_position_nft_to_fee_share",
+      "receipt": "analysis/daos_fun/dao-v1-transfer-position-nft-probes.json",
+      "receipt_sha256": "db072ec4c7120daed3c856ea0ad8ff54c015ad7057be53d56a37e2f403dde2a8",
+      "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "current_binary_local_success": true,
+      "source_era_only_local_success": false,
+      "prestate_kind": "synthetic_or_later_restored",
+      "qualification": "Current downstream FeeShare/Meteora accounts, synthetic NFT unit restoration. No historical transfer transaction, no live submission."
+    },
+    {
+      "instruction": "finalize_meteora_bonding",
+      "receipt": "analysis/daos_fun/dao-bm1-cross-pool-current-config.json",
+      "receipt_sha256": "40c935fcd36e2628e54b6cb3180f8afec6646ce2190c3e78aef3167f63d92727",
+      "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "current_binary_local_success": true,
+      "source_era_only_local_success": false,
+      "prestate_kind": "synthetic_or_later_restored",
+      "qualification": "Independent local cross-pool test with two captured migrated DBC pools and DAO States; missing wallet/ATAs locally reconstructed, Y-base-vault PDA placeholder supplied because DAO only checks seeds. Disposable payer signs with sigverify enabled. Captures are later finalized state, not archival pre-finalization bytes. The captured deployed config's migration-fee byte is zero, so current-config cases transfer no fee; the positive 6.6-billion-unit payout requires explicitly changing config byte247 from 0 to 10 locally. No live transaction."
+    },
+    {
+      "instruction": "init_bonding_on_meteora",
+      "receipt": "analysis/daos_fun/dao-v1-init-bonding-synthetic-probes.json",
+      "receipt_sha256": "3b6b2cff1b806198b7aa64363f83ba31cb4744ec2ab94f0d0d2f72fa9545199f",
+      "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "current_binary_local_success": true,
+      "source_era_only_local_success": false,
+      "prestate_kind": "synthetic_or_later_restored",
+      "qualification": "Synthetic new DAO mint/State/FeeShareState/DBC pool with pinned current config and funding mint; no historical launch comparator or live transaction."
+    },
+    {
+      "instruction": "init_curve",
+      "receipt": "analysis/daos_fun/dao-v1-init-curve-source-era-cp-replay.json",
+      "receipt_sha256": "d18c1a17578413af9029a20f6c5b969e002ba0b1f4d1b0d9d1ce8e98086b3382",
+      "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "current_binary_local_success": true,
+      "source_era_only_local_success": false,
+      "prestate_kind": "synthetic_or_later_restored",
+      "qualification": "Exact historical transaction bytes/metadata, later account bytes. DAO and CPMM binaries can be selected from pre-source Upgrade-buffer reconstructions; remaining account bytes may still differ from source-slot prestate. No live transaction."
+    },
+    {
+      "instruction": "migrate_bonding_to_meteora",
+      "receipt": "analysis/daos_fun/dao-v1-migrate-bonding-current-dao-restored-replay.json",
+      "receipt_sha256": "f863695450830760ac8bf0283299d6a1c58116a52824c95a3751837fde5d856f",
+      "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "current_binary_local_success": true,
+      "source_era_only_local_success": false,
+      "prestate_kind": "synthetic_or_later_restored",
+      "qualification": "Historical transaction metadata with later surviving account bytes; CPMM slot-349 and Hedgefun binaries predate this source, and --dao-historical selects DAO slot-350. This is a synthetic restoration, not the exact historical prestate. No live transaction."
+    }
+  ],
+  "totals": {
+    "current_catalog_handlers": 18,
+    "current_binary_local_success": 18,
+    "source_era_only_local_success": 0,
+    "init_curve_current_cp_success": 0,
+    "init_curve_source_era_cp_success": 1,
+    "exact_archival_prestate_replays": 0,
+    "strict_full_behavior": 0
+  },
+  "current_init_curve_failed_receipt": "analysis/daos_fun/dao-v1-init-curve-local-replay.json"
+}

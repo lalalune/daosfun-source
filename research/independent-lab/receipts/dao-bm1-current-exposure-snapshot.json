@@ -1,0 +1,55 @@
+{
+  "rpc": "https://api.mainnet-beta.solana.com",
+  "commitment": "finalized",
+  "capture_slot": 460967398,
+  "sampled_pools": 3,
+  "rows": [
+    {
+      "pool": "2TCTNeQubYZUc9EftCSmvGYkMQiiTVpx9Z9EtNseJBMM",
+      "token_mint": "GZFVdei2BLKar2oQ1KkcK4ay3r3998RR7K2VHwtvdaos",
+      "state": "JBSkdpibszwiiAs4CRZNvJr4nhAGuSoUE6e4AstK3DLT",
+      "quote_vault": "DcrswysVP6b6AfwZCFZeJU2e3kG5rK6Tg14XANNy1zzd",
+      "config": "BkoMF8PzYwoVQTKcQ6uNeQrHytw1jJN6ig4JzjcKS3iF",
+      "source_snapshot": "analysis/daos_fun/dao-v1-finalize-migrated-dbc-2TCTNeQubYZUc9EftCSmvGYkMQiiTVpx9Z9EtNseJBMM-snapshot.json",
+      "pool_is_migrated": 1,
+      "migration_fee_withdraw_status": 0,
+      "state_curve_initialized": 0,
+      "state_funding_goal": 0,
+      "quote_vault_amount": 11621676211,
+      "config_fee_byte_247": 0,
+      "config_migration_quote_threshold": 66000000000
+    },
+    {
+      "pool": "By73M4XPTebZN7ufg1GA7xpZpVGrcmWY6zTd4gbMRRb",
+      "token_mint": "CcgV8LwA2TdYMjo85nUrZR9jcE2b5Fs55Tgoeyqvdaos",
+      "state": "4xY38DpyS5nKYyTcAbFEjknKeLneJdVb49mMcRQeik5e",
+      "quote_vault": "9yDqiDfxnm1rdnEbRjFDASftMhuxWSNKBiTeL35egHZv",
+      "config": "BkoMF8PzYwoVQTKcQ6uNeQrHytw1jJN6ig4JzjcKS3iF",
+      "source_snapshot": "analysis/daos_fun/dao-v1-finalize-migrated-dbc-By73M4XPTebZN7ufg1GA7xpZpVGrcmWY6zTd4gbMRRb-snapshot.json",
+      "pool_is_migrated": 1,
+      "migration_fee_withdraw_status": 0,
+      "state_curve_initialized": 0,
+      "state_funding_goal": 0,
+      "quote_vault_amount": 6446611666,
+      "config_fee_byte_247": 0,
+      "config_migration_quote_threshold": 66000000000
+    },
+    {
+      "pool": "7Br1VEPcy8cjD1YeSpeUGqvSBRX1mLpfjyBq89C7Jcm",
+      "token_mint": "DaHRSwm28RH3MfM5NZ35nUhrzTfh9ygucSqyzCZdaos",
+      "state": "9DsmmAvfERNYLS15w1qyg1vCdLa28kn9JmCXZy3gA3eY",
+      "quote_vault": "is2gNsnwjYBzBWB9A1JDtiPx5kLC9NYPSpLuk5FJvMV",
+      "config": "BkoMF8PzYwoVQTKcQ6uNeQrHytw1jJN6ig4JzjcKS3iF",
+      "source_snapshot": "analysis/daos_fun/dao-v1-finalize-migrated-dbc-snapshot.json",
+      "pool_is_migrated": 1,
+      "migration_fee_withdraw_status": 0,
+      "state_curve_initialized": 0,
+      "state_funding_goal": 0,
+      "quote_vault_amount": 68,
+      "config_fee_byte_247": 0,
+      "config_migration_quote_threshold": 66000000000
+    }
+  ],
+  "open_sampled_lifecycle_pairs": 3,
+  "qualification": "Narrow read-only refresh of three saved DBC pool fixtures. It is not an exhaustive mainnet census. Positive fee diversion requires a nonzero DBC config fee and available quote funding; the config value is recorded per row. Account data can change after this finalized slot. No transaction sent."
+}

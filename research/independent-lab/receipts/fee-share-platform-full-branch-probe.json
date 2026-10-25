@@ -1,0 +1,2439 @@
+{
+  "scope": "FeeShareTraderDAO collect_platform_fees only",
+  "pinned_elf_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+  "signature_verification_enabled": true,
+  "mode": "offline LiteSVM signed local sends; no RPC or live transaction",
+  "count": 78,
+  "fresh_prediction_holdouts": [
+    {
+      "case": "fresh_holdout_00",
+      "available": 38584,
+      "requested": null,
+      "predicted_payout": 38584,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_01",
+      "available": 47583,
+      "requested": 0,
+      "predicted_payout": 0,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_02",
+      "available": 20202,
+      "requested": 20202,
+      "predicted_payout": 20202,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_03",
+      "available": 12547,
+      "requested": 12548,
+      "predicted_payout": 0,
+      "predicted_success": false
+    },
+    {
+      "case": "fresh_holdout_04",
+      "available": 4034,
+      "requested": 3040,
+      "predicted_payout": 3040,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_05",
+      "available": 42885,
+      "requested": null,
+      "predicted_payout": 42885,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_06",
+      "available": 5696,
+      "requested": 0,
+      "predicted_payout": 0,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_07",
+      "available": 33572,
+      "requested": 33572,
+      "predicted_payout": 33572,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_08",
+      "available": 40192,
+      "requested": 40193,
+      "predicted_payout": 0,
+      "predicted_success": false
+    },
+    {
+      "case": "fresh_holdout_09",
+      "available": 26113,
+      "requested": 16473,
+      "predicted_payout": 16473,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_10",
+      "available": 10473,
+      "requested": null,
+      "predicted_payout": 10473,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_11",
+      "available": 30987,
+      "requested": 0,
+      "predicted_payout": 0,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_12",
+      "available": 31898,
+      "requested": 31898,
+      "predicted_payout": 31898,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_13",
+      "available": 17510,
+      "requested": 17511,
+      "predicted_payout": 0,
+      "predicted_success": false
+    },
+    {
+      "case": "fresh_holdout_14",
+      "available": 24191,
+      "requested": 10987,
+      "predicted_payout": 10987,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_15",
+      "available": 18710,
+      "requested": null,
+      "predicted_payout": 18710,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_16",
+      "available": 2836,
+      "requested": 0,
+      "predicted_payout": 0,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_17",
+      "available": 3967,
+      "requested": 3967,
+      "predicted_payout": 3967,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_18",
+      "available": 20351,
+      "requested": 20352,
+      "predicted_payout": 0,
+      "predicted_success": false
+    },
+    {
+      "case": "fresh_holdout_19",
+      "available": 10631,
+      "requested": 2178,
+      "predicted_payout": 2178,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_20",
+      "available": 17696,
+      "requested": null,
+      "predicted_payout": 17696,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_21",
+      "available": 24118,
+      "requested": 0,
+      "predicted_payout": 0,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_22",
+      "available": 44341,
+      "requested": 44341,
+      "predicted_payout": 44341,
+      "predicted_success": true
+    },
+    {
+      "case": "fresh_holdout_23",
+      "available": 2187,
+      "requested": 2188,
+      "predicted_payout": 0,
+      "predicted_success": false
+    }
+  ],
+  "static_bpf": [
+    {
+      "address": "0xf6e8",
+      "bytes": "b704000032000000",
+      "mnemonic": "mov64",
+      "operands": "r4, 0x32"
+    },
+    {
+      "address": "0xf740",
+      "bytes": "3701000064000000",
+      "mnemonic": "div64",
+      "operands": "r1, 0x64"
+    },
+    {
+      "address": "0xf748",
+      "bytes": "2d12820100000000",
+      "mnemonic": "jgt",
+      "operands": "r2, r1, +0x182"
+    },
+    {
+      "address": "0xf750",
+      "bytes": "1f21000000000000",
+      "mnemonic": "sub64",
+      "operands": "r1, r2"
+    },
+    {
+      "address": "0xf760",
+      "bytes": "1506010000000000",
+      "mnemonic": "jeq",
+      "operands": "r6, 0x0, +0x1"
+    },
+    {
+      "address": "0xf770",
+      "bytes": "2d15010000000000",
+      "mnemonic": "jgt",
+      "operands": "r5, r1, +0x1"
+    },
+    {
+      "address": "0x421b0",
+      "bytes": "bf58000000000000",
+      "mnemonic": "mov64",
+      "operands": "r8, r5"
+    },
+    {
+      "address": "0x42220",
+      "bytes": "15083b0000000000",
+      "mnemonic": "jeq",
+      "operands": "r8, 0x0, +0x3b"
+    },
+    {
+      "address": "0x42228",
+      "bytes": "5508070001000000",
+      "mnemonic": "jne",
+      "operands": "r8, 0x1, +0x7"
+    },
+    {
+      "address": "0x42588",
+      "bytes": "85100000229affff",
+      "mnemonic": "call",
+      "operands": "0xffff9a22"
+    }
+  ],
+  "cases": [
+    {
+      "case": "none_available_500",
+      "success": true,
+      "error": null,
+      "compute_units": 21810,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 179211 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21810 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 500,
+      "platform_delta": 500,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "65347592bfede2c84043b84deb8eb4f49a88dba8d4e114bb755bfbd7e03cafe3",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "none_explicit_zero",
+      "success": true,
+      "error": null,
+      "compute_units": 21828,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 122 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21828 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "none_explicit_one",
+      "success": true,
+      "error": null,
+      "compute_units": 21818,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21818 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 1,
+      "platform_delta": 1,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "2330c01d021c82a419e2e972f092dc4d47aa660c39734ba52622635267d69376",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "none_explicit_cap",
+      "success": true,
+      "error": null,
+      "compute_units": 21818,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21818 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 500,
+      "platform_delta": 500,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "65347592bfede2c84043b84deb8eb4f49a88dba8d4e114bb755bfbd7e03cafe3",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "none_explicit_overcap",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6002))))",
+      "compute_units": 20558,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/collect_platform_fees.rs:21. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20558 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "some_available",
+      "success": true,
+      "error": null,
+      "compute_units": 22143,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 122 of 178936 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22143 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4846f55b682dc1f069459ffb95d7cd1cdcaf175c3be077b7259af42f6a6010ad",
+      "state_after_sha256": "4846f55b682dc1f069459ffb95d7cd1cdcaf175c3be077b7259af42f6a6010ad",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+      "synthetic_accrual": 0,
+      "local_edits": {
+        "original_creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "local_fee_accrual": 0,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "some_zero",
+      "success": true,
+      "error": null,
+      "compute_units": 22151,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 122 of 178928 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22151 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4846f55b682dc1f069459ffb95d7cd1cdcaf175c3be077b7259af42f6a6010ad",
+      "state_after_sha256": "4846f55b682dc1f069459ffb95d7cd1cdcaf175c3be077b7259af42f6a6010ad",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+      "synthetic_accrual": 0,
+      "local_edits": {
+        "original_creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "local_fee_accrual": 0,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "some_overcap",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6002))))",
+      "compute_units": 20833,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/collect_platform_fees.rs:21. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20833 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4846f55b682dc1f069459ffb95d7cd1cdcaf175c3be077b7259af42f6a6010ad",
+      "state_after_sha256": "4846f55b682dc1f069459ffb95d7cd1cdcaf175c3be077b7259af42f6a6010ad",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+      "synthetic_accrual": 0,
+      "local_edits": {
+        "original_creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "local_fee_accrual": 0,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "zero_available_none",
+      "success": true,
+      "error": null,
+      "compute_units": 21820,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 122 of 179211 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21820 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "3788b6395f00816745da32ec73d9803e8bcb1a9643de2218acc6cf2d7ff0edb1",
+      "state_after_sha256": "3788b6395f00816745da32ec73d9803e8bcb1a9643de2218acc6cf2d7ff0edb1",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 0,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 0,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "zero_available_one",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6002))))",
+      "compute_units": 20558,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/collect_platform_fees.rs:21. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20558 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "3788b6395f00816745da32ec73d9803e8bcb1a9643de2218acc6cf2d7ff0edb1",
+      "state_after_sha256": "3788b6395f00816745da32ec73d9803e8bcb1a9643de2218acc6cf2d7ff0edb1",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 0,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 0,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "corrupt_platform_counter_over_half",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Fieldless(ProgramFailedToComplete)))",
+      "compute_units": 19941,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: panicked at programs/fee_share_trader_dao/src/instructions/collect_platform_fees.rs:19:9:\nattempt to subtract with overflow",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19941 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: SBF program panicked"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "e54c27f70cf8271e7fab522c417d96dda4c44ec4cdf5340da786215db3d1bfbd",
+      "state_after_sha256": "e54c27f70cf8271e7fab522c417d96dda4c44ec4cdf5340da786215db3d1bfbd",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "corrupt_platform_counter_max",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Fieldless(ProgramFailedToComplete)))",
+      "compute_units": 19941,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: panicked at programs/fee_share_trader_dao/src/instructions/collect_platform_fees.rs:19:9:\nattempt to subtract with overflow",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19941 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: SBF program panicked"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "60ed375dc3580e95267d97f16ec899eaee6a3869f8e1e1b0c078bbc7c138ba28",
+      "state_after_sha256": "60ed375dc3580e95267d97f16ec899eaee6a3869f8e1e1b0c078bbc7c138ba28",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "max_total_zero_payout",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Fieldless(ProgramFailedToComplete)))",
+      "compute_units": 19936,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: panicked at programs/fee_share_trader_dao/src/instructions/collect_platform_fees.rs:19:9:\nattempt to multiply with overflow",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19936 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: SBF program panicked"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "aa5cd053870cf3784bfbfdd2941511f5eb0dc479f9de15a8d9ae805657bda103",
+      "state_after_sha256": "aa5cd053870cf3784bfbfdd2941511f5eb0dc479f9de15a8d9ae805657bda103",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 0,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 0,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "vault_zero_positive_payout",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(1))))",
+      "compute_units": 20990,
+      "log_tail": [
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program log: Error: insufficient funds",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 193 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20990 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "vault_zero_zero_payout",
+      "success": true,
+      "error": null,
+      "compute_units": 21828,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 122 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21828 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "vault_frozen_positive_payout",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(17))))",
+      "compute_units": 20982,
+      "log_tail": [
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program log: Error: Account is frozen",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 185 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x11",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20982 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x11"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "recipient_frozen_positive_payout",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(17))))",
+      "compute_units": 20983,
+      "log_tail": [
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program log: Error: Account is frozen",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 186 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x11",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20983 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x11"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "vault_uninitialized_state",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Fieldless(UninitializedAccount)))",
+      "compute_units": 10096,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: ProgramError caused by account: vault_funding_ata. Error Code: UninitializedAccount. Error Number: 42949672960. Error Message: An attempt to operate on an account that hasn't been initialized.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 10096 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: instruction requires an initialized account"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "recipient_uninitialized_state",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Fieldless(UninitializedAccount)))",
+      "compute_units": 8400,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: ProgramError caused by account: platform_funding_ata. Error Code: UninitializedAccount. Error Number: 42949672960. Error Message: An attempt to operate on an account that hasn't been initialized.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 8400 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: instruction requires an initialized account"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "vault_wrong_mint",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3))))",
+      "compute_units": 20994,
+      "log_tail": [
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program log: Error: Account not associated with this Mint",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 197 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x3",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20994 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x3"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "vault_wrong_authority",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(2015))))",
+      "compute_units": 16924,
+      "log_tail": [
+        "Program log: AnchorError caused by account: vault_funding_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program log: Left:",
+        "Program log: GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "Program log: Right:",
+        "Program log: CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 16924 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "vault_wrong_owner",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 11784,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError caused by account: vault_funding_ata. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 11784 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "recipient_wrong_mint",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3))))",
+      "compute_units": 20994,
+      "log_tail": [
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program log: Error: Account not associated with this Mint",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 197 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x3",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20994 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x3"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "recipient_wrong_authority",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(2015))))",
+      "compute_units": 13874,
+      "log_tail": [
+        "Program log: AnchorError caused by account: platform_funding_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program log: Left:",
+        "Program log: GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "Program log: Right:",
+        "Program log: 8CaTuoD1r6CzR1mu6ueTDvjNpLj7sq5nWafDLymkQ4jH",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 13874 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "recipient_wrong_owner",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 10088,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError caused by account: platform_funding_ata. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 10088 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "state_wrong_owner",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 7099,
+      "log_tail": [
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 7099 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "state_wrong_discriminator",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3002))))",
+      "compute_units": 6670,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: 8 byte discriminator did not match what was expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 6670 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbba"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "0542ee975a671d52e89e6f6bdacfe1659c96ec3a0b758bbf2886eb6c30d6c131",
+      "state_after_sha256": "0542ee975a671d52e89e6f6bdacfe1659c96ec3a0b758bbf2886eb6c30d6c131",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "state_wrong_funding_mint",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6000))))",
+      "compute_units": 12962,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: BadMint. Error Number: 6000. Error Message: Invalid token mint.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 12962 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1770"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "3858c6a19882834f039cd4236956ff80dadfc0f7c09324fa086796c62774b8db",
+      "state_after_sha256": "3858c6a19882834f039cd4236956ff80dadfc0f7c09324fa086796c62774b8db",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "state_wrong_token_mint",
+      "success": true,
+      "error": null,
+      "compute_units": 21818,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21818 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 1,
+      "platform_delta": 1,
+      "state_before_sha256": "923f9371a66c6ccdb8713b2ddb1d5026a5d085e8dc89f3728d07cd2be6f6bd21",
+      "state_after_sha256": "5e394fe5dfed9e89deef2cd0ca798fc0007940188611b67a516b4af4880ea9da",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "state_invalid_referrer_tag",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3003))))",
+      "compute_units": 7389,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountDidNotDeserialize. Error Number: 3003. Error Message: Failed to deserialize the account.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 7389 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbb"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "a9f1b4e134df845726a521bfeb31c46344db1572d99542975a3a55aa10d7fa8d",
+      "state_after_sha256": "a9f1b4e134df845726a521bfeb31c46344db1572d99542975a3a55aa10d7fa8d",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "payload_invalid_option_tag",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(102))))",
+      "compute_units": 4344,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError occurred. Error Code: InstructionDidNotDeserialize. Error Number: 102. Error Message: The program could not deserialize the given instruction.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 4344 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x66"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "payload_missing_option_tag",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(102))))",
+      "compute_units": 3898,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError occurred. Error Code: InstructionDidNotDeserialize. Error Number: 102. Error Message: The program could not deserialize the given instruction.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 3898 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x66"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "payload_some_truncated_u64",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(102))))",
+      "compute_units": 3905,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError occurred. Error Code: InstructionDidNotDeserialize. Error Number: 102. Error Message: The program could not deserialize the given instruction.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 3905 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x66"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "payload_none_with_trailing_bytes",
+      "success": true,
+      "error": null,
+      "compute_units": 21810,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 179211 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21810 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 500,
+      "platform_delta": 500,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "65347592bfede2c84043b84deb8eb4f49a88dba8d4e114bb755bfbd7e03cafe3",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "payload_some_with_trailing_bytes",
+      "success": true,
+      "error": null,
+      "compute_units": 21818,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21818 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 1,
+      "platform_delta": 1,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "2330c01d021c82a419e2e972f092dc4d47aa660c39734ba52622635267d69376",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "recipient_wrong_address",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 10088,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError caused by account: platform_funding_ata. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 10088 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "recipient_valid_token_wrong_pda",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(2015))))",
+      "compute_units": 13874,
+      "log_tail": [
+        "Program log: AnchorError caused by account: platform_funding_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program log: Left:",
+        "Program log: GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "Program log: Right:",
+        "Program log: 8CaTuoD1r6CzR1mu6ueTDvjNpLj7sq5nWafDLymkQ4jH",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 13874 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "recipient_platform_owner_noncanonical_key",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(2009))))",
+      "compute_units": 17025,
+      "log_tail": [
+        "Program log: AnchorError caused by account: platform_funding_ata. Error Code: ConstraintAssociated. Error Number: 2009. Error Message: An associated constraint was violated.",
+        "Program log: Left:",
+        "Program log: 9hdr8SYDibjubvqvXXymL53a78EFCvq9utaEuEvp2Qsw",
+        "Program log: Right:",
+        "Program log: DKuEjbHP3kyvaKvCKcdd7S3Y2WUf11mtq5hmvUQN3ckS",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 17025 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7d9"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "recipient_aliases_vault",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(2015))))",
+      "compute_units": 13710,
+      "log_tail": [
+        "Program log: AnchorError caused by account: platform_funding_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program log: Left:",
+        "Program log: CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V",
+        "Program log: Right:",
+        "Program log: 8CaTuoD1r6CzR1mu6ueTDvjNpLj7sq5nWafDLymkQ4jH",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 13710 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "funding_mint_wrong_address",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 6303,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError caused by account: funding_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 6303 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "token_mint_wrong_address",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 7137,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError caused by account: token_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 7137 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "state_wrong_address",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 7099,
+      "log_tail": [
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 7099 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "vault_wrong_address",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 11784,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError caused by account: vault_funding_ata. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 11784 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "token_program_wrong_address",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3008))))",
+      "compute_units": 13280,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError caused by account: token_program. Error Code: InvalidProgramId. Error Number: 3008. Error Message: Program ID was not as expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 13280 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbc0"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "associated_token_program_wrong_address",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3008))))",
+      "compute_units": 12010,
+      "log_tail": [
+        "Program log: AnchorError caused by account: associated_token_program. Error Code: InvalidProgramId. Error Number: 3008. Error Message: Program ID was not as expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 12010 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbc0"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "state_readonly",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(2000))))",
+      "compute_units": 13040,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: ConstraintMut. Error Number: 2000. Error Message: A mut constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 13040 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7d0"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "recipient_readonly",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(2000))))",
+      "compute_units": 16246,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError caused by account: platform_funding_ata. Error Code: ConstraintMut. Error Number: 2000. Error Message: A mut constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 16246 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7d0"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "vault_readonly",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(2000))))",
+      "compute_units": 19402,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError caused by account: vault_funding_ata. Error Code: ConstraintMut. Error Number: 2000. Error Message: A mut constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19402 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7d0"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "missing_last_account",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3005))))",
+      "compute_units": 11206,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError caused by account: associated_token_program. Error Code: AccountNotEnoughKeys. Error Number: 3005. Error Message: Not enough account keys given to the instruction.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 11206 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbd"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "missing_vault_and_rest",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3005))))",
+      "compute_units": 8882,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError caused by account: vault_funding_ata. Error Code: AccountNotEnoughKeys. Error Number: 3005. Error Message: Not enough account keys given to the instruction.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 8882 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbd"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "creator_signer_as_fee_payer",
+      "success": true,
+      "error": null,
+      "compute_units": 21818,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21818 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 1,
+      "platform_delta": 1,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "2330c01d021c82a419e2e972f092dc4d47aa660c39734ba52622635267d69376",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "invalid_payload_precedes_wrong_state_owner",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(102))))",
+      "compute_units": 4344,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError occurred. Error Code: InstructionDidNotDeserialize. Error Number: 102. Error Message: The program could not deserialize the given instruction.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 4344 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x66"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "wrong_state_owner_precedes_overcap",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 7099,
+      "log_tail": [
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 7099 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "recipient_authority_precedes_overcap",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(2015))))",
+      "compute_units": 13874,
+      "log_tail": [
+        "Program log: AnchorError caused by account: platform_funding_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program log: Left:",
+        "Program log: GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "Program log: Right:",
+        "Program log: 8CaTuoD1r6CzR1mu6ueTDvjNpLj7sq5nWafDLymkQ4jH",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 13874 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "state_after_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 1000,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 1000,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_00",
+      "success": true,
+      "error": null,
+      "compute_units": 21810,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 179211 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21810 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 38584,
+      "platform_delta": 38584,
+      "state_before_sha256": "421a5438c11e789c357e1cd53a157774cd428582cab920b4d63cdb09b2500a56",
+      "state_after_sha256": "a0ff506f4ec87180a6c96a7a6bf6122bb45d499349e25c31759392d2884e035c",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 77168,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 77168,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_01",
+      "success": true,
+      "error": null,
+      "compute_units": 22151,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 122 of 178928 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22151 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "0cc227a0b5dc63835c66475ed8f837049d98d599f4605b0918073d91d8f51d98",
+      "state_after_sha256": "0cc227a0b5dc63835c66475ed8f837049d98d599f4605b0918073d91d8f51d98",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+      "synthetic_accrual": 95167,
+      "local_edits": {
+        "original_creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "local_fee_accrual": 95167,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_02",
+      "success": true,
+      "error": null,
+      "compute_units": 21818,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21818 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 20202,
+      "platform_delta": 20202,
+      "state_before_sha256": "09e5c6610b257b89b6a4412be143ea2e2e00bd16235f58f628c57a2b8daab990",
+      "state_after_sha256": "2529230d02dacceb5a307a9fc5b427fd00ec8f6ac378aae38062298a346789b2",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 40403,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 40403,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_03",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6002))))",
+      "compute_units": 20833,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/collect_platform_fees.rs:21. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20833 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "c9579eb507a28b0a6ebf2d20293b004d55fec53e9190b9774251951622ba55f5",
+      "state_after_sha256": "c9579eb507a28b0a6ebf2d20293b004d55fec53e9190b9774251951622ba55f5",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+      "synthetic_accrual": 25094,
+      "local_edits": {
+        "original_creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "local_fee_accrual": 25094,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_04",
+      "success": true,
+      "error": null,
+      "compute_units": 21818,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21818 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 3040,
+      "platform_delta": 3040,
+      "state_before_sha256": "d5b66b11b9d6dffdcbb2692f00a871c81da73d943fe1daaeb4cef4e6479aff6d",
+      "state_after_sha256": "1dc19dc8a7b1e4b6031435714936328f73c3be4968c3fe6b54965ce7f45917b9",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 8068,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 8068,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_05",
+      "success": true,
+      "error": null,
+      "compute_units": 22133,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 178936 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22133 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 42885,
+      "platform_delta": 42885,
+      "state_before_sha256": "6a0233c80c4919d85ae11000396e160aa2235297d133c85f2f68e783ea0f2f52",
+      "state_after_sha256": "1aa904a2e86cb59195e2ba6247f8ab4b806d2bbd0c598fb8ce2c78c3bcd02747",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+      "synthetic_accrual": 85770,
+      "local_edits": {
+        "original_creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "local_fee_accrual": 85770,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_06",
+      "success": true,
+      "error": null,
+      "compute_units": 21828,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 122 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21828 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "6d3dee90ee8528ea2cca8966008d7d0287f14f6bc47acf942333102fa432a2ac",
+      "state_after_sha256": "6d3dee90ee8528ea2cca8966008d7d0287f14f6bc47acf942333102fa432a2ac",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 11391,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 11391,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_07",
+      "success": true,
+      "error": null,
+      "compute_units": 22141,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 178928 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22141 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 33572,
+      "platform_delta": 33572,
+      "state_before_sha256": "c4712070109dfc7c53d8c77a2218c93745c14a0f74db19e2adcac56ad4adde43",
+      "state_after_sha256": "a540655ee3dfd2aca780566f709171ab602fe65fb913e10df2620545254db193",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+      "synthetic_accrual": 67144,
+      "local_edits": {
+        "original_creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "local_fee_accrual": 67144,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_08",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6002))))",
+      "compute_units": 20558,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/collect_platform_fees.rs:21. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20558 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "a2e6c7debb51e3d62109545e494781346f6f0f52042bf5462c30bac537db9359",
+      "state_after_sha256": "a2e6c7debb51e3d62109545e494781346f6f0f52042bf5462c30bac537db9359",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 80384,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 80384,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_09",
+      "success": true,
+      "error": null,
+      "compute_units": 22141,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 178928 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22141 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 16473,
+      "platform_delta": 16473,
+      "state_before_sha256": "95dd5c2a9cb0f046ea357676439bce85d04441091726776c49e6ee17b3bb593c",
+      "state_after_sha256": "e9b693635a6cce4273ecf2a0522b95b3ff392892e0049ec9af6ab7f258f28489",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+      "synthetic_accrual": 52226,
+      "local_edits": {
+        "original_creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "local_fee_accrual": 52226,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_10",
+      "success": true,
+      "error": null,
+      "compute_units": 21810,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 179211 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21810 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 10473,
+      "platform_delta": 10473,
+      "state_before_sha256": "5cdc83c9bfb6d2f088527630f6e5966929bd4114100b86498e4ca7012e749888",
+      "state_after_sha256": "ca7f1e2842867f5952092d8c362cbf53b1b9f378a5fd465618198872472b290d",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 20945,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 20945,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_11",
+      "success": true,
+      "error": null,
+      "compute_units": 22151,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 122 of 178928 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22151 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "32a3f2478a16f9ca7de565026778f0648bd232a2028a64732cbd1af6adf28b27",
+      "state_after_sha256": "32a3f2478a16f9ca7de565026778f0648bd232a2028a64732cbd1af6adf28b27",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+      "synthetic_accrual": 61975,
+      "local_edits": {
+        "original_creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "local_fee_accrual": 61975,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_12",
+      "success": true,
+      "error": null,
+      "compute_units": 21818,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21818 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 31898,
+      "platform_delta": 31898,
+      "state_before_sha256": "fe748e7a47ccdec88b46fd9028b0d5448543fef2875f9cce69008a0306b3c6b0",
+      "state_after_sha256": "bd1135ea983b7fce4950ced6e0a3724edb81db1230672cdcc6d17d10b495c097",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 63796,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 63796,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_13",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6002))))",
+      "compute_units": 20833,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/collect_platform_fees.rs:21. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20833 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "3c74ebd450f977fb93e3292187888b74db62b64788fdca77f47afea43b5d8b6b",
+      "state_after_sha256": "3c74ebd450f977fb93e3292187888b74db62b64788fdca77f47afea43b5d8b6b",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+      "synthetic_accrual": 35020,
+      "local_edits": {
+        "original_creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "local_fee_accrual": 35020,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_14",
+      "success": true,
+      "error": null,
+      "compute_units": 21818,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21818 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 10987,
+      "platform_delta": 10987,
+      "state_before_sha256": "b791ddee5efbe75d13b6ec79a90a761b56bc10bbf69d7ee65e350d28c5da4669",
+      "state_after_sha256": "134cc306ec5d2696d9b272edba3221a0866be734432b04914cca56eff7d6a236",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 48382,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 48382,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_15",
+      "success": true,
+      "error": null,
+      "compute_units": 22133,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 178936 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22133 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 18710,
+      "platform_delta": 18710,
+      "state_before_sha256": "df2a65089e36e51f2d3b2856c799af128da3fbe5c41fa590763e029ba8573422",
+      "state_after_sha256": "523bd050b55d37d9efc8deb38ea67f2f04e0167980ebfdf9d1ccc45f66c83624",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+      "synthetic_accrual": 37420,
+      "local_edits": {
+        "original_creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "local_fee_accrual": 37420,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_16",
+      "success": true,
+      "error": null,
+      "compute_units": 21828,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 122 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21828 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "202e16deb630933af4d7087dfa2bb8b8829559c24bfdba9ddac37ed87917d49d",
+      "state_after_sha256": "202e16deb630933af4d7087dfa2bb8b8829559c24bfdba9ddac37ed87917d49d",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 5671,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 5671,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_17",
+      "success": true,
+      "error": null,
+      "compute_units": 22141,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 178928 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22141 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 3967,
+      "platform_delta": 3967,
+      "state_before_sha256": "c61e9bc4875866001b46f0dc9846558bbf2b3b9e54e7f161e1bb98806d9ee950",
+      "state_after_sha256": "ca61214ab0c8255bf8de21a03b58f2ed3bd2b1f2a16194a1b8106827fce8619d",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+      "synthetic_accrual": 7934,
+      "local_edits": {
+        "original_creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "local_fee_accrual": 7934,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_18",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6002))))",
+      "compute_units": 20558,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/collect_platform_fees.rs:21. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20558 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "37b05cdc13b4512938902da6f92822fd65de197c3db19420155041ad974ff333",
+      "state_after_sha256": "37b05cdc13b4512938902da6f92822fd65de197c3db19420155041ad974ff333",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 40701,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 40701,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_19",
+      "success": true,
+      "error": null,
+      "compute_units": 22141,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 178928 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22141 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 2178,
+      "platform_delta": 2178,
+      "state_before_sha256": "78a19ed06c26075997d4a7b41b9a96eed360c824c1e2cc6f1b0f7297771424da",
+      "state_after_sha256": "af8d4417684ac09a2f7dd9110feacc7470327cf7361c005810805b8e8d4eb9d1",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+      "synthetic_accrual": 21263,
+      "local_edits": {
+        "original_creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "local_fee_accrual": 21263,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_20",
+      "success": true,
+      "error": null,
+      "compute_units": 21810,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 179211 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21810 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 17696,
+      "platform_delta": 17696,
+      "state_before_sha256": "1c9723cba1cddc9d9a0977be43fa7a5a687e17fb0f8be55e98bcad1c6381601c",
+      "state_after_sha256": "36f026e0251cbe583da6c786ada0111dc46d850fd838de1fba0514b15f8ed334",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 35391,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 35391,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_21",
+      "success": true,
+      "error": null,
+      "compute_units": 22151,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 122 of 178928 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22151 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "a92fb5ea0aabb02aa829a470856b742b087fb0161539a451d25f6a09a3abbfe4",
+      "state_after_sha256": "a92fb5ea0aabb02aa829a470856b742b087fb0161539a451d25f6a09a3abbfe4",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+      "synthetic_accrual": 48236,
+      "local_edits": {
+        "original_creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "local_fee_accrual": 48236,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_22",
+      "success": true,
+      "error": null,
+      "compute_units": 21818,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 179203 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21818 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+      ],
+      "vault_delta": 44341,
+      "platform_delta": 44341,
+      "state_before_sha256": "b52d2669e499b17685ea14237f0127c69edead34fbaf09a21874b6791edc1692",
+      "state_after_sha256": "c5ebf3a2f96fd7f52a8b98063770ae1083fd73a89f24f850b6d842cd8e4d73ba",
+      "tracked_unchanged_on_failure": null,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+      "synthetic_accrual": 88682,
+      "local_edits": {
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "local_fee_accrual": 88682,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    },
+    {
+      "case": "fresh_holdout_23",
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6002))))",
+      "compute_units": 20833,
+      "log_tail": [
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+        "Program log: Instruction: CollectPlatformFees",
+        "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/collect_platform_fees.rs:21. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20833 of 200000 compute units",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+      ],
+      "vault_delta": 0,
+      "platform_delta": 0,
+      "state_before_sha256": "02d98b6019d32e139d6a2d17621838f993e6c08528ec45229c3de1cc51aecf85",
+      "state_after_sha256": "02d98b6019d32e139d6a2d17621838f993e6c08528ec45229c3de1cc51aecf85",
+      "tracked_unchanged_on_failure": true,
+      "fixture": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+      "synthetic_accrual": 4375,
+      "local_edits": {
+        "original_creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "local_fee_accrual": 4375,
+        "vault_rent_reserve_lamports": 2039280
+      }
+    }
+  ]
+}

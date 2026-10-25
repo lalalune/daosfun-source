@@ -1,0 +1,461 @@
+{
+  "environment": "isolated offline Surfpool, committed signed transactions",
+  "rpc": "http://127.0.0.1:19347",
+  "dao_program": "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM",
+  "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+  "deployed_source_snapshot": "analysis/daos_fun/dao_v1-execute_invoke-snapshot.json",
+  "source_snapshot_slot": 460727235,
+  "source_snapshot_sha256": "ea6226d82c3b8a857b5f19de6ec35ed2bb8d3dbc90820a5d865c6e543b85927a",
+  "funding_snapshot_sha256": "05e7012978ba3453c664b5f7089333faca183b2ad509a501cfac1f3f34e739ae",
+  "source_state_expiration_timestamp": 1765653914,
+  "surfpool_clock_unix_timestamp": 1792877741,
+  "account_provenance": {
+    "state_mint_wallet_cosigner_pda_funding_mint": "captured finalized account bytes from saved snapshots",
+    "state_admin": "replaced only in local State with PAYER disposable signer",
+    "cosign_state_signer": "replaced only in local CosignState with COSIGNER disposable signer",
+    "state_expiration": "captured past value, plus local setup-clock/future variants",
+    "closed_flag": "locally changed to 1 only for closed controls; no platform close key",
+    "wallet_funding_ata_admin_funding_ata": "canonical ATAs created by signed local ATA instructions",
+    "destination": "disposable locally funded account"
+  },
+  "signers": {
+    "admin_payer": "6W7YmZTKZc5jQezEPwNgua3FDDHjK3DQMWmTowr2Ey6o",
+    "cosigner": "D2RGSD4paRbDANmHeUC2L9Ljaon7vXy6HzaNeHnoQ7Tg",
+    "ordinary_redemption_caller": "GSWmWFSy27pcZDVH9NA52BFapq8DUwTyuzT8JsrhctL1"
+  },
+  "ata_creation": {
+    "wallet": {
+      "signature_offline": "3yYbmuvzWSMnbUPXKwFALXJ52k2TKYHDTJbvcv8cjZmxzW8kxNGCQq7Rhu83in8aXWsXBN1WERsndyPrYBEkR7WL",
+      "simulation_error": null,
+      "status_error": null,
+      "units": 13670,
+      "log_tail": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 38 of 89330 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 230 of 86866 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13520 of 99852 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success"
+      ]
+    },
+    "admin": {
+      "signature_offline": "67mkHDAGBek5qJXpNR61echbVRw1k2NjqHBXtoEtDGtEAg3FHpsN5uGTz6PrW3CPU2r3s8Vd3ixqv2Fihsme8eih",
+      "simulation_error": null,
+      "status_error": null,
+      "units": 15069,
+      "log_tail": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 38 of 87909 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 230 of 85447 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 14919 of 99853 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success"
+      ]
+    }
+  },
+  "execute_cases": [
+    {
+      "case": "future_open",
+      "expiry_relation_at_setup": "future",
+      "wallet_transfer_raw": 500001,
+      "before": {
+        "state_sha256": "06aa3ee852e69c4b3dbee7ff1e4fde4c5f398d129846559c9c3fcd7c3331e46d",
+        "state_flags": [
+          0,
+          0
+        ],
+        "expiration_timestamp": 1792881341,
+        "wallet_lamports": 49568993,
+        "destination_lamports": 1000000,
+        "wallet_wsol_raw": 0,
+        "admin_wsol_raw": 0
+      },
+      "execution": {
+        "signature_offline": "3MpiVN1JDfQzt2GXAE5wZUj8AFLXSYB9bHfSAvHXNSqN39wkpzWTwVoVdbjGwJTHqGSSGYsnfqvfob9LLKYQLd1u",
+        "simulation_error": null,
+        "status_error": null,
+        "units": 20083,
+        "log_tail": [
+          "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+          "Program ComputeBudget111111111111111111111111111111 success",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+          "Program log: Instruction: ExecuteInvoke",
+          "Program 11111111111111111111111111111111 invoke [2]",
+          "Program 11111111111111111111111111111111 success",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 19933 of 199861 compute units",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+        ]
+      },
+      "after": {
+        "state_sha256": "06aa3ee852e69c4b3dbee7ff1e4fde4c5f398d129846559c9c3fcd7c3331e46d",
+        "state_flags": [
+          0,
+          0
+        ],
+        "expiration_timestamp": 1792881341,
+        "wallet_lamports": 49068992,
+        "destination_lamports": 1500001,
+        "wallet_wsol_raw": 0,
+        "admin_wsol_raw": 0
+      }
+    },
+    {
+      "case": "recorded_expired_open",
+      "expiry_relation_at_setup": "past",
+      "wallet_transfer_raw": 500002,
+      "before": {
+        "state_sha256": "8d4244830d1bf1ddba22cdb10b954f6f4af55ed85fc9d3ddd6f91f61fc6c72ec",
+        "state_flags": [
+          0,
+          0
+        ],
+        "expiration_timestamp": 1765653914,
+        "wallet_lamports": 49568993,
+        "destination_lamports": 1000000,
+        "wallet_wsol_raw": 0,
+        "admin_wsol_raw": 0
+      },
+      "execution": {
+        "signature_offline": "5LQkLfYFK6xZ8dPVKVzTQKdBTBnvdzbkJMpxobVgJ88q3exQjq4YfVsCcRUjVW6UaHeaNKZdnt25QnS6wcouB37K",
+        "simulation_error": null,
+        "status_error": null,
+        "units": 20083,
+        "log_tail": [
+          "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+          "Program ComputeBudget111111111111111111111111111111 success",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+          "Program log: Instruction: ExecuteInvoke",
+          "Program 11111111111111111111111111111111 invoke [2]",
+          "Program 11111111111111111111111111111111 success",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 19933 of 199862 compute units",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+        ]
+      },
+      "after": {
+        "state_sha256": "8d4244830d1bf1ddba22cdb10b954f6f4af55ed85fc9d3ddd6f91f61fc6c72ec",
+        "state_flags": [
+          0,
+          0
+        ],
+        "expiration_timestamp": 1765653914,
+        "wallet_lamports": 49068991,
+        "destination_lamports": 1500002,
+        "wallet_wsol_raw": 0,
+        "admin_wsol_raw": 0
+      }
+    },
+    {
+      "case": "setup_clock_open",
+      "expiry_relation_at_setup": "setup_clock",
+      "wallet_transfer_raw": 500003,
+      "before": {
+        "state_sha256": "e91aff0f15b52e130a9dca23a6f7c0b09f693663680df7028c7336eeb8f54793",
+        "state_flags": [
+          0,
+          0
+        ],
+        "expiration_timestamp": 1792877741,
+        "wallet_lamports": 49568993,
+        "destination_lamports": 1000000,
+        "wallet_wsol_raw": 0,
+        "admin_wsol_raw": 0
+      },
+      "execution": {
+        "signature_offline": "5n6TivS5Y6EGAQKZsMi6ENR9RUXWV3DeRW7eoS5hRgoiEwqkWCGu3twzyb7yrTgPFFYLedNz878ZEABJa28UiXCR",
+        "simulation_error": null,
+        "status_error": null,
+        "units": 20083,
+        "log_tail": [
+          "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+          "Program ComputeBudget111111111111111111111111111111 success",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+          "Program log: Instruction: ExecuteInvoke",
+          "Program 11111111111111111111111111111111 invoke [2]",
+          "Program 11111111111111111111111111111111 success",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 19933 of 199863 compute units",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+        ]
+      },
+      "after": {
+        "state_sha256": "e91aff0f15b52e130a9dca23a6f7c0b09f693663680df7028c7336eeb8f54793",
+        "state_flags": [
+          0,
+          0
+        ],
+        "expiration_timestamp": 1792877741,
+        "wallet_lamports": 49068990,
+        "destination_lamports": 1500003,
+        "wallet_wsol_raw": 0,
+        "admin_wsol_raw": 0
+      }
+    },
+    {
+      "case": "future_closed",
+      "expiry_relation_at_setup": "future",
+      "wallet_transfer_raw": 500004,
+      "before": {
+        "state_sha256": "b785531d118fec6e1a112c0e054c819200c0f2c5d5ed5baf30860dd222fb039c",
+        "state_flags": [
+          1,
+          0
+        ],
+        "expiration_timestamp": 1792881341,
+        "wallet_lamports": 49568993,
+        "destination_lamports": 1000000,
+        "wallet_wsol_raw": 0,
+        "admin_wsol_raw": 0
+      },
+      "execution": {
+        "signature_offline": "5jTXWCfWQnKpdj3qcM7W6Ba93MBJvCDkhC7gMJpsZC1JCc1WDEaDMX26eC3UqDRwKoN6gEmkFhgifRSfoPoijN46",
+        "simulation_error": {
+          "InstructionError": [
+            1,
+            {
+              "Custom": 6013
+            }
+          ]
+        },
+        "status_error": {
+          "InstructionError": [
+            1,
+            {
+              "Custom": 6013
+            }
+          ]
+        },
+        "units": 19142,
+        "log_tail": [
+          "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+          "Program ComputeBudget111111111111111111111111111111 success",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+          "Program log: Instruction: ExecuteInvoke",
+          "Program log: AnchorError thrown in programs/dao-v1/src/instructions/execute_invoke.rs:11. Error Code: Execute_FundClosed. Error Number: 6013. Error Message: Fund is closed.",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 18992 of 199864 compute units",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x177d"
+        ]
+      },
+      "after": {
+        "state_sha256": "b785531d118fec6e1a112c0e054c819200c0f2c5d5ed5baf30860dd222fb039c",
+        "state_flags": [
+          1,
+          0
+        ],
+        "expiration_timestamp": 1792881341,
+        "wallet_lamports": 49568993,
+        "destination_lamports": 1000000,
+        "wallet_wsol_raw": 0,
+        "admin_wsol_raw": 0
+      }
+    }
+  ],
+  "unprivileged_execute_control": {
+    "before": {
+      "state_sha256": "8d4244830d1bf1ddba22cdb10b954f6f4af55ed85fc9d3ddd6f91f61fc6c72ec",
+      "state_flags": [
+        0,
+        0
+      ],
+      "expiration_timestamp": 1765653914,
+      "wallet_lamports": 49568993,
+      "destination_lamports": 1000000,
+      "wallet_wsol_raw": 0,
+      "admin_wsol_raw": 0
+    },
+    "attempt": {
+      "signature_offline": "2VUwRzALWELEGtFnn8kJGnL2o8uVQUuRBd5za3tY7WKe7udi6U97A8zcZTcusr558iDtQgr6QFvFMbbJs4Pyo9ay",
+      "simulation_error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6011
+          }
+        ]
+      },
+      "status_error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6011
+          }
+        ]
+      },
+      "units": 19157,
+      "log_tail": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+        "Program log: Instruction: ExecuteInvoke",
+        "Program log: AnchorError thrown in programs/dao-v1/src/instructions/execute_invoke.rs:16. Error Code: Unauthorized. Error Number: 6011. Error Message: Unauthorized.",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 19007 of 199865 compute units",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x177b"
+      ]
+    },
+    "after": {
+      "state_sha256": "8d4244830d1bf1ddba22cdb10b954f6f4af55ed85fc9d3ddd6f91f61fc6c72ec",
+      "state_flags": [
+        0,
+        0
+      ],
+      "expiration_timestamp": 1765653914,
+      "wallet_lamports": 49568993,
+      "destination_lamports": 1000000,
+      "wallet_wsol_raw": 0,
+      "admin_wsol_raw": 0
+    }
+  },
+  "missing_cosigner_signature_control": {
+    "simulation_error": "SignatureFailure",
+    "log_tail": [],
+    "ledger_unchanged": true
+  },
+  "holder_open_after_expiry": {
+    "before": {
+      "state_sha256": "8d4244830d1bf1ddba22cdb10b954f6f4af55ed85fc9d3ddd6f91f61fc6c72ec",
+      "state_flags": [
+        0,
+        0
+      ],
+      "expiration_timestamp": 1765653914,
+      "wallet_lamports": 49568993,
+      "destination_lamports": 1000000,
+      "wallet_wsol_raw": 0,
+      "admin_wsol_raw": 0
+    },
+    "close_fund_attempt": {
+      "signature_offline": "35XALdcp9K4a1Vk3jK3dgKG9d8m5qrMQTQ3kNVLRJUYVhxJjJhm93FZfEyn4Q9hTyCvxhfSZzG1nmVsZAqsUYmjD",
+      "simulation_error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6011
+          }
+        ]
+      },
+      "status_error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6011
+          }
+        ]
+      },
+      "units": 7338,
+      "log_tail": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+        "Program log: Instruction: CloseFund",
+        "Program log: AnchorError caused by account: admin. Error Code: Unauthorized. Error Number: 6011. Error Message: Unauthorized.",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 7188 of 239851 compute units",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x177b"
+      ]
+    },
+    "after_close_attempt": {
+      "state_sha256": "8d4244830d1bf1ddba22cdb10b954f6f4af55ed85fc9d3ddd6f91f61fc6c72ec",
+      "state_flags": [
+        0,
+        0
+      ],
+      "expiration_timestamp": 1765653914,
+      "wallet_lamports": 49568993,
+      "destination_lamports": 1000000,
+      "wallet_wsol_raw": 0,
+      "admin_wsol_raw": 0
+    },
+    "init_redemption_attempt": {
+      "signature_offline": "uQy9q7Xg3X9rnNw8FSwWyt98suZbjBGMjPFLXobigmpKmpFwMmMTKCi1G1Tphsj5wtASUAJFnFWxmLiYRCwPfeb",
+      "simulation_error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6007
+          }
+        ]
+      },
+      "status_error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6007
+          }
+        ]
+      },
+      "units": 25600,
+      "log_tail": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+        "Program log: Instruction: InitRedemption",
+        "Program log: AnchorError thrown in programs/dao-v1/src/instructions/init_redemption.rs:20. Error Code: Redeem_FundNotExpired. Error Number: 6007. Error Message: Fund is not expired.",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 25450 of 229851 compute units",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x1777"
+      ]
+    },
+    "after_redemption_attempt": {
+      "state_sha256": "8d4244830d1bf1ddba22cdb10b954f6f4af55ed85fc9d3ddd6f91f61fc6c72ec",
+      "state_flags": [
+        0,
+        0
+      ],
+      "expiration_timestamp": 1765653914,
+      "wallet_lamports": 49568993,
+      "destination_lamports": 1000000,
+      "wallet_wsol_raw": 0,
+      "admin_wsol_raw": 0
+    }
+  },
+  "locally_closed_redemption": {
+    "before": {
+      "state_sha256": "201d830deca4db209ff7356e4d5b6e9c3bc67de4a23155935585e3f595e953f8",
+      "state_flags": [
+        1,
+        0
+      ],
+      "expiration_timestamp": 1765653914,
+      "wallet_lamports": 49568993,
+      "destination_lamports": 1000000,
+      "wallet_wsol_raw": 0,
+      "admin_wsol_raw": 0
+    },
+    "init_redemption": {
+      "signature_offline": "2mCfShFjgX4xdXigPy1feV1Mue927shCvFQ1ZqVHrUdRMGjExQWMjyLGahLUuoH7cX7LC8GvEuaLpUFUp7AcVviX",
+      "simulation_error": null,
+      "status_error": null,
+      "units": 24645,
+      "log_tail": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+        "Program log: Instruction: InitRedemption",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 24495 of 229852 compute units",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+      ]
+    },
+    "after": {
+      "state_sha256": "055d67ecbb59fe0b30500cd7aecc7cec3ff8ac534f27f855e8fd333b472d83d3",
+      "state_flags": [
+        1,
+        1
+      ],
+      "expiration_timestamp": 1765653914,
+      "wallet_lamports": 49568993,
+      "destination_lamports": 1000000,
+      "wallet_wsol_raw": 0,
+      "admin_wsol_raw": 0
+    }
+  },
+  "assessment": "On the pinned current ELF, a validly signed local admin+cosigner wallet transfer commits after the captured expiration while the fund is open. The ordinary signed caller cannot close the fund or start redemption; the same caller starts redemption once a local closed flag is provided. This supports a missing holder-enforceable expiry gate, not an unprivileged drain or proof that a current live fund is locked. Real execution still requires the actual admin/delegate and platform cosigner; their keys and off-chain policy were not tested.",
+  "limitations": "Original State/cosigner/wallet bytes came from separate finalized captures. The local signer substitutions, ATAs, destination, exact-clock/future timestamps, and closed flag are fixtures. No live transaction, real user funds, or real platform close/cosigner signature."
+}

@@ -1,0 +1,248 @@
+{
+  "captured_at": "2026-10-24T21:03:35.583087+00:00",
+  "endpoint": "https://api.mainnet-beta.solana.com",
+  "commitment": "finalized",
+  "used_methods": [
+    "getAccountInfo",
+    "getMinimumBalanceForRentExemption",
+    "getLatestBlockhash",
+    "getMultipleAccounts",
+    "simulateTransaction"
+  ],
+  "no_broadcast": true,
+  "signature": "all zero placeholder",
+  "sig_verify": false,
+  "payer_public_address": "3uqXZ8csdfB91DfEPXCvPNrusBYC5ZZHm8kKyjB6ULhb",
+  "payer_pre_lamports": 4208062,
+  "simulated_wallet_rent_lamports": 650240,
+  "payer_pre_context_slot": 460996034,
+  "simulated_prerequisites": [
+    "rent-exempt System transfer from public payer to Y wallet PDA",
+    "Associated Token Program CreateIdempotent for Y wallet PDA + WSOL mint, rent paid by public payer inside simulation"
+  ],
+  "not_simulated_prerequisite": "Y-mint/X-pool base-vault PDA remains absent",
+  "baseline_receipt": "analysis/daos_fun/bm1-mainnet-readonly-20261024.json",
+  "baseline_receipt_sha256": "980e639f91fedb90ae2de7b4a1598f001fa5790ceacd8e6d1318178936432ff9",
+  "program_versions": {
+    "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM": {
+      "programdata": "DorEUwsw12hyhPGW95LrFMZTsAVi9pnjERcjQap3p7G2",
+      "last_deploy_slot": 370107442,
+      "upgrade_authority": "8CaTuoD1r6CzR1mu6ueTDvjNpLj7sq5nWafDLymkQ4jH",
+      "elf_bytes": 1120784,
+      "elf_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "pinned_manifest_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "pinned_file_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "matches_pinned_version": true
+    },
+    "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN": {
+      "programdata": "HUfnSSiJxgspQm6C1rkqv6L3XgVtn7AESApgCQpCXCYh",
+      "last_deploy_slot": 457502600,
+      "upgrade_authority": "JADaUV8kvDpDbJr55wxXJHVaBS3VCj8thZZHjfeuCVLd",
+      "elf_bytes": 2326577,
+      "elf_sha256": "e2bfc853c1a1778dd8ee40ea9a0f3edf5587442360c57c685e7e3024ad0cad47",
+      "pinned_manifest_sha256": "e2bfc853c1a1778dd8ee40ea9a0f3edf5587442360c57c685e7e3024ad0cad47",
+      "pinned_file_sha256": "e2bfc853c1a1778dd8ee40ea9a0f3edf5587442360c57c685e7e3024ad0cad47",
+      "matches_pinned_version": true
+    }
+  },
+  "address_roles": {
+    "x_pool": "2TCTNeQubYZUc9EftCSmvGYkMQiiTVpx9Z9EtNseJBMM",
+    "y_state": "4xY38DpyS5nKYyTcAbFEjknKeLneJdVb49mMcRQeik5e",
+    "x_quote_vault": "DcrswysVP6b6AfwZCFZeJU2e3kG5rK6Tg14XANNy1zzd",
+    "y_wallet": "XBw49PriCAVx9pC44exu3XKEeUFWNDp993sjLqXu3UU",
+    "y_wallet_funding_ata": "BHFeKf3gdqFWkKTh7nEVDdxDZY4XMVXBFXmLP1FqpMuJ",
+    "cross_pool_base_vault": "64oBEXcecH5PykgUaixctYYQcEoVuJefrdKANmhpQQhs"
+  },
+  "actual_pre_snapshot": {
+    "context_slot": 460996036,
+    "accounts": {
+      "2TCTNeQubYZUc9EftCSmvGYkMQiiTVpx9Z9EtNseJBMM": {
+        "exists": true,
+        "owner": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+        "lamports": 3841920,
+        "raw_length": 424,
+        "raw_sha256": "d43dba1d2ac56ddd3be5efa301257dcb739cc16d3a0e6e8ae5ce849497519d67",
+        "raw_base64": "1eAF0WJFd1wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAn81ARdqp1HyC1l4bYHB/sk6kX+s+nNOYSuYyqCoBgYjY+fYl8DAtPF/vEAjhCiUrwTQX7e88nhws5tRev3eak+ciRx6tm+K+rm0ovSmzMHpIDtqx/4ce99ngsMxzKfSSeEX6D4JJDLZtq933WlczsA7LonKUDTrt78zL/nB/u6O7e/gZOpbqwzQ1iYhBSWbYaC4mPjn0z5hO+p25L9uBclFKZJsDi8YC4ea3PhEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmcg40AQAAADe4ot7GpSUAAAAAAAAAAABIf7NoAAAAAAEBAAEDAAAAAAAAAAAAAADf3XdBAAAAAAAAAAAAAAAAZnIONAEAAADsobNoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+      },
+      "4xY38DpyS5nKYyTcAbFEjknKeLneJdVb49mMcRQeik5e": {
+        "exists": true,
+        "owner": "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM",
+        "lamports": 2672640,
+        "raw_length": 256,
+        "raw_sha256": "5e05affde30e8cfb70023354605df4b8b42be6c4c4176650a65f183305c369bf",
+        "raw_base64": "2JJrXmhLtrExouJlnPJFv62PyutScgWtpDEiVErfzud3zFSt4r3b8qyUh7/+iqsnsohV4+YXuPjglaNWaJ/liwjzoNqn+ZqyBpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEAAAAAAAAAAAAADkF7ewAAAAAAAAAAANBRVP4al1pjVjQuId5+yAgthSZbiHl1DkP6vpXX5TIsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+      },
+      "DcrswysVP6b6AfwZCFZeJU2e3kG5rK6Tg14XANNy1zzd": {
+        "exists": true,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "lamports": 11623715491,
+        "raw_length": 165,
+        "raw_sha256": "60f34cfe3c61ea64cf01f689400fac435c7f702ce0cb25cdf051ed763622996f",
+        "raw_base64": "BpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAHaY2gfcoa8yAZxniwrUKIBVyQ7/JZosRUgvFOEPtzbCLO0tLQCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAADwHR8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      },
+      "BHFeKf3gdqFWkKTh7nEVDdxDZY4XMVXBFXmLP1FqpMuJ": {
+        "exists": false
+      },
+      "XBw49PriCAVx9pC44exu3XKEeUFWNDp993sjLqXu3UU": {
+        "exists": false
+      },
+      "64oBEXcecH5PykgUaixctYYQcEoVuJefrdKANmhpQQhs": {
+        "exists": false
+      }
+    }
+  },
+  "actual_pre_fields": {
+    "x_pool_fee_status": 0,
+    "y_state_curve_initialized": 0,
+    "y_state_funding_goal": 0,
+    "x_quote_vault_raw_amount": 11621676211,
+    "y_wallet_ata_raw_amount": null
+  },
+  "unsigned_atomic_simulation": {
+    "context_slot": 460996036,
+    "err": null,
+    "logs": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+      "Program log: CreateIdempotent",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 395922 compute units",
+      "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program 11111111111111111111111111111111 invoke [2]",
+      "Program 11111111111111111111111111111111 success",
+      "Program log: Initialize the associated token account",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 390833 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 229 of 388371 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 15012 of 402850 compute units",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+      "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+      "Program log: Instruction: FinalizeMeteoraBonding",
+      "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN invoke [2]",
+      "Program log: Instruction: WithdrawMigrationFee",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 122 of 344286 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN invoke [3]",
+      "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN consumed 646 of 342278 compute units",
+      "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN success",
+      "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN consumed 11585 of 352697 compute units",
+      "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN success",
+      "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 48268 of 387838 compute units",
+      "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+    ],
+    "units_consumed": 63430,
+    "post_account_snapshot": {
+      "context_slot": 460996036,
+      "accounts": {
+        "2TCTNeQubYZUc9EftCSmvGYkMQiiTVpx9Z9EtNseJBMM": {
+          "exists": true,
+          "owner": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+          "lamports": 3841920,
+          "raw_length": 424,
+          "raw_sha256": "f1537b170f39a4359126dfaff8a60ed16fa816102a8645a91dc4a30a9ec68da0",
+          "raw_base64": "1eAF0WJFd1wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAn81ARdqp1HyC1l4bYHB/sk6kX+s+nNOYSuYyqCoBgYjY+fYl8DAtPF/vEAjhCiUrwTQX7e88nhws5tRev3eak+ciRx6tm+K+rm0ovSmzMHpIDtqx/4ce99ngsMxzKfSSeEX6D4JJDLZtq933WlczsA7LonKUDTrt78zL/nB/u6O7e/gZOpbqwzQ1iYhBSWbYaC4mPjn0z5hO+p25L9uBclFKZJsDi8YC4ea3PhEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmcg40AQAAADe4ot7GpSUAAAAAAAAAAABIf7NoAAAAAAEBAAEDAAAEAAAAAAAAAADf3XdBAAAAAAAAAAAAAAAAZnIONAEAAADsobNoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+        },
+        "4xY38DpyS5nKYyTcAbFEjknKeLneJdVb49mMcRQeik5e": {
+          "exists": true,
+          "owner": "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM",
+          "lamports": 2672640,
+          "raw_length": 256,
+          "raw_sha256": "06c5448128f2d3aa316c558ebc1f866d265a4ca740c215ed6dd009b9b1ee470b",
+          "raw_base64": "2JJrXmhLtrExouJlnPJFv62PyutScgWtpDEiVErfzud3zFSt4r3b8qyUh7/+iqsnsohV4+YXuPjglaNWaJ/liwjzoNqn+ZqyBpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEAFOhdDwAAAAAADkF7ewAAAAAAAAAAANBRVP4al1pjVjQuId5+yAgthSZbiHl1DkP6vpXX5TIsAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+        },
+        "DcrswysVP6b6AfwZCFZeJU2e3kG5rK6Tg14XANNy1zzd": {
+          "exists": true,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 11623715491,
+          "raw_length": 165,
+          "raw_sha256": "60f34cfe3c61ea64cf01f689400fac435c7f702ce0cb25cdf051ed763622996f",
+          "raw_base64": "BpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAHaY2gfcoa8yAZxniwrUKIBVyQ7/JZosRUgvFOEPtzbCLO0tLQCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAADwHR8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        },
+        "BHFeKf3gdqFWkKTh7nEVDdxDZY4XMVXBFXmLP1FqpMuJ": {
+          "exists": true,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 1488440,
+          "raw_length": 165,
+          "raw_sha256": "3d988722b5407a5b8f0649da549ab1e8bb09a06d3e2012dd0943e7e4423fbb05",
+          "raw_base64": "BpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEHu8j7nYi6nRL5daHgnYg8+Usahu4e/Krda8QtTjQMQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAA4thYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        },
+        "XBw49PriCAVx9pC44exu3XKEeUFWNDp993sjLqXu3UU": {
+          "exists": true,
+          "owner": "11111111111111111111111111111111",
+          "lamports": 650240,
+          "raw_length": 0,
+          "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "raw_base64": ""
+        },
+        "64oBEXcecH5PykgUaixctYYQcEoVuJefrdKANmhpQQhs": {
+          "exists": true,
+          "owner": "11111111111111111111111111111111",
+          "lamports": 0,
+          "raw_length": 0,
+          "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "raw_base64": ""
+        }
+      }
+    },
+    "simulated_post_fields": {
+      "x_pool_fee_status": 4,
+      "y_state_curve_initialized": 1,
+      "y_state_funding_goal": 66000000000,
+      "x_quote_vault_raw_amount": 11621676211,
+      "y_wallet_ata_raw_amount": 0
+    }
+  },
+  "actual_post_read_snapshot": {
+    "context_slot": 460996037,
+    "accounts": {
+      "2TCTNeQubYZUc9EftCSmvGYkMQiiTVpx9Z9EtNseJBMM": {
+        "exists": true,
+        "owner": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+        "lamports": 3841920,
+        "raw_length": 424,
+        "raw_sha256": "d43dba1d2ac56ddd3be5efa301257dcb739cc16d3a0e6e8ae5ce849497519d67",
+        "raw_base64": "1eAF0WJFd1wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAn81ARdqp1HyC1l4bYHB/sk6kX+s+nNOYSuYyqCoBgYjY+fYl8DAtPF/vEAjhCiUrwTQX7e88nhws5tRev3eak+ciRx6tm+K+rm0ovSmzMHpIDtqx/4ce99ngsMxzKfSSeEX6D4JJDLZtq933WlczsA7LonKUDTrt78zL/nB/u6O7e/gZOpbqwzQ1iYhBSWbYaC4mPjn0z5hO+p25L9uBclFKZJsDi8YC4ea3PhEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmcg40AQAAADe4ot7GpSUAAAAAAAAAAABIf7NoAAAAAAEBAAEDAAAAAAAAAAAAAADf3XdBAAAAAAAAAAAAAAAAZnIONAEAAADsobNoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+      },
+      "4xY38DpyS5nKYyTcAbFEjknKeLneJdVb49mMcRQeik5e": {
+        "exists": true,
+        "owner": "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM",
+        "lamports": 2672640,
+        "raw_length": 256,
+        "raw_sha256": "5e05affde30e8cfb70023354605df4b8b42be6c4c4176650a65f183305c369bf",
+        "raw_base64": "2JJrXmhLtrExouJlnPJFv62PyutScgWtpDEiVErfzud3zFSt4r3b8qyUh7/+iqsnsohV4+YXuPjglaNWaJ/liwjzoNqn+ZqyBpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEAAAAAAAAAAAAADkF7ewAAAAAAAAAAANBRVP4al1pjVjQuId5+yAgthSZbiHl1DkP6vpXX5TIsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+      },
+      "DcrswysVP6b6AfwZCFZeJU2e3kG5rK6Tg14XANNy1zzd": {
+        "exists": true,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "lamports": 11623715491,
+        "raw_length": 165,
+        "raw_sha256": "60f34cfe3c61ea64cf01f689400fac435c7f702ce0cb25cdf051ed763622996f",
+        "raw_base64": "BpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAHaY2gfcoa8yAZxniwrUKIBVyQ7/JZosRUgvFOEPtzbCLO0tLQCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAADwHR8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      },
+      "BHFeKf3gdqFWkKTh7nEVDdxDZY4XMVXBFXmLP1FqpMuJ": {
+        "exists": false
+      },
+      "XBw49PriCAVx9pC44exu3XKEeUFWNDp993sjLqXu3UU": {
+        "exists": false
+      },
+      "64oBEXcecH5PykgUaixctYYQcEoVuJefrdKANmhpQQhs": {
+        "exists": false
+      }
+    }
+  },
+  "actual_post_read_fields": {
+    "x_pool_fee_status": 0,
+    "y_state_curve_initialized": 0,
+    "y_state_funding_goal": 0,
+    "x_quote_vault_raw_amount": 11621676211,
+    "y_wallet_ata_raw_amount": null
+  },
+  "pre_post_state_fields_unchanged": true,
+  "qualification": "Unsigned, signature-verification-disabled, no-broadcast public RPC simulation. The payer is a public historical address whose key we do not hold. Simulated account creation and lamport transfer do not commit. Mainnet account reads occur at separate finalized context slots. A simulation result does not prove a valid signature, owner consent, or live exploit transaction. The quoted fee configuration remains zero."
+}

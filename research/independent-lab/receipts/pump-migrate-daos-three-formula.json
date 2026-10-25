@@ -1,0 +1,61 @@
+{
+  "formula": "funding_to_virtual = floor(F/2); token_to_virtual = floor(VT * funding_to_virtual / (F + VF))",
+  "field_layout": "Later Pump CurveV2 F at offset80, VT at offset96, XYK VF at offset197; source-era 203-byte PumpCurve VT at offset88 and VF at offset96.",
+  "qualification": "Exact integer fit to one inference and two held-out historical XYK migrations. Transaction metadata gives exact token balances; F/VT/VF are read from later surviving CurveV2 accounts inverse-mapped to source-era layout, not archival source bytes. Other XYK states, non-XYK variants, and overflow/error branches remain unproved.",
+  "rows": [
+    {
+      "fixture": "inference",
+      "pump_curve": "4PQoSMqPRxYs1ocSDVVw9T4Ytz8hmMpxPsnuM5UNvixF",
+      "source_signature": "2zHfaFZA6KPnqWJjLGWTX5aquYJ7veiYLqtXihLsdRUziKbAc9YCBxK3486BhPPBuWhc4TU5AEKcNbsLvz4Zxphb",
+      "source_slot": 323143972,
+      "pump_funding_amount_u64": 276000000198,
+      "pump_virtual_token_amount_u64": 800000000000000,
+      "pump_xyk_virtual_funding_amount_u64": 69000000000,
+      "predicted_funding_to_virtual_u64": 138000000099,
+      "predicted_token_to_virtual_u64": 320000000045913,
+      "historical_pump_token_pre_u64": 800000000000000,
+      "historical_pump_token_post_u64": 479999999954087,
+      "historical_pump_funding_pre_u64": 286619640891,
+      "historical_pump_funding_post_u64": 148619640792,
+      "historical_virtual_token_post_u64": 320000000045913,
+      "historical_virtual_funding_post_u64": 138000000099,
+      "matches": true
+    },
+    {
+      "fixture": "held_out",
+      "pump_curve": "3HVjXbE9jxVoLmkMJLPpvnmdzMddNNdFVpHtZL21JvUW",
+      "source_signature": "4P6fYdzyxH9PKxnDogCyj7zFDWwLAVdDpgrXBtjmVNbZGZmqXW7kBQY6iMjTqc9ymNbkTm4ufGi7g9sAjkAwFm4s",
+      "source_slot": 323770299,
+      "pump_funding_amount_u64": 93750000003,
+      "pump_virtual_token_amount_u64": 1600000000000000,
+      "pump_xyk_virtual_funding_amount_u64": 375000000000,
+      "predicted_funding_to_virtual_u64": 46875000001,
+      "predicted_token_to_virtual_u64": 160000000002389,
+      "historical_pump_token_pre_u64": 1600000000000000,
+      "historical_pump_token_post_u64": 1439999999997611,
+      "historical_pump_funding_pre_u64": 94957709821,
+      "historical_pump_funding_post_u64": 48082709820,
+      "historical_virtual_token_post_u64": 160000000002389,
+      "historical_virtual_funding_post_u64": 46875000001,
+      "matches": true
+    },
+    {
+      "fixture": "held_out",
+      "pump_curve": "rK6rmS4Dw3JSSt9PDXLsoD1MTy4nGdirwtU7YLWxnff",
+      "source_signature": "1294dwbHih1f8CWPwuVQfC3tvoNTiVgypbPddiZivoKPPQhSqgqCBYrjuqCBjYALP9GWjMmndJPeDaFC8miAQXsy",
+      "source_slot": 323789332,
+      "pump_funding_amount_u64": 937500000047,
+      "pump_virtual_token_amount_u64": 1600000000000000,
+      "pump_xyk_virtual_funding_amount_u64": 3750000000000,
+      "predicted_funding_to_virtual_u64": 468750000023,
+      "predicted_token_to_virtual_u64": 160000000006246,
+      "historical_pump_token_pre_u64": 1600000000000000,
+      "historical_pump_token_post_u64": 1439999999993754,
+      "historical_pump_funding_pre_u64": 953879013186,
+      "historical_pump_funding_post_u64": 485129013163,
+      "historical_virtual_token_post_u64": 160000000006246,
+      "historical_virtual_funding_post_u64": 468750000023,
+      "matches": true
+    }
+  ]
+}

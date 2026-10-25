@@ -1,0 +1,1529 @@
+{
+  "source_signature": "WUNXtMZZS4hhqkCY6oG9upfy8QXrrFbXcZyC3aFRr5nN5LHodgSbLtrejVTmtGphwFQXixJikx8SHGzpsGe6MyC",
+  "source_slot": 331875236,
+  "current_binary_sha256": {
+    "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS": "816bc6d42ffea7d63bd7b1287589413aef04d8f7dceb34dd274a0f7872d40aa2",
+    "CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B": "2238aa5b96fc29e7693174b20d75063df2e1dfba28c26c5346338c23732e2fb9"
+  },
+  "disposable_local_keys": {
+    "payer": "ApbE3bMMLhJdzviCJpGAQoDGnbBeAZpyvevVDtSnRiRm",
+    "mint": "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4",
+    "outsider": "9Hh9h1ATNtRdkNUT3GBwau2RDn9tyjVf1LDCToXDGhcM",
+    "trader": "5n7YWeynT7waMBF4FCALBsBdTJnPUWEqN3PhXb3a58et"
+  },
+  "derived_addresses": {
+    "state": "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA",
+    "curve": "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5",
+    "dao_vault": "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY",
+    "state_funding_vault": "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT",
+    "pump_token_vault": "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz",
+    "pump_funding_vault": "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R",
+    "trader_token_vault": "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT",
+    "trader_funding_vault": "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn"
+  },
+  "initial": {
+    "ApbE3bMMLhJdzviCJpGAQoDGnbBeAZpyvevVDtSnRiRm": {
+      "lamports": 20000000000,
+      "owner": "11111111111111111111111111111111",
+      "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "9Hh9h1ATNtRdkNUT3GBwau2RDn9tyjVf1LDCToXDGhcM": {
+      "lamports": 1000000000,
+      "owner": "11111111111111111111111111111111",
+      "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "5n7YWeynT7waMBF4FCALBsBdTJnPUWEqN3PhXb3a58et": {
+      "lamports": 2000000000,
+      "owner": "11111111111111111111111111111111",
+      "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": null,
+    "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": null,
+    "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": null,
+    "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": null,
+    "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": null,
+    "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": null,
+    "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": null,
+    "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": null,
+    "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+  },
+  "founder_init": {
+    "step": "founder_init",
+    "signature": "4n3VX3ffGQ9F5dqsAiad3xBuPGL7uJ3jP1hJb3o1heQntsWAKzDSPb7xxTLcB6Jwbe1m3dUv5DB5JPHMHzup8ZHX",
+    "signed_transaction_base64": "Arzk8xZ8nRr1AmBQ1HFyj59JLr6MgkFXNe5Bx3qVxStmn/QKOt13b25D+//lDyjDNaJxOA+UYmuUYbqoTPhcygakJgUtCAiCcJPBBSX09aabkYbfuTWcn3Zo4a8hTeqkJaDUnA+olN8COXtppV+qui+aR4b0j03+ApLGbVD+aJgFAgAGCpHqLbgmADkEm9OxbbD0J1WGHn0jj0x40GTZoiAaLhNQgFRA7kgFH8gupk2QWsq/8NIXgPf8q6aQDg5BOHsdSlc0Lgz/ADNAds5Qj4FSHBUTrdWeDhcHAwGX9nCAQqB5tfL7og1dW4Z6IKTRju7On4U7ImkY+qDP8DBJPIwbySDHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADBkZv5SEXMv/srbpyw5vnvIzlu8X3EmssQ5s6QAAAAAabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABBt324e51j94YQl285GzN2rYa/E2DuQ0n/r35KNihi/yMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4Wbr1aoeWCtOKZHerT4EKTig/dQ3e9TSJextxcMazRojfBoaFnTjICpchSBhBaRfgv4/KFX5GT5jM/Q/6nfhH3BEDBQAFAmCuCgAFAAkDAQAAAAAAAAAJCQAAAgEGAwcIBIkB3DvP7Gz6L2QJAAAAYmFvc3dvcmxkBAAAAEJBT1NQAAAAaHR0cHM6Ly9pcGZzLmlvL2lwZnMvYmFma3JlaWZwZnNzNjVybW9jYmd3Y3E0Z3ltNmtrdmF6bHpyYXl3ZjZibjZhYWloendmYm5ueGFsanUANOIwBAAAAAAAjUn9GgcAAAjW6CkAAAA=",
+    "signature_verified": true,
+    "simulation_error": null,
+    "committed_error": null,
+    "compute_units": 63476,
+    "log_tail": [
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1958 of 656941 compute units",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 16930 of 671609 compute units",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+      "Program 11111111111111111111111111111111 invoke [2]",
+      "Program 11111111111111111111111111111111 success",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+      "Program log: TokenMetadataInstruction: Initialize",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3479 of 645803 compute units",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+      "Program log: Instruction: MintTo",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1696 of 639952 compute units",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 63176 of 699700 compute units",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+    ],
+    "before": {
+      "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": null,
+      "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": null,
+      "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": null,
+      "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": null,
+      "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": null,
+      "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": null,
+      "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": null,
+      "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": null,
+      "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+    },
+    "after": {
+      "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+        "lamports": 3751440,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+      },
+      "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+        "lamports": 1969680,
+        "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "data_sha256": "9172e06c915f691186e2e3c656c3510e374c271c76b66eca4275f33a30a318b7"
+      },
+      "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": null,
+      "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "e9405d75db2a60d720a063d100412d292e4bdf69a2047522a0a256e6ec57ecbd"
+      },
+      "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": null,
+      "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": null,
+      "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": null,
+      "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": null,
+      "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+    }
+  },
+  "ata_setup": [
+    {
+      "step": "state_token_ata_idempotent",
+      "signature": "3NDqP1aYJTo2Eto8AnsedMGnoG65fwLoLHYCpHyWdrwnG9bvFm6ap5LxLgvDqhNwuVKbQMYZCdZk44R7ynEU83WD",
+      "signed_transaction_base64": "AXZVnKTx5W1/ds06tcOjo4gDnCjFS0WSvsGqEGunUVxwKlvtXvGxsL2Y2jWkJy5WSjwDrIXuXGSb43OAHSG8wQ4BAAYIkeotuCYAOQSb07FtsPQnVYYefSOPTHjQZNmiIBouE1Dy+6INXVuGeiCk0Y7uzp+FOyJpGPqgz/AwSTyMG8kgxwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwZGb+UhFzL/7K26csOb57yM5bvF9xJrLEObOkAAAAAG3fbh7nWP3hhCXbzkbM3athr8TYO5DSf+vfko2KGL/DQuDP8AM0B2zlCPgVIcFROt1Z4OFwcDAZf2cIBCoHm1gFRA7kgFH8gupk2QWsq/8NIXgPf8q6aQDg5BOHsdSleMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4WQaGhZ04yAqXIUgYQWkX4L+PyhV+Rk+YzP0P+p34R9wRAwMABQJgrgoAAwAJAwIAAAAAAAAABwYAAQUGAgQBAQ==",
+      "signature_verified": true,
+      "simulation_error": null,
+      "committed_error": null,
+      "compute_units": 4756,
+      "log_tail": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4456 of 699700 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success"
+      ],
+      "before": {
+        "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+          "lamports": 3751440,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+        },
+        "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+          "lamports": 1969680,
+          "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+          "data_sha256": "9172e06c915f691186e2e3c656c3510e374c271c76b66eca4275f33a30a318b7"
+        },
+        "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": null,
+        "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "e9405d75db2a60d720a063d100412d292e4bdf69a2047522a0a256e6ec57ecbd"
+        },
+        "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": null,
+        "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": null,
+        "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": null,
+        "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": null,
+        "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+      },
+      "after": {
+        "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+          "lamports": 3751440,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+        },
+        "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+          "lamports": 1969680,
+          "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+          "data_sha256": "9172e06c915f691186e2e3c656c3510e374c271c76b66eca4275f33a30a318b7"
+        },
+        "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": null,
+        "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "e9405d75db2a60d720a063d100412d292e4bdf69a2047522a0a256e6ec57ecbd"
+        },
+        "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": null,
+        "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": null,
+        "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": null,
+        "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": null,
+        "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+      }
+    },
+    {
+      "step": "curve_token_ata",
+      "signature": "jUiuTFpNimc6XiiWuSuWZHPL8Bpqzhg1X4SceYqrHQVHEPtEyXSzhfQsRGfL5ytgGY6nUYUsn57c8sUBvr35rGR",
+      "signed_transaction_base64": "ASShou09F1UEFvIyW4lZ04UxpRQfRU8/84UImHdSi7XrEv9kwrpmlMdV4F0YCYsmdclinNpTZe0QSJm/HA4ohQIBAAYIkeotuCYAOQSb07FtsPQnVYYefSOPTHjQZNmiIBouE1BzP1obeZifPPh+Jn+cvqejKT6SSXNOsCIAun2KkM4WCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwZGb+UhFzL/7K26csOb57yM5bvF9xJrLEObOkAAAAAG3fbh7nWP3hhCXbzkbM3athr8TYO5DSf+vfko2KGL/IBUQO5IBR/ILqZNkFrKv/DSF4D3/KumkA4OQTh7HUpXjJclj04kifG7PRApFI4NgwtaE5na/xCEBI572Nvp+FnIJIazpIuz/q8vVF7k3WlMJBschsSpL9F8aIOYAR68TAaGhZ04yAqXIUgYQWkX4L+PyhV+Rk+YzP0P+p34R9wRAwMABQJgrgoAAwAJAwMAAAAAAAAABgYAAQcFAgQBAQ==",
+      "signature_verified": true,
+      "simulation_error": null,
+      "committed_error": null,
+      "compute_units": 17500,
+      "log_tail": [
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1519 of 694358 compute units",
+        "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb qgAAAAAAAAA=",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 734 of 688017 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2142 of 684946 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 17200 of 699700 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success"
+      ],
+      "before": {
+        "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+          "lamports": 3751440,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+        },
+        "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+          "lamports": 1969680,
+          "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+          "data_sha256": "9172e06c915f691186e2e3c656c3510e374c271c76b66eca4275f33a30a318b7"
+        },
+        "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": null,
+        "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "e9405d75db2a60d720a063d100412d292e4bdf69a2047522a0a256e6ec57ecbd"
+        },
+        "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": null,
+        "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": null,
+        "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": null,
+        "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": null,
+        "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+      },
+      "after": {
+        "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+          "lamports": 3751440,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+        },
+        "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+          "lamports": 1969680,
+          "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+          "data_sha256": "9172e06c915f691186e2e3c656c3510e374c271c76b66eca4275f33a30a318b7"
+        },
+        "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": null,
+        "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "e9405d75db2a60d720a063d100412d292e4bdf69a2047522a0a256e6ec57ecbd"
+        },
+        "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": null,
+        "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "9de6186f05ec52558f1c292ff82ab34739c729b16e104cacf86e4e12277ab48b"
+        },
+        "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": null,
+        "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": null,
+        "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+      }
+    },
+    {
+      "step": "state_funding_ata",
+      "signature": "5J7QADoT13UUcQPCtgWXCknDysRsHvJuK7qa1et2nyzGDjzvqXCrj2wEvATMk5aakKebFbkCitNZJrF9ppx3x6E4",
+      "signed_transaction_base64": "AdbSw3SBMou05F3Xwu1oRQrInPf8IAT4j8q8dH7KZ8A5MAtpTL2pRsvkxPOmgQLp9B/hQBcpxvQ+5Q2Qx5cYVgEBAAYIkeotuCYAOQSb07FtsPQnVYYefSOPTHjQZNmiIBouE1Ci2IBTbsHZN8BrGHcL22cEFl3TrA2FZcf2VeQamnvdlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwZGb+UhFzL/7K26csOb57yM5bvF9xJrLEObOkAAAAAGm4hX/quBhPtof2NGGMA12sQ53BrrO1WYoPAAAAAAAQbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpNC4M/wAzQHbOUI+BUhwVE63Vng4XBwMBl/ZwgEKgebWMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4WQaGhZ04yAqXIUgYQWkX4L+PyhV+Rk+YzP0P+p34R9wRAwMABQJgrgoAAwAJAwQAAAAAAAAABwYAAQYEAgUBAQ==",
+      "signature_verified": true,
+      "simulation_error": null,
+      "committed_error": null,
+      "compute_units": 16820,
+      "log_tail": [
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 183 of 691271 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 38 of 686178 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 230 of 683714 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 16520 of 699700 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success"
+      ],
+      "before": {
+        "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+          "lamports": 3751440,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+        },
+        "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+          "lamports": 1969680,
+          "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+          "data_sha256": "9172e06c915f691186e2e3c656c3510e374c271c76b66eca4275f33a30a318b7"
+        },
+        "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": null,
+        "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "e9405d75db2a60d720a063d100412d292e4bdf69a2047522a0a256e6ec57ecbd"
+        },
+        "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": null,
+        "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "9de6186f05ec52558f1c292ff82ab34739c729b16e104cacf86e4e12277ab48b"
+        },
+        "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": null,
+        "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": null,
+        "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+      },
+      "after": {
+        "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+          "lamports": 3751440,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+        },
+        "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+          "lamports": 1969680,
+          "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+          "data_sha256": "9172e06c915f691186e2e3c656c3510e374c271c76b66eca4275f33a30a318b7"
+        },
+        "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": null,
+        "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "e9405d75db2a60d720a063d100412d292e4bdf69a2047522a0a256e6ec57ecbd"
+        },
+        "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+          "lamports": 2039280,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+        },
+        "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "9de6186f05ec52558f1c292ff82ab34739c729b16e104cacf86e4e12277ab48b"
+        },
+        "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": null,
+        "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": null,
+        "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+      }
+    },
+    {
+      "step": "curve_funding_ata",
+      "signature": "5YD9Chn4XVnc3ZkvX9nhL4QdmnuN9evX5h5wEgCECi86BWgAcSxFs9jzmccdetiWaymhUcssFFNcwEKtP8mfkcpc",
+      "signed_transaction_base64": "AeL7U0BoS9YzZEd9vyU5EqDZ1hhSLyL6i8XbVW1c3h22G8ickRDKDe8Ky1qRsj0lmarKMGm1dnABH7zQYsIwsQ0BAAYIkeotuCYAOQSb07FtsPQnVYYefSOPTHjQZNmiIBouE1A0tqEXiYkfHwqmop3mr291XZPeKBTiHWPbgK4Ji5ZLnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwZGb+UhFzL/7K26csOb57yM5bvF9xJrLEObOkAAAAAGm4hX/quBhPtof2NGGMA12sQ53BrrO1WYoPAAAAAAAQbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpjJclj04kifG7PRApFI4NgwtaE5na/xCEBI572Nvp+FnIJIazpIuz/q8vVF7k3WlMJBschsSpL9F8aIOYAR68TAaGhZ04yAqXIUgYQWkX4L+PyhV+Rk+YzP0P+p34R9wRAwMABQJgrgoAAwAJAwUAAAAAAAAABgYAAQcEAgUBAQ==",
+      "signature_verified": true,
+      "simulation_error": null,
+      "committed_error": null,
+      "compute_units": 13820,
+      "log_tail": [
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 183 of 694271 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 38 of 689178 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 230 of 686714 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13520 of 699700 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success"
+      ],
+      "before": {
+        "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+          "lamports": 3751440,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+        },
+        "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+          "lamports": 1969680,
+          "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+          "data_sha256": "9172e06c915f691186e2e3c656c3510e374c271c76b66eca4275f33a30a318b7"
+        },
+        "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": null,
+        "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "e9405d75db2a60d720a063d100412d292e4bdf69a2047522a0a256e6ec57ecbd"
+        },
+        "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+          "lamports": 2039280,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+        },
+        "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "9de6186f05ec52558f1c292ff82ab34739c729b16e104cacf86e4e12277ab48b"
+        },
+        "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": null,
+        "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": null,
+        "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+      },
+      "after": {
+        "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+          "lamports": 3751440,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+        },
+        "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+          "lamports": 1969680,
+          "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+          "data_sha256": "9172e06c915f691186e2e3c656c3510e374c271c76b66eca4275f33a30a318b7"
+        },
+        "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": null,
+        "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "e9405d75db2a60d720a063d100412d292e4bdf69a2047522a0a256e6ec57ecbd"
+        },
+        "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+          "lamports": 2039280,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+        },
+        "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "9de6186f05ec52558f1c292ff82ab34739c729b16e104cacf86e4e12277ab48b"
+        },
+        "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+          "lamports": 2039280,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "e7216f34076a39abd9a53744e0a5b4d71bec740a45e4d68107fd67b1a12829eb"
+        },
+        "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": null,
+        "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+      }
+    }
+  ],
+  "pre_start": {
+    "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+      "lamports": 3751440,
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+    },
+    "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+      "lamports": 1969680,
+      "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+      "data_sha256": "9172e06c915f691186e2e3c656c3510e374c271c76b66eca4275f33a30a318b7"
+    },
+    "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": null,
+    "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+      "lamports": 2074080,
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "data_sha256": "e9405d75db2a60d720a063d100412d292e4bdf69a2047522a0a256e6ec57ecbd"
+    },
+    "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+      "lamports": 2039280,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+    },
+    "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+      "lamports": 2074080,
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "data_sha256": "9de6186f05ec52558f1c292ff82ab34739c729b16e104cacf86e4e12277ab48b"
+    },
+    "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+      "lamports": 2039280,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "data_sha256": "e7216f34076a39abd9a53744e0a5b4d71bec740a45e4d68107fd67b1a12829eb"
+    },
+    "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": null,
+    "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+  },
+  "wrong_founder_rejected": {
+    "step": "wrong_founder_rejected",
+    "signature": "31ZcwXTawjd2f6ELPayWmepQUVcbTBh6qEEzkqGkqYFnWsjYM4hJd7LgJerUsWnD2ugf5nBME7CZ4MtgTMoxJHkm",
+    "signed_transaction_base64": "AmSE3Ot8hJegZhyBtlKgxT4peabEPfJfU9gfaQOBSBENEAeK/mbOT+c/sRAlQGg/Va9WxAvezPBZ5c7Pl+pXlQJq8VppLxjzCyc5q+e0NEYJwpblOENuvS0Kogce7HjPxXKJ6+7CuWjpt5ayDEOo/HfEWPuuk9Wcd/NJqFM3iQ4MAgEJEZHqLbgmADkEm9OxbbD0J1WGHn0jj0x40GTZoiAaLhNQeyQvl3i7+dG6o4qAJiaL5VZt/zQeWbs3mNtHHEyygvo0Lgz/ADNAds5Qj4FSHBUTrdWeDhcHAwGX9nCAQqB5tTS2oReJiR8fCqaineavb3Vdk94oFOIdY9uArgmLlkuccz9aG3mYnzz4fiZ/nL6noyk+kklzTrAiALp9ipDOFgui2IBTbsHZN8BrGHcL22cEFl3TrA2FZcf2VeQamnvdlMgkhrOki7P+ry9UXuTdaUwkGxyGxKkv0Xxog5gBHrxM8vuiDV1bhnogpNGO7s6fhTsiaRj6oM/wMEk8jBvJIMcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMGRm/lIRcy/+ytunLDm+e8jOW7xfcSayxDmzpAAAAABpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQbd9uHudY/eGEJdvORszdq2GvxNg7kNJ/69+SjYoYv8gFRA7kgFH8gupk2QWsq/8NIXgPf8q6aQDg5BOHsdSleMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4WbD7NwBMpbI+oOfeDLXQ5aUCdgMM4elCyzzbRNeuR/jsuvVqh5YK04pkd6tPgQpOKD91Dd71NIl7G3FwxrNGiN8GhoWdOMgKlyFIGEFpF+C/j8oVfkZPmMz9D/qd+EfcEQMJAAUCYK4KAAkACQMGAAAAAAAAABAQAAENCgIHBQYEAwsOCAwPEAiR0zGyrd28AA==",
+    "signature_verified": true,
+    "simulation_error": {
+      "InstructionError": [
+        2,
+        {
+          "Custom": 6003
+        }
+      ]
+    },
+    "committed_error": {
+      "InstructionError": [
+        2,
+        {
+          "Custom": 6003
+        }
+      ]
+    },
+    "compute_units": 17729,
+    "log_tail": [
+      "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+      "Program ComputeBudget111111111111111111111111111111 success",
+      "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+      "Program ComputeBudget111111111111111111111111111111 success",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+      "Program log: Instruction: StartCurve",
+      "Program log: AnchorError caused by account: state. Error Code: InvalidState. Error Number: 6003. Error Message: Invalid state.",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 17429 of 699700 compute units",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1773"
+    ],
+    "before": {
+      "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+        "lamports": 3751440,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+      },
+      "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+        "lamports": 1969680,
+        "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "data_sha256": "9172e06c915f691186e2e3c656c3510e374c271c76b66eca4275f33a30a318b7"
+      },
+      "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": null,
+      "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "e9405d75db2a60d720a063d100412d292e4bdf69a2047522a0a256e6ec57ecbd"
+      },
+      "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+      },
+      "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "9de6186f05ec52558f1c292ff82ab34739c729b16e104cacf86e4e12277ab48b"
+      },
+      "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "e7216f34076a39abd9a53744e0a5b4d71bec740a45e4d68107fd67b1a12829eb"
+      },
+      "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": null,
+      "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+    },
+    "after": {
+      "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+        "lamports": 3751440,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+      },
+      "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+        "lamports": 1969680,
+        "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "data_sha256": "9172e06c915f691186e2e3c656c3510e374c271c76b66eca4275f33a30a318b7"
+      },
+      "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": null,
+      "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "e9405d75db2a60d720a063d100412d292e4bdf69a2047522a0a256e6ec57ecbd"
+      },
+      "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+      },
+      "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "9de6186f05ec52558f1c292ff82ab34739c729b16e104cacf86e4e12277ab48b"
+      },
+      "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "e7216f34076a39abd9a53744e0a5b4d71bec740a45e4d68107fd67b1a12829eb"
+      },
+      "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": null,
+      "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+    }
+  },
+  "start_curve": {
+    "step": "founder_start_curve_pump_init",
+    "signature": "257NyzPx5hDVxtJZ5VQfmWq8fFMvdqSiaiQpSH3FhMgLbKN5HNU5Y4CaR4qUdmqv3YgzRuNY5kDuQzm67PsDYdai",
+    "signed_transaction_base64": "ATWPsM9L7PBnmJ927eYbo3IOfUmOCGHJaC13VQsLTflzkzLYxg7/DGxweLqqOoNoyV7iktJAHnXwWB6joid6wwsBAAkQkeotuCYAOQSb07FtsPQnVYYefSOPTHjQZNmiIBouE1A0Lgz/ADNAds5Qj4FSHBUTrdWeDhcHAwGX9nCAQqB5tTS2oReJiR8fCqaineavb3Vdk94oFOIdY9uArgmLlkuccz9aG3mYnzz4fiZ/nL6noyk+kklzTrAiALp9ipDOFgui2IBTbsHZN8BrGHcL22cEFl3TrA2FZcf2VeQamnvdlMgkhrOki7P+ry9UXuTdaUwkGxyGxKkv0Xxog5gBHrxM8vuiDV1bhnogpNGO7s6fhTsiaRj6oM/wMEk8jBvJIMcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMGRm/lIRcy/+ytunLDm+e8jOW7xfcSayxDmzpAAAAABpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQbd9uHudY/eGEJdvORszdq2GvxNg7kNJ/69+SjYoYv8gFRA7kgFH8gupk2QWsq/8NIXgPf8q6aQDg5BOHsdSleMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4WbD7NwBMpbI+oOfeDLXQ5aUCdgMM4elCyzzbRNeuR/jsuvVqh5YK04pkd6tPgQpOKD91Dd71NIl7G3FwxrNGiN8GhoWdOMgKlyFIGEFpF+C/j8oVfkZPmMz9D/qd+EfcEQMIAAUCYK4KAAgACQMHAAAAAAAAAA8QAAAMCQEGBAUDAgoNBwsODwiR0zGyrd28AA==",
+    "signature_verified": true,
+    "simulation_error": null,
+    "committed_error": null,
+    "compute_units": 78965,
+    "log_tail": [
+      "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+      "Program ComputeBudget111111111111111111111111111111 success",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+      "Program log: Instruction: StartCurve",
+      "Program CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B invoke [2]",
+      "Program log: Instruction: Init",
+      "Program 11111111111111111111111111111111 invoke [3]",
+      "Program 11111111111111111111111111111111 success",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+      "Program log: Instruction: TransferChecked",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2547 of 627122 compute units",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B consumed 46652 of 669267 compute units",
+      "Program CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B success",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 78665 of 699700 compute units",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+    ],
+    "before": {
+      "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+        "lamports": 3751440,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+      },
+      "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+        "lamports": 1969680,
+        "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "data_sha256": "9172e06c915f691186e2e3c656c3510e374c271c76b66eca4275f33a30a318b7"
+      },
+      "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": null,
+      "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "e9405d75db2a60d720a063d100412d292e4bdf69a2047522a0a256e6ec57ecbd"
+      },
+      "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+      },
+      "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "9de6186f05ec52558f1c292ff82ab34739c729b16e104cacf86e4e12277ab48b"
+      },
+      "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "e7216f34076a39abd9a53744e0a5b4d71bec740a45e4d68107fd67b1a12829eb"
+      },
+      "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": null,
+      "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+    },
+    "after": {
+      "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+        "lamports": 3751440,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+      },
+      "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+        "lamports": 1969680,
+        "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "data_sha256": "dcab83d6d4d2c37cfc6ac1730460d72f0139b52641fda3acbfc293b0bcb77073"
+      },
+      "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": {
+        "lamports": 2763120,
+        "owner": "CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "data_sha256": "9199e553ed877e7ddb181ac6339403f9329d5db3a6f6b23c84980d9b8c87ff85"
+      },
+      "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "387ee36555565bbd91c45b6f203c2f4152979e359593f64366a511ec8019e3a5"
+      },
+      "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+      },
+      "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "e99ed32ab7bdca85602ff970693cc8348af716928fc7328cc4e305db45eddd29"
+      },
+      "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "e7216f34076a39abd9a53744e0a5b4d71bec740a45e4d68107fd67b1a12829eb"
+      },
+      "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": null,
+      "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+    }
+  },
+  "trader_ata_setup": [
+    {
+      "step": "trader_token_ata",
+      "signature": "2UVU7VLoMAVpcNDXEdEGYut94G1NmVQHTWq3a4EWD795ADWGKepW5gKpkcj6skbf4ZfQoGFRaDeXzhkLNCw3mZ7f",
+      "signed_transaction_base64": "AUm5WnIDNDR2nAeiIhv7Rttau2E9pR1YJxVSAINQqVjzTHJ4r1Ewh+lnCDms4llCKz9couMLHjhads2ZPXIiaQIBAAYIkeotuCYAOQSb07FtsPQnVYYefSOPTHjQZNmiIBouE1ADygrDhsNcr2cuya5QA4kt49lbtE/F8A4YWr83t9WNqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwZGb+UhFzL/7K26csOb57yM5bvF9xJrLEObOkAAAAAG3fbh7nWP3hhCXbzkbM3athr8TYO5DSf+vfko2KGL/Eb9SFtkbWBqYRAjUx4oENzhkHeClL/88htEbse7BCsBgFRA7kgFH8gupk2QWsq/8NIXgPf8q6aQDg5BOHsdSleMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4WQaGhZ04yAqXIUgYQWkX4L+PyhV+Rk+YzP0P+p34R9wRAwMABQJgrgoAAwAJAwgAAAAAAAAABwYAAQUGAgQBAQ==",
+      "signature_verified": true,
+      "simulation_error": null,
+      "committed_error": null,
+      "compute_units": 17500,
+      "log_tail": [
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1519 of 694358 compute units",
+        "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb qgAAAAAAAAA=",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 734 of 688017 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2142 of 684946 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 17200 of 699700 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success"
+      ],
+      "before": {
+        "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+          "lamports": 3751440,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+        },
+        "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+          "lamports": 1969680,
+          "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+          "data_sha256": "dcab83d6d4d2c37cfc6ac1730460d72f0139b52641fda3acbfc293b0bcb77073"
+        },
+        "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": {
+          "lamports": 2763120,
+          "owner": "CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+          "data_sha256": "9199e553ed877e7ddb181ac6339403f9329d5db3a6f6b23c84980d9b8c87ff85"
+        },
+        "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "387ee36555565bbd91c45b6f203c2f4152979e359593f64366a511ec8019e3a5"
+        },
+        "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+          "lamports": 2039280,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+        },
+        "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "e99ed32ab7bdca85602ff970693cc8348af716928fc7328cc4e305db45eddd29"
+        },
+        "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+          "lamports": 2039280,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "e7216f34076a39abd9a53744e0a5b4d71bec740a45e4d68107fd67b1a12829eb"
+        },
+        "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": null,
+        "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+      },
+      "after": {
+        "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+          "lamports": 3751440,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+        },
+        "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+          "lamports": 1969680,
+          "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+          "data_sha256": "dcab83d6d4d2c37cfc6ac1730460d72f0139b52641fda3acbfc293b0bcb77073"
+        },
+        "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": {
+          "lamports": 2763120,
+          "owner": "CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+          "data_sha256": "9199e553ed877e7ddb181ac6339403f9329d5db3a6f6b23c84980d9b8c87ff85"
+        },
+        "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "387ee36555565bbd91c45b6f203c2f4152979e359593f64366a511ec8019e3a5"
+        },
+        "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+          "lamports": 2039280,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+        },
+        "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "e99ed32ab7bdca85602ff970693cc8348af716928fc7328cc4e305db45eddd29"
+        },
+        "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+          "lamports": 2039280,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "e7216f34076a39abd9a53744e0a5b4d71bec740a45e4d68107fd67b1a12829eb"
+        },
+        "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "26ef620d0663cd8f2b6b493d86aa5a65ed06e3166a78646820d3236e6406baa4"
+        },
+        "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+      }
+    },
+    {
+      "step": "trader_funding_ata",
+      "signature": "5oVdppRJxY1u7T3bBQnWL7GwbYXHjm4gSRrdB5U5qcojCMme4cMdY7DCciNZzhVBSngGyKT9DtbKdtSU7tBHzDnx",
+      "signed_transaction_base64": "AfApkw1Xb7QrVY48GYEdxldj/Uv5nm0Q8FlkRoQ5xWtoTirBLVYTrw9jWp/nP5/DznEwURioYClhWgSa30SAMwEBAAYIkeotuCYAOQSb07FtsPQnVYYefSOPTHjQZNmiIBouE1ColP0zCXOAXdnvrEX59pXEwIBHcZN6iKvQnMbcrNU39wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwZGb+UhFzL/7K26csOb57yM5bvF9xJrLEObOkAAAAAGm4hX/quBhPtof2NGGMA12sQ53BrrO1WYoPAAAAAAAQbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpRv1IW2RtYGphECNTHigQ3OGQd4KUv/zyG0Rux7sEKwGMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4WQaGhZ04yAqXIUgYQWkX4L+PyhV+Rk+YzP0P+p34R9wRAwMABQJgrgoAAwAJAwkAAAAAAAAABwYAAQYEAgUBAQ==",
+      "signature_verified": true,
+      "simulation_error": null,
+      "committed_error": null,
+      "compute_units": 19820,
+      "log_tail": [
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 183 of 688271 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 38 of 683178 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 230 of 680714 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 19520 of 699700 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success"
+      ],
+      "before": {
+        "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+          "lamports": 3751440,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+        },
+        "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+          "lamports": 1969680,
+          "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+          "data_sha256": "dcab83d6d4d2c37cfc6ac1730460d72f0139b52641fda3acbfc293b0bcb77073"
+        },
+        "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": {
+          "lamports": 2763120,
+          "owner": "CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+          "data_sha256": "9199e553ed877e7ddb181ac6339403f9329d5db3a6f6b23c84980d9b8c87ff85"
+        },
+        "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "387ee36555565bbd91c45b6f203c2f4152979e359593f64366a511ec8019e3a5"
+        },
+        "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+          "lamports": 2039280,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+        },
+        "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "e99ed32ab7bdca85602ff970693cc8348af716928fc7328cc4e305db45eddd29"
+        },
+        "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+          "lamports": 2039280,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "e7216f34076a39abd9a53744e0a5b4d71bec740a45e4d68107fd67b1a12829eb"
+        },
+        "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "26ef620d0663cd8f2b6b493d86aa5a65ed06e3166a78646820d3236e6406baa4"
+        },
+        "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": null
+      },
+      "after": {
+        "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+          "lamports": 3751440,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+        },
+        "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+          "lamports": 1969680,
+          "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+          "data_sha256": "dcab83d6d4d2c37cfc6ac1730460d72f0139b52641fda3acbfc293b0bcb77073"
+        },
+        "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": {
+          "lamports": 2763120,
+          "owner": "CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+          "data_sha256": "9199e553ed877e7ddb181ac6339403f9329d5db3a6f6b23c84980d9b8c87ff85"
+        },
+        "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "387ee36555565bbd91c45b6f203c2f4152979e359593f64366a511ec8019e3a5"
+        },
+        "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+          "lamports": 2039280,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+        },
+        "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "e99ed32ab7bdca85602ff970693cc8348af716928fc7328cc4e305db45eddd29"
+        },
+        "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+          "lamports": 2039280,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "e7216f34076a39abd9a53744e0a5b4d71bec740a45e4d68107fd67b1a12829eb"
+        },
+        "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "26ef620d0663cd8f2b6b493d86aa5a65ed06e3166a78646820d3236e6406baa4"
+        },
+        "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": {
+          "lamports": 2039280,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "779a50709d40653f32074a1cf2525b72321d674ed2c2512c67db780b413ca5d3"
+        }
+      }
+    }
+  ],
+  "fund_local_trader_wsol": {
+    "step": "fund_local_trader_wsol",
+    "signature": "4gQEp5qtrwGCFrP4m2FtdYLWoGfoGmzF77FQkFzRf39gfQiXA911ukv7gPe3voKCcNY1wxj1dHKHa9KQ4MQZq1Ma",
+    "signed_transaction_base64": "AbgHVBICWZ5PMHk55rluqN5A++i2xYP1ACubWYIBMQNbxc7TevhSdlXt1FXWoZfCO6MJZt5mZ/8gK2rxs0Kt7wkBAAMFkeotuCYAOQSb07FtsPQnVYYefSOPTHjQZNmiIBouE1ColP0zCXOAXdnvrEX59pXEwIBHcZN6iKvQnMbcrNU39wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwZGb+UhFzL/7K26csOb57yM5bvF9xJrLEObOkAAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQaGhZ04yAqXIUgYQWkX4L+PyhV+Rk+YzP0P+p34R9wRBAMABQJgrgoAAwAJAwoAAAAAAAAAAgIAAQwCAAAAAMqaOwAAAAAEAQEBEQ==",
+    "signature_verified": true,
+    "simulation_error": null,
+    "committed_error": null,
+    "compute_units": 651,
+    "log_tail": [
+      "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+      "Program ComputeBudget111111111111111111111111111111 success",
+      "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+      "Program ComputeBudget111111111111111111111111111111 success",
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 201 of 699550 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success"
+    ],
+    "before": {
+      "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+        "lamports": 3751440,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+      },
+      "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+        "lamports": 1969680,
+        "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "data_sha256": "dcab83d6d4d2c37cfc6ac1730460d72f0139b52641fda3acbfc293b0bcb77073"
+      },
+      "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": {
+        "lamports": 2763120,
+        "owner": "CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "data_sha256": "9199e553ed877e7ddb181ac6339403f9329d5db3a6f6b23c84980d9b8c87ff85"
+      },
+      "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "387ee36555565bbd91c45b6f203c2f4152979e359593f64366a511ec8019e3a5"
+      },
+      "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+      },
+      "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "e99ed32ab7bdca85602ff970693cc8348af716928fc7328cc4e305db45eddd29"
+      },
+      "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "e7216f34076a39abd9a53744e0a5b4d71bec740a45e4d68107fd67b1a12829eb"
+      },
+      "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "26ef620d0663cd8f2b6b493d86aa5a65ed06e3166a78646820d3236e6406baa4"
+      },
+      "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "779a50709d40653f32074a1cf2525b72321d674ed2c2512c67db780b413ca5d3"
+      }
+    },
+    "after": {
+      "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+        "lamports": 3751440,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+      },
+      "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+        "lamports": 1969680,
+        "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "data_sha256": "dcab83d6d4d2c37cfc6ac1730460d72f0139b52641fda3acbfc293b0bcb77073"
+      },
+      "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": {
+        "lamports": 2763120,
+        "owner": "CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "data_sha256": "9199e553ed877e7ddb181ac6339403f9329d5db3a6f6b23c84980d9b8c87ff85"
+      },
+      "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "387ee36555565bbd91c45b6f203c2f4152979e359593f64366a511ec8019e3a5"
+      },
+      "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+      },
+      "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "e99ed32ab7bdca85602ff970693cc8348af716928fc7328cc4e305db45eddd29"
+      },
+      "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "e7216f34076a39abd9a53744e0a5b4d71bec740a45e4d68107fd67b1a12829eb"
+      },
+      "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "26ef620d0663cd8f2b6b493d86aa5a65ed06e3166a78646820d3236e6406baa4"
+      },
+      "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": {
+        "lamports": 1002039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "9fc210c895d54f2d096085da10b4d086ebbb3fbec923c3a274ea7e33d0d18b7d"
+      }
+    }
+  },
+  "fresh_pump_buy": {
+    "step": "fresh_pump_buy",
+    "signature": "2BQchgQDbVY7JmcVXuQf61eKmnE5P8z9mKM77kpYovQaFXWVeXeA2hYsajiVvPU1XQGxznXxDFC53SFz12zWbUrc",
+    "signed_transaction_base64": "Ajr94s3FgKBs+OE/kHSF0guzaIE4JNdl1lcrw0X8Lf9yN8rfaSM9+ZoyIdzjr0Ha43S39bhO7OW2Aqje2xuX0gkWF6pmqm2f3GRWJ7dri/UBzFhF7Nrvo81RiaWS+r/u+HGxsW/1hoO+el82ADg2MUoHCjWpfbE6vAeSKx0FFw4OAgEID5HqLbgmADkEm9OxbbD0J1WGHn0jj0x40GTZoiAaLhNQRv1IW2RtYGphECNTHigQ3OGQd4KUv/zyG0Rux7sEKwEDygrDhsNcr2cuya5QA4kt49lbtE/F8A4YWr83t9WNqDS2oReJiR8fCqaineavb3Vdk94oFOIdY9uArgmLlkuccz9aG3mYnzz4fiZ/nL6noyk+kklzTrAiALp9ipDOFguolP0zCXOAXdnvrEX59pXEwIBHcZN6iKvQnMbcrNU398gkhrOki7P+ry9UXuTdaUwkGxyGxKkv0Xxog5gBHrxMAwZGb+UhFzL/7K26csOb57yM5bvF9xJrLEObOkAAAAAGm4hX/quBhPtof2NGGMA12sQ53BrrO1WYoPAAAAAAAQbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpBt324e51j94YQl285GzN2rYa/E2DuQ0n/r35KNihi/w0Lgz/ADNAds5Qj4FSHBUTrdWeDhcHAwGX9nCAQqB5tYBUQO5IBR/ILqZNkFrKv/DSF4D3/KumkA4OQTh7HUpXjJclj04kifG7PRApFI4NgwtaE5na/xCEBI572Nvp+Fmw+zcATKWyPqDn3gy10OWlAnYDDOHpQss820TXrkf47AaGhZ04yAqXIUgYQWkX4L+PyhV+Rk+YzP0P+p34R9wRAwcABQJgrgoABwAJAwsAAAAAAAAADgwBCwwIBgIFBAMKCQ0Yin8OWyZXc2kA4fUFAAAAAAAAAAAAAAAA",
+    "signature_verified": true,
+    "simulation_error": null,
+    "committed_error": null,
+    "compute_units": 125101,
+    "log_tail": [
+      "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+      "Program ComputeBudget111111111111111111111111111111 success",
+      "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+      "Program ComputeBudget111111111111111111111111111111 success",
+      "Program CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B invoke [1]",
+      "Program log: Instruction: BuyToken",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 581852 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+      "Program log: Instruction: TransferChecked",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2547 of 579146 compute units",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B consumed 124801 of 699700 compute units",
+      "Program CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B success"
+    ],
+    "before": {
+      "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+        "lamports": 3751440,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+      },
+      "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+        "lamports": 1969680,
+        "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "data_sha256": "dcab83d6d4d2c37cfc6ac1730460d72f0139b52641fda3acbfc293b0bcb77073"
+      },
+      "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": {
+        "lamports": 2763120,
+        "owner": "CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "data_sha256": "9199e553ed877e7ddb181ac6339403f9329d5db3a6f6b23c84980d9b8c87ff85"
+      },
+      "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "387ee36555565bbd91c45b6f203c2f4152979e359593f64366a511ec8019e3a5"
+      },
+      "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+      },
+      "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "e99ed32ab7bdca85602ff970693cc8348af716928fc7328cc4e305db45eddd29"
+      },
+      "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "e7216f34076a39abd9a53744e0a5b4d71bec740a45e4d68107fd67b1a12829eb"
+      },
+      "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "26ef620d0663cd8f2b6b493d86aa5a65ed06e3166a78646820d3236e6406baa4"
+      },
+      "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": {
+        "lamports": 1002039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "9fc210c895d54f2d096085da10b4d086ebbb3fbec923c3a274ea7e33d0d18b7d"
+      }
+    },
+    "after": {
+      "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+        "lamports": 3751440,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+      },
+      "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+        "lamports": 1969680,
+        "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "data_sha256": "dcab83d6d4d2c37cfc6ac1730460d72f0139b52641fda3acbfc293b0bcb77073"
+      },
+      "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": {
+        "lamports": 2763120,
+        "owner": "CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "data_sha256": "8a63c4770a75decd0bfdd92d05d54a66100f0ac5cd37be2474cf09e314a1b7b0"
+      },
+      "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "387ee36555565bbd91c45b6f203c2f4152979e359593f64366a511ec8019e3a5"
+      },
+      "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+      },
+      "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "14ed17b7516690cdcfad0d09a3a8e3a7981f50661445f817e8ad4e0ecb03c8d8"
+      },
+      "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+        "lamports": 102039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "d9ac417e4b2973d4e216d405435e740bcb4052b7679291082419e6f85154cf85"
+      },
+      "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "a5c2950fd896bd639c6b3cd648b8cf11adafde31abc32c76ca723e81fc768dd7"
+      },
+      "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": {
+        "lamports": 902039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "01a7509d08a1b85b247c57a50f62e70ec3afef3716639edea31eb300d0979a33"
+      }
+    }
+  },
+  "fresh_pump_sell_high_min_rejected": {
+    "step": "fresh_pump_sell_high_min_rejected",
+    "signature": "3bgJRRK8y6jLmLxAz2ZAF1ucqeJJhkBazj4XuUYw8VGLUdWJf7huq4StnUN8xAFggRxny2MWDoUd1uDWKZNREtd6",
+    "signed_transaction_base64": "AoHwSnXmGBHO5JFRq5/nHqWH4jJPJohakoCQXLmvnDPuAooY6l77G51ju8yTvxyv2PDHsyahjCRtToRf26dFpAGJhgaFvqk/LQP963TaSaNJE2MTvtHf9Y+hxONjEDII62WjxsjaN/5Fr1fh5bXqZ/HGAFdSO6HW3fE4LS3ONrIOAgEID5HqLbgmADkEm9OxbbD0J1WGHn0jj0x40GTZoiAaLhNQRv1IW2RtYGphECNTHigQ3OGQd4KUv/zyG0Rux7sEKwEDygrDhsNcr2cuya5QA4kt49lbtE/F8A4YWr83t9WNqDS2oReJiR8fCqaineavb3Vdk94oFOIdY9uArgmLlkuccz9aG3mYnzz4fiZ/nL6noyk+kklzTrAiALp9ipDOFguolP0zCXOAXdnvrEX59pXEwIBHcZN6iKvQnMbcrNU398gkhrOki7P+ry9UXuTdaUwkGxyGxKkv0Xxog5gBHrxMAwZGb+UhFzL/7K26csOb57yM5bvF9xJrLEObOkAAAAAGm4hX/quBhPtof2NGGMA12sQ53BrrO1WYoPAAAAAAAQbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpBt324e51j94YQl285GzN2rYa/E2DuQ0n/r35KNihi/w0Lgz/ADNAds5Qj4FSHBUTrdWeDhcHAwGX9nCAQqB5tYBUQO5IBR/ILqZNkFrKv/DSF4D3/KumkA4OQTh7HUpXjJclj04kifG7PRApFI4NgwtaE5na/xCEBI572Nvp+Fmw+zcATKWyPqDn3gy10OWlAnYDDOHpQss820TXrkf47AaGhZ04yAqXIUgYQWkX4L+PyhV+Rk+YzP0P+p34R9wRAwcABQJgrgoABwAJAwwAAAAAAAAADgwBCwwIBgIFBAMKCQ0YbT0ou+awh64Gcub3fwIAAP//////////",
+    "signature_verified": true,
+    "simulation_error": {
+      "InstructionError": [
+        2,
+        {
+          "Custom": 6001
+        }
+      ]
+    },
+    "committed_error": {
+      "InstructionError": [
+        2,
+        {
+          "Custom": 6001
+        }
+      ]
+    },
+    "compute_units": 27732,
+    "log_tail": [
+      "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+      "Program ComputeBudget111111111111111111111111111111 success",
+      "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+      "Program ComputeBudget111111111111111111111111111111 success",
+      "Program CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B invoke [1]",
+      "Program log: Instruction: SellToken",
+      "Program log: AnchorError thrown in programs/pump_xyk/src/instructions/sell_token.rs:25. Error Code: SlippageExceeded. Error Number: 6001. Error Message: Slippage exceeded.",
+      "Program CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B consumed 27432 of 699700 compute units",
+      "Program CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B failed: custom program error: 0x1771"
+    ],
+    "before": {
+      "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+        "lamports": 3751440,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+      },
+      "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+        "lamports": 1969680,
+        "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "data_sha256": "dcab83d6d4d2c37cfc6ac1730460d72f0139b52641fda3acbfc293b0bcb77073"
+      },
+      "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": {
+        "lamports": 2763120,
+        "owner": "CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "data_sha256": "8a63c4770a75decd0bfdd92d05d54a66100f0ac5cd37be2474cf09e314a1b7b0"
+      },
+      "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "387ee36555565bbd91c45b6f203c2f4152979e359593f64366a511ec8019e3a5"
+      },
+      "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+      },
+      "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "14ed17b7516690cdcfad0d09a3a8e3a7981f50661445f817e8ad4e0ecb03c8d8"
+      },
+      "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+        "lamports": 102039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "d9ac417e4b2973d4e216d405435e740bcb4052b7679291082419e6f85154cf85"
+      },
+      "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "a5c2950fd896bd639c6b3cd648b8cf11adafde31abc32c76ca723e81fc768dd7"
+      },
+      "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": {
+        "lamports": 902039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "01a7509d08a1b85b247c57a50f62e70ec3afef3716639edea31eb300d0979a33"
+      }
+    },
+    "after": {
+      "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+        "lamports": 3751440,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+      },
+      "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+        "lamports": 1969680,
+        "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "data_sha256": "dcab83d6d4d2c37cfc6ac1730460d72f0139b52641fda3acbfc293b0bcb77073"
+      },
+      "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": {
+        "lamports": 2763120,
+        "owner": "CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "data_sha256": "8a63c4770a75decd0bfdd92d05d54a66100f0ac5cd37be2474cf09e314a1b7b0"
+      },
+      "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "387ee36555565bbd91c45b6f203c2f4152979e359593f64366a511ec8019e3a5"
+      },
+      "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+      },
+      "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "14ed17b7516690cdcfad0d09a3a8e3a7981f50661445f817e8ad4e0ecb03c8d8"
+      },
+      "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+        "lamports": 102039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "d9ac417e4b2973d4e216d405435e740bcb4052b7679291082419e6f85154cf85"
+      },
+      "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "a5c2950fd896bd639c6b3cd648b8cf11adafde31abc32c76ca723e81fc768dd7"
+      },
+      "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": {
+        "lamports": 902039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "01a7509d08a1b85b247c57a50f62e70ec3afef3716639edea31eb300d0979a33"
+      }
+    }
+  },
+  "fresh_pump_sell": {
+    "step": "fresh_pump_sell",
+    "signature": "NHQwS7pp3SxN53WPgm1yxgiQx48476XfsgjPKp9utiVywcfKgyQJUyBAYCtRvyimXN8NVwT6nWz5RhkQ9C15eSc",
+    "signed_transaction_base64": "AhJah6h9GfGiTndh11i+nyM6LUlniM1NthabZ04aeFq8aXu7sL8FapQo159ipj0qlsNLsq04jzxK2siU54/TMQGGn/LgXhKB5omtZzjTWjfmuR82O/Xs7xf4LN2J3N8XLaJavv5gQPqwSerKDz3CYq3nwUK7VKPldQ5cZGP/5G0MAgEID5HqLbgmADkEm9OxbbD0J1WGHn0jj0x40GTZoiAaLhNQRv1IW2RtYGphECNTHigQ3OGQd4KUv/zyG0Rux7sEKwEDygrDhsNcr2cuya5QA4kt49lbtE/F8A4YWr83t9WNqDS2oReJiR8fCqaineavb3Vdk94oFOIdY9uArgmLlkuccz9aG3mYnzz4fiZ/nL6noyk+kklzTrAiALp9ipDOFguolP0zCXOAXdnvrEX59pXEwIBHcZN6iKvQnMbcrNU398gkhrOki7P+ry9UXuTdaUwkGxyGxKkv0Xxog5gBHrxMAwZGb+UhFzL/7K26csOb57yM5bvF9xJrLEObOkAAAAAGm4hX/quBhPtof2NGGMA12sQ53BrrO1WYoPAAAAAAAQbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpBt324e51j94YQl285GzN2rYa/E2DuQ0n/r35KNihi/w0Lgz/ADNAds5Qj4FSHBUTrdWeDhcHAwGX9nCAQqB5tYBUQO5IBR/ILqZNkFrKv/DSF4D3/KumkA4OQTh7HUpXjJclj04kifG7PRApFI4NgwtaE5na/xCEBI572Nvp+Fmw+zcATKWyPqDn3gy10OWlAnYDDOHpQss820TXrkf47AaGhZ04yAqXIUgYQWkX4L+PyhV+Rk+YzP0P+p34R9wRAwcABQJgrgoABwAJAw0AAAAAAAAADgwBCwwIBgIFBAMKCQ0YbT0ou+awh64Gcub3fwIAAAAAAAAAAAAA",
+    "signature_verified": true,
+    "simulation_error": null,
+    "committed_error": null,
+    "compute_units": 34982,
+    "log_tail": [
+      "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+      "Program ComputeBudget111111111111111111111111111111 success",
+      "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+      "Program ComputeBudget111111111111111111111111111111 success",
+      "Program CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B invoke [1]",
+      "Program log: Instruction: SellToken",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+      "Program log: Instruction: TransferChecked",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2547 of 671971 compute units",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 666824 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B consumed 34682 of 699700 compute units",
+      "Program CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B success"
+    ],
+    "before": {
+      "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+        "lamports": 3751440,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+      },
+      "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+        "lamports": 1969680,
+        "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "data_sha256": "dcab83d6d4d2c37cfc6ac1730460d72f0139b52641fda3acbfc293b0bcb77073"
+      },
+      "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": {
+        "lamports": 2763120,
+        "owner": "CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "data_sha256": "8a63c4770a75decd0bfdd92d05d54a66100f0ac5cd37be2474cf09e314a1b7b0"
+      },
+      "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "387ee36555565bbd91c45b6f203c2f4152979e359593f64366a511ec8019e3a5"
+      },
+      "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+      },
+      "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "14ed17b7516690cdcfad0d09a3a8e3a7981f50661445f817e8ad4e0ecb03c8d8"
+      },
+      "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+        "lamports": 102039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "d9ac417e4b2973d4e216d405435e740bcb4052b7679291082419e6f85154cf85"
+      },
+      "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "a5c2950fd896bd639c6b3cd648b8cf11adafde31abc32c76ca723e81fc768dd7"
+      },
+      "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": {
+        "lamports": 902039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "01a7509d08a1b85b247c57a50f62e70ec3afef3716639edea31eb300d0979a33"
+      }
+    },
+    "after": {
+      "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+        "lamports": 3751440,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+      },
+      "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+        "lamports": 1969680,
+        "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "data_sha256": "dcab83d6d4d2c37cfc6ac1730460d72f0139b52641fda3acbfc293b0bcb77073"
+      },
+      "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": {
+        "lamports": 2763120,
+        "owner": "CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "data_sha256": "16ce8f384a0296c3a150d19d193c6d28123a03b74a260b2ce88f22bd085d073a"
+      },
+      "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "387ee36555565bbd91c45b6f203c2f4152979e359593f64366a511ec8019e3a5"
+      },
+      "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+      },
+      "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "8064a5a8ea0575bb500eb65206d80688a8c5768dd3626747ef717b0ad5f1ada4"
+      },
+      "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+        "lamports": 53022191,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "0438aed940fedff4bca85f6266a7b4c275fce028f538df4f48e13af465a4e780"
+      },
+      "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "c977f94cc60ee59fc116be35db427db5a813d9b72c5943af0a4c0a1094f180e9"
+      },
+      "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": {
+        "lamports": 951056369,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "83b2419715a059a00e34fee435bec98bbd78787bea78942e4b0ebc0f6273d09b"
+      }
+    }
+  },
+  "repeat_start_curve_rejected": {
+    "step": "repeat_start_curve_rejected",
+    "signature": "2LK6fA5mrmxJaDgaKQNBPiHGEeXaBvsK96sKgpmHqevpASjVRZyaqXQH6K63sp86Guq7yZtUWcQN1E1mG5FikBYG",
+    "signed_transaction_base64": "AUKrw9kz3GxGfE7YU+t+SuCqKuO8Slb7RyY4kgaKC8vZtsr/yu75k+AI6N5uVyUlmshazfSG4JF5+Pdgl2VsvAUBAAkQkeotuCYAOQSb07FtsPQnVYYefSOPTHjQZNmiIBouE1A0Lgz/ADNAds5Qj4FSHBUTrdWeDhcHAwGX9nCAQqB5tTS2oReJiR8fCqaineavb3Vdk94oFOIdY9uArgmLlkuccz9aG3mYnzz4fiZ/nL6noyk+kklzTrAiALp9ipDOFgui2IBTbsHZN8BrGHcL22cEFl3TrA2FZcf2VeQamnvdlMgkhrOki7P+ry9UXuTdaUwkGxyGxKkv0Xxog5gBHrxM8vuiDV1bhnogpNGO7s6fhTsiaRj6oM/wMEk8jBvJIMcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMGRm/lIRcy/+ytunLDm+e8jOW7xfcSayxDmzpAAAAABpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQbd9uHudY/eGEJdvORszdq2GvxNg7kNJ/69+SjYoYv8gFRA7kgFH8gupk2QWsq/8NIXgPf8q6aQDg5BOHsdSleMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4WbD7NwBMpbI+oOfeDLXQ5aUCdgMM4elCyzzbRNeuR/jsuvVqh5YK04pkd6tPgQpOKD91Dd71NIl7G3FwxrNGiN8GhoWdOMgKlyFIGEFpF+C/j8oVfkZPmMz9D/qd+EfcEQMIAAUCYK4KAAgACQMOAAAAAAAAAA8QAAAMCQEGBAUDAgoNBwsODwiR0zGyrd28AA==",
+    "signature_verified": true,
+    "simulation_error": {
+      "InstructionError": [
+        2,
+        {
+          "Custom": 6003
+        }
+      ]
+    },
+    "committed_error": {
+      "InstructionError": [
+        2,
+        {
+          "Custom": 6003
+        }
+      ]
+    },
+    "compute_units": 17625,
+    "log_tail": [
+      "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+      "Program ComputeBudget111111111111111111111111111111 success",
+      "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+      "Program ComputeBudget111111111111111111111111111111 success",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+      "Program log: Instruction: StartCurve",
+      "Program log: AnchorError caused by account: state. Error Code: InvalidState. Error Number: 6003. Error Message: Invalid state.",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 17325 of 699700 compute units",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1773"
+    ],
+    "before": {
+      "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+        "lamports": 3751440,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+      },
+      "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+        "lamports": 1969680,
+        "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "data_sha256": "dcab83d6d4d2c37cfc6ac1730460d72f0139b52641fda3acbfc293b0bcb77073"
+      },
+      "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": {
+        "lamports": 2763120,
+        "owner": "CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "data_sha256": "16ce8f384a0296c3a150d19d193c6d28123a03b74a260b2ce88f22bd085d073a"
+      },
+      "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "387ee36555565bbd91c45b6f203c2f4152979e359593f64366a511ec8019e3a5"
+      },
+      "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+      },
+      "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "8064a5a8ea0575bb500eb65206d80688a8c5768dd3626747ef717b0ad5f1ada4"
+      },
+      "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+        "lamports": 53022191,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "0438aed940fedff4bca85f6266a7b4c275fce028f538df4f48e13af465a4e780"
+      },
+      "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "c977f94cc60ee59fc116be35db427db5a813d9b72c5943af0a4c0a1094f180e9"
+      },
+      "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": {
+        "lamports": 951056369,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "83b2419715a059a00e34fee435bec98bbd78787bea78942e4b0ebc0f6273d09b"
+      }
+    },
+    "after": {
+      "9dwhaeJo2MCctECdZcrrpdUnnnsxPdaTkRVk35R9fhB4": {
+        "lamports": 3751440,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "62138465e6709cf076f07e16c8a12d608d68f9a18a1827221681cdc268ef90b5"
+      },
+      "4WgvpAjvwEtaGRYddtRgE3tnArJC1nTQvQR9b4BtRzDA": {
+        "lamports": 1969680,
+        "owner": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "data_sha256": "dcab83d6d4d2c37cfc6ac1730460d72f0139b52641fda3acbfc293b0bcb77073"
+      },
+      "EUGqvVyuHmZcBtJV8yoEgxevjLVaccHJeY1nZAdUPWs5": {
+        "lamports": 2763120,
+        "owner": "CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "data_sha256": "16ce8f384a0296c3a150d19d193c6d28123a03b74a260b2ce88f22bd085d073a"
+      },
+      "HMWD5yBjFyFXT3YAEBsWGSnzJXegRrhvyVE7MFJ9LfDY": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "387ee36555565bbd91c45b6f203c2f4152979e359593f64366a511ec8019e3a5"
+      },
+      "BxgXGYJELNjDzMoa74QZb8hd6CzapLvwTteKddJ55dzT": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "b3809e8f6ce1248dc5ad08fd0884814bb056717821f5f4cb4ec3d107297aa6d6"
+      },
+      "8ksv1tMyXyeXbDTvETvAgHmvnT1SEqKGPiJ6bLYqgeGz": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "8064a5a8ea0575bb500eb65206d80688a8c5768dd3626747ef717b0ad5f1ada4"
+      },
+      "4Ymig9AMZyBhuaag62QeHKMVQ5XiqhG2V3P8rGHiWM7R": {
+        "lamports": 53022191,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "0438aed940fedff4bca85f6266a7b4c275fce028f538df4f48e13af465a4e780"
+      },
+      "Fnunb1rbxktaGRGfvoL79mrHAvHcL99UGjQHRe1fTgT": {
+        "lamports": 2074080,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "data_sha256": "c977f94cc60ee59fc116be35db427db5a813d9b72c5943af0a4c0a1094f180e9"
+      },
+      "CM5G5KMqQZzntoj6UpaeZBLEg3jux6y7TdqEG7DKZ2Yn": {
+        "lamports": 951056369,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "data_sha256": "83b2419715a059a00e34fee435bec98bbd78787bea78942e4b0ebc0f6273d09b"
+      }
+    }
+  },
+  "final": {
+    "state_curve_started": true,
+    "state_curve_allocation_raw": 7000000000000000,
+    "mint_supply_raw": 10000000000000000,
+    "dao_vault_raw": 3000000000000000,
+    "pump_vault_after_start_raw": 7000000000000000,
+    "pump_vault_final_raw": 6997251356823033,
+    "trader_token_final_raw": 2748643176967,
+    "trader_token_bought_raw": 5497286353933,
+    "trader_token_sold_raw": 2748643176966,
+    "state_funding_vault_raw": 0,
+    "pump_funding_vault_raw": 50982911,
+    "trader_funding_vault_raw": 949017089,
+    "tracked_funding_total_raw": 1000000000,
+    "curve_data_sha256": "16ce8f384a0296c3a150d19d193c6d28123a03b74a260b2ce88f22bd085d073a",
+    "supply_conserved": true
+  },
+  "qualification": "Signed offline Surfpool commits create fresh Founder state/mint and Pump curve, then trade in that same new curve using pinned current ELFs. Public historical Init arguments and StartCurve discriminator are reused, but all state and signing keys are new local fixtures. Trader WSOL is funded locally. No mainnet state or funds touched. Controls are signed local ledger failures with protocol-account rollback."
+}

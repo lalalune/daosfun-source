@@ -1,0 +1,366 @@
+{
+  "captured_at": "2026-10-24T21:02:23.524853+00:00",
+  "endpoint": "https://api.mainnet-beta.solana.com",
+  "commitment": "finalized",
+  "coherent_account_slot": 460995695,
+  "allowed_methods": [
+    "getMultipleAccounts",
+    "getLatestBlockhash",
+    "simulateTransaction"
+  ],
+  "used_methods": [
+    "getMultipleAccounts",
+    "getLatestBlockhash",
+    "simulateTransaction"
+  ],
+  "no_broadcast": true,
+  "no_wallet_or_keypair_created": true,
+  "program_versions": {
+    "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM": {
+      "programdata": "DorEUwsw12hyhPGW95LrFMZTsAVi9pnjERcjQap3p7G2",
+      "last_deploy_slot": 370107442,
+      "upgrade_authority": "8CaTuoD1r6CzR1mu6ueTDvjNpLj7sq5nWafDLymkQ4jH",
+      "elf_bytes": 1120784,
+      "elf_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "pinned_manifest_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "pinned_file_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "matches_pinned_version": true
+    },
+    "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN": {
+      "programdata": "HUfnSSiJxgspQm6C1rkqv6L3XgVtn7AESApgCQpCXCYh",
+      "last_deploy_slot": 457502600,
+      "upgrade_authority": "JADaUV8kvDpDbJr55wxXJHVaBS3VCj8thZZHjfeuCVLd",
+      "elf_bytes": 2326577,
+      "elf_sha256": "e2bfc853c1a1778dd8ee40ea9a0f3edf5587442360c57c685e7e3024ad0cad47",
+      "pinned_manifest_sha256": "e2bfc853c1a1778dd8ee40ea9a0f3edf5587442360c57c685e7e3024ad0cad47",
+      "pinned_file_sha256": "e2bfc853c1a1778dd8ee40ea9a0f3edf5587442360c57c685e7e3024ad0cad47",
+      "matches_pinned_version": true
+    }
+  },
+  "rows": [
+    {
+      "pool": "2TCTNeQubYZUc9EftCSmvGYkMQiiTVpx9Z9EtNseJBMM",
+      "token_mint": "GZFVdei2BLKar2oQ1KkcK4ay3r3998RR7K2VHwtvdaos",
+      "config": "BkoMF8PzYwoVQTKcQ6uNeQrHytw1jJN6ig4JzjcKS3iF",
+      "state": "JBSkdpibszwiiAs4CRZNvJr4nhAGuSoUE6e4AstK3DLT",
+      "quote_vault": "DcrswysVP6b6AfwZCFZeJU2e3kG5rK6Tg14XANNy1zzd",
+      "wallet": "GzQ2mrkhKJFUwmEpwqZSeeAeTwhgepoaVY9p4ddZBL9L",
+      "wallet_funding_ata": "3wgkCFNVj8te15aPy8EadwjHWLxBoX5smWLj4c41cHvf",
+      "base_vault": "96Vp57WbMZEDi8vi2k4BQnsbz8E2X7ejGLAy3VzFuv7t",
+      "pool_is_migrated": 1,
+      "migration_fee_withdraw_status": 0,
+      "state_curve_initialized": 0,
+      "state_funding_goal": 0,
+      "quote_vault_amount": 11621676211,
+      "config_fee_byte_247": 0,
+      "config_migration_quote_threshold": 66000000000,
+      "wallet_exists": false,
+      "wallet_funding_ata_exists": false,
+      "pool_base_vault_exists": true
+    },
+    {
+      "pool": "By73M4XPTebZN7ufg1GA7xpZpVGrcmWY6zTd4gbMRRb",
+      "token_mint": "CcgV8LwA2TdYMjo85nUrZR9jcE2b5Fs55Tgoeyqvdaos",
+      "config": "BkoMF8PzYwoVQTKcQ6uNeQrHytw1jJN6ig4JzjcKS3iF",
+      "state": "4xY38DpyS5nKYyTcAbFEjknKeLneJdVb49mMcRQeik5e",
+      "quote_vault": "9yDqiDfxnm1rdnEbRjFDASftMhuxWSNKBiTeL35egHZv",
+      "wallet": "XBw49PriCAVx9pC44exu3XKEeUFWNDp993sjLqXu3UU",
+      "wallet_funding_ata": "BHFeKf3gdqFWkKTh7nEVDdxDZY4XMVXBFXmLP1FqpMuJ",
+      "base_vault": "BE7BcvSY5APstpZpkSR9WXBHSpnG8gsoe81pYm8ghhRx",
+      "pool_is_migrated": 1,
+      "migration_fee_withdraw_status": 0,
+      "state_curve_initialized": 0,
+      "state_funding_goal": 0,
+      "quote_vault_amount": 6446611666,
+      "config_fee_byte_247": 0,
+      "config_migration_quote_threshold": 66000000000,
+      "wallet_exists": false,
+      "wallet_funding_ata_exists": false,
+      "pool_base_vault_exists": true
+    },
+    {
+      "pool": "7Br1VEPcy8cjD1YeSpeUGqvSBRX1mLpfjyBq89C7Jcm",
+      "token_mint": "DaHRSwm28RH3MfM5NZ35nUhrzTfh9ygucSqyzCZdaos",
+      "config": "BkoMF8PzYwoVQTKcQ6uNeQrHytw1jJN6ig4JzjcKS3iF",
+      "state": "9DsmmAvfERNYLS15w1qyg1vCdLa28kn9JmCXZy3gA3eY",
+      "quote_vault": "is2gNsnwjYBzBWB9A1JDtiPx5kLC9NYPSpLuk5FJvMV",
+      "wallet": "GrSZU7k65abMUxpSMk7cBRdNc6wWLy5VyxdVM7HYhVP9",
+      "wallet_funding_ata": "8W7Envqk6xCHm4D3sE8qD5sTzTsevTPNkLqjCwryPKhn",
+      "base_vault": "AY8VRHPnetUcDHiNRUJ7onWntiAEr6XgK7v8BHiRFgs4",
+      "pool_is_migrated": 1,
+      "migration_fee_withdraw_status": 0,
+      "state_curve_initialized": 0,
+      "state_funding_goal": 0,
+      "quote_vault_amount": 68,
+      "config_fee_byte_247": 0,
+      "config_migration_quote_threshold": 66000000000,
+      "wallet_exists": false,
+      "wallet_funding_ata_exists": false,
+      "pool_base_vault_exists": true
+    }
+  ],
+  "cross_pool_y_mint_x_pool_base_vault": "64oBEXcecH5PykgUaixctYYQcEoVuJefrdKANmhpQQhs",
+  "cross_pool_y_mint_x_pool_base_vault_exists": false,
+  "raw_accounts": {
+    "2TCTNeQubYZUc9EftCSmvGYkMQiiTVpx9Z9EtNseJBMM": {
+      "exists": true,
+      "owner": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+      "lamports": 3841920,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 424,
+      "raw_sha256": "d43dba1d2ac56ddd3be5efa301257dcb739cc16d3a0e6e8ae5ce849497519d67",
+      "raw_base64": "1eAF0WJFd1wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAn81ARdqp1HyC1l4bYHB/sk6kX+s+nNOYSuYyqCoBgYjY+fYl8DAtPF/vEAjhCiUrwTQX7e88nhws5tRev3eak+ciRx6tm+K+rm0ovSmzMHpIDtqx/4ce99ngsMxzKfSSeEX6D4JJDLZtq933WlczsA7LonKUDTrt78zL/nB/u6O7e/gZOpbqwzQ1iYhBSWbYaC4mPjn0z5hO+p25L9uBclFKZJsDi8YC4ea3PhEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmcg40AQAAADe4ot7GpSUAAAAAAAAAAABIf7NoAAAAAAEBAAEDAAAAAAAAAAAAAADf3XdBAAAAAAAAAAAAAAAAZnIONAEAAADsobNoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    "GZFVdei2BLKar2oQ1KkcK4ay3r3998RR7K2VHwtvdaos": {
+      "exists": true,
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "lamports": 3786240,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 416,
+      "raw_sha256": "3a3ee2bbc7003eb3f7753e3b7d5621f59e8115ca2d963138772d846fa35b208e",
+      "raw_base64": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeThz6/Ls3w0JAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARIAQADY+fYl8DAtPF/vEAjhCiUrwTQX7e88nhws5tRev3eak+ciRx6tm+K+rm0ovSmzMHpIDtqx/4ce99ngsMxzKfSSEwCyAP9DmqVgBClJfOkyHIjA+DWZuEAkRdnG1usRpMkcgVho5yJHHq2b4r6ubSi9KbMwekgO2rH/hx732eCwzHMp9JIOAAAAeXVuZ2dtb25leWJhYnkEAAAAWVVOR1AAAABodHRwczovL2lwZnMuaW8vaXBmcy9iYWZrcmVpYzdlN2U2cWJqc3ozZG95Z3R4d20yM3R0ZGU2b2Zua2Q1bmhwNWdnZTNic3h5NHR4cmFtcQAAAAA="
+    },
+    "BkoMF8PzYwoVQTKcQ6uNeQrHytw1jJN6ig4JzjcKS3iF": {
+      "exists": true,
+      "owner": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+      "lamports": 8184960,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 1048,
+      "raw_sha256": "770c1ceb7ef3fcf5398f010a448843f33d294a17ced66792e7c29cb495b50e8e",
+      "raw_base64": "GmwOe3TmgSsGm4hX/quBhPtof2NGGMA12sQ53BrrO1WYoPAAAAAAAdj59iXwMC08X+8QCOEKJSvBNBft7zyeHCzm1F6/d5qT2Pn2JfAwLTxf7xAI4QolK8E0F+3vPJ4cLObUXr93mpPA4eQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUFAABAQkAAQBkAAAAAgEAAgAAAAAAAAAAALZ58AuwKxoLABToXQ8AAAB1TuiaA4vGArX0od7GpSUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGSns7bgDQAAZKeztuANAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXNkgo5lkLAAAAAAAAAAAACwyzohusFAAAAAAAAAAAAACArpF1xboikZALxfXZAAA3uKLexqUlAAAAAAAAAAAAAMBS+vgrFKy+E0e6D3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    "JBSkdpibszwiiAs4CRZNvJr4nhAGuSoUE6e4AstK3DLT": {
+      "exists": true,
+      "owner": "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM",
+      "lamports": 2672640,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 256,
+      "raw_sha256": "98d44974a9a685cbe50320178c0cf401c175f5cd1e3818d781385b45f421954f",
+      "raw_base64": "2JJrXmhLtrFmOHyVLhadSW8w4cPNxNAnrbpDghu+YKw95N5b7r0o3+ciRx6tm+K+rm0ovSmzMHpIDtqx/4ce99ngsMxzKfSSBpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEAAAAAAAAAAAAASIJ/ewAAAAAAAAAAALeu2j06iufLd4m2FBOl6yoHPFIcTv3gKbb1o3eHUL9oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    "DcrswysVP6b6AfwZCFZeJU2e3kG5rK6Tg14XANNy1zzd": {
+      "exists": true,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "lamports": 11623715491,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 165,
+      "raw_sha256": "60f34cfe3c61ea64cf01f689400fac435c7f702ce0cb25cdf051ed763622996f",
+      "raw_base64": "BpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAHaY2gfcoa8yAZxniwrUKIBVyQ7/JZosRUgvFOEPtzbCLO0tLQCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAADwHR8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "GzQ2mrkhKJFUwmEpwqZSeeAeTwhgepoaVY9p4ddZBL9L": {
+      "exists": false
+    },
+    "3wgkCFNVj8te15aPy8EadwjHWLxBoX5smWLj4c41cHvf": {
+      "exists": false
+    },
+    "96Vp57WbMZEDi8vi2k4BQnsbz8E2X7ejGLAy3VzFuv7t": {
+      "exists": true,
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "lamports": 2039280,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 165,
+      "raw_sha256": "b9d996d5dfc905dd6622020ed0bf04c3df97b499f1dbec23cd6ea731d1a2b68d",
+      "raw_base64": "5yJHHq2b4r6ubSi9KbMwekgO2rH/hx732eCwzHMp9JLaY2gfcoa8yAZxniwrUKIBVyQ7/JZosRUgvFOEPtzbCNz7ewAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "By73M4XPTebZN7ufg1GA7xpZpVGrcmWY6zTd4gbMRRb": {
+      "exists": true,
+      "owner": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+      "lamports": 3841920,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 424,
+      "raw_sha256": "df0c3e2c38cd65d7f76a4b6b38220e8f0edf714d5d51e703be63c256e616daeb",
+      "raw_base64": "1eAF0WJFd1wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAn81ARdqp1HyC1l4bYHB/sk6kX+s+nNOYSuYyqCoBgYjY+fYl8DAtPF/vEAjhCiUrwTQX7e88nhws5tRev3eak6yUh7/+iqsnsohV4+YXuPjglaNWaJ/liwjzoNqn+Zqyl/BpOP3sTlQinJlZogMw0aag3mKR3V6GjkEDeNn/adeFRIns6lFoQuGbSuLD1IxQFa51ksSvXgSFostKuV9AnX2cc5sDi8YCYBToXQ8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACGfD+AAQAAALX0od7GpSUAAAAAAAAAAAAOPq9oAAAAAAEBAAEDAAAAAAAAAAAAAABynB5PAAAAAAAAAAAAAAAAhnw/gAEAAABQPq9oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    "CcgV8LwA2TdYMjo85nUrZR9jcE2b5Fs55Tgoeyqvdaos": {
+      "exists": true,
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "lamports": 3814080,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 420,
+      "raw_sha256": "1866172a206b75815129f90aa6adfa33ed98b12c9059d57d117a778731d3b8ff",
+      "raw_base64": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//9jp7O24A0JAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARIAQADY+fYl8DAtPF/vEAjhCiUrwTQX7e88nhws5tRev3eak6yUh7/+iqsnsohV4+YXuPjglaNWaJ/liwjzoNqn+ZqyEwC2ADrNGTe/KTpfxfivMmRYfImW3pADOAS1F6KB3bzWCkSxrJSHv/6KqyeyiFXj5he4+OCVo1Zon+WLCPOg2qf5mrIVAAAAU09MQU5BIExBTkdVQUdFIE1PREVMAwAAAFNMTU4AAABodHRwczovL3JhcGlkbGF1bmNoLmlvL3RlbXAvbWV0YWRhdGEvMzU5NTc1ZGQtNTE1OS00OGFiLThkYjgtN2UxOTJmMGFkYWM3Lmpzb24AAAAA"
+    },
+    "4xY38DpyS5nKYyTcAbFEjknKeLneJdVb49mMcRQeik5e": {
+      "exists": true,
+      "owner": "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM",
+      "lamports": 2672640,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 256,
+      "raw_sha256": "5e05affde30e8cfb70023354605df4b8b42be6c4c4176650a65f183305c369bf",
+      "raw_base64": "2JJrXmhLtrExouJlnPJFv62PyutScgWtpDEiVErfzud3zFSt4r3b8qyUh7/+iqsnsohV4+YXuPjglaNWaJ/liwjzoNqn+ZqyBpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEAAAAAAAAAAAAADkF7ewAAAAAAAAAAANBRVP4al1pjVjQuId5+yAgthSZbiHl1DkP6vpXX5TIsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    "9yDqiDfxnm1rdnEbRjFDASftMhuxWSNKBiTeL35egHZv": {
+      "exists": true,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "lamports": 6448650946,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 165,
+      "raw_sha256": "41663b8dcc524807e366562b900062e267c0779718d3851a4dd114d3cdd5e10a",
+      "raw_base64": "BpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAHaY2gfcoa8yAZxniwrUKIBVyQ7/JZosRUgvFOEPtzbCNJ8P4ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAADwHR8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "XBw49PriCAVx9pC44exu3XKEeUFWNDp993sjLqXu3UU": {
+      "exists": false
+    },
+    "BHFeKf3gdqFWkKTh7nEVDdxDZY4XMVXBFXmLP1FqpMuJ": {
+      "exists": false
+    },
+    "BE7BcvSY5APstpZpkSR9WXBHSpnG8gsoe81pYm8ghhRx": {
+      "exists": true,
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "lamports": 2039280,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 165,
+      "raw_sha256": "0827e7dbf8cba320f01ab52ef3d91e80cfb830b182add6efb6979e1e84f34116",
+      "raw_base64": "rJSHv/6KqyeyiFXj5he4+OCVo1Zon+WLCPOg2qf5mrLaY2gfcoa8yAZxniwrUKIBVyQ7/JZosRUgvFOEPtzbCAhOiwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "7Br1VEPcy8cjD1YeSpeUGqvSBRX1mLpfjyBq89C7Jcm": {
+      "exists": true,
+      "owner": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+      "lamports": 3841920,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 424,
+      "raw_sha256": "38c411e1750ce20000eb3962c5d0e8e576562bfdaebdad5f7788f7493b637398",
+      "raw_base64": "1eAF0WJFd1wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAn81ARdqp1HyC1l4bYHB/sk6kX+s+nNOYSuYyqCoBgYjY+fYl8DAtPF/vEAjhCiUrwTQX7e88nhws5tRev3eakwM4mmJbJE19LA4P7USShQLzwVD2IuwgZB7TCGsamcACjbKoB19UgON0cGgbt90vSpovadk49GrMv2s0k2+b2CMKuWGOoUCNNGIczPUTuF/G+ZR0rarfP3ifeqUum7sS4MC6c5sDi8YCVhToXQ8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALX0od7GpSUAAAAAAAAAAABxsaxoAAAAAAEBAAEDAAAAAAAAAAAAAADnclFAAAAAAAAAAAAAAAAADVgpMQEAAAD0tqxoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    "DaHRSwm28RH3MfM5NZ35nUhrzTfh9ygucSqyzCZdaos": {
+      "exists": true,
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "lamports": 3716640,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 406,
+      "raw_sha256": "fb72f55af38304adafdc0374aa1deac27c692a1f816495da942d835bf82b4965",
+      "raw_base64": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIWP3Qwt/3w0JAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARIAQADY+fYl8DAtPF/vEAjhCiUrwTQX7e88nhws5tRev3eakwM4mmJbJE19LA4P7USShQLzwVD2IuwgZB7TCGsamcACEwCoAHop33fOa6ac+bUVMj0HgiZbRdniXUukFOgIP0+ChjjhAziaYlskTX0sDg/tRJKFAvPBUPYi7CBkHtMIaxqZwAIEAAAAWllaWgQAAABaWVpaUAAAAGh0dHBzOi8vaXBmcy5pby9pcGZzL2JhZmtyZWlneHNhc2Y2eTdhbXNsemVlejVsa3p2dmloZXV4NGZwZmZoYmVyZ29kZmw0N21qd3R4Z2l1AAAAAA=="
+    },
+    "9DsmmAvfERNYLS15w1qyg1vCdLa28kn9JmCXZy3gA3eY": {
+      "exists": true,
+      "owner": "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM",
+      "lamports": 2672640,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 256,
+      "raw_sha256": "0d11e0058eae85396b9b5ede1de09b329a602f199534a7e0c6a84d044883e6f6",
+      "raw_base64": "2JJrXmhLtrECseok+XkKaV0gNWttt4tj/S23iu4lUzKcZyyP74v99AM4mmJbJE19LA4P7USShQLzwVD2IuwgZB7TCGsamcACBpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEAAAAAAAAAAAAAcbR4ewAAAAAAAAAAAMjzDZjglAry9lnfY53oiu/oSXN8NSu67uhNHKBJz9MJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    "is2gNsnwjYBzBWB9A1JDtiPx5kLC9NYPSpLuk5FJvMV": {
+      "exists": true,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "lamports": 2039348,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 165,
+      "raw_sha256": "7e79c5f572341c7f729e18efab7865d763ead15fc94bc876ae9faa7913846261",
+      "raw_base64": "BpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAHaY2gfcoa8yAZxniwrUKIBVyQ7/JZosRUgvFOEPtzbCEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAADwHR8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "GrSZU7k65abMUxpSMk7cBRdNc6wWLy5VyxdVM7HYhVP9": {
+      "exists": false
+    },
+    "8W7Envqk6xCHm4D3sE8qD5sTzTsevTPNkLqjCwryPKhn": {
+      "exists": false
+    },
+    "AY8VRHPnetUcDHiNRUJ7onWntiAEr6XgK7v8BHiRFgs4": {
+      "exists": true,
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "lamports": 2039280,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 165,
+      "raw_sha256": "6a03395a1382ae28cf64c56b44277d419701fd3ac7e2c6c2386e9d55e1ab6669",
+      "raw_base64": "AziaYlskTX0sDg/tRJKFAvPBUPYi7CBkHtMIaxqZwALaY2gfcoa8yAZxniwrUKIBVyQ7/JZosRUgvFOEPtzbCEtsiwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "So11111111111111111111111111111111111111112": {
+      "exists": true,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "lamports": 1856054097572,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 82,
+      "raw_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3",
+      "raw_base64": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    "64oBEXcecH5PykgUaixctYYQcEoVuJefrdKANmhpQQhs": {
+      "exists": false
+    },
+    "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM": {
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "lamports": 1141440,
+      "executable": true,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 36,
+      "raw_sha256": "41f3080db264a777cd7d1d01eaac2c931e61763c16727ae824802a986f755247",
+      "raw_base64": "AgAAAL5MoKzTbOtERuTj5JrC/edmCEt4ftl8P9GqN2bBArHX"
+    },
+    "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN": {
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "lamports": 5593470038,
+      "executable": true,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 36,
+      "raw_sha256": "9f6dec461a88a6a1c75308225fce833b332890a2c825d8b6bc848b07a9cc0dd3",
+      "raw_base64": "AgAAAPTRhnUwUkPcN560lFevp91gACRj3NxvEbJoXSM0nPy6"
+    },
+    "DorEUwsw12hyhPGW95LrFMZTsAVi9pnjERcjQap3p7G2": {
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "lamports": 7801860720,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 1120829,
+      "raw_sha256": "36f2c1b63f8cea65a2b48b50a15c2333d492de5a1ee1880dfe642bd93f8c98e0"
+    },
+    "HUfnSSiJxgspQm6C1rkqv6L3XgVtn7AESApgCQpCXCYh": {
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "lamports": 11819890000,
+      "executable": false,
+      "rent_epoch": 18446744073709551615,
+      "raw_length": 2326622,
+      "raw_sha256": "f104fdd56c7c2af9d7d1a753418ef4f0890284e926090fdb28dd1dc70af4e44e"
+    }
+  },
+  "qualification": "One finalized getMultipleAccounts response for all account bytes and both ProgramData binaries. This verifies current state and code version at the returned slot, not historical transaction prestate or an exploitable live path. Missing wallet and vault accounts are recorded, not reconstructed. No transaction broadcast or account mutation.",
+  "unsigned_simulation": {
+    "rpc_context_slot": 460995697,
+    "payer_public_address": "3uqXZ8csdfB91DfEPXCvPNrusBYC5ZZHm8kKyjB6ULhb",
+    "signature": "all zero placeholder",
+    "sig_verify": false,
+    "replace_recent_blockhash": true,
+    "err": {
+      "InstructionError": [
+        0,
+        {
+          "Custom": 3012
+        }
+      ]
+    },
+    "logs": [
+      "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+      "Program log: Instruction: FinalizeMeteoraBonding",
+      "Program log: AnchorError caused by account: wallet_funding_ata. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.",
+      "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 11324 of 200000 compute units",
+      "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0xbc4"
+    ],
+    "units_consumed": 11324,
+    "post_account_sha256": {
+      "2TCTNeQubYZUc9EftCSmvGYkMQiiTVpx9Z9EtNseJBMM": null,
+      "4xY38DpyS5nKYyTcAbFEjknKeLneJdVb49mMcRQeik5e": null,
+      "DcrswysVP6b6AfwZCFZeJU2e3kG5rK6Tg14XANNy1zzd": null,
+      "BHFeKf3gdqFWkKTh7nEVDdxDZY4XMVXBFXmLP1FqpMuJ": null
+    },
+    "qualification": "Read-only unsigned simulation only. Signature verification disabled. No state is committed. Rejection on missing live accounts cannot prove the BM-1 path reachable on mainnet."
+  }
+}

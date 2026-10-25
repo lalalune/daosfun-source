@@ -32,6 +32,12 @@ The [audit](audit/AUDIT.md) records **1 CRITICAL, 4 MEDIUM and 1 LOW** finding.
 The packaged differential suite passed **410 cases across 15 suites**; all six
 security scripts passed. See [scope and limitations](docs/SECURITY_SCOPE.md).
 
+An [independent supplemental lab](research/independent-lab/README.md) pins all
+five daos.fun Solana programs, maps their 52 site-IDL entrypoints on current
+binaries, and adds bounded local paths across current and historical versions
+plus fund-safety controls. Its hash-checked evidence
+bundle is separate from the byte-identical `dao_v1` source claim above.
+
 After installing `requirements.txt` in a Python virtual environment:
 
 ```sh
@@ -71,6 +77,7 @@ are retained with unresolved observations and are not counted as validated tests
 | [`binaries/`](binaries/), [`evidence/`](evidence/) | Solana rebuilt artifact, original capture and test fixtures |
 | [`scripts/`](scripts/), [`repro/`](repro/) | Solana reproduction tooling and verification records |
 | [`audit/`](audit/) | Solana findings and local test evidence |
+| [`research/independent-lab/`](research/independent-lab/) | Independent five-program daos.fun evidence and bounded behavior notes |
 | [`clank/`](clank/) | EVM source, original and rebuilt bytecode, tooling and audit |
 
 See [SECURITY.md](SECURITY.md) for reporting vulnerabilities.

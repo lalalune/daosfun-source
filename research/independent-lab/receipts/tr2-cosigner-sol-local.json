@@ -1,0 +1,107 @@
+{
+  "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+  "source_snapshot_sha256": "ea6226d82c3b8a857b5f19de6ec35ed2bb8d3dbc90820a5d865c6e543b85927a",
+  "real_current_cosigner": "AeqZQwJTg6ikeCfXR7Xh1VCVH5QgTwGi933sZiF7KNUu",
+  "real_current_cosigner_lamports": 3910061294,
+  "local_disposable_cosigner": "4ap9kAPdHiV82d8D73mrtEgwGxBbUxJgyFr1fRGLhide",
+  "local_transfer_amount_lamports": 1000000,
+  "cases": [
+    {
+      "case": "local_cosigner_source",
+      "source": "4ap9kAPdHiV82d8D73mrtEgwGxBbUxJgyFr1fRGLhide",
+      "before_lamports": {
+        "5WcE8o73vmsSZXeeWTLm3ty3fAJKCnBWRF6VuKUme5nu": 10000000000,
+        "92CudvFbL7Tyw2RkWC7NU1ehdNBSjy8FEG1TsJaN8wgz": 1000000000,
+        "4ap9kAPdHiV82d8D73mrtEgwGxBbUxJgyFr1fRGLhide": 3910061294,
+        "Gq2ZG2URrWhVFeWRua7PnRuipDytEXyh26VgCo7cBm46": 100000000
+      },
+      "after_lamports": {
+        "5WcE8o73vmsSZXeeWTLm3ty3fAJKCnBWRF6VuKUme5nu": 9999985000,
+        "92CudvFbL7Tyw2RkWC7NU1ehdNBSjy8FEG1TsJaN8wgz": 1001000000,
+        "4ap9kAPdHiV82d8D73mrtEgwGxBbUxJgyFr1fRGLhide": 3909061294,
+        "Gq2ZG2URrWhVFeWRua7PnRuipDytEXyh26VgCo7cBm46": 100000000
+      },
+      "execution": {
+        "success": true,
+        "error": null,
+        "required_outer_signers": [
+          "5WcE8o73vmsSZXeeWTLm3ty3fAJKCnBWRF6VuKUme5nu",
+          "4ap9kAPdHiV82d8D73mrtEgwGxBbUxJgyFr1fRGLhide",
+          "92CudvFbL7Tyw2RkWC7NU1ehdNBSjy8FEG1TsJaN8wgz"
+        ],
+        "compute_units": 19735,
+        "log_tail": [
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+          "Program log: Instruction: ExecuteInvoke",
+          "Program 11111111111111111111111111111111 invoke [2]",
+          "Program 11111111111111111111111111111111 success",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 19735 of 200000 compute units",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+        ]
+      }
+    },
+    {
+      "case": "unrelated_unsigned_source",
+      "source": "Gq2ZG2URrWhVFeWRua7PnRuipDytEXyh26VgCo7cBm46",
+      "before_lamports": {
+        "5WcE8o73vmsSZXeeWTLm3ty3fAJKCnBWRF6VuKUme5nu": 10000000000,
+        "92CudvFbL7Tyw2RkWC7NU1ehdNBSjy8FEG1TsJaN8wgz": 1000000000,
+        "4ap9kAPdHiV82d8D73mrtEgwGxBbUxJgyFr1fRGLhide": 3910061294,
+        "Gq2ZG2URrWhVFeWRua7PnRuipDytEXyh26VgCo7cBm46": 100000000
+      },
+      "after_lamports": {
+        "5WcE8o73vmsSZXeeWTLm3ty3fAJKCnBWRF6VuKUme5nu": 9999985000,
+        "92CudvFbL7Tyw2RkWC7NU1ehdNBSjy8FEG1TsJaN8wgz": 1000000000,
+        "4ap9kAPdHiV82d8D73mrtEgwGxBbUxJgyFr1fRGLhide": 3910061294,
+        "Gq2ZG2URrWhVFeWRua7PnRuipDytEXyh26VgCo7cBm46": 100000000
+      },
+      "execution": {
+        "success": false,
+        "error": "TransactionErrorInstructionError((0, Fieldless(MissingRequiredSignature)))",
+        "required_outer_signers": [
+          "5WcE8o73vmsSZXeeWTLm3ty3fAJKCnBWRF6VuKUme5nu",
+          "4ap9kAPdHiV82d8D73mrtEgwGxBbUxJgyFr1fRGLhide",
+          "92CudvFbL7Tyw2RkWC7NU1ehdNBSjy8FEG1TsJaN8wgz"
+        ],
+        "compute_units": 18679,
+        "log_tail": [
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+          "Program log: Instruction: ExecuteInvoke",
+          "Program 11111111111111111111111111111111 invoke [2]",
+          "Transfer: `from` account Gq2ZG2URrWhVFeWRua7PnRuipDytEXyh26VgCo7cBm46 must sign",
+          "Program 11111111111111111111111111111111 failed: missing required signature for instruction",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 18679 of 200000 compute units",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: missing required signature for instruction"
+        ]
+      }
+    },
+    {
+      "case": "missing_cosigner_signature",
+      "source": "4ap9kAPdHiV82d8D73mrtEgwGxBbUxJgyFr1fRGLhide",
+      "before_lamports": {
+        "5WcE8o73vmsSZXeeWTLm3ty3fAJKCnBWRF6VuKUme5nu": 10000000000,
+        "92CudvFbL7Tyw2RkWC7NU1ehdNBSjy8FEG1TsJaN8wgz": 1000000000,
+        "4ap9kAPdHiV82d8D73mrtEgwGxBbUxJgyFr1fRGLhide": 3910061294,
+        "Gq2ZG2URrWhVFeWRua7PnRuipDytEXyh26VgCo7cBm46": 100000000
+      },
+      "after_lamports": {
+        "5WcE8o73vmsSZXeeWTLm3ty3fAJKCnBWRF6VuKUme5nu": 10000000000,
+        "92CudvFbL7Tyw2RkWC7NU1ehdNBSjy8FEG1TsJaN8wgz": 1000000000,
+        "4ap9kAPdHiV82d8D73mrtEgwGxBbUxJgyFr1fRGLhide": 3910061294,
+        "Gq2ZG2URrWhVFeWRua7PnRuipDytEXyh26VgCo7cBm46": 100000000
+      },
+      "execution": {
+        "success": false,
+        "error": "TransactionErrorFieldless.SignatureFailure",
+        "required_outer_signers": [
+          "5WcE8o73vmsSZXeeWTLm3ty3fAJKCnBWRF6VuKUme5nu",
+          "4ap9kAPdHiV82d8D73mrtEgwGxBbUxJgyFr1fRGLhide",
+          "92CudvFbL7Tyw2RkWC7NU1ehdNBSjy8FEG1TsJaN8wgz"
+        ],
+        "compute_units": 0,
+        "log_tail": []
+      }
+    }
+  ],
+  "qualification": "Current DAO binary and a pinned later State/Wallet fixture with a local-only delegate and cosigner substitution. LiteSVM verifies actual disposable signatures. The successful SOL transfer uses only local test-key lamports; no real cosigner signature or mainnet transaction exists. Real-world exposure depends on the shared cosigner service signing a transaction that makes its account writable and forwards it as inner source."
+}

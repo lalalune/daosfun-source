@@ -1,0 +1,56 @@
+{
+  "scope": "Two real active Token-2022 traded mints, one DAO-v1 and one Founder State-PDA authority, copied from finalized snapshots. Disposable payer and local positive-control authority signatures; recipient ATAs created by the actual ATA program. No public program PDA signed or live MintTo was submitted.",
+  "cases": [
+    {
+      "authority_kind": "dao_v1",
+      "active_token_mint": "4Fs1jsJCyNvS5RRXW2mFkhvCgmKmsApPS4c85U88EuMM",
+      "real_mint_authority_pda": "AQGZFCK7iZ1HnZ27FE5JUjx1vro3m9JePrWTTHedKD9A",
+      "mint_data_sha256": "d7ca41bf8551f379e93cbfe7e74a0d0daf4d03e4d0721738112ae2e6ed477acd",
+      "source_snapshot": "analysis/root_virtual_xyk/active-fee-redeem-target-snapshot.json",
+      "source_snapshot_slot": 460800723,
+      "before_supply": 1080000771170595044,
+      "before_recipient": 0,
+      "unsigned_state_pda_error": "TransactionErrorInstructionError((0, Fieldless(MissingRequiredSignature)))",
+      "unsigned_state_pda_log_tail": [
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: Instruction: MintTo",
+        "Program log: Error: MissingRequiredSignature",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1779 of 200000 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: missing required signature for instruction"
+      ],
+      "valid_payer_missing_state_pda_signature_error": "TransactionErrorFieldless.SignatureFailure",
+      "controlled_local_authority_substitution_signed_mint_to": {
+        "success": true,
+        "after_supply": 1080000771170595045,
+        "after_recipient": 1,
+        "compute_units": 1696
+      }
+    },
+    {
+      "authority_kind": "founder_dao",
+      "active_token_mint": "zdyMtb2HjKoHTpXuoRwedkpH6DLEx3zUbGWXJ6HdYhf",
+      "real_mint_authority_pda": "7GxrET83Vm264G452PggNGiZZZwyCgwHvdnxdwnmJfVJ",
+      "mint_data_sha256": "1e7833fe655e63582631bf9291d426aad426c43b6a075e1fcd10b93c0a96c3b4",
+      "source_snapshot": "analysis/root_virtual_xyk/active-system-fee-snapshot.json",
+      "source_snapshot_slot": 460801111,
+      "before_supply": 9999904517652956,
+      "before_recipient": 0,
+      "unsigned_state_pda_error": "TransactionErrorInstructionError((0, Fieldless(MissingRequiredSignature)))",
+      "unsigned_state_pda_log_tail": [
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: Instruction: MintTo",
+        "Program log: Error: MissingRequiredSignature",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1779 of 200000 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: missing required signature for instruction"
+      ],
+      "valid_payer_missing_state_pda_signature_error": "TransactionErrorFieldless.SignatureFailure",
+      "controlled_local_authority_substitution_signed_mint_to": {
+        "success": true,
+        "after_supply": 9999904517652957,
+        "after_recipient": 1,
+        "compute_units": 1696
+      }
+    }
+  ],
+  "qualification": "Direct Token-2022 signer boundary only. Program-mediated State-PDA MintTo paths require separate wrapper/handler analysis; the controlled local authority substitution does not confer real mint rights."
+}

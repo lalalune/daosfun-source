@@ -1,0 +1,1238 @@
+{
+  "scope": "FeeShare DBC claim, captured current pool, signed offline target/candidate differential",
+  "target_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+  "dao_v1_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+  "dbc_sha256": "e2bfc853c1a1778dd8ee40ea9a0f3edf5587442360c57c685e7e3024ad0cad47",
+  "candidate_sha256": "bf9efa8cd4cdd40995d7d2c4a2d096a2eae7c9bfb488aa523e80cfdb63997e4a",
+  "source_sha256": "1615faf083bc80e14a7f26e37df8c5a7e9c16ec4b04b5e15d87d30a5492937bc",
+  "snapshot_sha256": "e8fbb9d1347eacfc34b4995c2feaa54683e564f9010a99940761fc9030966358",
+  "offline_only": true,
+  "signed_local": true,
+  "candidate_build": "cargo build-sbf --manifest-path reconstruction/fee-share-full-candidate/Cargo.toml --sbf-out-dir reconstruction/fee-share-full-candidate/out --tools-version v1.54 --offline --jobs 4",
+  "synthetic_fee_setup": "Captured pool partner base/quote fee counters at bytes 264/272 are set to 1000 where named; matching pool vault SPL amounts are raised locally, and wrapped-SOL vault lamports rise by the same quote amount. No such fee accrual is claimed on chain.",
+  "all_outcomes_equal": true,
+  "all_poststates_equal": true,
+  "cases": [
+    {
+      "case": "baseline",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        0
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 142207,
+      "candidate_compute_units": 125885,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "repeat_after_zero",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        0
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 142207,
+      "candidate_compute_units": 125885,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "fee_accrual_quote_1000",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool",
+        "pool_funding_vault"
+      ],
+      "candidate_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool",
+        "pool_funding_vault"
+      ],
+      "target_funding_delta": 1000,
+      "candidate_funding_delta": 1000,
+      "target_total_fees_delta": 1000,
+      "candidate_total_fees_delta": 1000,
+      "target_balance_deltas": {
+        "funding_ata": 1000,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": -1000,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        1000
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 144369,
+      "candidate_compute_units": 128047,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "fee_accrual_quote_1000_repeat",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool",
+        "pool_funding_vault"
+      ],
+      "candidate_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool",
+        "pool_funding_vault"
+      ],
+      "target_funding_delta": 1000,
+      "candidate_funding_delta": 1000,
+      "target_total_fees_delta": 1000,
+      "candidate_total_fees_delta": 1000,
+      "target_balance_deltas": {
+        "funding_ata": 1000,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": -1000,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        1000
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 144369,
+      "candidate_compute_units": 128047,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "repeat_after_positive",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        0
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 142207,
+      "candidate_compute_units": 125885,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "fee_accrual_quote_1000_underfunded",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(1))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(1))))",
+      "target_error_code": 1,
+      "candidate_error_code": 1,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        1000
+      ],
+      "pool_fee_counters_after": [
+        0,
+        1000
+      ],
+      "target_compute_units": 126593,
+      "candidate_compute_units": 111220,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Error: insufficient funds",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN failed: custom program error: 0x1",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x1",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Error: insufficient funds",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN failed: custom program error: 0x1",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x1",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1"
+      ]
+    },
+    {
+      "case": "fee_accrual_quote_1000_overflow",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Fieldless(ProgramFailedToComplete)))",
+      "candidate_error": "TransactionErrorInstructionError((1, Fieldless(ProgramFailedToComplete)))",
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        1000
+      ],
+      "pool_fee_counters_after": [
+        0,
+        1000
+      ],
+      "target_compute_units": 144870,
+      "candidate_compute_units": 127501,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: SBF program panicked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: SBF program panicked"
+      ]
+    },
+    {
+      "case": "fee_accrual_base_1000",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer",
+        "pool",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "candidate_changed": [
+        "local_fee_payer",
+        "pool",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 1000,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": -1000
+      },
+      "pool_fee_counters_before": [
+        1000,
+        0
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 147049,
+      "candidate_compute_units": 130727,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "fee_accrual_both_1000",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool",
+        "pool_funding_vault",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "candidate_changed": [
+        "fee_share_state",
+        "funding_ata",
+        "local_fee_payer",
+        "pool",
+        "pool_funding_vault",
+        "pool_token_vault",
+        "token_ata"
+      ],
+      "target_funding_delta": 1000,
+      "candidate_funding_delta": 1000,
+      "target_total_fees_delta": 1000,
+      "candidate_total_fees_delta": 1000,
+      "target_balance_deltas": {
+        "funding_ata": 1000,
+        "token_ata": 1000,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": -1000,
+        "pool_token_vault": -1000
+      },
+      "pool_fee_counters_before": [
+        1000,
+        1000
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 149211,
+      "candidate_compute_units": 132889,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: TransferChecked"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "case": "wrong_state_funding_mint",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6000))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6000))))",
+      "target_error_code": 6000,
+      "candidate_error_code": 6000,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        0
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 23366,
+      "candidate_compute_units": 14075,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: BadMint. Error Number: 6000. Error Message: Invalid token mint.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1770"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: BadMint. Error Number: 6000. Error Message: Invalid token mint.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "case": "wrong_state_dao_mint",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2003))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2003))))",
+      "target_error_code": 2003,
+      "candidate_error_code": 2003,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        0
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 80176,
+      "candidate_compute_units": 64803,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: AnchorError caused by account: fee_authority. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x7d3",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7d3"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: AnchorError caused by account: fee_authority. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x7d3",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7d3"
+      ]
+    },
+    {
+      "case": "wrong_state_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        0
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 10731,
+      "candidate_compute_units": 9066,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_pool_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6075))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6075))))",
+      "target_error_code": 6075,
+      "candidate_error_code": 6075,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        0
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 126490,
+      "candidate_compute_units": 111117,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: AnchorError thrown in programs/dynamic-bonding-curve/src/utils/pool_account_loader.rs:17. Error Code: InvalidPoolAccount. Error Number: 6075. Error Message: Invalid pool account.",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN failed: custom program error: 0x17bb",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x17bb",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x17bb"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: AnchorError thrown in programs/dynamic-bonding-curve/src/utils/pool_account_loader.rs:17. Error Code: InvalidPoolAccount. Error Number: 6075. Error Message: Invalid pool account.",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN failed: custom program error: 0x17bb",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x17bb",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x17bb"
+      ]
+    },
+    {
+      "case": "wrong_funding_ata_mint",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3))))",
+      "target_error_code": 3,
+      "candidate_error_code": 3,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        0
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 138687,
+      "candidate_compute_units": 123314,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Error: Account not associated with this Mint",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x3",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x3",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x3"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Error: Account not associated with this Mint",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x3",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x3",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x3"
+      ]
+    },
+    {
+      "case": "wrong_token_ata_mint",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3))))",
+      "target_error_code": 3,
+      "candidate_error_code": 3,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        0
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 135805,
+      "candidate_compute_units": 120432,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Error: Account not associated with this Mint",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: custom program error: 0x3",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x3",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x3"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Error: Account not associated with this Mint",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: custom program error: 0x3",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x3",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x3"
+      ]
+    },
+    {
+      "case": "wrong_funding_ata_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        0
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 13677,
+      "candidate_compute_units": 10687,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: AnchorError caused by account: funding_ata. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: AnchorError caused by account: funding_ata. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_token_ata_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        0
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 15391,
+      "candidate_compute_units": 11127,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: AnchorError caused by account: token_ata. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: AnchorError caused by account: token_ata. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_funding_ata_authority",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "target_error_code": 2015,
+      "candidate_error_code": 2015,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        0
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 24127,
+      "candidate_compute_units": 14751,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: AnchorError caused by account: funding_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: AnchorError caused by account: funding_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ]
+    },
+    {
+      "case": "wrong_token_ata_authority",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "target_error_code": 2015,
+      "candidate_error_code": 2015,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        0
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 25800,
+      "candidate_compute_units": 18815,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: AnchorError caused by account: token_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+      ]
+    },
+    {
+      "case": "wrong_dbc_config",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        0
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 70015,
+      "candidate_compute_units": 54642,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: AnchorError caused by account: dbc_config. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: AnchorError caused by account: dbc_config. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_pool_funding_vault_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        0
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 122927,
+      "candidate_compute_units": 107554,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: AnchorError caused by account: quote_vault. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN failed: custom program error: 0xbbf",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: AnchorError caused by account: quote_vault. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN failed: custom program error: 0xbbf",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0xbbf",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "case": "wrong_meteora_authority_funding_ata_mint",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3))))",
+      "target_error_code": 3,
+      "candidate_error_code": 3,
+      "outcome_equal": true,
+      "all_account_poststates_equal": true,
+      "tracked_account_count": 22,
+      "target_changed": [
+        "local_fee_payer"
+      ],
+      "candidate_changed": [
+        "local_fee_payer"
+      ],
+      "target_funding_delta": 0,
+      "candidate_funding_delta": 0,
+      "target_total_fees_delta": 0,
+      "candidate_total_fees_delta": 0,
+      "target_balance_deltas": {
+        "funding_ata": 0,
+        "token_ata": 0,
+        "meteora_authority_funding_ata": 0,
+        "meteora_authority_token_ata": 0,
+        "pool_funding_vault": 0,
+        "pool_token_vault": 0
+      },
+      "pool_fee_counters_before": [
+        0,
+        0
+      ],
+      "pool_fee_counters_after": [
+        0,
+        0
+      ],
+      "target_compute_units": 138687,
+      "candidate_compute_units": 123314,
+      "target_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Error: Account not associated with this Mint",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x3",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x3",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x3"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraDbcFees",
+        "Program log: Instruction: ClaimDbcTradingFees",
+        "Program log: Instruction: ClaimTradingFee",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Error: Account not associated with this Mint",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x3",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x3",
+        "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x3"
+      ]
+    }
+  ],
+  "qualification": "Later captured account state with no claimable fees. Positive-fee cases use locally synthetic DBC counters and vault balance/lamports, so they do not prove live accrual or a historical prestate. Only one captured pool and selected guards are covered; other DBC modes, token extensions, and exact source/ELF equality remain unproven. Inner DAO v1 and DBC behavior comes from pinned deployed dependency ELFs. The overflow is a synthetic near-u64 state, not a demonstrated reachable fund-risk bug. No live transactions or funds."
+}

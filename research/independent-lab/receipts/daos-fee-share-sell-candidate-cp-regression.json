@@ -1,0 +1,2606 @@
+{
+  "scope": "FeeShare claim_meteora_fees on one captured CP pool, local mutations and repeat claim",
+  "reference_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+  "candidate_sbf_sha256": "bf9efa8cd4cdd40995d7d2c4a2d096a2eae7c9bfb488aa523e80cfdb63997e4a",
+  "candidate_source_sha256": "1615faf083bc80e14a7f26e37df8c5a7e9c16ec4b04b5e15d87d30a5492937bc",
+  "cp_amm_sha256": "967ff9fb161eec2e62f66d2c899100739fb747c445f697b8625c86b31b9a2022",
+  "snapshot_sha256": "e055e289fb78b096bd48556123c2ffc00f120028008e8e175d7361a3fa3f9227",
+  "candidate_build": "cargo build-sbf --manifest-path reconstruction/fee-share-full-candidate/Cargo.toml --sbf-out-dir reconstruction/fee-share-full-candidate/out --tools-version v1.54 --offline --jobs 4",
+  "offline_only": true,
+  "signed_local": true,
+  "case_count": 28,
+  "outcome_and_all_account_poststates_equal_count": 28,
+  "cases": [
+    {
+      "case": "baseline",
+      "success": true,
+      "error": null,
+      "error_code": null,
+      "cp_claim_invoked": true,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V",
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq",
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v",
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw",
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 79828645,
+      "fee_total_after": 1618760199006,
+      "reference_compute_units": 67102,
+      "candidate_compute_units": 54150,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "26d9b8a85a851c878de5ae70018f2ce096581964aa1124a5bac2f0ea7f16fdd0"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 81867926,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "98fc4ab3bb8df89321c0c6a02988af7fb52e5559dbd543acc77619646aed4c5d"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211052385666,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "repeat_after_positive",
+      "success": true,
+      "error": null,
+      "error_code": null,
+      "cp_claim_invoked": true,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618760199006,
+      "reference_compute_units": 64862,
+      "candidate_compute_units": 51910,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "26d9b8a85a851c878de5ae70018f2ce096581964aa1124a5bac2f0ea7f16fdd0"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 81867926,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "98fc4ab3bb8df89321c0c6a02988af7fb52e5559dbd543acc77619646aed4c5d"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211052385666,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999990000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "some_referrer",
+      "success": true,
+      "error": null,
+      "error_code": null,
+      "cp_claim_invoked": true,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V",
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq",
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v",
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw",
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 79828645,
+      "fee_total_after": 1618760199006,
+      "reference_compute_units": 67425,
+      "candidate_compute_units": 54227,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "987706104f522cdf23959dcba5e22be0d9b92ec9be295d7457a2bb82c613f6ad"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 81867926,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "98fc4ab3bb8df89321c0c6a02988af7fb52e5559dbd543acc77619646aed4c5d"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211052385666,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "total_fees_zero",
+      "success": true,
+      "error": null,
+      "error_code": null,
+      "cp_claim_invoked": true,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V",
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq",
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v",
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw",
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 79828645,
+      "fee_total_after": 79828645,
+      "reference_compute_units": 67102,
+      "candidate_compute_units": 54150,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "67ef6814a27826272a510a7e7dca94b7acccf6cb9719ce2ce87e9954726dc7c8"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 81867926,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "98fc4ab3bb8df89321c0c6a02988af7fb52e5559dbd543acc77619646aed4c5d"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211052385666,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "total_fees_exact_max",
+      "success": true,
+      "error": null,
+      "error_code": null,
+      "cp_claim_invoked": true,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V",
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq",
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v",
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw",
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 79828645,
+      "fee_total_after": 18446744073709551615,
+      "reference_compute_units": 67102,
+      "candidate_compute_units": 54150,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "ec3ce8be59c367d5def1fd30899e66255e945b5c86c338052de434018225fde8"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 81867926,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "98fc4ab3bb8df89321c0c6a02988af7fb52e5559dbd543acc77619646aed4c5d"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211052385666,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "total_fees_overflow",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Fieldless(ProgramFailedToComplete)))",
+      "error_code": null,
+      "cp_claim_invoked": true,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 18446744073629722971,
+      "reference_compute_units": 67671,
+      "candidate_compute_units": 53759,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program log: panicked at programs/fee_share_trader_dao/src/instructions/claim_meteora_fees.rs:52:5:\nattempt to add with overflow"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program log: panicked at src/instructions/external.rs:223:5:\nattempt to add with overflow"
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "be20c4bef4aca9e0ceb469ccfa443c75a7cdbf0bb21e2b8c0244fa0219399801"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "vault_zero",
+      "success": true,
+      "error": null,
+      "error_code": null,
+      "cp_claim_invoked": true,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V",
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq",
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v",
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw",
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 79828645,
+      "fee_total_after": 1618760199006,
+      "reference_compute_units": 67102,
+      "candidate_compute_units": 54150,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "26d9b8a85a851c878de5ae70018f2ce096581964aa1124a5bac2f0ea7f16fdd0"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 81867925,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "5041cf58b3b9399fe3278d5329ead2e841f5623289f3f128acf715d97b84daff"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211052385666,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "vault_1001",
+      "success": true,
+      "error": null,
+      "error_code": null,
+      "cp_claim_invoked": true,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V",
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq",
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v",
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw",
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 79828645,
+      "fee_total_after": 1618760199006,
+      "reference_compute_units": 67102,
+      "candidate_compute_units": 54150,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "26d9b8a85a851c878de5ae70018f2ce096581964aa1124a5bac2f0ea7f16fdd0"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 81868926,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "63eaed852cfc31e27751cc9b5c264743cf48a6434549cd058d3b29fc577f2a45"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211052385666,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_vault_authority",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "error_code": 2015,
+      "cp_claim_invoked": false,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618680370361,
+      "reference_compute_units": 19786,
+      "candidate_compute_units": 11987,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: funding_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated."
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: funding_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated."
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "d6fc560bac56c731dbc3bd9bb507400565460dd1c1d84badc6317b0aea5acebb"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_vault_mint",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3))))",
+      "error_code": 3,
+      "cp_claim_invoked": true,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618680370361,
+      "reference_compute_units": 61063,
+      "candidate_compute_units": 49064,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "c592b33c00bb77e8c9e7f26014a888ddd5ff18ad38ebe1b473335d67ecce18f3"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_state_owner",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "error_code": 3007,
+      "cp_claim_invoked": false,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618680370361,
+      "reference_compute_units": 10226,
+      "candidate_compute_units": 8497,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_position_owner",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "error_code": 3007,
+      "cp_claim_invoked": true,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618680370361,
+      "reference_compute_units": 53177,
+      "candidate_compute_units": 41178,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program log: AnchorError caused by account: position. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program log: AnchorError caused by account: position. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_state_and_vault_authority",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "error_code": 3007,
+      "cp_claim_invoked": false,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618680370361,
+      "reference_compute_units": 10226,
+      "candidate_compute_units": 8497,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "d6fc560bac56c731dbc3bd9bb507400565460dd1c1d84badc6317b0aea5acebb"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_vault_authority_and_position_owner",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "error_code": 2015,
+      "cp_claim_invoked": false,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618680370361,
+      "reference_compute_units": 19786,
+      "candidate_compute_units": 11987,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: funding_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated."
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: funding_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated."
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "d6fc560bac56c731dbc3bd9bb507400565460dd1c1d84badc6317b0aea5acebb"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_position_owner_and_vault_mint",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "error_code": 3007,
+      "cp_claim_invoked": true,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618680370361,
+      "reference_compute_units": 53177,
+      "candidate_compute_units": 41178,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program log: AnchorError caused by account: position. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program log: AnchorError caused by account: position. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "c592b33c00bb77e8c9e7f26014a888ddd5ff18ad38ebe1b473335d67ecce18f3"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_state_funding_mint",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6000))))",
+      "error_code": 6000,
+      "cp_claim_invoked": false,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618680370361,
+      "reference_compute_units": 18953,
+      "candidate_compute_units": 11287,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: BadMint. Error Number: 6000. Error Message: Invalid token mint."
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: fee_share_state. Error Code: BadMint. Error Number: 6000. Error Message: Invalid token mint."
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "735677dd8524b3e7f6868a1a290579e253d8b29f16021b23a6d0fa263892ee8a"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_state_dao_mint",
+      "success": true,
+      "error": null,
+      "error_code": null,
+      "cp_claim_invoked": true,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V",
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq",
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v",
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw",
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 79828645,
+      "fee_total_after": 1618760199006,
+      "reference_compute_units": 67102,
+      "candidate_compute_units": 54150,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "d13d13d552c9c6f5c3a5b0667b495746736c4b3e62369192b9a4c59c9d3257c8"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 81867926,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "98fc4ab3bb8df89321c0c6a02988af7fb52e5559dbd543acc77619646aed4c5d"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211052385666,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_token_ata_authority",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "error_code": 2015,
+      "cp_claim_invoked": false,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618680370361,
+      "reference_compute_units": 22960,
+      "candidate_compute_units": 16051,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: token_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated."
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated."
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "dda9030be367846a4376ec37efa57228428e452bf37b7d63f4a2b8382d291e61"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_token_ata_mint",
+      "success": true,
+      "error": null,
+      "error_code": null,
+      "cp_claim_invoked": true,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V",
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq",
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v",
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw",
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 79828645,
+      "fee_total_after": 1618760199006,
+      "reference_compute_units": 67102,
+      "candidate_compute_units": 54150,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee"
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "26d9b8a85a851c878de5ae70018f2ce096581964aa1124a5bac2f0ea7f16fdd0"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 81867926,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "98fc4ab3bb8df89321c0c6a02988af7fb52e5559dbd543acc77619646aed4c5d"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "9206dec5e95aa879e573123ff097745a1ccf4310d42fed8049bb5b2ab13723f9"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "4955261bcda22826a68e849b2f2ed3ddc53e3cbb6af45c7839a486a23e1f4750"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211052385666,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_fee_nft_owner",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "error_code": 3007,
+      "cp_claim_invoked": false,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618680370361,
+      "reference_compute_units": 13240,
+      "candidate_compute_units": 10123,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: fee_nft_account. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: fee_nft_account. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_pool_owner",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "error_code": 3007,
+      "cp_claim_invoked": true,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618680370361,
+      "reference_compute_units": 53107,
+      "candidate_compute_units": 41108,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program log: AnchorError caused by account: pool. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program log: AnchorError caused by account: pool. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_fee_nft_authority",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2015))))",
+      "error_code": 2015,
+      "cp_claim_invoked": false,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618680370361,
+      "reference_compute_units": 18558,
+      "candidate_compute_units": 11246,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated."
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated."
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "e14abb2d0db7ccbda83f4261ca19ae7fc0954134f48b2359706e703855e7f878"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_fee_nft_mint",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2014))))",
+      "error_code": 2014,
+      "cp_claim_invoked": false,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618680370361,
+      "reference_compute_units": 18555,
+      "candidate_compute_units": 11255,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenMint. Error Number: 2014. Error Message: A token mint constraint was violated."
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenMint. Error Number: 2014. Error Message: A token mint constraint was violated."
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "33ce47778349694b436742df6a196f6c20a89575463ecfc022a00c566abacd3a"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_fee_nft_amount",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2003))))",
+      "error_code": 2003,
+      "cp_claim_invoked": false,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618680370361,
+      "reference_compute_units": 19052,
+      "candidate_compute_units": 11438,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: fee_nft_account. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated."
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: fee_nft_account. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated."
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "3eb78434b8472b931186fb737ce459ce2b4c534121171c858d1fec930e58c87e"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_position_nft_mint_owner",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "error_code": 3007,
+      "cp_claim_invoked": false,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618680370361,
+      "reference_compute_units": 14684,
+      "candidate_compute_units": 10578,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: position_nft_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: position_nft_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_pool_token_vault_owner",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "error_code": 3007,
+      "cp_claim_invoked": true,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618680370361,
+      "reference_compute_units": 55407,
+      "candidate_compute_units": 43408,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program log: AnchorError caused by account: token_a_vault. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: Instruction: ClaimPositionFee",
+        "Program log: AnchorError caused by account: token_a_vault. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_funding_mint_owner",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "error_code": 3007,
+      "cp_claim_invoked": false,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618680370361,
+      "reference_compute_units": 9431,
+      "candidate_compute_units": 9189,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: funding_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: funding_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "case": "wrong_token_mint_owner",
+      "success": false,
+      "error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "error_code": 3007,
+      "cp_claim_invoked": false,
+      "all_snapshot_account_poststates_equal": true,
+      "tracked_account_count": 13,
+      "changed_keys": [
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK"
+      ],
+      "funding_claimed": 0,
+      "fee_total_after": 1618680370361,
+      "reference_compute_units": 10264,
+      "candidate_compute_units": 9457,
+      "reference_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: token_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: ClaimMeteoraFees",
+        "Program log: AnchorError caused by account: token_mint. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected."
+      ],
+      "post_account_hashes": {
+        "So11111111111111111111111111111111111111112": {
+          "lamports": 1856043097572,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3"
+        },
+        "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos": {
+          "lamports": 35565888,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "81f452570b3946c0bae4fd5a6c91b725c999aae5f399f8c7ee59cab95031c7ec"
+        },
+        "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V": {
+          "lamports": 2067120,
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "data_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc"
+        },
+        "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "65abb253993ec20d676afd57bd8dc2a5e831733073ee4e1a2475e1bac823faee"
+        },
+        "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J": {
+          "lamports": 4127280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "bf8e5bb05bdd54046f5a2cbf815ef365fa995afef88c2b589a5cac8bbeee7682"
+        },
+        "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq": {
+          "lamports": 2039281,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e"
+        },
+        "7kzWYBKGs1ACCYyL2MDqCG1yzWMNoGJbifDmPHhLbtf9": {
+          "lamports": 2074080,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "379f9a164ed0d20ec0a50ea732e3f9c1473ecbef8eb9d9f13f6ba80ac136316f"
+        },
+        "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2": {
+          "lamports": 8630400,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "19f209fbc90e997980544e098f893e50eb79e439179debc4be2ff4449f570342"
+        },
+        "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v": {
+          "lamports": 3730560,
+          "owner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "data_sha256": "c2fecb5c9d663ada774fbca87664d741b0221327074952ba4823ef9b0ae9b4da"
+        },
+        "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu": {
+          "lamports": 2039280,
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "data_sha256": "7911fbd42728223378a3c891c96bd0bdfccbc7f6026d4ae746b6e42cf32405ca"
+        },
+        "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw": {
+          "lamports": 211132214311,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56"
+        },
+        "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC": {
+          "lamports": 178300434586,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "CdnPLLzipWFFaVdwjHi9zoUqRp2wRotjJpNMeUW6WBxK": {
+          "lamports": 9999995000,
+          "owner": "11111111111111111111111111111111",
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    }
+  ],
+  "qualification": "Source candidate is not a byte-identical rebuild. The fixture is a later captured state, not the historical prestate. One CP pool and 15 bounded cases do not cover other CP pool modes, token extensions, malformed inputs or full fee-claim behavior. CP AMM math executes the pinned deployed dependency ELF in both sides. No live transaction or funds."
+}

@@ -1,0 +1,2297 @@
+{
+  "offline_only": true,
+  "genesis_hash": "2s9NkoDB7RGLKGWpvk2BWF1kLx4w2sVWHY3FiEaeNg21",
+  "fee_share_program": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+  "fee_share_elf_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+  "last_deploy_slot": 364247116,
+  "redeem_discriminator": "b80c569546c461e1",
+  "collect_platform_fees_discriminator": "bf99dba405419930",
+  "signature_verification_enabled": true,
+  "committed_transactions": 24,
+  "scenarios": [
+    {
+      "layout": "none",
+      "edits": {
+        "capture_slot": 460726264,
+        "source_snapshot": "analysis/daos_fun/fee_share_trader_dao-redeem-snapshot.json",
+        "source_state_sha256": "8a2ec613d3ed550f6d78b5b4d52b8152235a83e0a086cef9fa29eabac38c25fc",
+        "source_vault_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": null,
+        "synthetic_fee_accrual": 1000,
+        "synthetic_recipient_atas": {
+          "creator": "9C4kdNHjoaP3H4qQqvxTSvvsoz3MbH25u7eH5Xuuvedq",
+          "referrer": "CnsWx5aQXTm2PLF4xU393atMZ5jdnUYNoWEfNyexJWms",
+          "outsider": "Cqh8EaA67H6VXmQquX9HnyXwASERiFtkEyktgaWxAW7w",
+          "platform": "DKuEjbHP3kyvaKvCKcdd7S3Y2WUf11mtq5hmvUQN3ckS"
+        },
+        "rent_reserve_lamports": 2039280
+      },
+      "keys": {
+        "funding": "So11111111111111111111111111111111111111112",
+        "token": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+        "state": "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V",
+        "vault": "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq",
+        "creator": "9C4kdNHjoaP3H4qQqvxTSvvsoz3MbH25u7eH5Xuuvedq",
+        "referrer": "CnsWx5aQXTm2PLF4xU393atMZ5jdnUYNoWEfNyexJWms",
+        "outsider": "Cqh8EaA67H6VXmQquX9HnyXwASERiFtkEyktgaWxAW7w",
+        "platform": "DKuEjbHP3kyvaKvCKcdd7S3Y2WUf11mtq5hmvUQN3ckS"
+      },
+      "creator_available_initial": 500,
+      "initial": {
+        "state_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+        "state": {
+          "total_fees": 1618680371361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185180,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185180,
+          "trailing_padding_nonzero": false
+        },
+        "vault_sha256": "f7be5d190a2ed49696d1ef6429965d819eb0dc9ad20cdbfd836c562a378ab0a9",
+        "balances": {
+          "vault": 1001,
+          "creator": 0,
+          "referrer": 0,
+          "outsider": 0,
+          "platform": 0
+        }
+      },
+      "final": {
+        "state_sha256": "2a63d647e2d9448fe5f0262400ef96ae06e5e2056fe2ee9a4ed84a6ffd0484ec",
+        "state": {
+          "total_fees": 1618680371361,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+          "referrer_tag": 0,
+          "referrer": null,
+          "counter_offset": 113,
+          "creator_distributed": 809340185680,
+          "referrer_distributed": 0,
+          "platform_distributed": 809340185680,
+          "trailing_padding_nonzero": false
+        },
+        "vault_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+        "balances": {
+          "vault": 1,
+          "creator": 500,
+          "referrer": 0,
+          "outsider": 0,
+          "platform": 500
+        }
+      },
+      "actions": [
+        {
+          "case": "outsider_entity_0",
+          "offline_signature": "5b5NsD3fXooEzJbKLx6gLZbHjUhL97feqMfsZuRzppMUQeWzAkCX8MvnsCRWN9zuTgS7hVvQ2cvNVi1TgzU3KPnm",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "units_consumed": 19304,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:14. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19154 of 259851 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+          ],
+          "before": {
+            "state_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185180,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185180,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "f7be5d190a2ed49696d1ef6429965d819eb0dc9ad20cdbfd836c562a378ab0a9",
+            "balances": {
+              "vault": 1001,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185180,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185180,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "f7be5d190a2ed49696d1ef6429965d819eb0dc9ad20cdbfd836c562a378ab0a9",
+            "balances": {
+              "vault": 1001,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        },
+        {
+          "case": "referrer_entity_0",
+          "offline_signature": "37wVBeK6aLrRyyVTfU2CaG2vGYmeN3CJGYaQhNffjwvXGCkMh5BaBQMnNk9JXLbKKQC8Qeg9KDEEKnkoiJKGzoMp",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "units_consumed": 22304,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:14. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22154 of 259852 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+          ],
+          "before": {
+            "state_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185180,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185180,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "f7be5d190a2ed49696d1ef6429965d819eb0dc9ad20cdbfd836c562a378ab0a9",
+            "balances": {
+              "vault": 1001,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185180,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185180,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "f7be5d190a2ed49696d1ef6429965d819eb0dc9ad20cdbfd836c562a378ab0a9",
+            "balances": {
+              "vault": 1001,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        },
+        {
+          "case": "referrer_entity_1",
+          "offline_signature": "4HWp7pnHar1E3bLyZwDFMhUeZYFx8j4m8BdwgAUdeim5ZuphWKtviQyyzDWNrL6P9vwejwYAEjA3tKxWqhJ5VKFR",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "units_consumed": 22288,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:14. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22138 of 259853 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+          ],
+          "before": {
+            "state_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185180,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185180,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "f7be5d190a2ed49696d1ef6429965d819eb0dc9ad20cdbfd836c562a378ab0a9",
+            "balances": {
+              "vault": 1001,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185180,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185180,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "f7be5d190a2ed49696d1ef6429965d819eb0dc9ad20cdbfd836c562a378ab0a9",
+            "balances": {
+              "vault": 1001,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        },
+        {
+          "case": "creator_entity_1",
+          "offline_signature": "56EXG2UinMDK1pxCFFFmnA1DRRgJuoM9TjDHVFPfBv9yMRPZVkEC2W2PcoComMuPzYNGreiqmL6CUVHeZWqfhkzy",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "units_consumed": 19288,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:14. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19138 of 259854 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+          ],
+          "before": {
+            "state_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185180,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185180,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "f7be5d190a2ed49696d1ef6429965d819eb0dc9ad20cdbfd836c562a378ab0a9",
+            "balances": {
+              "vault": 1001,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185180,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185180,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "f7be5d190a2ed49696d1ef6429965d819eb0dc9ad20cdbfd836c562a378ab0a9",
+            "balances": {
+              "vault": 1001,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        },
+        {
+          "case": "creator_over_cap",
+          "offline_signature": "2MJZjujPVEyFxCD6k2DkHRxtj9NYzwFHWfhWFBJianCyEJbnAxsEchGTShPQdny9WaRLn2j8vgZB2Kg9U2fHRzfi",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "units_consumed": 19454,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:29. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19304 of 259855 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+          ],
+          "before": {
+            "state_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185180,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185180,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "f7be5d190a2ed49696d1ef6429965d819eb0dc9ad20cdbfd836c562a378ab0a9",
+            "balances": {
+              "vault": 1001,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185180,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185180,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "f7be5d190a2ed49696d1ef6429965d819eb0dc9ad20cdbfd836c562a378ab0a9",
+            "balances": {
+              "vault": 1001,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        },
+        {
+          "case": "creator_at_cap",
+          "offline_signature": "23cvQ4w2aQW7MavyMrteKuw39sEZmFhEmZdfPwMPd1Z8o3UYi1Qimg35oEeGXsb7Ex7J1L4rucDsKKijheACJ3Lv",
+          "signature_verified": true,
+          "simulation_error": null,
+          "committed_error": null,
+          "ledger_error": null,
+          "units_consumed": 20791,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 240257 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20641 of 259856 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+          ],
+          "before": {
+            "state_sha256": "4e52b1aaaf497a378c85f6d7c95484b8fe9744d8f9125aa2e671636c3162a9c8",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185180,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185180,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "f7be5d190a2ed49696d1ef6429965d819eb0dc9ad20cdbfd836c562a378ab0a9",
+            "balances": {
+              "vault": 1001,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "a4fcdd361321e7ebbd695a59c25a60c5eb1bb5769c21c35e8093f0a1dd476f8d",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185680,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185180,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "cc2290fabd50c789ad8d848dbe6b2cc82df0ee1b8cd2d8f696a35d03e1f29e02",
+            "balances": {
+              "vault": 501,
+              "creator": 500,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": null,
+          "token_and_counter_conservation": true
+        },
+        {
+          "case": "creator_repeat",
+          "offline_signature": "4tJ9gsK52jhnZVyLSvkeES7aEab3XvdDEwyZkhxM8wzgY6Hhkxu8yDNvwzQd4hmvDxMqf5Mxcbwmnm82sAy1PppR",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "units_consumed": 19454,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:29. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19304 of 259857 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+          ],
+          "before": {
+            "state_sha256": "a4fcdd361321e7ebbd695a59c25a60c5eb1bb5769c21c35e8093f0a1dd476f8d",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185680,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185180,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "cc2290fabd50c789ad8d848dbe6b2cc82df0ee1b8cd2d8f696a35d03e1f29e02",
+            "balances": {
+              "vault": 501,
+              "creator": 500,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "a4fcdd361321e7ebbd695a59c25a60c5eb1bb5769c21c35e8093f0a1dd476f8d",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185680,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185180,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "cc2290fabd50c789ad8d848dbe6b2cc82df0ee1b8cd2d8f696a35d03e1f29e02",
+            "balances": {
+              "vault": 501,
+              "creator": 500,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        },
+        {
+          "case": "platform_over_cap",
+          "offline_signature": "47A56HHXxtR6P7rdyqL8WKHQxdnGs38zMKDHPdvaVACqDonbmCRF4SW9xz63AwqCqgh8jZGhDcNZANzq5ZtktdZn",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "units_consumed": 20708,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: CollectPlatformFees",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/collect_platform_fees.rs:21. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20558 of 259858 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+          ],
+          "before": {
+            "state_sha256": "a4fcdd361321e7ebbd695a59c25a60c5eb1bb5769c21c35e8093f0a1dd476f8d",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185680,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185180,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "cc2290fabd50c789ad8d848dbe6b2cc82df0ee1b8cd2d8f696a35d03e1f29e02",
+            "balances": {
+              "vault": 501,
+              "creator": 500,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "a4fcdd361321e7ebbd695a59c25a60c5eb1bb5769c21c35e8093f0a1dd476f8d",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185680,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185180,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "cc2290fabd50c789ad8d848dbe6b2cc82df0ee1b8cd2d8f696a35d03e1f29e02",
+            "balances": {
+              "vault": 501,
+              "creator": 500,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        },
+        {
+          "case": "platform_remaining",
+          "offline_signature": "2pVXVTX7dr19hRa6JNcp1TQzGuB1bqBgzVNidnZzETceFSC36p8TX7X6hutaPoZdpvS4e9fFhyYMfu9CP9Ve1Ybe",
+          "signature_verified": true,
+          "simulation_error": null,
+          "committed_error": null,
+          "ledger_error": null,
+          "units_consumed": 21960,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: CollectPlatformFees",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 239070 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21810 of 259859 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+          ],
+          "before": {
+            "state_sha256": "a4fcdd361321e7ebbd695a59c25a60c5eb1bb5769c21c35e8093f0a1dd476f8d",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185680,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185180,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "cc2290fabd50c789ad8d848dbe6b2cc82df0ee1b8cd2d8f696a35d03e1f29e02",
+            "balances": {
+              "vault": 501,
+              "creator": 500,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "2a63d647e2d9448fe5f0262400ef96ae06e5e2056fe2ee9a4ed84a6ffd0484ec",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185680,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185680,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+            "balances": {
+              "vault": 1,
+              "creator": 500,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 500
+            }
+          },
+          "protocol_unchanged_on_failure": null,
+          "token_and_counter_conservation": true
+        },
+        {
+          "case": "platform_repeat",
+          "offline_signature": "4FbyKWht8kvMTb5y5TxKURVP9CSxtRAr8EdCqoEpbaSHc5coFHyi5512gMnVmNV8TGi2tVBykBtfPiYEzHUsDAe8",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "units_consumed": 20708,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: CollectPlatformFees",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/collect_platform_fees.rs:21. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20558 of 259860 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+          ],
+          "before": {
+            "state_sha256": "2a63d647e2d9448fe5f0262400ef96ae06e5e2056fe2ee9a4ed84a6ffd0484ec",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185680,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185680,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+            "balances": {
+              "vault": 1,
+              "creator": 500,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 500
+            }
+          },
+          "after": {
+            "state_sha256": "2a63d647e2d9448fe5f0262400ef96ae06e5e2056fe2ee9a4ed84a6ffd0484ec",
+            "state": {
+              "total_fees": 1618680371361,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 0,
+              "referrer": null,
+              "counter_offset": 113,
+              "creator_distributed": 809340185680,
+              "referrer_distributed": 0,
+              "platform_distributed": 809340185680,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+            "balances": {
+              "vault": 1,
+              "creator": 500,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 500
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        }
+      ]
+    },
+    {
+      "layout": "some_self",
+      "edits": {
+        "capture_slot": 460726261,
+        "source_snapshot": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+        "source_state_sha256": "c6d3d5a5903bfa5245566716e55641595334df1caa2fa4aef4fae7e801fcc140",
+        "source_vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+        "original_creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_fee_accrual": 0,
+        "synthetic_recipient_atas": {
+          "creator": "9C4kdNHjoaP3H4qQqvxTSvvsoz3MbH25u7eH5Xuuvedq",
+          "referrer": "CnsWx5aQXTm2PLF4xU393atMZ5jdnUYNoWEfNyexJWms",
+          "outsider": "Cqh8EaA67H6VXmQquX9HnyXwASERiFtkEyktgaWxAW7w",
+          "platform": "DKuEjbHP3kyvaKvCKcdd7S3Y2WUf11mtq5hmvUQN3ckS"
+        },
+        "rent_reserve_lamports": 2039280
+      },
+      "keys": {
+        "funding": "So11111111111111111111111111111111111111112",
+        "token": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+        "state": "ATcKXyYVrMc7DwyDuWHL3xdZYVGDnYuGQpgnWu7TnKjd",
+        "vault": "HfafGQp3hqXbt8AteEXSFyYdFmTuGUN89Rn9wdvpexuW",
+        "creator": "9C4kdNHjoaP3H4qQqvxTSvvsoz3MbH25u7eH5Xuuvedq",
+        "referrer": "CnsWx5aQXTm2PLF4xU393atMZ5jdnUYNoWEfNyexJWms",
+        "outsider": "Cqh8EaA67H6VXmQquX9HnyXwASERiFtkEyktgaWxAW7w",
+        "platform": "DKuEjbHP3kyvaKvCKcdd7S3Y2WUf11mtq5hmvUQN3ckS"
+      },
+      "creator_available_initial": 8922753598,
+      "initial": {
+        "state_sha256": "4846f55b682dc1f069459ffb95d7cd1cdcaf175c3be077b7259af42f6a6010ad",
+        "state": {
+          "total_fees": 876081870188,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+          "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+          "referrer_tag": 1,
+          "referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+          "counter_offset": 145,
+          "creator_distributed": 429118181496,
+          "referrer_distributed": 0,
+          "platform_distributed": 438040935094,
+          "trailing_padding_nonzero": false
+        },
+        "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+        "balances": {
+          "vault": 8922753598,
+          "creator": 0,
+          "referrer": 0,
+          "outsider": 0,
+          "platform": 0
+        }
+      },
+      "final": {
+        "state_sha256": "739a5a6d39ac3d4e5488cf923011adbe173e8530a84ddea3e19679524e234c75",
+        "state": {
+          "total_fees": 876081870188,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+          "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+          "referrer_tag": 1,
+          "referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+          "counter_offset": 145,
+          "creator_distributed": 438040935094,
+          "referrer_distributed": 0,
+          "platform_distributed": 438040935094,
+          "trailing_padding_nonzero": false
+        },
+        "vault_sha256": "5afadbd7219819ca98805c1bbda84e9baf75454f68cea839ee908feecb045d02",
+        "balances": {
+          "vault": 0,
+          "creator": 8922753598,
+          "referrer": 0,
+          "outsider": 0,
+          "platform": 0
+        }
+      },
+      "actions": [
+        {
+          "case": "outsider_entity_0",
+          "offline_signature": "CNqCVVDSPjy2ZQkMhfLbasSQZjVfmNBCLhdVJYjPCDZFJMKAngx5UqCpxpUk3kziSFygkknR8Tp8LZe7VvfZUy6",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "units_consumed": 19579,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:14. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19429 of 259861 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+          ],
+          "before": {
+            "state_sha256": "4846f55b682dc1f069459ffb95d7cd1cdcaf175c3be077b7259af42f6a6010ad",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "4846f55b682dc1f069459ffb95d7cd1cdcaf175c3be077b7259af42f6a6010ad",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        },
+        {
+          "case": "referrer_entity_0",
+          "offline_signature": "5HxHGdQMr5r3YC9u5RB5n5oV73JvEtRqWXkZVx51hasnVJ9kHLMw9an5YNbvkcUxWe62adrJvDYtHCWsEYFWpiKF",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "units_consumed": 22579,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:14. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22429 of 259862 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+          ],
+          "before": {
+            "state_sha256": "4846f55b682dc1f069459ffb95d7cd1cdcaf175c3be077b7259af42f6a6010ad",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "4846f55b682dc1f069459ffb95d7cd1cdcaf175c3be077b7259af42f6a6010ad",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        },
+        {
+          "case": "referrer_entity_1",
+          "offline_signature": "5qBCGqvPfM1cZko3teDJ1sY4ZBZE45eWBrgUg9tSPhRQd8HWM3uT61WtkqC7foAEETSZRQ6upA38sCgsvQCqH1sH",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "units_consumed": 22563,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:14. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22413 of 259863 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+          ],
+          "before": {
+            "state_sha256": "4846f55b682dc1f069459ffb95d7cd1cdcaf175c3be077b7259af42f6a6010ad",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "4846f55b682dc1f069459ffb95d7cd1cdcaf175c3be077b7259af42f6a6010ad",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        },
+        {
+          "case": "creator_entity_1",
+          "offline_signature": "4Y7a2xFbyqyTRSBQK2BEKRdHrEWfCVTRn21VicADkHvQypZoZKf6KCS8TFe44ssnaRGC8dKundi6pgyosWHD1HkD",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "units_consumed": 19563,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:14. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19413 of 259864 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+          ],
+          "before": {
+            "state_sha256": "4846f55b682dc1f069459ffb95d7cd1cdcaf175c3be077b7259af42f6a6010ad",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "4846f55b682dc1f069459ffb95d7cd1cdcaf175c3be077b7259af42f6a6010ad",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        },
+        {
+          "case": "creator_over_cap",
+          "offline_signature": "367wh8kBVG9sDaf6koCxu7p4dgm2wutRyaTNfE7hKiksUuFfAFWyL5KrmNpQgZUnwhawZwqu7vMkYFT6GAbGtBpQ",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "units_consumed": 19729,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:29. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19579 of 259865 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+          ],
+          "before": {
+            "state_sha256": "4846f55b682dc1f069459ffb95d7cd1cdcaf175c3be077b7259af42f6a6010ad",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "4846f55b682dc1f069459ffb95d7cd1cdcaf175c3be077b7259af42f6a6010ad",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        },
+        {
+          "case": "creator_at_cap",
+          "offline_signature": "3SEBoMSvt2bgfhU6ap6EySMZ2LvLTYxkvSCepoAPofNqurXxX9hoJr6RkazYcG9mY6fPUWEAgLUJoJ3P9jNYbW1M",
+          "signature_verified": true,
+          "simulation_error": null,
+          "committed_error": null,
+          "ledger_error": null,
+          "units_consumed": 21114,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 239992 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20964 of 259866 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+          ],
+          "before": {
+            "state_sha256": "4846f55b682dc1f069459ffb95d7cd1cdcaf175c3be077b7259af42f6a6010ad",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "739a5a6d39ac3d4e5488cf923011adbe173e8530a84ddea3e19679524e234c75",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "counter_offset": 145,
+              "creator_distributed": 438040935094,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "5afadbd7219819ca98805c1bbda84e9baf75454f68cea839ee908feecb045d02",
+            "balances": {
+              "vault": 0,
+              "creator": 8922753598,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": null,
+          "token_and_counter_conservation": true
+        },
+        {
+          "case": "creator_repeat",
+          "offline_signature": "2dnVmLreuiyYmsGJ7XN8MrFKcEDRpM7vNQ2MAuPq7ieb4bYc9iyj5TWkquRguFTFw8GjpPGB7gvbHWQMjB11XbvA",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "units_consumed": 19729,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:29. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19579 of 259867 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+          ],
+          "before": {
+            "state_sha256": "739a5a6d39ac3d4e5488cf923011adbe173e8530a84ddea3e19679524e234c75",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "counter_offset": 145,
+              "creator_distributed": 438040935094,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "5afadbd7219819ca98805c1bbda84e9baf75454f68cea839ee908feecb045d02",
+            "balances": {
+              "vault": 0,
+              "creator": 8922753598,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "739a5a6d39ac3d4e5488cf923011adbe173e8530a84ddea3e19679524e234c75",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "counter_offset": 145,
+              "creator_distributed": 438040935094,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "5afadbd7219819ca98805c1bbda84e9baf75454f68cea839ee908feecb045d02",
+            "balances": {
+              "vault": 0,
+              "creator": 8922753598,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        }
+      ]
+    },
+    {
+      "layout": "some_distinct",
+      "edits": {
+        "capture_slot": 460726261,
+        "source_snapshot": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+        "source_state_sha256": "c6d3d5a5903bfa5245566716e55641595334df1caa2fa4aef4fae7e801fcc140",
+        "source_vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+        "original_creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+        "synthetic_creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+        "synthetic_referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+        "synthetic_fee_accrual": 0,
+        "synthetic_recipient_atas": {
+          "creator": "9C4kdNHjoaP3H4qQqvxTSvvsoz3MbH25u7eH5Xuuvedq",
+          "referrer": "CnsWx5aQXTm2PLF4xU393atMZ5jdnUYNoWEfNyexJWms",
+          "outsider": "Cqh8EaA67H6VXmQquX9HnyXwASERiFtkEyktgaWxAW7w",
+          "platform": "DKuEjbHP3kyvaKvCKcdd7S3Y2WUf11mtq5hmvUQN3ckS"
+        },
+        "rent_reserve_lamports": 2039280
+      },
+      "keys": {
+        "funding": "So11111111111111111111111111111111111111112",
+        "token": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+        "state": "ATcKXyYVrMc7DwyDuWHL3xdZYVGDnYuGQpgnWu7TnKjd",
+        "vault": "HfafGQp3hqXbt8AteEXSFyYdFmTuGUN89Rn9wdvpexuW",
+        "creator": "9C4kdNHjoaP3H4qQqvxTSvvsoz3MbH25u7eH5Xuuvedq",
+        "referrer": "CnsWx5aQXTm2PLF4xU393atMZ5jdnUYNoWEfNyexJWms",
+        "outsider": "Cqh8EaA67H6VXmQquX9HnyXwASERiFtkEyktgaWxAW7w",
+        "platform": "DKuEjbHP3kyvaKvCKcdd7S3Y2WUf11mtq5hmvUQN3ckS"
+      },
+      "creator_available_initial": 8922753598,
+      "initial": {
+        "state_sha256": "81cdebdf81f8a7a2aae3a81b9dab02ca8b46df30a70f5768273676df16e66faf",
+        "state": {
+          "total_fees": 876081870188,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+          "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+          "referrer_tag": 1,
+          "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+          "counter_offset": 145,
+          "creator_distributed": 429118181496,
+          "referrer_distributed": 0,
+          "platform_distributed": 438040935094,
+          "trailing_padding_nonzero": false
+        },
+        "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+        "balances": {
+          "vault": 8922753598,
+          "creator": 0,
+          "referrer": 0,
+          "outsider": 0,
+          "platform": 0
+        }
+      },
+      "final": {
+        "state_sha256": "3a0629d2dc6b6a268127e3bf1fad22d972cd540a1fa296acc97fefbd904c7510",
+        "state": {
+          "total_fees": 876081870188,
+          "funding_mint": "So11111111111111111111111111111111111111112",
+          "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+          "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+          "referrer_tag": 1,
+          "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+          "counter_offset": 145,
+          "creator_distributed": 438040935094,
+          "referrer_distributed": 0,
+          "platform_distributed": 438040935094,
+          "trailing_padding_nonzero": false
+        },
+        "vault_sha256": "5afadbd7219819ca98805c1bbda84e9baf75454f68cea839ee908feecb045d02",
+        "balances": {
+          "vault": 0,
+          "creator": 8922753598,
+          "referrer": 0,
+          "outsider": 0,
+          "platform": 0
+        }
+      },
+      "actions": [
+        {
+          "case": "outsider_entity_0",
+          "offline_signature": "5Vc8tdZQsfbGJ9jw525GFHyb7fZVKA56YqrzyecjxBvMraBWEZ2PxZVW4GnDeoxveex51bXAH8igSVJXcqCfPG8m",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "units_consumed": 19579,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:14. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19429 of 259868 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+          ],
+          "before": {
+            "state_sha256": "81cdebdf81f8a7a2aae3a81b9dab02ca8b46df30a70f5768273676df16e66faf",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "81cdebdf81f8a7a2aae3a81b9dab02ca8b46df30a70f5768273676df16e66faf",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        },
+        {
+          "case": "referrer_entity_0",
+          "offline_signature": "3SSiWdG1RE1zGFKgHftyNAHtpCiquupQuFpNesxhqv5p6pzduNJ9F586mEhNvE7oS5kCJDe88aiksovcZV5Py73X",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "units_consumed": 22579,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:14. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22429 of 259869 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+          ],
+          "before": {
+            "state_sha256": "81cdebdf81f8a7a2aae3a81b9dab02ca8b46df30a70f5768273676df16e66faf",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "81cdebdf81f8a7a2aae3a81b9dab02ca8b46df30a70f5768273676df16e66faf",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        },
+        {
+          "case": "referrer_entity_1",
+          "offline_signature": "4bzEhG3z2vKkkp5FdH7CtDS9Az3xMrUmn3ozttscFcSJnRmgDvnExCsrBVREaSBbeftAWdUvkybDw3rguNXqEszD",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "units_consumed": 22563,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:14. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22413 of 259870 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+          ],
+          "before": {
+            "state_sha256": "81cdebdf81f8a7a2aae3a81b9dab02ca8b46df30a70f5768273676df16e66faf",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "81cdebdf81f8a7a2aae3a81b9dab02ca8b46df30a70f5768273676df16e66faf",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        },
+        {
+          "case": "creator_entity_1",
+          "offline_signature": "2VB99iAcApT47JotNa3xdgt4gbcTEx5D8U3A4cypsgNcp12dsBXzCHzQJHdnGeJSsru5Si2mNywz7VhigbXrZiLh",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "units_consumed": 19563,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:14. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19413 of 259871 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+          ],
+          "before": {
+            "state_sha256": "81cdebdf81f8a7a2aae3a81b9dab02ca8b46df30a70f5768273676df16e66faf",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "81cdebdf81f8a7a2aae3a81b9dab02ca8b46df30a70f5768273676df16e66faf",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        },
+        {
+          "case": "creator_over_cap",
+          "offline_signature": "UHxwKXBXbUShz1byJWJfV9imfMRChJC8GM4tvX9m5AwiXZ73tEfJEXGF4rkG4z8WfPjRuvaxMFbbfFu1Q6R6txw",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "units_consumed": 19729,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:29. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19579 of 259872 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+          ],
+          "before": {
+            "state_sha256": "81cdebdf81f8a7a2aae3a81b9dab02ca8b46df30a70f5768273676df16e66faf",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "81cdebdf81f8a7a2aae3a81b9dab02ca8b46df30a70f5768273676df16e66faf",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        },
+        {
+          "case": "creator_at_cap",
+          "offline_signature": "5JWWpjxsKDu24eJQSNq8LioMN4Vhm7fADNhoMF8CneJ8BFXkaJzDdY5RT2AmqBUNbeyhTjs1bHismvZxAiV1Fkj2",
+          "signature_verified": true,
+          "simulation_error": null,
+          "committed_error": null,
+          "ledger_error": null,
+          "units_consumed": 21114,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 239999 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20964 of 259873 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+          ],
+          "before": {
+            "state_sha256": "81cdebdf81f8a7a2aae3a81b9dab02ca8b46df30a70f5768273676df16e66faf",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+              "counter_offset": 145,
+              "creator_distributed": 429118181496,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+            "balances": {
+              "vault": 8922753598,
+              "creator": 0,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "3a0629d2dc6b6a268127e3bf1fad22d972cd540a1fa296acc97fefbd904c7510",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+              "counter_offset": 145,
+              "creator_distributed": 438040935094,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "5afadbd7219819ca98805c1bbda84e9baf75454f68cea839ee908feecb045d02",
+            "balances": {
+              "vault": 0,
+              "creator": 8922753598,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": null,
+          "token_and_counter_conservation": true
+        },
+        {
+          "case": "creator_repeat",
+          "offline_signature": "4Du1exzcS9iEgPQ8z9kN4Hgi1qaoo349f6bu8xzXVz3ut2dVvzZxCA6JZz7vgZrvH9kyRBX66SaMv8BbatRm3yXE",
+          "signature_verified": true,
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "units_consumed": 19729,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:29. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19579 of 259874 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+          ],
+          "before": {
+            "state_sha256": "3a0629d2dc6b6a268127e3bf1fad22d972cd540a1fa296acc97fefbd904c7510",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+              "counter_offset": 145,
+              "creator_distributed": 438040935094,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "5afadbd7219819ca98805c1bbda84e9baf75454f68cea839ee908feecb045d02",
+            "balances": {
+              "vault": 0,
+              "creator": 8922753598,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "after": {
+            "state_sha256": "3a0629d2dc6b6a268127e3bf1fad22d972cd540a1fa296acc97fefbd904c7510",
+            "state": {
+              "total_fees": 876081870188,
+              "funding_mint": "So11111111111111111111111111111111111111112",
+              "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+              "creator": "GFKfRLPKHYRyARLSTc4p94vukKPMFAkSrQT5j55WYoy2",
+              "referrer_tag": 1,
+              "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+              "counter_offset": 145,
+              "creator_distributed": 438040935094,
+              "referrer_distributed": 0,
+              "platform_distributed": 438040935094,
+              "trailing_padding_nonzero": false
+            },
+            "vault_sha256": "5afadbd7219819ca98805c1bbda84e9baf75454f68cea839ee908feecb045d02",
+            "balances": {
+              "vault": 0,
+              "creator": 8922753598,
+              "referrer": 0,
+              "outsider": 0,
+              "platform": 0
+            }
+          },
+          "protocol_unchanged_on_failure": true
+        }
+      ]
+    }
+  ],
+  "qualification": "The current pinned ELF ran in a fresh writable --offline Surfpool ledger with real signatures from disposable local keys. Captured State/vault/mint bytes anchor each scenario; creator/referrer keys and recipient ATAs are local substitutions, and the exhausted None state has 1,000 synthetic accrued units. Successes were submitted and read back from Surfpool, while failed submitted calls left tracked protocol accounts unchanged. This proves these local payout/cap branches, not control of historical signers or a live fund-risk exploit."
+}

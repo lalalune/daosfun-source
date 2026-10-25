@@ -1,0 +1,110 @@
+{
+  "deployed_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+  "candidate_unstripped_sha256": "2ab52b4568f7207fbba14b2450394854036848fd60ae889624a379f649ddb580",
+  "candidate_path_when_measured": "/private/tmp/fee-share-dbc-v141-20261024/target/sbf-solana-solana/release/fee_share_trader_dao.so",
+  "deployed_function_table_sha256": "c59d77ab46f88a7ef82db8a6529aa76cd89403510a89ee3302be27a58e73b584",
+  "wrapper_count": 9,
+  "exact_region_count": 0,
+  "rows": [
+    {
+      "instruction": "change_creator",
+      "deployed_address": "0x42da0",
+      "deployed_bytes": 568,
+      "candidate_address": "0x289d8",
+      "candidate_bytes": 560,
+      "region_equal": false,
+      "first_region_difference": 36,
+      "same_offset_matching_instructions": 11,
+      "same_offset_compared_instructions": 70
+    },
+    {
+      "instruction": "claim_meteora_dbc_fees",
+      "deployed_address": "0x42b38",
+      "deployed_bytes": 616,
+      "candidate_address": "0x28c08",
+      "candidate_bytes": 12048,
+      "region_equal": false,
+      "first_region_difference": 17,
+      "same_offset_matching_instructions": 6,
+      "same_offset_compared_instructions": 77
+    },
+    {
+      "instruction": "claim_meteora_fees",
+      "deployed_address": "0x428d0",
+      "deployed_bytes": 616,
+      "candidate_address": "0x2bb18",
+      "candidate_bytes": 13152,
+      "region_equal": false,
+      "first_region_difference": 17,
+      "same_offset_matching_instructions": 7,
+      "same_offset_compared_instructions": 77
+    },
+    {
+      "instruction": "claim_raydium_fees",
+      "deployed_address": "0x41778",
+      "deployed_bytes": 616,
+      "candidate_address": "0x2ee78",
+      "candidate_bytes": 1376,
+      "region_equal": false,
+      "first_region_difference": 36,
+      "same_offset_matching_instructions": 9,
+      "same_offset_compared_instructions": 77
+    },
+    {
+      "instruction": "collect_platform_fees",
+      "deployed_address": "0x421b0",
+      "deployed_bytes": 1120,
+      "candidate_address": "0x2f3d8",
+      "candidate_bytes": 7560,
+      "region_equal": false,
+      "first_region_difference": 1,
+      "same_offset_matching_instructions": 8,
+      "same_offset_compared_instructions": 140
+    },
+    {
+      "instruction": "init_with_legacy",
+      "deployed_address": "0x42610",
+      "deployed_bytes": 704,
+      "candidate_address": "0x31160",
+      "candidate_bytes": 10488,
+      "region_equal": false,
+      "first_region_difference": 24,
+      "same_offset_matching_instructions": 8,
+      "same_offset_compared_instructions": 88
+    },
+    {
+      "instruction": "initialize",
+      "deployed_address": "0x407d0",
+      "deployed_bytes": 4008,
+      "candidate_address": "0x33a58",
+      "candidate_bytes": 3952,
+      "region_equal": false,
+      "first_region_difference": 44,
+      "same_offset_matching_instructions": 262,
+      "same_offset_compared_instructions": 494
+    },
+    {
+      "instruction": "redeem",
+      "deployed_address": "0x419e0",
+      "deployed_bytes": 1160,
+      "candidate_address": "0x349c8",
+      "candidate_bytes": 7216,
+      "region_equal": false,
+      "first_region_difference": 1,
+      "same_offset_matching_instructions": 34,
+      "same_offset_compared_instructions": 145
+    },
+    {
+      "instruction": "sell_token",
+      "deployed_address": "0x41e68",
+      "deployed_bytes": 840,
+      "candidate_address": "0x365f8",
+      "candidate_bytes": 1576,
+      "region_equal": false,
+      "first_region_difference": 9,
+      "same_offset_matching_instructions": 12,
+      "same_offset_compared_instructions": 105
+    }
+  ],
+  "qualification": "The deployed extents are Ghidra functions selected by the pinned dispatcher; candidate extents are unstripped Anchor __global symbols. Address-dependent codegen, linker ordering, and missing source prevent an exact-region inference from these bounded same-offset comparisons."
+}

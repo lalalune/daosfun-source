@@ -1,0 +1,2127 @@
+{
+  "founder_binary_sha256": "816bc6d42ffea7d63bd7b1287589413aef04d8f7dceb34dd274a0f7872d40aa2",
+  "founder_last_deploy_slot": 328988984,
+  "vest_binary_sha256": "7a348374607cd000a73405c7608ab4795e14c5e42efbbe4b6fc20909b3beeb07",
+  "vest_last_deploy_slot": 315403567,
+  "founder_idl_sha256": "9aa7b9dbde23635af598ffdccad35c4a9879d04bd950c403fafe6c456474088b",
+  "static_schema": {
+    "payer_signer": true,
+    "vest_writable": true,
+    "curve_pda_seeds": [
+      {
+        "kind": "const",
+        "value": [
+          99,
+          117,
+          114,
+          118,
+          101
+        ]
+      },
+      {
+        "kind": "account",
+        "path": "state"
+      }
+    ],
+    "vest_pda_seeds": [
+      {
+        "kind": "const",
+        "value": [
+          118,
+          101,
+          115,
+          116
+        ]
+      },
+      {
+        "kind": "account",
+        "path": "state"
+      },
+      {
+        "kind": "const",
+        "value": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "vest_program_address": "2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2"
+  },
+  "cases": [
+    {
+      "source_slot": 355531144,
+      "source_signature": "67RgatfFfSG5maz6Uhiim9zpPXmYbZ2HkGGnjx8GsL3czoCEu1o15ndmysjZpWK1Z2ug7kmyg7CifEWxNB29GFf4",
+      "snapshot": "analysis/daos_fun/founder-start-vest-355531144-snapshot.json",
+      "snapshot_slot": 460731724,
+      "case": "baseline_unstarted",
+      "source_payer": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "state_founder": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "source_payer_is_state_founder": true,
+      "payer_passed": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1753401245,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 32402,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1753401245,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "source_signature": "67RgatfFfSG5maz6Uhiim9zpPXmYbZ2HkGGnjx8GsL3czoCEu1o15ndmysjZpWK1Z2ug7kmyg7CifEWxNB29GFf4",
+      "snapshot": "analysis/daos_fun/founder-start-vest-355531144-snapshot.json",
+      "snapshot_slot": 460731724,
+      "case": "alternate_signed_payer",
+      "source_payer": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "state_founder": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "source_payer_is_state_founder": true,
+      "payer_passed": "8bcRzB3v6PxbbtkVCiX9ceW2whwakA6gX7qvSYbeMHLq",
+      "signature_verification_enabled": true,
+      "clock_unix_timestamp": 1753401245,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 32402,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1753401245,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "source_signature": "67RgatfFfSG5maz6Uhiim9zpPXmYbZ2HkGGnjx8GsL3czoCEu1o15ndmysjZpWK1Z2ug7kmyg7CifEWxNB29GFf4",
+      "snapshot": "analysis/daos_fun/founder-start-vest-355531144-snapshot.json",
+      "snapshot_slot": 460731724,
+      "case": "unsigned_source_payer",
+      "source_payer": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "state_founder": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "source_payer_is_state_founder": true,
+      "payer_passed": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "signature_verification_enabled": true,
+      "clock_unix_timestamp": 1753401245,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3010))))",
+      "compute_units": 3787,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: payer. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 3787 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbc2"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "source_signature": "67RgatfFfSG5maz6Uhiim9zpPXmYbZ2HkGGnjx8GsL3czoCEu1o15ndmysjZpWK1Z2ug7kmyg7CifEWxNB29GFf4",
+      "snapshot": "analysis/daos_fun/founder-start-vest-355531144-snapshot.json",
+      "snapshot_slot": 460731724,
+      "case": "already_started",
+      "source_payer": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "state_founder": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "source_payer_is_state_founder": true,
+      "payer_passed": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1753401245,
+      "edits": [],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6003))))",
+      "compute_units": 21442,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: InvalidState. Error Number: 6003. Error Message: Invalid state.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 21442 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1773"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "source_signature": "67RgatfFfSG5maz6Uhiim9zpPXmYbZ2HkGGnjx8GsL3czoCEu1o15ndmysjZpWK1Z2ug7kmyg7CifEWxNB29GFf4",
+      "snapshot": "analysis/daos_fun/founder-start-vest-355531144-snapshot.json",
+      "snapshot_slot": 460731724,
+      "case": "state_curve_flag_zero",
+      "source_payer": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "state_founder": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "source_payer_is_state_founder": true,
+      "payer_passed": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1753401245,
+      "edits": [
+        {
+          "field": "StateV2.curve_started",
+          "offset": 146,
+          "before": 1,
+          "after": 0
+        },
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 32400,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1753401245,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177711 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32400 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "source_signature": "67RgatfFfSG5maz6Uhiim9zpPXmYbZ2HkGGnjx8GsL3czoCEu1o15ndmysjZpWK1Z2ug7kmyg7CifEWxNB29GFf4",
+      "snapshot": "analysis/daos_fun/founder-start-vest-355531144-snapshot.json",
+      "snapshot_slot": 460731724,
+      "case": "state_team_flag_zero",
+      "source_payer": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "state_founder": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "source_payer_is_state_founder": true,
+      "payer_passed": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1753401245,
+      "edits": [
+        {
+          "field": "StateV2.team_allocation_claimed",
+          "offset": 145,
+          "before": 1,
+          "after": 0
+        },
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 32400,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1753401245,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177711 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32400 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "source_signature": "67RgatfFfSG5maz6Uhiim9zpPXmYbZ2HkGGnjx8GsL3czoCEu1o15ndmysjZpWK1Z2ug7kmyg7CifEWxNB29GFf4",
+      "snapshot": "analysis/daos_fun/founder-start-vest-355531144-snapshot.json",
+      "snapshot_slot": 460731724,
+      "case": "curve_flags_zero",
+      "source_payer": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "state_founder": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "source_payer_is_state_founder": true,
+      "payer_passed": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1753401245,
+      "edits": [
+        {
+          "field": "CurveV2 flag bytes",
+          "offsets": [
+            193,
+            194,
+            195,
+            196
+          ],
+          "before": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "after": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 32121,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1753401245,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177990 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32121 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "source_signature": "67RgatfFfSG5maz6Uhiim9zpPXmYbZ2HkGGnjx8GsL3czoCEu1o15ndmysjZpWK1Z2ug7kmyg7CifEWxNB29GFf4",
+      "snapshot": "analysis/daos_fun/founder-start-vest-355531144-snapshot.json",
+      "snapshot_slot": 460731724,
+      "case": "curve_empty_program_account",
+      "source_payer": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "state_founder": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "source_payer_is_state_founder": true,
+      "payer_passed": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1753401245,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3001))))",
+      "compute_units": 6413,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountDiscriminatorNotFound. Error Number: 3001. Error Message: No 8 byte discriminator was found on the account.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 6413 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbb9"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "source_signature": "67RgatfFfSG5maz6Uhiim9zpPXmYbZ2HkGGnjx8GsL3czoCEu1o15ndmysjZpWK1Z2ug7kmyg7CifEWxNB29GFf4",
+      "snapshot": "analysis/daos_fun/founder-start-vest-355531144-snapshot.json",
+      "snapshot_slot": 460731724,
+      "case": "curve_empty_system_account",
+      "source_payer": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "state_founder": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "source_payer_is_state_founder": true,
+      "payer_passed": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1753401245,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 7151,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 7151 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "source_signature": "67RgatfFfSG5maz6Uhiim9zpPXmYbZ2HkGGnjx8GsL3czoCEu1o15ndmysjZpWK1Z2ug7kmyg7CifEWxNB29GFf4",
+      "snapshot": "analysis/daos_fun/founder-start-vest-355531144-snapshot.json",
+      "snapshot_slot": 460731724,
+      "case": "curve_wrong_owner",
+      "source_payer": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "state_founder": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "source_payer_is_state_founder": true,
+      "payer_passed": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1753401245,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 7151,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 7151 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "source_signature": "67RgatfFfSG5maz6Uhiim9zpPXmYbZ2HkGGnjx8GsL3czoCEu1o15ndmysjZpWK1Z2ug7kmyg7CifEWxNB29GFf4",
+      "snapshot": "analysis/daos_fun/founder-start-vest-355531144-snapshot.json",
+      "snapshot_slot": 460731724,
+      "case": "vest_wrong_owner",
+      "source_payer": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "state_founder": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "source_payer_is_state_founder": true,
+      "payer_passed": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1753401245,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 9120,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 9120 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "source_signature": "67RgatfFfSG5maz6Uhiim9zpPXmYbZ2HkGGnjx8GsL3czoCEu1o15ndmysjZpWK1Z2ug7kmyg7CifEWxNB29GFf4",
+      "snapshot": "analysis/daos_fun/founder-start-vest-355531144-snapshot.json",
+      "snapshot_slot": 460731724,
+      "case": "state_wrong_owner",
+      "source_payer": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "state_founder": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "source_payer_is_state_founder": true,
+      "payer_passed": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1753401245,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 5920,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 5920 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "source_signature": "67RgatfFfSG5maz6Uhiim9zpPXmYbZ2HkGGnjx8GsL3czoCEu1o15ndmysjZpWK1Z2ug7kmyg7CifEWxNB29GFf4",
+      "snapshot": "analysis/daos_fun/founder-start-vest-355531144-snapshot.json",
+      "snapshot_slot": 460731724,
+      "case": "wrong_vest_pda",
+      "source_payer": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "state_founder": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "source_payer_is_state_founder": true,
+      "payer_passed": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1753401245,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3002))))",
+      "compute_units": 8663,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: 8 byte discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 8663 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "source_signature": "67RgatfFfSG5maz6Uhiim9zpPXmYbZ2HkGGnjx8GsL3czoCEu1o15ndmysjZpWK1Z2ug7kmyg7CifEWxNB29GFf4",
+      "snapshot": "analysis/daos_fun/founder-start-vest-355531144-snapshot.json",
+      "snapshot_slot": 460731724,
+      "case": "clock_one_week_earlier",
+      "source_payer": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "state_founder": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "source_payer_is_state_founder": true,
+      "payer_passed": "FwHaWRajNveJCDfrXHFTxPmUurkA37ca1grwsbkJQqzG",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1752796445,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 32402,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1752796445,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "source_signature": "CxUKUwTFkFiiXN3pQcdzzUioGv6sNNMXRc94TA98BGW3ocheGfa2CvTGgYevYLcnhptUK7LDxH525fNdG27kuUT",
+      "snapshot": "analysis/daos_fun/founder-start-vest-336800341-snapshot.json",
+      "snapshot_slot": 460731725,
+      "case": "baseline_unstarted",
+      "source_payer": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "state_founder": "9Pd5T5sYHDThQVSjR7kwG3PkAfPynp93dCju4fp2WK4C",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1745977955,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 27902,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1745977955,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177709 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27902 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "source_signature": "CxUKUwTFkFiiXN3pQcdzzUioGv6sNNMXRc94TA98BGW3ocheGfa2CvTGgYevYLcnhptUK7LDxH525fNdG27kuUT",
+      "snapshot": "analysis/daos_fun/founder-start-vest-336800341-snapshot.json",
+      "snapshot_slot": 460731725,
+      "case": "alternate_signed_payer",
+      "source_payer": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "state_founder": "9Pd5T5sYHDThQVSjR7kwG3PkAfPynp93dCju4fp2WK4C",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "8bcRzB3v6PxbbtkVCiX9ceW2whwakA6gX7qvSYbeMHLq",
+      "signature_verification_enabled": true,
+      "clock_unix_timestamp": 1745977955,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 27902,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1745977955,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177709 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27902 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "source_signature": "CxUKUwTFkFiiXN3pQcdzzUioGv6sNNMXRc94TA98BGW3ocheGfa2CvTGgYevYLcnhptUK7LDxH525fNdG27kuUT",
+      "snapshot": "analysis/daos_fun/founder-start-vest-336800341-snapshot.json",
+      "snapshot_slot": 460731725,
+      "case": "unsigned_source_payer",
+      "source_payer": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "state_founder": "9Pd5T5sYHDThQVSjR7kwG3PkAfPynp93dCju4fp2WK4C",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "signature_verification_enabled": true,
+      "clock_unix_timestamp": 1745977955,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3010))))",
+      "compute_units": 3787,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: payer. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 3787 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbc2"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "source_signature": "CxUKUwTFkFiiXN3pQcdzzUioGv6sNNMXRc94TA98BGW3ocheGfa2CvTGgYevYLcnhptUK7LDxH525fNdG27kuUT",
+      "snapshot": "analysis/daos_fun/founder-start-vest-336800341-snapshot.json",
+      "snapshot_slot": 460731725,
+      "case": "already_started",
+      "source_payer": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "state_founder": "9Pd5T5sYHDThQVSjR7kwG3PkAfPynp93dCju4fp2WK4C",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1745977955,
+      "edits": [],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6003))))",
+      "compute_units": 21442,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: InvalidState. Error Number: 6003. Error Message: Invalid state.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 21442 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1773"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "source_signature": "CxUKUwTFkFiiXN3pQcdzzUioGv6sNNMXRc94TA98BGW3ocheGfa2CvTGgYevYLcnhptUK7LDxH525fNdG27kuUT",
+      "snapshot": "analysis/daos_fun/founder-start-vest-336800341-snapshot.json",
+      "snapshot_slot": 460731725,
+      "case": "state_curve_flag_zero",
+      "source_payer": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "state_founder": "9Pd5T5sYHDThQVSjR7kwG3PkAfPynp93dCju4fp2WK4C",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1745977955,
+      "edits": [
+        {
+          "field": "StateV2.curve_started",
+          "offset": 146,
+          "before": 1,
+          "after": 0
+        },
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 27900,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1745977955,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177711 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27900 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "source_signature": "CxUKUwTFkFiiXN3pQcdzzUioGv6sNNMXRc94TA98BGW3ocheGfa2CvTGgYevYLcnhptUK7LDxH525fNdG27kuUT",
+      "snapshot": "analysis/daos_fun/founder-start-vest-336800341-snapshot.json",
+      "snapshot_slot": 460731725,
+      "case": "state_team_flag_zero",
+      "source_payer": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "state_founder": "9Pd5T5sYHDThQVSjR7kwG3PkAfPynp93dCju4fp2WK4C",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1745977955,
+      "edits": [
+        {
+          "field": "StateV2.team_allocation_claimed",
+          "offset": 145,
+          "before": 1,
+          "after": 0
+        },
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 27900,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1745977955,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177711 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27900 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "source_signature": "CxUKUwTFkFiiXN3pQcdzzUioGv6sNNMXRc94TA98BGW3ocheGfa2CvTGgYevYLcnhptUK7LDxH525fNdG27kuUT",
+      "snapshot": "analysis/daos_fun/founder-start-vest-336800341-snapshot.json",
+      "snapshot_slot": 460731725,
+      "case": "curve_flags_zero",
+      "source_payer": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "state_founder": "9Pd5T5sYHDThQVSjR7kwG3PkAfPynp93dCju4fp2WK4C",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1745977955,
+      "edits": [
+        {
+          "field": "CurveV2 flag bytes",
+          "offsets": [
+            193,
+            194,
+            195,
+            196
+          ],
+          "before": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "after": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 27621,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1745977955,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177990 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27621 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "source_signature": "CxUKUwTFkFiiXN3pQcdzzUioGv6sNNMXRc94TA98BGW3ocheGfa2CvTGgYevYLcnhptUK7LDxH525fNdG27kuUT",
+      "snapshot": "analysis/daos_fun/founder-start-vest-336800341-snapshot.json",
+      "snapshot_slot": 460731725,
+      "case": "curve_empty_program_account",
+      "source_payer": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "state_founder": "9Pd5T5sYHDThQVSjR7kwG3PkAfPynp93dCju4fp2WK4C",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1745977955,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3001))))",
+      "compute_units": 6413,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountDiscriminatorNotFound. Error Number: 3001. Error Message: No 8 byte discriminator was found on the account.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 6413 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbb9"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "source_signature": "CxUKUwTFkFiiXN3pQcdzzUioGv6sNNMXRc94TA98BGW3ocheGfa2CvTGgYevYLcnhptUK7LDxH525fNdG27kuUT",
+      "snapshot": "analysis/daos_fun/founder-start-vest-336800341-snapshot.json",
+      "snapshot_slot": 460731725,
+      "case": "curve_empty_system_account",
+      "source_payer": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "state_founder": "9Pd5T5sYHDThQVSjR7kwG3PkAfPynp93dCju4fp2WK4C",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1745977955,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 7151,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 7151 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "source_signature": "CxUKUwTFkFiiXN3pQcdzzUioGv6sNNMXRc94TA98BGW3ocheGfa2CvTGgYevYLcnhptUK7LDxH525fNdG27kuUT",
+      "snapshot": "analysis/daos_fun/founder-start-vest-336800341-snapshot.json",
+      "snapshot_slot": 460731725,
+      "case": "curve_wrong_owner",
+      "source_payer": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "state_founder": "9Pd5T5sYHDThQVSjR7kwG3PkAfPynp93dCju4fp2WK4C",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1745977955,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 7151,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 7151 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "source_signature": "CxUKUwTFkFiiXN3pQcdzzUioGv6sNNMXRc94TA98BGW3ocheGfa2CvTGgYevYLcnhptUK7LDxH525fNdG27kuUT",
+      "snapshot": "analysis/daos_fun/founder-start-vest-336800341-snapshot.json",
+      "snapshot_slot": 460731725,
+      "case": "vest_wrong_owner",
+      "source_payer": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "state_founder": "9Pd5T5sYHDThQVSjR7kwG3PkAfPynp93dCju4fp2WK4C",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1745977955,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 9120,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 9120 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "source_signature": "CxUKUwTFkFiiXN3pQcdzzUioGv6sNNMXRc94TA98BGW3ocheGfa2CvTGgYevYLcnhptUK7LDxH525fNdG27kuUT",
+      "snapshot": "analysis/daos_fun/founder-start-vest-336800341-snapshot.json",
+      "snapshot_slot": 460731725,
+      "case": "state_wrong_owner",
+      "source_payer": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "state_founder": "9Pd5T5sYHDThQVSjR7kwG3PkAfPynp93dCju4fp2WK4C",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1745977955,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 5920,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 5920 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "source_signature": "CxUKUwTFkFiiXN3pQcdzzUioGv6sNNMXRc94TA98BGW3ocheGfa2CvTGgYevYLcnhptUK7LDxH525fNdG27kuUT",
+      "snapshot": "analysis/daos_fun/founder-start-vest-336800341-snapshot.json",
+      "snapshot_slot": 460731725,
+      "case": "wrong_vest_pda",
+      "source_payer": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "state_founder": "9Pd5T5sYHDThQVSjR7kwG3PkAfPynp93dCju4fp2WK4C",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1745977955,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3002))))",
+      "compute_units": 8663,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: 8 byte discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 8663 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "source_signature": "CxUKUwTFkFiiXN3pQcdzzUioGv6sNNMXRc94TA98BGW3ocheGfa2CvTGgYevYLcnhptUK7LDxH525fNdG27kuUT",
+      "snapshot": "analysis/daos_fun/founder-start-vest-336800341-snapshot.json",
+      "snapshot_slot": 460731725,
+      "case": "clock_one_week_earlier",
+      "source_payer": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "state_founder": "9Pd5T5sYHDThQVSjR7kwG3PkAfPynp93dCju4fp2WK4C",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "HNc5mQKb5X7Agsk866kxM1yLv6dVDTPJnuPSsanGhrFo",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1745373155,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 27902,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1745373155,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177709 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27902 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "source_signature": "2Kpdr5EFEZkLtYaLdmuCRBSn4JeuJEuEn2YTVqenqitMMsWkCuEBZinJjmRXkRWZoHCT4EmSRpDks3seqPPtcWTZ",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332107100-snapshot.json",
+      "snapshot_slot": 460731726,
+      "case": "baseline_unstarted",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "FbXGiWoppqgKhY1aREogA39MnzAXWxpK9s6YL2brEtkk",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115667,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 38402,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1744115667,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171709 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38402 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "source_signature": "2Kpdr5EFEZkLtYaLdmuCRBSn4JeuJEuEn2YTVqenqitMMsWkCuEBZinJjmRXkRWZoHCT4EmSRpDks3seqPPtcWTZ",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332107100-snapshot.json",
+      "snapshot_slot": 460731726,
+      "case": "alternate_signed_payer",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "FbXGiWoppqgKhY1aREogA39MnzAXWxpK9s6YL2brEtkk",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "8bcRzB3v6PxbbtkVCiX9ceW2whwakA6gX7qvSYbeMHLq",
+      "signature_verification_enabled": true,
+      "clock_unix_timestamp": 1744115667,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 38402,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1744115667,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171709 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38402 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "source_signature": "2Kpdr5EFEZkLtYaLdmuCRBSn4JeuJEuEn2YTVqenqitMMsWkCuEBZinJjmRXkRWZoHCT4EmSRpDks3seqPPtcWTZ",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332107100-snapshot.json",
+      "snapshot_slot": 460731726,
+      "case": "unsigned_source_payer",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "FbXGiWoppqgKhY1aREogA39MnzAXWxpK9s6YL2brEtkk",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": true,
+      "clock_unix_timestamp": 1744115667,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3010))))",
+      "compute_units": 3787,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: payer. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 3787 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbc2"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "source_signature": "2Kpdr5EFEZkLtYaLdmuCRBSn4JeuJEuEn2YTVqenqitMMsWkCuEBZinJjmRXkRWZoHCT4EmSRpDks3seqPPtcWTZ",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332107100-snapshot.json",
+      "snapshot_slot": 460731726,
+      "case": "already_started",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "FbXGiWoppqgKhY1aREogA39MnzAXWxpK9s6YL2brEtkk",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115667,
+      "edits": [],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6003))))",
+      "compute_units": 27442,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: InvalidState. Error Number: 6003. Error Message: Invalid state.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27442 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1773"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "source_signature": "2Kpdr5EFEZkLtYaLdmuCRBSn4JeuJEuEn2YTVqenqitMMsWkCuEBZinJjmRXkRWZoHCT4EmSRpDks3seqPPtcWTZ",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332107100-snapshot.json",
+      "snapshot_slot": 460731726,
+      "case": "state_curve_flag_zero",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "FbXGiWoppqgKhY1aREogA39MnzAXWxpK9s6YL2brEtkk",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115667,
+      "edits": [
+        {
+          "field": "StateV2.curve_started",
+          "offset": 146,
+          "before": 1,
+          "after": 0
+        },
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 38400,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1744115667,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171711 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38400 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "source_signature": "2Kpdr5EFEZkLtYaLdmuCRBSn4JeuJEuEn2YTVqenqitMMsWkCuEBZinJjmRXkRWZoHCT4EmSRpDks3seqPPtcWTZ",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332107100-snapshot.json",
+      "snapshot_slot": 460731726,
+      "case": "state_team_flag_zero",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "FbXGiWoppqgKhY1aREogA39MnzAXWxpK9s6YL2brEtkk",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115667,
+      "edits": [
+        {
+          "field": "StateV2.team_allocation_claimed",
+          "offset": 145,
+          "before": 1,
+          "after": 0
+        },
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 38400,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1744115667,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171711 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38400 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "source_signature": "2Kpdr5EFEZkLtYaLdmuCRBSn4JeuJEuEn2YTVqenqitMMsWkCuEBZinJjmRXkRWZoHCT4EmSRpDks3seqPPtcWTZ",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332107100-snapshot.json",
+      "snapshot_slot": 460731726,
+      "case": "curve_flags_zero",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "FbXGiWoppqgKhY1aREogA39MnzAXWxpK9s6YL2brEtkk",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115667,
+      "edits": [
+        {
+          "field": "CurveV2 flag bytes",
+          "offsets": [
+            193,
+            194,
+            195,
+            196
+          ],
+          "before": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "after": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 38121,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1744115667,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171990 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38121 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "source_signature": "2Kpdr5EFEZkLtYaLdmuCRBSn4JeuJEuEn2YTVqenqitMMsWkCuEBZinJjmRXkRWZoHCT4EmSRpDks3seqPPtcWTZ",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332107100-snapshot.json",
+      "snapshot_slot": 460731726,
+      "case": "curve_empty_program_account",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "FbXGiWoppqgKhY1aREogA39MnzAXWxpK9s6YL2brEtkk",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115667,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3001))))",
+      "compute_units": 6413,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountDiscriminatorNotFound. Error Number: 3001. Error Message: No 8 byte discriminator was found on the account.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 6413 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbb9"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "source_signature": "2Kpdr5EFEZkLtYaLdmuCRBSn4JeuJEuEn2YTVqenqitMMsWkCuEBZinJjmRXkRWZoHCT4EmSRpDks3seqPPtcWTZ",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332107100-snapshot.json",
+      "snapshot_slot": 460731726,
+      "case": "curve_empty_system_account",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "FbXGiWoppqgKhY1aREogA39MnzAXWxpK9s6YL2brEtkk",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115667,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 7151,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 7151 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "source_signature": "2Kpdr5EFEZkLtYaLdmuCRBSn4JeuJEuEn2YTVqenqitMMsWkCuEBZinJjmRXkRWZoHCT4EmSRpDks3seqPPtcWTZ",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332107100-snapshot.json",
+      "snapshot_slot": 460731726,
+      "case": "curve_wrong_owner",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "FbXGiWoppqgKhY1aREogA39MnzAXWxpK9s6YL2brEtkk",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115667,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 7151,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 7151 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "source_signature": "2Kpdr5EFEZkLtYaLdmuCRBSn4JeuJEuEn2YTVqenqitMMsWkCuEBZinJjmRXkRWZoHCT4EmSRpDks3seqPPtcWTZ",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332107100-snapshot.json",
+      "snapshot_slot": 460731726,
+      "case": "vest_wrong_owner",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "FbXGiWoppqgKhY1aREogA39MnzAXWxpK9s6YL2brEtkk",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115667,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 9120,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 9120 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "source_signature": "2Kpdr5EFEZkLtYaLdmuCRBSn4JeuJEuEn2YTVqenqitMMsWkCuEBZinJjmRXkRWZoHCT4EmSRpDks3seqPPtcWTZ",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332107100-snapshot.json",
+      "snapshot_slot": 460731726,
+      "case": "state_wrong_owner",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "FbXGiWoppqgKhY1aREogA39MnzAXWxpK9s6YL2brEtkk",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115667,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 5920,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 5920 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "source_signature": "2Kpdr5EFEZkLtYaLdmuCRBSn4JeuJEuEn2YTVqenqitMMsWkCuEBZinJjmRXkRWZoHCT4EmSRpDks3seqPPtcWTZ",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332107100-snapshot.json",
+      "snapshot_slot": 460731726,
+      "case": "wrong_vest_pda",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "FbXGiWoppqgKhY1aREogA39MnzAXWxpK9s6YL2brEtkk",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115667,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3002))))",
+      "compute_units": 8663,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: 8 byte discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 8663 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "source_signature": "2Kpdr5EFEZkLtYaLdmuCRBSn4JeuJEuEn2YTVqenqitMMsWkCuEBZinJjmRXkRWZoHCT4EmSRpDks3seqPPtcWTZ",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332107100-snapshot.json",
+      "snapshot_slot": 460731726,
+      "case": "clock_one_week_earlier",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "FbXGiWoppqgKhY1aREogA39MnzAXWxpK9s6YL2brEtkk",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1743510867,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 38402,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1743510867,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171709 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38402 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "source_signature": "26KGCNVduntoUxDnSFwtfJXtyaadSGQ5BN8zxBkxR9SaYTQEkCgFQcFkCfTfNAMc3agRgYWwpPNjDUwub61J9PZS",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332106432-snapshot.json",
+      "snapshot_slot": 460731727,
+      "case": "baseline_unstarted",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "6bShXs6Lpi47mxZ6u6MRabfoKVh2i2E4xBemuhyc58U4",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115404,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 20462,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1744115404,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "source_signature": "26KGCNVduntoUxDnSFwtfJXtyaadSGQ5BN8zxBkxR9SaYTQEkCgFQcFkCfTfNAMc3agRgYWwpPNjDUwub61J9PZS",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332106432-snapshot.json",
+      "snapshot_slot": 460731727,
+      "case": "alternate_signed_payer",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "6bShXs6Lpi47mxZ6u6MRabfoKVh2i2E4xBemuhyc58U4",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "8bcRzB3v6PxbbtkVCiX9ceW2whwakA6gX7qvSYbeMHLq",
+      "signature_verification_enabled": true,
+      "clock_unix_timestamp": 1744115404,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 20462,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1744115404,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "source_signature": "26KGCNVduntoUxDnSFwtfJXtyaadSGQ5BN8zxBkxR9SaYTQEkCgFQcFkCfTfNAMc3agRgYWwpPNjDUwub61J9PZS",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332106432-snapshot.json",
+      "snapshot_slot": 460731727,
+      "case": "unsigned_source_payer",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "6bShXs6Lpi47mxZ6u6MRabfoKVh2i2E4xBemuhyc58U4",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": true,
+      "clock_unix_timestamp": 1744115404,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3010))))",
+      "compute_units": 3787,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: payer. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 3787 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbc2"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "source_signature": "26KGCNVduntoUxDnSFwtfJXtyaadSGQ5BN8zxBkxR9SaYTQEkCgFQcFkCfTfNAMc3agRgYWwpPNjDUwub61J9PZS",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332106432-snapshot.json",
+      "snapshot_slot": 460731727,
+      "case": "already_started",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "6bShXs6Lpi47mxZ6u6MRabfoKVh2i2E4xBemuhyc58U4",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115404,
+      "edits": [],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6003))))",
+      "compute_units": 13950,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: InvalidState. Error Number: 6003. Error Message: Invalid state.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 13950 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1773"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "source_signature": "26KGCNVduntoUxDnSFwtfJXtyaadSGQ5BN8zxBkxR9SaYTQEkCgFQcFkCfTfNAMc3agRgYWwpPNjDUwub61J9PZS",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332106432-snapshot.json",
+      "snapshot_slot": 460731727,
+      "case": "state_curve_flag_zero",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "6bShXs6Lpi47mxZ6u6MRabfoKVh2i2E4xBemuhyc58U4",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115404,
+      "edits": [
+        {
+          "field": "StateV2.curve_started",
+          "offset": 154,
+          "before": 1,
+          "after": 0
+        },
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 20460,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1744115404,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185203 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20460 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "source_signature": "26KGCNVduntoUxDnSFwtfJXtyaadSGQ5BN8zxBkxR9SaYTQEkCgFQcFkCfTfNAMc3agRgYWwpPNjDUwub61J9PZS",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332106432-snapshot.json",
+      "snapshot_slot": 460731727,
+      "case": "state_team_flag_zero",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "6bShXs6Lpi47mxZ6u6MRabfoKVh2i2E4xBemuhyc58U4",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115404,
+      "edits": [
+        {
+          "field": "StateV2.team_allocation_claimed",
+          "offset": 153,
+          "before": 1,
+          "after": 0
+        },
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 20460,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1744115404,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185203 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20460 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "source_signature": "26KGCNVduntoUxDnSFwtfJXtyaadSGQ5BN8zxBkxR9SaYTQEkCgFQcFkCfTfNAMc3agRgYWwpPNjDUwub61J9PZS",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332106432-snapshot.json",
+      "snapshot_slot": 460731727,
+      "case": "curve_flags_zero",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "6bShXs6Lpi47mxZ6u6MRabfoKVh2i2E4xBemuhyc58U4",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115404,
+      "edits": [
+        {
+          "field": "CurveV2 flag bytes",
+          "offsets": [
+            193,
+            194,
+            195,
+            196
+          ],
+          "before": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "after": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 20181,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1744115404,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185482 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20181 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "source_signature": "26KGCNVduntoUxDnSFwtfJXtyaadSGQ5BN8zxBkxR9SaYTQEkCgFQcFkCfTfNAMc3agRgYWwpPNjDUwub61J9PZS",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332106432-snapshot.json",
+      "snapshot_slot": 460731727,
+      "case": "curve_empty_program_account",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "6bShXs6Lpi47mxZ6u6MRabfoKVh2i2E4xBemuhyc58U4",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115404,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3001))))",
+      "compute_units": 6421,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountDiscriminatorNotFound. Error Number: 3001. Error Message: No 8 byte discriminator was found on the account.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 6421 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbb9"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "source_signature": "26KGCNVduntoUxDnSFwtfJXtyaadSGQ5BN8zxBkxR9SaYTQEkCgFQcFkCfTfNAMc3agRgYWwpPNjDUwub61J9PZS",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332106432-snapshot.json",
+      "snapshot_slot": 460731727,
+      "case": "curve_empty_system_account",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "6bShXs6Lpi47mxZ6u6MRabfoKVh2i2E4xBemuhyc58U4",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115404,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 7159,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 7159 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "source_signature": "26KGCNVduntoUxDnSFwtfJXtyaadSGQ5BN8zxBkxR9SaYTQEkCgFQcFkCfTfNAMc3agRgYWwpPNjDUwub61J9PZS",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332106432-snapshot.json",
+      "snapshot_slot": 460731727,
+      "case": "curve_wrong_owner",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "6bShXs6Lpi47mxZ6u6MRabfoKVh2i2E4xBemuhyc58U4",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115404,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 7159,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 7159 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "source_signature": "26KGCNVduntoUxDnSFwtfJXtyaadSGQ5BN8zxBkxR9SaYTQEkCgFQcFkCfTfNAMc3agRgYWwpPNjDUwub61J9PZS",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332106432-snapshot.json",
+      "snapshot_slot": 460731727,
+      "case": "vest_wrong_owner",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "6bShXs6Lpi47mxZ6u6MRabfoKVh2i2E4xBemuhyc58U4",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115404,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 9128,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 9128 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "source_signature": "26KGCNVduntoUxDnSFwtfJXtyaadSGQ5BN8zxBkxR9SaYTQEkCgFQcFkCfTfNAMc3agRgYWwpPNjDUwub61J9PZS",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332106432-snapshot.json",
+      "snapshot_slot": 460731727,
+      "case": "state_wrong_owner",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "6bShXs6Lpi47mxZ6u6MRabfoKVh2i2E4xBemuhyc58U4",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115404,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3007))))",
+      "compute_units": 5920,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 5920 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "source_signature": "26KGCNVduntoUxDnSFwtfJXtyaadSGQ5BN8zxBkxR9SaYTQEkCgFQcFkCfTfNAMc3agRgYWwpPNjDUwub61J9PZS",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332106432-snapshot.json",
+      "snapshot_slot": 460731727,
+      "case": "wrong_vest_pda",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "6bShXs6Lpi47mxZ6u6MRabfoKVh2i2E4xBemuhyc58U4",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1744115404,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": false,
+      "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(3002))))",
+      "compute_units": 8671,
+      "vest_start_tag_after": null,
+      "vest_start_timestamp_after": null,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: 8 byte discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 8671 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "source_signature": "26KGCNVduntoUxDnSFwtfJXtyaadSGQ5BN8zxBkxR9SaYTQEkCgFQcFkCfTfNAMc3agRgYWwpPNjDUwub61J9PZS",
+      "snapshot": "analysis/daos_fun/founder-start-vest-332106432-snapshot.json",
+      "snapshot_slot": 460731727,
+      "case": "clock_one_week_earlier",
+      "source_payer": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "state_founder": "6bShXs6Lpi47mxZ6u6MRabfoKVh2i2E4xBemuhyc58U4",
+      "source_payer_is_state_founder": false,
+      "payer_passed": "AxqYe4EieqM6PCVrWjJBN5h3YP4FxZ26ycQKkhvFFrdS",
+      "signature_verification_enabled": false,
+      "clock_unix_timestamp": 1743510604,
+      "edits": [
+        {
+          "field": "Vest.start Option tag",
+          "offset": 72,
+          "before": 1,
+          "after": 0
+        }
+      ],
+      "success": true,
+      "error": null,
+      "compute_units": 20462,
+      "vest_start_tag_after": 1,
+      "vest_start_timestamp_after": 1743510604,
+      "log_tail": [
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+        "Program log: Instruction: StartVest",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+        "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+      ]
+    }
+  ],
+  "qualification": "Pinned current/source-era Founder and Vest ELFs and static public IDL schema. Four historical instructions and clocks are exact, but all local account bytes are later snapshots with a hypothetical reset of the Vest start Option tag. Alternate payer uses a disposable valid local signature. State/Curve mutations and earlier Clock are synthetic boundary controls. No live transaction, historical prestate proof, or fund-risk claim."
+}

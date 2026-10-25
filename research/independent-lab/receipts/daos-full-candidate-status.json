@@ -1,0 +1,61 @@
+{
+  "targets": {
+    "fee_share_trader_dao": {
+      "deployed_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+      "current_toolchain_candidate_sha256": "bf9efa8cd4cdd40995d7d2c4a2d096a2eae7c9bfb488aa523e80cfdb63997e4a",
+      "v1_41_candidate_sha256": "5d255617f57e2e19b95c6a4736168a5cbcbf4935bad88e67de786e1853fd675f",
+      "signed_payout_cases_matched": 27,
+      "signed_meteora_cpi_cases_matched": 28,
+      "signed_meteora_dbc_cpi_cases_matched": 22,
+      "dbc_positive_fee_fixture_synthetic": true,
+      "signed_raydium_cpi_cases_matched": 31,
+      "raydium_positive_fee_fixture_captured_later_state": true,
+      "signed_sell_cases_matched": 32,
+      "setup_cases_matched": 49,
+      "setup_signed_cases_matched": 37,
+      "setup_unsigned_operator_simulations_matched": 12,
+      "sell_creator_substitution_synthetic": true,
+      "external_cpi_handlers_stubbed": 0,
+      "complete_handlers": 0,
+      "v1_41_exact_wrapper_regions": 0,
+      "whole_file_equal": false
+    },
+    "founder_dao": {
+      "deployed_sha256": "816bc6d42ffea7d63bd7b1287589413aef04d8f7dceb34dd274a0f7872d40aa2",
+      "candidate_sha256": "55020d6a4815ff2d4d19b8b626b174603a4bb1766334e894e583f14661af5036",
+      "selectors_verified": 6,
+      "signed_start_presale_cases_matched": 162,
+      "signed_start_curve_cases_matched": 66,
+      "signed_start_vest_cases_matched": 64,
+      "signed_start_vest_positive_cases_matched": 20,
+      "start_vest_positive_prestates_synthetic": true,
+      "bounded_candidate_handlers": 3,
+      "complete_handlers": 0,
+      "whole_file_equal": false
+    },
+    "pump_xyk": {
+      "deployed_sha256": "2238aa5b96fc29e7693174b20d75063df2e1dfba28c26c5346338c23732e2fb9",
+      "candidate_sha256": "9da202b2c2ce8542079082b50ee1b8ce7b3855733333b4347c3a0d419a345109",
+      "signed_migrate_cases_matched": 80,
+      "signed_collect_fee_cases_matched": 45,
+      "handlers_stubbed": 7,
+      "complete_handlers": 0,
+      "whole_file_equal": false
+    },
+    "virtual_xyk": {
+      "deployed_sha256": "c151c6b15b84d8bfc47a5f2e0e5b9e04babff0263a1125a9e8dcb07df6144377",
+      "candidate_sha256": "9ac219670c8323dd3016e78d23634ddfa53fd62ba24f7a82dd832aaca89cc7b6",
+      "selectors_verified": 10,
+      "signed_buy_token_cases_matched": 14,
+      "signed_buy_token_positive_cases_matched": 9,
+      "buy_token_lp_enabled_fixture_synthetic": true,
+      "signed_sell_token_cases_matched": 16,
+      "signed_sell_token_positive_cases_matched": 10,
+      "sell_token_lp_enabled_fixture_synthetic": true,
+      "bounded_candidate_handlers": 2,
+      "complete_handlers": 0,
+      "whole_file_equal": false
+    }
+  },
+  "scope": "Saved receipt and current source hash integrity, not a fresh build; all candidates are incomplete and not deployable replacements."
+}

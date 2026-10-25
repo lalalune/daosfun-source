@@ -1,0 +1,266 @@
+{
+  "target": "daos-fee-share",
+  "reference": {
+    "path": "inputs/daos_fun/fee_share_trader_dao-mainnet.so",
+    "whole_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+    "whole_bytes": 522216,
+    "machine": "EM_BPF",
+    "elf_flags": 0,
+    "entry_point": 274392,
+    "elf_bytes": 522216,
+    "elf_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+    "allocation_padding_bytes": 0,
+    "allocation_padding_all_zero": true,
+    "sections": [
+      {
+        "name": "",
+        "type": "SHT_NULL",
+        "file_offset": 0,
+        "virtual_address": 0,
+        "size": 0,
+        "alignment": 0,
+        "sha256": null
+      },
+      {
+        "name": ".text",
+        "type": "SHT_PROGBITS",
+        "file_offset": 288,
+        "virtual_address": 288,
+        "size": 468912,
+        "alignment": 8,
+        "sha256": "0c9076dcbaee957e43ea2bcf17d07ea431fa4b305524833031f9bc1eb48a8015"
+      },
+      {
+        "name": ".rodata",
+        "type": "SHT_PROGBITS",
+        "file_offset": 469200,
+        "virtual_address": 469200,
+        "size": 15135,
+        "alignment": 16,
+        "sha256": "684f153d8192cc86ba595ac5989df70488c6e46e900d9955c1c9cc33e416cf95"
+      },
+      {
+        "name": ".data.rel.ro",
+        "type": "SHT_PROGBITS",
+        "file_offset": 484336,
+        "virtual_address": 484336,
+        "size": 6104,
+        "alignment": 8,
+        "sha256": "24ff15df941bbdb566e8a0c3cd799e9a4fc5fce589b8298358fb7386421d6f51"
+      },
+      {
+        "name": ".dynamic",
+        "type": "SHT_DYNAMIC",
+        "file_offset": 490440,
+        "virtual_address": 490440,
+        "size": 176,
+        "alignment": 8,
+        "sha256": "1c753a13f71316dab0f89fd1ff19fa3ee0c8356d7825c0bce74b1641e771957a"
+      },
+      {
+        "name": ".dynsym",
+        "type": "SHT_DYNSYM",
+        "file_offset": 490616,
+        "virtual_address": 490616,
+        "size": 312,
+        "alignment": 8,
+        "sha256": "79f840a3d85720a9994e44be60376a8bf2be0cd5acf8fbd3a277019cfd0aef2f"
+      },
+      {
+        "name": ".dynstr",
+        "type": "SHT_STRTAB",
+        "file_offset": 490928,
+        "virtual_address": 490928,
+        "size": 174,
+        "alignment": 1,
+        "sha256": "3f3955ffe345ecfae0a2c76f95ec047193566f928f75f896e04e92f25a22da0a"
+      },
+      {
+        "name": ".rel.dyn",
+        "type": "SHT_REL",
+        "file_offset": 491104,
+        "virtual_address": 491104,
+        "size": 30464,
+        "alignment": 8,
+        "sha256": "7c8e9b91b97c705f8cd15ef2992176bd2794d66032982cf248e0644453411a42"
+      },
+      {
+        "name": ".shstrtab",
+        "type": "SHT_STRTAB",
+        "file_offset": 521568,
+        "virtual_address": 0,
+        "size": 72,
+        "alignment": 1,
+        "sha256": "d981263d501f120e0990544791b6647d652caea4613d7fe87ca90431c71f4911"
+      }
+    ]
+  },
+  "source_reconstruction_status": "candidate byte comparison only; build provenance must be verified separately",
+  "candidate": {
+    "path": "reconstruction/fee-share-full-candidate/out/fee_share_trader_dao.so",
+    "whole_sha256": "3c6a79867e21599a5a42d91509e39c24fbae44ea4c8af04a522a4007de3b0331",
+    "whole_bytes": 362000,
+    "machine": "263",
+    "elf_flags": 0,
+    "entry_point": 187760,
+    "elf_bytes": 362000,
+    "elf_sha256": "3c6a79867e21599a5a42d91509e39c24fbae44ea4c8af04a522a4007de3b0331",
+    "allocation_padding_bytes": 0,
+    "allocation_padding_all_zero": true,
+    "sections": [
+      {
+        "name": "",
+        "type": "SHT_NULL",
+        "file_offset": 0,
+        "virtual_address": 0,
+        "size": 0,
+        "alignment": 0,
+        "sha256": null
+      },
+      {
+        "name": ".text",
+        "type": "SHT_PROGBITS",
+        "file_offset": 288,
+        "virtual_address": 288,
+        "size": 315224,
+        "alignment": 8,
+        "sha256": "f20491e8d14cfb30284295bd505509f192abe52d04dd8775e13e13450404bef5"
+      },
+      {
+        "name": ".rodata",
+        "type": "SHT_PROGBITS",
+        "file_offset": 315512,
+        "virtual_address": 315512,
+        "size": 15936,
+        "alignment": 8,
+        "sha256": "044a0958825f6e5fe67adcc0924f42b434f386aff8d4f55eda6603390de157f2"
+      },
+      {
+        "name": ".data.rel.ro",
+        "type": "SHT_PROGBITS",
+        "file_offset": 331448,
+        "virtual_address": 331448,
+        "size": 6040,
+        "alignment": 8,
+        "sha256": "245d90a65a821e60fca42262720490650cf2cb6bccc55304eb2568535a3532e6"
+      },
+      {
+        "name": ".dynamic",
+        "type": "SHT_DYNAMIC",
+        "file_offset": 337488,
+        "virtual_address": 337488,
+        "size": 176,
+        "alignment": 8,
+        "sha256": "583818a439e01c988a8eda39d8ed221c6551f7a40621079ac86cb09f22c4bb8c"
+      },
+      {
+        "name": ".dynsym",
+        "type": "SHT_DYNSYM",
+        "file_offset": 337664,
+        "virtual_address": 337664,
+        "size": 312,
+        "alignment": 8,
+        "sha256": "60d1e00081dca93027bf66dfaf38545fbaef3b982267d5c2795f030b9cb0bff0"
+      },
+      {
+        "name": ".dynstr",
+        "type": "SHT_STRTAB",
+        "file_offset": 337976,
+        "virtual_address": 337976,
+        "size": 174,
+        "alignment": 1,
+        "sha256": "3f3955ffe345ecfae0a2c76f95ec047193566f928f75f896e04e92f25a22da0a"
+      },
+      {
+        "name": ".rel.dyn",
+        "type": "SHT_REL",
+        "file_offset": 338152,
+        "virtual_address": 338152,
+        "size": 23200,
+        "alignment": 8,
+        "sha256": "2e4efdd9bbf04c55d0257c99ef38682314de2b56896f31d64cc9ac6b114fbce5"
+      },
+      {
+        "name": ".shstrtab",
+        "type": "SHT_STRTAB",
+        "file_offset": 361352,
+        "virtual_address": 0,
+        "size": 72,
+        "alignment": 1,
+        "sha256": "d981263d501f120e0990544791b6647d652caea4613d7fe87ca90431c71f4911"
+      }
+    ]
+  },
+  "comparison": {
+    "whole_file_equal": false,
+    "elf_extent_equal": false,
+    "elf_bytes_equal": false,
+    "padding_equal": true,
+    "first_whole_file_difference_offset": 18,
+    "section_comparison": [
+      {
+        "index": 0,
+        "reference_name": "",
+        "candidate_name": "",
+        "layout_equal": true,
+        "contents_equal": true
+      },
+      {
+        "index": 1,
+        "reference_name": ".text",
+        "candidate_name": ".text",
+        "layout_equal": false,
+        "contents_equal": false
+      },
+      {
+        "index": 2,
+        "reference_name": ".rodata",
+        "candidate_name": ".rodata",
+        "layout_equal": false,
+        "contents_equal": false
+      },
+      {
+        "index": 3,
+        "reference_name": ".data.rel.ro",
+        "candidate_name": ".data.rel.ro",
+        "layout_equal": false,
+        "contents_equal": false
+      },
+      {
+        "index": 4,
+        "reference_name": ".dynamic",
+        "candidate_name": ".dynamic",
+        "layout_equal": false,
+        "contents_equal": false
+      },
+      {
+        "index": 5,
+        "reference_name": ".dynsym",
+        "candidate_name": ".dynsym",
+        "layout_equal": false,
+        "contents_equal": false
+      },
+      {
+        "index": 6,
+        "reference_name": ".dynstr",
+        "candidate_name": ".dynstr",
+        "layout_equal": false,
+        "contents_equal": true
+      },
+      {
+        "index": 7,
+        "reference_name": ".rel.dyn",
+        "candidate_name": ".rel.dyn",
+        "layout_equal": false,
+        "contents_equal": false
+      },
+      {
+        "index": 8,
+        "reference_name": ".shstrtab",
+        "candidate_name": ".shstrtab",
+        "layout_equal": false,
+        "contents_equal": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "founder_binary_sha256": "816bc6d42ffea7d63bd7b1287589413aef04d8f7dceb34dd274a0f7872d40aa2",
+  "fundraise_binary_sha256": "00bdbee1546f2087bfa845cb4144561ebaaf00a2af231399fa3269d82c30af28",
+  "vest_binary_sha256": "7a348374607cd000a73405c7608ab4795e14c5e42efbbe4b6fc20909b3beeb07",
+  "source_template_signature": "26XBjcbVfBZ4i9RStARaxc7gPiu8uExSP7xkKGR4LqHhfUchvnc6JCt1MqaRKYhVHCA4p8MngxLdKSdEkpoo5NCT",
+  "claim_template_signature": "2JnJDLrGR798gBQtKRJREkYwKQzCmao9Udd3aqL395oDb3ppkNnxF1NU7hUvs6CgTKNt3QyLV3q9LDDu5A1DSkJx",
+  "historical_whitelist_authority": "AeqZQwJTg6ikeCfXR7Xh1VCVH5QgTwGi933sZiF7KNUu",
+  "historical_whitelist_authority_key_available_locally": false,
+  "local_keys": {
+    "payer": "4pCM2tGd36eWLJ7FnoQJ5eLmuFYxe8bxpgzct2zXo42s",
+    "mint": "EYwzqwfWPgKiF5LNrjh1xZugnpDXwWwCKYfiAqQ6w3sd",
+    "state": "Cxi68JJ3bBLyNE7e3xGYNGaKPxA54tCUq6wrQKz96CuZ",
+    "dao_vault": "7AX9vHpxPFc11nBXXsbVJ8qAjt5QRy2XGGcd6Sf39Zao",
+    "fundraise": "83k4eDua47aCDkkDBbj5gcAafVDXkhuFKynvEQvdEwm8",
+    "fundraise_vault": "7jiqspoxYNkcuwtzNYTAKjhJGR2rfaw4cK5p3qW3v9NY",
+    "party_mint": "2uzMdmJFsTeQ1dY47E4xsYCeFT4VRzu5kAorfA4NGNAu",
+    "vest_schedule": "CSpdCUScbP8EitWPhWpryEGN4joNd3xEoUVASU9okwzH",
+    "schedule_ata": "DfyErnBk5eNwZg4whRFU1p82oF7JoePFZfK8KhrPBbrN"
+  },
+  "initial": {
+    "payer_lamports": 20000000000,
+    "state_exists": false,
+    "mint_exists": false,
+    "dao_vault_exists": false
+  },
+  "init": {
+    "step": "init",
+    "local_signature": "4tU93pvDnm6G4AAX7qfQ33qk4PQrWeQQ48iVode2Z7Fy5xruKjDNxAx5F2gMvuF7xswmRMWQoWy3B7qTjDJm9xau",
+    "simulation_error": null,
+    "committed_status_error": null,
+    "units_consumed": 63133,
+    "log_tail": [
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 16930 of 171878 compute units",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+      "Program 11111111111111111111111111111111 invoke [2]",
+      "Program 11111111111111111111111111111111 success",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+      "Program log: TokenMetadataInstruction: Initialize",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3499 of 146166 compute units",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+      "Program log: Instruction: MintTo",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1696 of 140295 compute units",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 63133 of 200000 compute units",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+    ],
+    "tracked_lamports_before": 22000000000,
+    "tracked_lamports_after": 21999990000,
+    "fee_lamports": 10000,
+    "lamport_conservation_after_fee": true
+  },
+  "initialized": {
+    "payer_lamports": 19992187840,
+    "mint_supply": 10000000000000000,
+    "dao_vault_raw": 10000000000000000,
+    "state_sha256": "a8fb41fe6e4b9472de36970de7e82b60cf04dab8c026bc60a61bd23fe03a27a3"
+  },
+  "over_cap_presale_raw": 4000000000000001,
+  "over_cap_presale_rejected": {
+    "step": "over_cap_presale_rejected",
+    "local_signature": "5uKFFLutDUJsqnEgB3wwrBozYcGX9xsXE9ybWcBjgEMWKGxcrSXinvxgkSRoE7DTDxdiVUSh4jtCQcE5RyHrpo61",
+    "simulation_error": {
+      "InstructionError": [
+        0,
+        {
+          "Custom": 6007
+        }
+      ]
+    },
+    "committed_status_error": {
+      "InstructionError": [
+        0,
+        {
+          "Custom": 6007
+        }
+      ]
+    },
+    "units_consumed": 16486,
+    "log_tail": [
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+      "Program log: Instruction: StartPresale",
+      "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_presale.rs:15. Error Code: PreSaleMaxPresaleExceeded. Error Number: 6007. Error Message: Presale amount exceeded.",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 16486 of 200000 compute units",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1777"
+    ],
+    "tracked_lamports_before": 21999990000,
+    "tracked_lamports_after": 21999980000,
+    "fee_lamports": 10000,
+    "lamport_conservation_after_fee": true
+  },
+  "outsider_start_presale_rejected": {
+    "step": "outsider_start_presale_rejected",
+    "local_signature": "55rQkHE7Suox6UF5JLviTWevJSxsQCYEJKxZiVum9DEUVs8NKKDqFi5PuredUutCyDBeLWxJf96yVGcrs6Cz4qhL",
+    "simulation_error": {
+      "InstructionError": [
+        0,
+        {
+          "Custom": 6002
+        }
+      ]
+    },
+    "committed_status_error": {
+      "InstructionError": [
+        0,
+        {
+          "Custom": 6002
+        }
+      ]
+    },
+    "units_consumed": 12406,
+    "log_tail": [
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+      "Program log: Instruction: StartPresale",
+      "Program log: AnchorError caused by account: state. Error Code: Unauthorized. Error Number: 6002. Error Message: Unauthorized.",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 12406 of 200000 compute units",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1772"
+    ],
+    "tracked_lamports_before": 21999980000,
+    "tracked_lamports_after": 21999965000,
+    "fee_lamports": 15000,
+    "lamport_conservation_after_fee": true
+  },
+  "presale_rejections_protocol_accounts_unchanged": true,
+  "start_presale": {
+    "step": "start_presale",
+    "local_signature": "64cKBkLvBnZwMMM11MmeMvPhPpNePK8YinJ8y247ESS4oNpkcKFP94y2cJes5tt7mLhakPrahCkPSwumNbnFW6u8",
+    "simulation_error": null,
+    "committed_status_error": null,
+    "units_consumed": 81202,
+    "log_tail": [
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [4]",
+      "Program log: Instruction: InitializeAccount3",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2142 of 133820 compute units",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 17192 of 148566 compute units",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+      "Program log: Instruction: TransferChecked",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2547 of 124443 compute units",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program ETK5PUmiqVDRsd1TPFqCu84bsrLNG4YySZND96PEjW97 consumed 47466 of 167718 compute units",
+      "Program ETK5PUmiqVDRsd1TPFqCu84bsrLNG4YySZND96PEjW97 success",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 81202 of 200000 compute units",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+    ],
+    "tracked_lamports_before": 21999965000,
+    "tracked_lamports_after": 21999955000,
+    "fee_lamports": 10000,
+    "lamport_conservation_after_fee": true
+  },
+  "started": {
+    "payer_lamports": 19987768040,
+    "mint_supply": 10000000000000000,
+    "dao_vault_raw": 8000000000000000,
+    "fundraise_vault_raw": 2000000000000000,
+    "state_sha256": "8cd77d60c8eac20accfc745f46b5f440cab859891503ae9f86a225f352cf892a",
+    "fundraise_sha256": "86b3b37900e153c79023a9c9e077b7b2cda9ebac734d21e2c24eae6db3b2b440"
+  },
+  "schedule_dao_ata_created": {
+    "step": "create_schedule_dao_ata",
+    "local_signature": "22JizDLNTPv4Jc38QsP55TdZ6asJRCmEVwi5FZSM7JUnop6ynjFwKhYReVqs6ukgnPJmt6MRZAPtNVV33svSib8J",
+    "simulation_error": null,
+    "committed_status_error": null,
+    "units_consumed": 17200,
+    "log_tail": [
+      "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb qgAAAAAAAAA=",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program 11111111111111111111111111111111 invoke [2]",
+      "Program 11111111111111111111111111111111 success",
+      "Program log: Initialize the associated token account",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+      "Program log: Instruction: InitializeImmutableOwner",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 734 of 188317 compute units",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+      "Program log: Instruction: InitializeAccount3",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2142 of 185246 compute units",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 17200 of 200000 compute units",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success"
+    ],
+    "tracked_lamports_before": 21999955000,
+    "tracked_lamports_after": 21999950000,
+    "fee_lamports": 5000,
+    "lamport_conservation_after_fee": true
+  },
+  "outsider_claim_rejected": {
+    "step": "outsider_claim_rejected",
+    "local_signature": "2TXVcgdpdGUGGTEoR46WwfdsCgp15as551R2hKVFEdZu6ee6ZxTJtg6ARZasH6Tz9F1SEtcDqqcTT9RccMhh4v5m",
+    "simulation_error": {
+      "InstructionError": [
+        1,
+        {
+          "Custom": 6002
+        }
+      ]
+    },
+    "committed_status_error": {
+      "InstructionError": [
+        1,
+        {
+          "Custom": 6002
+        }
+      ]
+    },
+    "units_consumed": 54614,
+    "log_tail": [
+      "Program 11111111111111111111111111111111 success",
+      "Program log: Initialize the associated token account",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+      "Program log: Instruction: InitializeImmutableOwner",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 734 of 356522 compute units",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+      "Program log: Instruction: InitializeAccount3",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1958 of 353452 compute units",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 18430 of 369620 compute units",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+      "Program log: AnchorError caused by account: state. Error Code: Unauthorized. Error Number: 6002. Error Message: Unauthorized.",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 54464 of 399850 compute units",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1772"
+    ],
+    "tracked_lamports_before": 21999950000,
+    "tracked_lamports_after": 21999940000,
+    "fee_lamports": 10000,
+    "lamport_conservation_after_fee": true
+  },
+  "outsider_protocol_accounts_unchanged": true,
+  "natural_claim_before_curve_rejected": {
+    "step": "claim_before_curve_rejected",
+    "local_signature": "5N9VLXimpSmYUUa5FwYqwgDed7HuNstVb7yVaPXQZfwpHaNVhgNgj2WnkDN67huN7n652eJ4JxuHXhYbthUqFuKP",
+    "simulation_error": {
+      "InstructionError": [
+        1,
+        {
+          "Custom": 6003
+        }
+      ]
+    },
+    "committed_status_error": {
+      "InstructionError": [
+        1,
+        {
+          "Custom": 6003
+        }
+      ]
+    },
+    "units_consumed": 51393,
+    "log_tail": [
+      "Program 11111111111111111111111111111111 success",
+      "Program log: Initialize the associated token account",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+      "Program log: Instruction: InitializeImmutableOwner",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 734 of 359776 compute units",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+      "Program log: Instruction: InitializeAccount3",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1958 of 356708 compute units",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 16829 of 371296 compute units",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+      "Program log: AnchorError caused by account: state. Error Code: InvalidState. Error Number: 6003. Error Message: Invalid state.",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 51243 of 399850 compute units",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1773"
+    ],
+    "tracked_lamports_before": 21999940000,
+    "tracked_lamports_after": 21999935000,
+    "fee_lamports": 5000,
+    "lamport_conservation_after_fee": true
+  },
+  "natural_claim_protocol_accounts_unchanged": true,
+  "modeled_curve_started_prestate": {
+    "field": "StateV2.curve_started",
+    "offset": 154,
+    "before": 0,
+    "after": 1,
+    "before_state_sha256": "8cd77d60c8eac20accfc745f46b5f440cab859891503ae9f86a225f352cf892a",
+    "after_state_sha256": "b92a547f92209008fe6627abc30137d125f0bd7c10ea6ed949847ab31d7bb1a5",
+    "qualification": "Synthetic later-stage state flag, not obtained from StartCurve in this sequence."
+  },
+  "before_claim": {
+    "state_sha256": "b92a547f92209008fe6627abc30137d125f0bd7c10ea6ed949847ab31d7bb1a5",
+    "dao_vault_raw": 8000000000000000,
+    "fundraise_vault_raw": 2000000000000000,
+    "schedule_ata_raw": 0
+  },
+  "claim_team_allo": {
+    "step": "claim_team_allo",
+    "local_signature": "4XPp9zuY9xWEdSvo8AStKvfu7Ba3VUMqCJACNPvtGHDRVG2FW9FD7sGW2ft24RJ7Y7cC82cPkUof6GUpFy7dmNYg",
+    "simulation_error": null,
+    "committed_status_error": null,
+    "units_consumed": 94030,
+    "log_tail": [
+      "Program log: Instruction: MintTo",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1696 of 336937 compute units",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 invoke [2]",
+      "Program log: Instruction: Initialize",
+      "Program 11111111111111111111111111111111 invoke [3]",
+      "Program 11111111111111111111111111111111 success",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+      "Program log: Instruction: TransferChecked",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2547 of 310958 compute units",
+      "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+      "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 21630 of 329102 compute units",
+      "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 93880 of 399850 compute units",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+    ],
+    "tracked_lamports_before": 21999935000,
+    "tracked_lamports_after": 21999930000,
+    "fee_lamports": 5000,
+    "lamport_conservation_after_fee": true
+  },
+  "claimed": {
+    "payer_lamports": 19978089520,
+    "mint_supply": 10000000000000000,
+    "dao_vault_raw": 6000000000000000,
+    "fundraise_vault_raw": 2000000000000000,
+    "schedule_ata_raw": 2000000000000000,
+    "party_mint_supply": 2000000000000000,
+    "founder_party_ata_raw": 2000000000000000,
+    "state_sha256": "f3db090e907d29dd9db9195232485f8edd76346ca280b87c39913662c717c234",
+    "vest_schedule_sha256": "acfb7b7304c23365438582449bb29d00fe408ccd01b07f8fbe1a59fb22b6747a"
+  },
+  "repeat_claim_rejected": {
+    "step": "repeat_claim_rejected",
+    "local_signature": "3T4QzcsFu1gT6PjZ665UNj8nyW7yzDLZBjGZmZq2t4NroqSRhFEd44MWi5NT3UEpKLTvnf7MdB2iNoeUpJ9RNXKp",
+    "simulation_error": {
+      "InstructionError": [
+        1,
+        {
+          "Custom": 0
+        }
+      ]
+    },
+    "committed_status_error": {
+      "InstructionError": [
+        1,
+        {
+          "Custom": 0
+        }
+      ]
+    },
+    "units_consumed": 14515,
+    "log_tail": [
+      "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+      "Program ComputeBudget111111111111111111111111111111 success",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS invoke [1]",
+      "Program log: Instruction: ClaimTeamAllo",
+      "Program 11111111111111111111111111111111 invoke [2]",
+      "Allocate: account Address { address: 2uzMdmJFsTeQ1dY47E4xsYCeFT4VRzu5kAorfA4NGNAu, base: None } already in use",
+      "Program 11111111111111111111111111111111 failed: custom program error: 0x0",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14365 of 399850 compute units",
+      "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x0"
+    ],
+    "tracked_lamports_before": 21999930000,
+    "tracked_lamports_after": 21999925000,
+    "fee_lamports": 5000,
+    "lamport_conservation_after_fee": true
+  },
+  "repeat_protocol_accounts_unchanged": true,
+  "team_allocation_raw": 2000000000000000,
+  "token_supply_conserved_across_three_vaults": true,
+  "qualification": "Current pinned Founder/Fundraise/Vest ELFs, historical instruction argument bytes and captured funding mint; fresh disposable signed local payer/mint and program-created state/vaults. Init and StartPresale are organic offline commits. Immediate ClaimTeam fails because curve_started is false; the ClaimTeam success is conditional on an explicit synthetic later-stage curve_started=true state flag, not a witnessed StartCurve. Historical claim instruction data comes from a separate DAO; account keys and PDAs are newly derived. The historical StartPresale whitelist authority is retained as an unsignable account key, so privileged later Fundraise actions are outside this run. Failed signed calls are committed only to the local ledger; tracked protocol accounts roll back, while the fee payer pays signature fees. No public RPC or mainnet funds."
+}

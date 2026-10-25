@@ -1,0 +1,14 @@
+{
+  "scope": "Read-only finalized 45-byte ProgramData header check. Matching last-deploy slot supports version continuity but does not recompute the current full payload hash. No transaction was sent.",
+  "queried_at_utc": "2026-10-25T04:52:38.196922+00:00",
+  "rpc_context_slot": 461128520,
+  "program": "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM",
+  "programdata": "DorEUwsw12hyhPGW95LrFMZTsAVi9pnjERcjQap3p7G2",
+  "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "loader_variant": 3,
+  "last_deploy_slot": 370107442,
+  "pinned_last_deploy_slot": 370107442,
+  "matches_pinned_deploy_slot": true,
+  "header_sha256": "3ed12f82caf681e9bdd7596b30a6f79617780b48e3773c742ca3dcfe41c38eee",
+  "pinned_payload_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d"
+}

@@ -1,0 +1,647 @@
+{
+  "current_binary_sha256": {
+    "dao_v1": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+    "founder_dao": "816bc6d42ffea7d63bd7b1287589413aef04d8f7dceb34dd274a0f7872d40aa2",
+    "pump_xyk": "2238aa5b96fc29e7693174b20d75063df2e1dfba28c26c5346338c23732e2fb9"
+  },
+  "active_census_program_accounts_slot": 460779981,
+  "active_mint_authority_kinds": {
+    "founder_dao_state_pda": 13,
+    "dao_v1_state_pda": 35
+  },
+  "current_idl_writable_traded_mint_account_shapes": {
+    "dao_v1": [
+      {
+        "instruction": "init_bonding_on_meteora",
+        "mint_account": "token_mint",
+        "mint_signer_required": true,
+        "account_count": 17
+      },
+      {
+        "instruction": "initialize",
+        "mint_account": "dao_mint",
+        "mint_signer_required": true,
+        "account_count": 10
+      }
+    ],
+    "founder_dao": [
+      {
+        "instruction": "claim_team_allo",
+        "mint_account": "dao_mint",
+        "mint_signer_required": false,
+        "account_count": 13
+      },
+      {
+        "instruction": "init",
+        "mint_account": "dao_mint",
+        "mint_signer_required": true,
+        "account_count": 9
+      }
+    ],
+    "pump_xyk": [
+      {
+        "instruction": "migrate_to_raydium",
+        "mint_account": "token_mint",
+        "mint_signer_required": false,
+        "account_count": 35
+      }
+    ]
+  },
+  "founder_claim_party_mint_pda_is_distinct_from_dao_mint": true,
+  "pump_migrate_to_daos_traded_mint_readonly": true,
+  "pump_migrate_to_raydium_idl_has_no_dao_or_founder_program_account": true,
+  "current_dao_init_bonding_new_mint_control": {
+    "new_mint_supply": 1000000000000000000,
+    "new_pool_vault_amount": 1000000000000000000,
+    "repeat_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(0))))",
+    "wrong_admin_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6001))))",
+    "unsigned_mint_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3010))))"
+  },
+  "current_dao_execute_invoke_state_pda_mint_to_rejections": [
+    {
+      "case": "mint_to_checked_one",
+      "error": "TransactionErrorInstructionError((0, Fieldless(MissingRequiredSignature)))"
+    },
+    {
+      "case": "mint_to_one",
+      "error": "TransactionErrorInstructionError((0, Fieldless(MissingRequiredSignature)))"
+    }
+  ],
+  "founder_postdeploy_successful_transactions_scanned": 39,
+  "founder_postdeploy_outer_handler_counts": {
+    "claim_team_allo": 7,
+    "start_vest": 4,
+    "init": 19,
+    "start_curve": 18,
+    "start_presale": 2,
+    "migrate_v2": 140
+  },
+  "founder_claim_traded_mint_to_count": 0,
+  "founder_postdeploy_mint_to_rows": [
+    {
+      "slot": 364894756,
+      "signature": "2JnJDLrGR798gBQtKRJREkYwKQzCmao9Udd3aqL395oDb3ppkNnxF1NU7hUvs6CgTKNt3QyLV3q9LDDu5A1DSkJx",
+      "outer_instruction_index": 4,
+      "instruction": "claim_team_allo",
+      "dao_mint": "AKnk98ZZptY5unKaFtaoKwzxj5TMwjW9E8rwWTpeHQ2H",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "3VSTUkh6w6pi4mc4KUMWxKkJNZirP6k4E3gVpEASKSeA",
+          "amount": 3000000000000000,
+          "to_traded_dao_mint": false,
+          "to_claim_party_mint": true
+        }
+      ]
+    },
+    {
+      "slot": 331875236,
+      "signature": "WUNXtMZZS4hhqkCY6oG9upfy8QXrrFbXcZyC3aFRr5nN5LHodgSbLtrejVTmtGphwFQXixJikx8SHGzpsGe6MyC",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "Ztu3CbhvwR9wTP8fAnkyJJFKgz2ZJ9mGcocbxkodaos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "Ztu3CbhvwR9wTP8fAnkyJJFKgz2ZJ9mGcocbxkodaos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    },
+    {
+      "slot": 331664467,
+      "signature": "TXdsWPVvD8Rj2v645KwenVcZ57fieZMnkg9V9mJFVA19PDoUqK4hBnzMbuBUfW8EAAZUvZPEVL7cKpsgucjn8Xz",
+      "outer_instruction_index": 4,
+      "instruction": "claim_team_allo",
+      "dao_mint": "EE6pUz8M6YXozBjnDd3wntYBhw21YGu3cDJ1n1cdaos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "6g36JFWdnMvdnJ71YTFroGT5BkBYz186mDJADRZPzKUi",
+          "amount": 2000000000000000,
+          "to_traded_dao_mint": false,
+          "to_claim_party_mint": true
+        }
+      ]
+    },
+    {
+      "slot": 331519039,
+      "signature": "QyZMNSoT5QBnrTQycY9BCPQ9nDBA9QPq757UpUbwvwF1EcRR159NZCUJZ4GtHnB3LU9dV6UjhfJaGZkoug5bYCy",
+      "outer_instruction_index": 4,
+      "instruction": "claim_team_allo",
+      "dao_mint": "BggXtUvJfumGpX1u4a2NpF2Vv1q6gzvhvRa26o1xdaos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "7h811GQGfZK8DTSNCXp5ZA1dDA7gzq5xLVEEiAXuaoac",
+          "amount": 2000000000000000,
+          "to_traded_dao_mint": false,
+          "to_claim_party_mint": true
+        }
+      ]
+    },
+    {
+      "slot": 331515628,
+      "signature": "2e5q1s7JXixQ8oxRxCxxys12Wu893SHZbDv6XuUnDuWoC7RqZ2WPxck2va3fxgPo8zuXWzJS2UJaur9SBMSoKnFz",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "BggXtUvJfumGpX1u4a2NpF2Vv1q6gzvhvRa26o1xdaos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "BggXtUvJfumGpX1u4a2NpF2Vv1q6gzvhvRa26o1xdaos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    },
+    {
+      "slot": 331299315,
+      "signature": "23DkAUMNXZcjiSgQa8fH15eoh7bxUhCJvPUKLRgKbszdsUiLgsUCbo2Pe9sZFLBB14MWEL9wKsLAWMQD2BSg8nGa",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "EE6pUz8M6YXozBjnDd3wntYBhw21YGu3cDJ1n1cdaos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "EE6pUz8M6YXozBjnDd3wntYBhw21YGu3cDJ1n1cdaos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    },
+    {
+      "slot": 330873481,
+      "signature": "4Xq8oGzWtmVUGZ6VaynQDpdRNz63haAErW17DoTsLL5VSbhYEkytWpoyait173YEdArWpc232Cgxxv2Yv6VSH3VJ",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "124njRFMKiCsbo3ek7sszBcqxtJHXAuCob9pEAYEdaos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "124njRFMKiCsbo3ek7sszBcqxtJHXAuCob9pEAYEdaos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    },
+    {
+      "slot": 330812335,
+      "signature": "2MoeYCASH6BW3Sk5BgZY6ovZQgwt6i75FK8Y7NeEs29pZQT7szMsM7AKnm2bQ8TUxtkE3uT619npofQwF1H9dgo5",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "6htoJudmsYRqLVxMBfuqBaPo8iBmxrwTRSXwkVBsdaos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "6htoJudmsYRqLVxMBfuqBaPo8iBmxrwTRSXwkVBsdaos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    },
+    {
+      "slot": 330811782,
+      "signature": "4JYEvMVsWp4PjTWmAfx8ChDwD8wmdTNXe9KPvCtHTmwYGR62LzCZasH41Mo9uKdYrdTv86Yu4EYpUhffUT1HKmmD",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "B2ezk6pgpQsMqF7jJSC1EFV3tef6vtspLH5NZmqCdaos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "B2ezk6pgpQsMqF7jJSC1EFV3tef6vtspLH5NZmqCdaos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    },
+    {
+      "slot": 330401784,
+      "signature": "5Vbigk8kowgJpvqBVaGrm5jBYgRpbb2rygzGWLgXzwzrYDVoLphSHUYojyEhczSrND8NCuiAmfUpcXA1Vnbzo5nB",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "8rWJpDiMyghMP4T2HEGsX4Crn3Fc4h8X54Xj5qfndaos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "8rWJpDiMyghMP4T2HEGsX4Crn3Fc4h8X54Xj5qfndaos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    },
+    {
+      "slot": 330369434,
+      "signature": "5PcvjnLfaPcMude3xr1PDMCNzfBB8jvzxhv5UJofk6W4KQT56Yx2kYpdgz9QZKNysJBzPRKNTxRfxXJUYELMHMSp",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "H1Z8yBHf5Pu5Jj1LBxwhKYRPHy5e6LxKA2PwRE7Pdaos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "H1Z8yBHf5Pu5Jj1LBxwhKYRPHy5e6LxKA2PwRE7Pdaos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    },
+    {
+      "slot": 329812160,
+      "signature": "5mcNYZftu5KntxK4Kun7MeS6WyVVp1r6cTNTPH4LUNyzW7sPRqbf22v7ijLYZccmJNwxfaAxrWFfXJrRQmbh2kog",
+      "outer_instruction_index": 4,
+      "instruction": "claim_team_allo",
+      "dao_mint": "4Y2L3PUFXn3JdobnqeC8GRndbr7wJGFnNipXmNeRdaos",
+      "dao_mint_active_at_census": true,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "C8YBNmRcSwmKvAY97fDPxTqBd6HskP9rhxnVWyNbbk7P",
+          "amount": 2000000000000000,
+          "to_traded_dao_mint": false,
+          "to_claim_party_mint": true
+        }
+      ]
+    },
+    {
+      "slot": 329631865,
+      "signature": "4jLzuSuBUHTFjq6GrFqsZqoPLjEhJdfPnCoYajKiHGvJPqTmnatPGXJGD97GVdYDSYjCaytX3qz3iZ9YTn4tKY3J",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "GQdtCnJDAtYugmMFyySa8Xqk6DpMpedFdZZ1whR2daos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "GQdtCnJDAtYugmMFyySa8Xqk6DpMpedFdZZ1whR2daos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    },
+    {
+      "slot": 329631477,
+      "signature": "44DEaW3tNydpF73rWUj1e5mGLCvZ1EUECrBp3z8cRXjG1UhfCuVdD5eXk4ukPV1yixGQoFXdmUbar5tzbLZt6EeZ",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "EVQ8HTxFAz4TgaDtBj7ZwP6ZUQtapnnyctzVrn2Vdaos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "EVQ8HTxFAz4TgaDtBj7ZwP6ZUQtapnnyctzVrn2Vdaos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    },
+    {
+      "slot": 329631476,
+      "signature": "6118FnCMzW6rrshhWtyNkhN65wV6neLcBhGMu8a2rFgyJMccdm9L7uHopNM17JX6r3fT74HULUKKFMv88L8nbcnd",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "4wdbY57Grxv9RrWuueH3zL5qVFRf3LLUutipEVrFdaos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "4wdbY57Grxv9RrWuueH3zL5qVFRf3LLUutipEVrFdaos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    },
+    {
+      "slot": 329616398,
+      "signature": "3BjuNNEdcVxAXX1FvSmBQp3SMHXptyyEaj78t5AEhv6eqreEQAo7ZYfSVzC6XCHahRLuCQkweibNp8gaXSPaoky9",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "CyJUNE9cJ7Sgqt8vzLPrFpsd6ehjbLBnDQ1zVKq1daos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "CyJUNE9cJ7Sgqt8vzLPrFpsd6ehjbLBnDQ1zVKq1daos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    },
+    {
+      "slot": 329521971,
+      "signature": "3YEjDbUVTo8TUHuqkSuPhxHxF1mdPrM8FKNDZz8QY2haLhTSLH5CYPt9x4Gk7CDaoNG96vAwDLdTVWihdZWs4reB",
+      "outer_instruction_index": 4,
+      "instruction": "claim_team_allo",
+      "dao_mint": "8FiHN1P4DTd19iwfZG7CGEhYJjQ7qSYqm1HxUetHdaos",
+      "dao_mint_active_at_census": true,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "ERDdn1Gg9Co7bdcseegJFDiT8E4rRtoEMpv9GPKdWuXo",
+          "amount": 2000000000000000,
+          "to_traded_dao_mint": false,
+          "to_claim_party_mint": true
+        }
+      ]
+    },
+    {
+      "slot": 329520296,
+      "signature": "2uumrTSxe5WPDTQXhjueVnDKVxHCPcyhDmUNco5AvWcMpGvNC21gKgoSU5sUCyhWaTL4hM6AWX2iJHE3DpGT7Q1S",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "8FiHN1P4DTd19iwfZG7CGEhYJjQ7qSYqm1HxUetHdaos",
+      "dao_mint_active_at_census": true,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "8FiHN1P4DTd19iwfZG7CGEhYJjQ7qSYqm1HxUetHdaos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    },
+    {
+      "slot": 329359146,
+      "signature": "3FkCnwAUCnCuXNXzbNjDp6vos9Y4AMHbv4ZEzqvpmFDN6CgiaJ9GNVYrwPz45Z8PptDym6hwVSEuAhxbN6dXVLg4",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "5QdZ1BPW1PEyyKy6rcfyk1h1upwyKvCUqfZMghV1daos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "5QdZ1BPW1PEyyKy6rcfyk1h1upwyKvCUqfZMghV1daos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    },
+    {
+      "slot": 329277125,
+      "signature": "4kTw3h8TKEkWMJKRUTK5E7kariB7YPx49zXFsAkAjKtqAvrqkeuyy78shsF7EYYYV6Vr7oxgMj5WZgZuhEmKNJeU",
+      "outer_instruction_index": 4,
+      "instruction": "claim_team_allo",
+      "dao_mint": "EKYotMbZR82JAVakfnaQbRfCE7oyWLsXVwfyjwTRdaos",
+      "dao_mint_active_at_census": true,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "F96kmKASRCfJExEz5h8d1Bqbedb4ab8b1rZTSAZk6m4Q",
+          "amount": 2000000000000000,
+          "to_traded_dao_mint": false,
+          "to_claim_party_mint": true
+        }
+      ]
+    },
+    {
+      "slot": 329275707,
+      "signature": "5wrFxBnV8jiNKoAQjumBGRht6sZ32zpva3ekP97Rne2odFerFXnLGiBE4T5YCX4eASNfAL98yG7zpjeHmJTKQf2x",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "3o6xU5sN7CpWsNfBGYVqVcvP9RcMmVvNPMyZP1bodaos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "3o6xU5sN7CpWsNfBGYVqVcvP9RcMmVvNPMyZP1bodaos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    },
+    {
+      "slot": 329268008,
+      "signature": "DRfyShUM8LwpU632DUFDV5Lmx7zAUWeAfA4rGPVCrV2e6HZeMoETDUrWoLtWKN6S5PYxgBbs1WiF5tbK9aasQhw",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "97KzCgtE6wziPxAug1xENCXPSjijzQ6KNHx5o4LZdaos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "97KzCgtE6wziPxAug1xENCXPSjijzQ6KNHx5o4LZdaos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    },
+    {
+      "slot": 329202668,
+      "signature": "26XBjcbVfBZ4i9RStARaxc7gPiu8uExSP7xkKGR4LqHhfUchvnc6JCt1MqaRKYhVHCA4p8MngxLdKSdEkpoo5NCT",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "4Y2L3PUFXn3JdobnqeC8GRndbr7wJGFnNipXmNeRdaos",
+      "dao_mint_active_at_census": true,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "4Y2L3PUFXn3JdobnqeC8GRndbr7wJGFnNipXmNeRdaos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    },
+    {
+      "slot": 329202276,
+      "signature": "5s8wyDSF7NRHEGpdeY7onkwSZA6ma2wv81sXdiuUpCrVHSeZhRx9XDnzAgXJ2jevfQ2YjKXDVi6mhywy3uDoNfTd",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "gbHHAA1PiNPRLi5LAwY2rhaJwa5oRMdxtHp11nMdaos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "gbHHAA1PiNPRLi5LAwY2rhaJwa5oRMdxtHp11nMdaos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    },
+    {
+      "slot": 329026839,
+      "signature": "4L2Eb95RvnrNvbaFTgo3gE5Lkubeg3cgXJ1Df2Dqs41Ty5EYXQoJVPoCmkWmDWoo7c6gM2SLahYomY5tHhL3pAZk",
+      "outer_instruction_index": 4,
+      "instruction": "claim_team_allo",
+      "dao_mint": "CBMFQzALHvTbHa5mbDa158AQJ6WkxyJb6KprxJ1Qdaos",
+      "dao_mint_active_at_census": true,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "D3tQakp73VKRU7fSPGm7tfGRWRoCJ9eJtxrhK4aWp5Fk",
+          "amount": 2000000000000000,
+          "to_traded_dao_mint": false,
+          "to_claim_party_mint": true
+        }
+      ]
+    },
+    {
+      "slot": 329015655,
+      "signature": "4TpmnKQfYswyWJbZVaN8yKB2mRHmU9tzvQFuAuY6ttvSPsR5MyovV7PWAYpZS4iZKrBCoAq8a9LSjNseGmjwMgZF",
+      "outer_instruction_index": 0,
+      "instruction": "init",
+      "dao_mint": "3b4imW7W8MgHTc2ynQBrB3khLnWweWfWPz2NuJridaos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "3b4imW7W8MgHTc2ynQBrB3khLnWweWfWPz2NuJridaos",
+          "amount": 10000000000000000,
+          "to_traded_dao_mint": true,
+          "to_claim_party_mint": false
+        }
+      ]
+    }
+  ],
+  "founder_claim_rows": [
+    {
+      "slot": 364894756,
+      "signature": "2JnJDLrGR798gBQtKRJREkYwKQzCmao9Udd3aqL395oDb3ppkNnxF1NU7hUvs6CgTKNt3QyLV3q9LDDu5A1DSkJx",
+      "outer_instruction_index": 4,
+      "instruction": "claim_team_allo",
+      "dao_mint": "AKnk98ZZptY5unKaFtaoKwzxj5TMwjW9E8rwWTpeHQ2H",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "3VSTUkh6w6pi4mc4KUMWxKkJNZirP6k4E3gVpEASKSeA",
+          "amount": 3000000000000000,
+          "to_traded_dao_mint": false,
+          "to_claim_party_mint": true
+        }
+      ]
+    },
+    {
+      "slot": 331664467,
+      "signature": "TXdsWPVvD8Rj2v645KwenVcZ57fieZMnkg9V9mJFVA19PDoUqK4hBnzMbuBUfW8EAAZUvZPEVL7cKpsgucjn8Xz",
+      "outer_instruction_index": 4,
+      "instruction": "claim_team_allo",
+      "dao_mint": "EE6pUz8M6YXozBjnDd3wntYBhw21YGu3cDJ1n1cdaos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "6g36JFWdnMvdnJ71YTFroGT5BkBYz186mDJADRZPzKUi",
+          "amount": 2000000000000000,
+          "to_traded_dao_mint": false,
+          "to_claim_party_mint": true
+        }
+      ]
+    },
+    {
+      "slot": 331519039,
+      "signature": "QyZMNSoT5QBnrTQycY9BCPQ9nDBA9QPq757UpUbwvwF1EcRR159NZCUJZ4GtHnB3LU9dV6UjhfJaGZkoug5bYCy",
+      "outer_instruction_index": 4,
+      "instruction": "claim_team_allo",
+      "dao_mint": "BggXtUvJfumGpX1u4a2NpF2Vv1q6gzvhvRa26o1xdaos",
+      "dao_mint_active_at_census": false,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "7h811GQGfZK8DTSNCXp5ZA1dDA7gzq5xLVEEiAXuaoac",
+          "amount": 2000000000000000,
+          "to_traded_dao_mint": false,
+          "to_claim_party_mint": true
+        }
+      ]
+    },
+    {
+      "slot": 329812160,
+      "signature": "5mcNYZftu5KntxK4Kun7MeS6WyVVp1r6cTNTPH4LUNyzW7sPRqbf22v7ijLYZccmJNwxfaAxrWFfXJrRQmbh2kog",
+      "outer_instruction_index": 4,
+      "instruction": "claim_team_allo",
+      "dao_mint": "4Y2L3PUFXn3JdobnqeC8GRndbr7wJGFnNipXmNeRdaos",
+      "dao_mint_active_at_census": true,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "C8YBNmRcSwmKvAY97fDPxTqBd6HskP9rhxnVWyNbbk7P",
+          "amount": 2000000000000000,
+          "to_traded_dao_mint": false,
+          "to_claim_party_mint": true
+        }
+      ]
+    },
+    {
+      "slot": 329521971,
+      "signature": "3YEjDbUVTo8TUHuqkSuPhxHxF1mdPrM8FKNDZz8QY2haLhTSLH5CYPt9x4Gk7CDaoNG96vAwDLdTVWihdZWs4reB",
+      "outer_instruction_index": 4,
+      "instruction": "claim_team_allo",
+      "dao_mint": "8FiHN1P4DTd19iwfZG7CGEhYJjQ7qSYqm1HxUetHdaos",
+      "dao_mint_active_at_census": true,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "ERDdn1Gg9Co7bdcseegJFDiT8E4rRtoEMpv9GPKdWuXo",
+          "amount": 2000000000000000,
+          "to_traded_dao_mint": false,
+          "to_claim_party_mint": true
+        }
+      ]
+    },
+    {
+      "slot": 329277125,
+      "signature": "4kTw3h8TKEkWMJKRUTK5E7kariB7YPx49zXFsAkAjKtqAvrqkeuyy78shsF7EYYYV6Vr7oxgMj5WZgZuhEmKNJeU",
+      "outer_instruction_index": 4,
+      "instruction": "claim_team_allo",
+      "dao_mint": "EKYotMbZR82JAVakfnaQbRfCE7oyWLsXVwfyjwTRdaos",
+      "dao_mint_active_at_census": true,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "F96kmKASRCfJExEz5h8d1Bqbedb4ab8b1rZTSAZk6m4Q",
+          "amount": 2000000000000000,
+          "to_traded_dao_mint": false,
+          "to_claim_party_mint": true
+        }
+      ]
+    },
+    {
+      "slot": 329026839,
+      "signature": "4L2Eb95RvnrNvbaFTgo3gE5Lkubeg3cgXJ1Df2Dqs41Ty5EYXQoJVPoCmkWmDWoo7c6gM2SLahYomY5tHhL3pAZk",
+      "outer_instruction_index": 4,
+      "instruction": "claim_team_allo",
+      "dao_mint": "CBMFQzALHvTbHa5mbDa158AQJ6WkxyJb6KprxJ1Qdaos",
+      "dao_mint_active_at_census": true,
+      "mint_to_calls": [
+        {
+          "opcode": 7,
+          "mint": "D3tQakp73VKRU7fSPGm7tfGRWRoCJ9eJtxrhK4aWp5Fk",
+          "amount": 2000000000000000,
+          "to_traded_dao_mint": false,
+          "to_claim_party_mint": true
+        }
+      ]
+    }
+  ],
+  "direct_active_mint_signer_controls": "analysis/root_virtual_xyk/active-mint-signer-controls.json",
+  "qualification": "Current IDL mutability/signature shapes are an interface screen, not exhaustive hidden CPI or branch proof. The DAO InitBonding local fixture creates a new mint, not an existing active one; its signature verification was disabled. The Founder post-deploy scan covers the saved 39 successful transactions, not every possible future state. Direct active-mint MintTo tests show only transaction-level signer requirements. No current program-mediated unauthorized active traded-mint inflation is validated."
+}

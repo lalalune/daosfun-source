@@ -1,0 +1,3059 @@
+{
+  "scope": "Founder StartVest signed offline target/candidate against four later captures with local unstarted Vest tag",
+  "target_sha256": "816bc6d42ffea7d63bd7b1287589413aef04d8f7dceb34dd274a0f7872d40aa2",
+  "pump_sha256": "2238aa5b96fc29e7693174b20d75063df2e1dfba28c26c5346338c23732e2fb9",
+  "vest_sha256": "7a348374607cd000a73405c7608ab4795e14c5e42efbbe4b6fc20909b3beeb07",
+  "candidate_sha256": "55020d6a4815ff2d4d19b8b626b174603a4bb1766334e894e583f14661af5036",
+  "candidate_source_sha256": "844bc41ee142a6a15a529334d5ab249bbd6688de36e827197486e1d08537170d",
+  "source_transactions": [
+    {
+      "signature": "67RgatfFfSG5maz6Uhiim9zpPXmYbZ2HkGGnjx8GsL3czoCEu1o15ndmysjZpWK1Z2ug7kmyg7CifEWxNB29GFf4",
+      "slot": 355531144,
+      "block_time": 1753401245,
+      "snapshot_sha256": "5a6ad344a0461a46147f5c75acd990958d3350fd410465a0db496174dcce48c0",
+      "later_vest_started_at_source_time": true
+    },
+    {
+      "signature": "CxUKUwTFkFiiXN3pQcdzzUioGv6sNNMXRc94TA98BGW3ocheGfa2CvTGgYevYLcnhptUK7LDxH525fNdG27kuUT",
+      "slot": 336800341,
+      "block_time": 1745977955,
+      "snapshot_sha256": "588f64916d9964cdb524671a109b76cc68e8e0b67b9a919866924b95a91f37a9",
+      "later_vest_started_at_source_time": true
+    },
+    {
+      "signature": "2Kpdr5EFEZkLtYaLdmuCRBSn4JeuJEuEn2YTVqenqitMMsWkCuEBZinJjmRXkRWZoHCT4EmSRpDks3seqPPtcWTZ",
+      "slot": 332107100,
+      "block_time": 1744115667,
+      "snapshot_sha256": "c7fe7e0489691fa4d9edb87b20e9957f81ed876a0614627f6bfff1a9d80ee324",
+      "later_vest_started_at_source_time": true
+    },
+    {
+      "signature": "26KGCNVduntoUxDnSFwtfJXtyaadSGQ5BN8zxBkxR9SaYTQEkCgFQcFkCfTfNAMc3agRgYWwpPNjDUwub61J9PZS",
+      "slot": 332106432,
+      "block_time": 1744115404,
+      "snapshot_sha256": "c3b5d25321ad1b4ab50c63b76d63c21ca3355d91a5d46dbd995861aecc635551",
+      "later_vest_started_at_source_time": true
+    }
+  ],
+  "historical_cpi_receipt_sha256": "bb8dd3535bac3a60d0d83bc58670ac05685d618efdea7c57614a0f558947d31c",
+  "rent_reference_sha256": "b22f9e4bf37fca7daf824d330eb397e06d39f7446ab898732b73c22395ce5431",
+  "offline_only": true,
+  "signed_local": true,
+  "case_count": 64,
+  "rows": [
+    {
+      "source_slot": 355531144,
+      "case": "baseline_unstarted",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1753401245,
+      "curve_timestamp": 1742864905,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1753401245,
+      "candidate_vest_timestamp_after": 1753401245,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000009dc7826800000000",
+          "account_keys": [
+            "8RQFgJA96cxYbc1DMZmcskbmFY6FWtGqHnGJ8jfpvsqU",
+            "8TnFkSYEHzkFADihuYz7SDGMduF18EdmmvrTB4ySGUHN"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000009dc7826800000000",
+          "account_keys": [
+            "8RQFgJA96cxYbc1DMZmcskbmFY6FWtGqHnGJ8jfpvsqU",
+            "8TnFkSYEHzkFADihuYz7SDGMduF18EdmmvrTB4ySGUHN"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 32552,
+      "candidate_compute_units": 26147,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "case": "first_success_second",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1742951306,
+      "curve_timestamp": 1742864905,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1742951306,
+      "candidate_vest_timestamp_after": 1742951306,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000008a53e36700000000",
+          "account_keys": [
+            "8RQFgJA96cxYbc1DMZmcskbmFY6FWtGqHnGJ8jfpvsqU",
+            "8TnFkSYEHzkFADihuYz7SDGMduF18EdmmvrTB4ySGUHN"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000008a53e36700000000",
+          "account_keys": [
+            "8RQFgJA96cxYbc1DMZmcskbmFY6FWtGqHnGJ8jfpvsqU",
+            "8TnFkSYEHzkFADihuYz7SDGMduF18EdmmvrTB4ySGUHN"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 32552,
+      "candidate_compute_units": 26147,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "case": "at_time_boundary",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6005))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6005))))",
+      "target_error_code": 6005,
+      "candidate_error_code": 6005,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1742951305,
+      "curve_timestamp": 1742864905,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1753401245,
+      "candidate_vest_timestamp_after": 1753401245,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 22401,
+      "candidate_compute_units": 16010,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:357. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "case": "already_started",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6003))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6003))))",
+      "target_error_code": 6003,
+      "candidate_error_code": 6003,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1753401245,
+      "curve_timestamp": 1742864905,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1753401245,
+      "candidate_vest_timestamp_after": 1753401245,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 21592,
+      "candidate_compute_units": 9784,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: InvalidState. Error Number: 6003. Error Message: Invalid state.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1773"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:220. Error Code: InvalidState. Error Number: 6003. Error Message: Invalid state.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1773"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "case": "state_curve_flag_zero",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1753401245,
+      "curve_timestamp": 1742864905,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1753401245,
+      "candidate_vest_timestamp_after": 1753401245,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000009dc7826800000000",
+          "account_keys": [
+            "8RQFgJA96cxYbc1DMZmcskbmFY6FWtGqHnGJ8jfpvsqU",
+            "8TnFkSYEHzkFADihuYz7SDGMduF18EdmmvrTB4ySGUHN"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000009dc7826800000000",
+          "account_keys": [
+            "8RQFgJA96cxYbc1DMZmcskbmFY6FWtGqHnGJ8jfpvsqU",
+            "8TnFkSYEHzkFADihuYz7SDGMduF18EdmmvrTB4ySGUHN"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 32550,
+      "candidate_compute_units": 26148,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "case": "state_team_flag_zero",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1753401245,
+      "curve_timestamp": 1742864905,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1753401245,
+      "candidate_vest_timestamp_after": 1753401245,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000009dc7826800000000",
+          "account_keys": [
+            "8RQFgJA96cxYbc1DMZmcskbmFY6FWtGqHnGJ8jfpvsqU",
+            "8TnFkSYEHzkFADihuYz7SDGMduF18EdmmvrTB4ySGUHN"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000009dc7826800000000",
+          "account_keys": [
+            "8RQFgJA96cxYbc1DMZmcskbmFY6FWtGqHnGJ8jfpvsqU",
+            "8TnFkSYEHzkFADihuYz7SDGMduF18EdmmvrTB4ySGUHN"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 32550,
+      "candidate_compute_units": 26148,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "case": "curve_flags_zero",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1753401245,
+      "curve_timestamp": 1742864905,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1753401245,
+      "candidate_vest_timestamp_after": 1753401245,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000009dc7826800000000",
+          "account_keys": [
+            "8RQFgJA96cxYbc1DMZmcskbmFY6FWtGqHnGJ8jfpvsqU",
+            "8TnFkSYEHzkFADihuYz7SDGMduF18EdmmvrTB4ySGUHN"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000009dc7826800000000",
+          "account_keys": [
+            "8RQFgJA96cxYbc1DMZmcskbmFY6FWtGqHnGJ8jfpvsqU",
+            "8TnFkSYEHzkFADihuYz7SDGMduF18EdmmvrTB4ySGUHN"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 32271,
+      "candidate_compute_units": 26147,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "case": "curve_empty_program_account",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3001))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3001))))",
+      "target_error_code": 3001,
+      "candidate_error_code": 3001,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1753401245,
+      "curve_timestamp": 1742864905,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1753401245,
+      "candidate_vest_timestamp_after": 1753401245,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 6563,
+      "candidate_compute_units": 9921,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountDiscriminatorNotFound. Error Number: 3001. Error Message: No 8 byte discriminator was found on the account.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbb9"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:205. Error Code: AccountDiscriminatorNotFound. Error Number: 3001. Error Message: No discriminator was found on the account.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbb9"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "case": "curve_wrong_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1753401245,
+      "curve_timestamp": 1742864905,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1753401245,
+      "candidate_vest_timestamp_after": 1753401245,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 7301,
+      "candidate_compute_units": 8823,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:196. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "case": "vest_wrong_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1753401245,
+      "curve_timestamp": 1742864905,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1753401245,
+      "candidate_vest_timestamp_after": 1753401245,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 9270,
+      "candidate_compute_units": 10500,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:213. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "case": "state_wrong_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1753401245,
+      "curve_timestamp": 1742864905,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1753401245,
+      "candidate_vest_timestamp_after": 1753401245,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 6070,
+      "candidate_compute_units": 3675,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "case": "wrong_vest_pda",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3002))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3002))))",
+      "target_error_code": 3002,
+      "candidate_error_code": 3002,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 6,
+      "clock": 1753401245,
+      "curve_timestamp": 1742864905,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1753401245,
+      "candidate_vest_timestamp_after": 1753401245,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 8813,
+      "candidate_compute_units": 10018,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: 8 byte discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:217. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: Account discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "case": "wrong_vest_pda_valid_data",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2006))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2006))))",
+      "target_error_code": 2006,
+      "candidate_error_code": 2006,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 6,
+      "clock": 1753401245,
+      "curve_timestamp": 1742864905,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1753401245,
+      "candidate_vest_timestamp_after": 1753401245,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 22343,
+      "candidate_compute_units": 16383,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x7d6"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:225. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x7d6"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "case": "vest_wrong_discriminator",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3002))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3002))))",
+      "target_error_code": 3002,
+      "candidate_error_code": 3002,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1753401245,
+      "curve_timestamp": 1742864905,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1753401245,
+      "candidate_vest_timestamp_after": 1753401245,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 8813,
+      "candidate_compute_units": 10018,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: 8 byte discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:217. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: Account discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "case": "wrong_vest_program",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3008))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3008))))",
+      "target_error_code": 3008,
+      "candidate_error_code": 3008,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1753401245,
+      "curve_timestamp": 1742864905,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1753401245,
+      "candidate_vest_timestamp_after": 1753401245,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 9983,
+      "candidate_compute_units": 7960,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest_program. Error Code: InvalidProgramId. Error Number: 3008. Error Message: Program ID was not as expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbc0"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest_program. Error Code: InvalidProgramId. Error Number: 3008. Error Message: Program ID was not as expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbc0"
+      ]
+    },
+    {
+      "source_slot": 355531144,
+      "case": "swapped_curve_vest",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1753401245,
+      "curve_timestamp": 1742864905,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1753401245,
+      "candidate_vest_timestamp_after": 1753401245,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 7282,
+      "candidate_compute_units": 8823,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:196. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "case": "baseline_unstarted",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1745977955,
+      "curve_timestamp": 1742793913,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1745977955,
+      "candidate_vest_timestamp_after": 1745977955,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000006382116800000000",
+          "account_keys": [
+            "J4YHUQ9XAHU4EoA393siqnEfnS5v8eXGsQBYP7LsB39i",
+            "1XCSDBSBDbsbug4Gah5KrwgDFLZ2wnNHrcR7DcJWaDZ"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000006382116800000000",
+          "account_keys": [
+            "J4YHUQ9XAHU4EoA393siqnEfnS5v8eXGsQBYP7LsB39i",
+            "1XCSDBSBDbsbug4Gah5KrwgDFLZ2wnNHrcR7DcJWaDZ"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 28052,
+      "candidate_compute_units": 21647,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "case": "first_success_second",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1742880314,
+      "curve_timestamp": 1742793913,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1742880314,
+      "candidate_vest_timestamp_after": 1742880314,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000003a3ee26700000000",
+          "account_keys": [
+            "J4YHUQ9XAHU4EoA393siqnEfnS5v8eXGsQBYP7LsB39i",
+            "1XCSDBSBDbsbug4Gah5KrwgDFLZ2wnNHrcR7DcJWaDZ"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000003a3ee26700000000",
+          "account_keys": [
+            "J4YHUQ9XAHU4EoA393siqnEfnS5v8eXGsQBYP7LsB39i",
+            "1XCSDBSBDbsbug4Gah5KrwgDFLZ2wnNHrcR7DcJWaDZ"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 28052,
+      "candidate_compute_units": 21647,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "case": "at_time_boundary",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6005))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6005))))",
+      "target_error_code": 6005,
+      "candidate_error_code": 6005,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1742880313,
+      "curve_timestamp": 1742793913,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1745977955,
+      "candidate_vest_timestamp_after": 1745977955,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 22401,
+      "candidate_compute_units": 16010,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:357. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "case": "already_started",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6003))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6003))))",
+      "target_error_code": 6003,
+      "candidate_error_code": 6003,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1745977955,
+      "curve_timestamp": 1742793913,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1745977955,
+      "candidate_vest_timestamp_after": 1745977955,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 21592,
+      "candidate_compute_units": 14284,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: InvalidState. Error Number: 6003. Error Message: Invalid state.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1773"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:220. Error Code: InvalidState. Error Number: 6003. Error Message: Invalid state.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1773"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "case": "state_curve_flag_zero",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1745977955,
+      "curve_timestamp": 1742793913,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1745977955,
+      "candidate_vest_timestamp_after": 1745977955,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000006382116800000000",
+          "account_keys": [
+            "J4YHUQ9XAHU4EoA393siqnEfnS5v8eXGsQBYP7LsB39i",
+            "1XCSDBSBDbsbug4Gah5KrwgDFLZ2wnNHrcR7DcJWaDZ"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000006382116800000000",
+          "account_keys": [
+            "J4YHUQ9XAHU4EoA393siqnEfnS5v8eXGsQBYP7LsB39i",
+            "1XCSDBSBDbsbug4Gah5KrwgDFLZ2wnNHrcR7DcJWaDZ"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 28050,
+      "candidate_compute_units": 21648,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "case": "state_team_flag_zero",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1745977955,
+      "curve_timestamp": 1742793913,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1745977955,
+      "candidate_vest_timestamp_after": 1745977955,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000006382116800000000",
+          "account_keys": [
+            "J4YHUQ9XAHU4EoA393siqnEfnS5v8eXGsQBYP7LsB39i",
+            "1XCSDBSBDbsbug4Gah5KrwgDFLZ2wnNHrcR7DcJWaDZ"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000006382116800000000",
+          "account_keys": [
+            "J4YHUQ9XAHU4EoA393siqnEfnS5v8eXGsQBYP7LsB39i",
+            "1XCSDBSBDbsbug4Gah5KrwgDFLZ2wnNHrcR7DcJWaDZ"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 28050,
+      "candidate_compute_units": 21648,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "case": "curve_flags_zero",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1745977955,
+      "curve_timestamp": 1742793913,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1745977955,
+      "candidate_vest_timestamp_after": 1745977955,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000006382116800000000",
+          "account_keys": [
+            "J4YHUQ9XAHU4EoA393siqnEfnS5v8eXGsQBYP7LsB39i",
+            "1XCSDBSBDbsbug4Gah5KrwgDFLZ2wnNHrcR7DcJWaDZ"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000006382116800000000",
+          "account_keys": [
+            "J4YHUQ9XAHU4EoA393siqnEfnS5v8eXGsQBYP7LsB39i",
+            "1XCSDBSBDbsbug4Gah5KrwgDFLZ2wnNHrcR7DcJWaDZ"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 27771,
+      "candidate_compute_units": 21647,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "case": "curve_empty_program_account",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3001))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3001))))",
+      "target_error_code": 3001,
+      "candidate_error_code": 3001,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1745977955,
+      "curve_timestamp": 1742793913,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1745977955,
+      "candidate_vest_timestamp_after": 1745977955,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 6563,
+      "candidate_compute_units": 14421,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountDiscriminatorNotFound. Error Number: 3001. Error Message: No 8 byte discriminator was found on the account.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbb9"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:205. Error Code: AccountDiscriminatorNotFound. Error Number: 3001. Error Message: No discriminator was found on the account.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbb9"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "case": "curve_wrong_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1745977955,
+      "curve_timestamp": 1742793913,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1745977955,
+      "candidate_vest_timestamp_after": 1745977955,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 7301,
+      "candidate_compute_units": 13323,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:196. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "case": "vest_wrong_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1745977955,
+      "curve_timestamp": 1742793913,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1745977955,
+      "candidate_vest_timestamp_after": 1745977955,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 9270,
+      "candidate_compute_units": 15000,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:213. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "case": "state_wrong_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1745977955,
+      "curve_timestamp": 1742793913,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1745977955,
+      "candidate_vest_timestamp_after": 1745977955,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 6070,
+      "candidate_compute_units": 3675,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "case": "wrong_vest_pda",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3002))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3002))))",
+      "target_error_code": 3002,
+      "candidate_error_code": 3002,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 6,
+      "clock": 1745977955,
+      "curve_timestamp": 1742793913,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1745977955,
+      "candidate_vest_timestamp_after": 1745977955,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 8813,
+      "candidate_compute_units": 14518,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: 8 byte discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:217. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: Account discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "case": "wrong_vest_pda_valid_data",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2006))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2006))))",
+      "target_error_code": 2006,
+      "candidate_error_code": 2006,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 6,
+      "clock": 1745977955,
+      "curve_timestamp": 1742793913,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1745977955,
+      "candidate_vest_timestamp_after": 1745977955,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 22343,
+      "candidate_compute_units": 16383,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x7d6"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:225. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x7d6"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "case": "vest_wrong_discriminator",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3002))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3002))))",
+      "target_error_code": 3002,
+      "candidate_error_code": 3002,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1745977955,
+      "curve_timestamp": 1742793913,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1745977955,
+      "candidate_vest_timestamp_after": 1745977955,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 8813,
+      "candidate_compute_units": 14518,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: 8 byte discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:217. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: Account discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "case": "wrong_vest_program",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3008))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3008))))",
+      "target_error_code": 3008,
+      "candidate_error_code": 3008,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1745977955,
+      "curve_timestamp": 1742793913,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1745977955,
+      "candidate_vest_timestamp_after": 1745977955,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 9983,
+      "candidate_compute_units": 12460,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest_program. Error Code: InvalidProgramId. Error Number: 3008. Error Message: Program ID was not as expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbc0"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest_program. Error Code: InvalidProgramId. Error Number: 3008. Error Message: Program ID was not as expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbc0"
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "case": "swapped_curve_vest",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1745977955,
+      "curve_timestamp": 1742793913,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1745977955,
+      "candidate_vest_timestamp_after": 1745977955,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 7282,
+      "candidate_compute_units": 13323,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:196. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "case": "baseline_unstarted",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115667,
+      "curve_timestamp": 1743082173,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1744115667,
+      "candidate_vest_timestamp_after": 1744115667,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e00000000d317f56700000000",
+          "account_keys": [
+            "H1ayVq2uS54fm36tkSJMK5gfXDqQmHX7NmE7H71EHdfb",
+            "FdRseSWVqR7zAM3zvyvNgSTFn5Y1z75uo71rz5kLkEAX"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e00000000d317f56700000000",
+          "account_keys": [
+            "H1ayVq2uS54fm36tkSJMK5gfXDqQmHX7NmE7H71EHdfb",
+            "FdRseSWVqR7zAM3zvyvNgSTFn5Y1z75uo71rz5kLkEAX"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 38552,
+      "candidate_compute_units": 32147,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "case": "first_success_second",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1743168574,
+      "curve_timestamp": 1743082173,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1743168574,
+      "candidate_vest_timestamp_after": 1743168574,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000003ea4e66700000000",
+          "account_keys": [
+            "H1ayVq2uS54fm36tkSJMK5gfXDqQmHX7NmE7H71EHdfb",
+            "FdRseSWVqR7zAM3zvyvNgSTFn5Y1z75uo71rz5kLkEAX"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e000000003ea4e66700000000",
+          "account_keys": [
+            "H1ayVq2uS54fm36tkSJMK5gfXDqQmHX7NmE7H71EHdfb",
+            "FdRseSWVqR7zAM3zvyvNgSTFn5Y1z75uo71rz5kLkEAX"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 38552,
+      "candidate_compute_units": 32147,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "case": "at_time_boundary",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6005))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6005))))",
+      "target_error_code": 6005,
+      "candidate_error_code": 6005,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1743168573,
+      "curve_timestamp": 1743082173,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115667,
+      "candidate_vest_timestamp_after": 1744115667,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 28401,
+      "candidate_compute_units": 22010,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:357. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "case": "already_started",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6003))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6003))))",
+      "target_error_code": 6003,
+      "candidate_error_code": 6003,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115667,
+      "curve_timestamp": 1743082173,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1744115667,
+      "candidate_vest_timestamp_after": 1744115667,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 27592,
+      "candidate_compute_units": 15784,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: InvalidState. Error Number: 6003. Error Message: Invalid state.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1773"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:220. Error Code: InvalidState. Error Number: 6003. Error Message: Invalid state.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1773"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "case": "state_curve_flag_zero",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115667,
+      "curve_timestamp": 1743082173,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1744115667,
+      "candidate_vest_timestamp_after": 1744115667,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e00000000d317f56700000000",
+          "account_keys": [
+            "H1ayVq2uS54fm36tkSJMK5gfXDqQmHX7NmE7H71EHdfb",
+            "FdRseSWVqR7zAM3zvyvNgSTFn5Y1z75uo71rz5kLkEAX"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e00000000d317f56700000000",
+          "account_keys": [
+            "H1ayVq2uS54fm36tkSJMK5gfXDqQmHX7NmE7H71EHdfb",
+            "FdRseSWVqR7zAM3zvyvNgSTFn5Y1z75uo71rz5kLkEAX"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 38550,
+      "candidate_compute_units": 32148,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "case": "state_team_flag_zero",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115667,
+      "curve_timestamp": 1743082173,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1744115667,
+      "candidate_vest_timestamp_after": 1744115667,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e00000000d317f56700000000",
+          "account_keys": [
+            "H1ayVq2uS54fm36tkSJMK5gfXDqQmHX7NmE7H71EHdfb",
+            "FdRseSWVqR7zAM3zvyvNgSTFn5Y1z75uo71rz5kLkEAX"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e00000000d317f56700000000",
+          "account_keys": [
+            "H1ayVq2uS54fm36tkSJMK5gfXDqQmHX7NmE7H71EHdfb",
+            "FdRseSWVqR7zAM3zvyvNgSTFn5Y1z75uo71rz5kLkEAX"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 38550,
+      "candidate_compute_units": 32148,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "case": "curve_flags_zero",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115667,
+      "curve_timestamp": 1743082173,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1744115667,
+      "candidate_vest_timestamp_after": 1744115667,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e00000000d317f56700000000",
+          "account_keys": [
+            "H1ayVq2uS54fm36tkSJMK5gfXDqQmHX7NmE7H71EHdfb",
+            "FdRseSWVqR7zAM3zvyvNgSTFn5Y1z75uo71rz5kLkEAX"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e00000000d317f56700000000",
+          "account_keys": [
+            "H1ayVq2uS54fm36tkSJMK5gfXDqQmHX7NmE7H71EHdfb",
+            "FdRseSWVqR7zAM3zvyvNgSTFn5Y1z75uo71rz5kLkEAX"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 38271,
+      "candidate_compute_units": 32147,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "case": "curve_empty_program_account",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3001))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3001))))",
+      "target_error_code": 3001,
+      "candidate_error_code": 3001,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115667,
+      "curve_timestamp": 1743082173,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115667,
+      "candidate_vest_timestamp_after": 1744115667,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 6563,
+      "candidate_compute_units": 15921,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountDiscriminatorNotFound. Error Number: 3001. Error Message: No 8 byte discriminator was found on the account.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbb9"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:205. Error Code: AccountDiscriminatorNotFound. Error Number: 3001. Error Message: No discriminator was found on the account.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbb9"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "case": "curve_wrong_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115667,
+      "curve_timestamp": 1743082173,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115667,
+      "candidate_vest_timestamp_after": 1744115667,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 7301,
+      "candidate_compute_units": 10323,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:196. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "case": "vest_wrong_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115667,
+      "curve_timestamp": 1743082173,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115667,
+      "candidate_vest_timestamp_after": 1744115667,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 9270,
+      "candidate_compute_units": 16500,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:213. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "case": "state_wrong_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115667,
+      "curve_timestamp": 1743082173,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115667,
+      "candidate_vest_timestamp_after": 1744115667,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 6070,
+      "candidate_compute_units": 3675,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "case": "wrong_vest_pda",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3002))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3002))))",
+      "target_error_code": 3002,
+      "candidate_error_code": 3002,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 6,
+      "clock": 1744115667,
+      "curve_timestamp": 1743082173,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115667,
+      "candidate_vest_timestamp_after": 1744115667,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 8813,
+      "candidate_compute_units": 16018,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: 8 byte discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:217. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: Account discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "case": "wrong_vest_pda_valid_data",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2006))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2006))))",
+      "target_error_code": 2006,
+      "candidate_error_code": 2006,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 6,
+      "clock": 1744115667,
+      "curve_timestamp": 1743082173,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115667,
+      "candidate_vest_timestamp_after": 1744115667,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 28343,
+      "candidate_compute_units": 22383,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x7d6"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:225. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x7d6"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "case": "vest_wrong_discriminator",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3002))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3002))))",
+      "target_error_code": 3002,
+      "candidate_error_code": 3002,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115667,
+      "curve_timestamp": 1743082173,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115667,
+      "candidate_vest_timestamp_after": 1744115667,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 8813,
+      "candidate_compute_units": 16018,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: 8 byte discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:217. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: Account discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "case": "wrong_vest_program",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3008))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3008))))",
+      "target_error_code": 3008,
+      "candidate_error_code": 3008,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115667,
+      "curve_timestamp": 1743082173,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115667,
+      "candidate_vest_timestamp_after": 1744115667,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 9983,
+      "candidate_compute_units": 9460,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest_program. Error Code: InvalidProgramId. Error Number: 3008. Error Message: Program ID was not as expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbc0"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest_program. Error Code: InvalidProgramId. Error Number: 3008. Error Message: Program ID was not as expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbc0"
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "case": "swapped_curve_vest",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115667,
+      "curve_timestamp": 1743082173,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115667,
+      "candidate_vest_timestamp_after": 1744115667,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 7282,
+      "candidate_compute_units": 10323,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:196. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "case": "baseline_unstarted",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115404,
+      "curve_timestamp": 1743125236,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1744115404,
+      "candidate_vest_timestamp_after": 1744115404,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e00000000cc16f56700000000",
+          "account_keys": [
+            "AscRrV1ZCf9ggpaX2tSTKHdWR7VwThvjNp4gEHJqaE4J",
+            "GnpRCcGaH5HqQe7Y5tXTvpkA7VDgVTmqZRmF69jc5ir"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e00000000cc16f56700000000",
+          "account_keys": [
+            "AscRrV1ZCf9ggpaX2tSTKHdWR7VwThvjNp4gEHJqaE4J",
+            "GnpRCcGaH5HqQe7Y5tXTvpkA7VDgVTmqZRmF69jc5ir"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 20612,
+      "candidate_compute_units": 14188,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "case": "first_success_second",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1743211637,
+      "curve_timestamp": 1743125236,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1743211637,
+      "candidate_vest_timestamp_after": 1743211637,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e00000000754ce76700000000",
+          "account_keys": [
+            "AscRrV1ZCf9ggpaX2tSTKHdWR7VwThvjNp4gEHJqaE4J",
+            "GnpRCcGaH5HqQe7Y5tXTvpkA7VDgVTmqZRmF69jc5ir"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e00000000754ce76700000000",
+          "account_keys": [
+            "AscRrV1ZCf9ggpaX2tSTKHdWR7VwThvjNp4gEHJqaE4J",
+            "GnpRCcGaH5HqQe7Y5tXTvpkA7VDgVTmqZRmF69jc5ir"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 20612,
+      "candidate_compute_units": 14188,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "case": "at_time_boundary",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6005))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6005))))",
+      "target_error_code": 6005,
+      "candidate_error_code": 6005,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1743211636,
+      "curve_timestamp": 1743125236,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115404,
+      "candidate_vest_timestamp_after": 1744115404,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 14909,
+      "candidate_compute_units": 8516,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:357. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "case": "already_started",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6003))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(6003))))",
+      "target_error_code": 6003,
+      "candidate_error_code": 6003,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115404,
+      "curve_timestamp": 1743125236,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1744115404,
+      "candidate_vest_timestamp_after": 1744115404,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 14100,
+      "candidate_compute_units": 6790,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: InvalidState. Error Number: 6003. Error Message: Invalid state.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1773"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:220. Error Code: InvalidState. Error Number: 6003. Error Message: Invalid state.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1773"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "case": "state_curve_flag_zero",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115404,
+      "curve_timestamp": 1743125236,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1744115404,
+      "candidate_vest_timestamp_after": 1744115404,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e00000000cc16f56700000000",
+          "account_keys": [
+            "AscRrV1ZCf9ggpaX2tSTKHdWR7VwThvjNp4gEHJqaE4J",
+            "GnpRCcGaH5HqQe7Y5tXTvpkA7VDgVTmqZRmF69jc5ir"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e00000000cc16f56700000000",
+          "account_keys": [
+            "AscRrV1ZCf9ggpaX2tSTKHdWR7VwThvjNp4gEHJqaE4J",
+            "GnpRCcGaH5HqQe7Y5tXTvpkA7VDgVTmqZRmF69jc5ir"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 20610,
+      "candidate_compute_units": 14189,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "case": "state_team_flag_zero",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115404,
+      "curve_timestamp": 1743125236,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1744115404,
+      "candidate_vest_timestamp_after": 1744115404,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e00000000cc16f56700000000",
+          "account_keys": [
+            "AscRrV1ZCf9ggpaX2tSTKHdWR7VwThvjNp4gEHJqaE4J",
+            "GnpRCcGaH5HqQe7Y5tXTvpkA7VDgVTmqZRmF69jc5ir"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e00000000cc16f56700000000",
+          "account_keys": [
+            "AscRrV1ZCf9ggpaX2tSTKHdWR7VwThvjNp4gEHJqaE4J",
+            "GnpRCcGaH5HqQe7Y5tXTvpkA7VDgVTmqZRmF69jc5ir"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 20610,
+      "candidate_compute_units": 14189,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "case": "curve_flags_zero",
+      "target_success": true,
+      "candidate_success": true,
+      "target_error": null,
+      "candidate_error": null,
+      "target_error_code": null,
+      "candidate_error_code": null,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115404,
+      "curve_timestamp": 1743125236,
+      "target_changed": [
+        "payer",
+        "vest"
+      ],
+      "candidate_changed": [
+        "payer",
+        "vest"
+      ],
+      "target_vest_option_after": 1,
+      "candidate_vest_option_after": 1,
+      "target_vest_timestamp_after": 1744115404,
+      "candidate_vest_timestamp_after": 1744115404,
+      "target_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e00000000cc16f56700000000",
+          "account_keys": [
+            "AscRrV1ZCf9ggpaX2tSTKHdWR7VwThvjNp4gEHJqaE4J",
+            "GnpRCcGaH5HqQe7Y5tXTvpkA7VDgVTmqZRmF69jc5ir"
+          ]
+        }
+      ],
+      "candidate_vest_cpis": [
+        {
+          "data_hex": "ee2777a1e0cd422e00000000cc16f56700000000",
+          "account_keys": [
+            "AscRrV1ZCf9ggpaX2tSTKHdWR7VwThvjNp4gEHJqaE4J",
+            "GnpRCcGaH5HqQe7Y5tXTvpkA7VDgVTmqZRmF69jc5ir"
+          ]
+        }
+      ],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 20331,
+      "candidate_compute_units": 14188,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: Instruction: StartVest"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "case": "curve_empty_program_account",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3001))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3001))))",
+      "target_error_code": 3001,
+      "candidate_error_code": 3001,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115404,
+      "curve_timestamp": 1743125236,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115404,
+      "candidate_vest_timestamp_after": 1744115404,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 6571,
+      "candidate_compute_units": 6927,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountDiscriminatorNotFound. Error Number: 3001. Error Message: No 8 byte discriminator was found on the account.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbb9"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:205. Error Code: AccountDiscriminatorNotFound. Error Number: 3001. Error Message: No discriminator was found on the account.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbb9"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "case": "curve_wrong_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115404,
+      "curve_timestamp": 1743125236,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115404,
+      "candidate_vest_timestamp_after": 1744115404,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 7309,
+      "candidate_compute_units": 5829,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:196. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "case": "vest_wrong_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115404,
+      "curve_timestamp": 1743125236,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115404,
+      "candidate_vest_timestamp_after": 1744115404,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 9278,
+      "candidate_compute_units": 7506,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:213. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "case": "state_wrong_owner",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115404,
+      "curve_timestamp": 1743125236,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115404,
+      "candidate_vest_timestamp_after": 1744115404,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 6070,
+      "candidate_compute_units": 3675,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: state. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "case": "wrong_vest_pda",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3002))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3002))))",
+      "target_error_code": 3002,
+      "candidate_error_code": 3002,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 6,
+      "clock": 1744115404,
+      "curve_timestamp": 1743125236,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115404,
+      "candidate_vest_timestamp_after": 1744115404,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 8821,
+      "candidate_compute_units": 7024,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: 8 byte discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:217. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: Account discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "case": "wrong_vest_pda_valid_data",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2006))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(2006))))",
+      "target_error_code": 2006,
+      "candidate_error_code": 2006,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 6,
+      "clock": 1744115404,
+      "curve_timestamp": 1743125236,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115404,
+      "candidate_vest_timestamp_after": 1744115404,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 14851,
+      "candidate_compute_units": 8889,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x7d6"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:225. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x7d6"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "case": "vest_wrong_discriminator",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3002))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3002))))",
+      "target_error_code": 3002,
+      "candidate_error_code": 3002,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115404,
+      "curve_timestamp": 1743125236,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115404,
+      "candidate_vest_timestamp_after": 1744115404,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 8821,
+      "candidate_compute_units": 7024,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: 8 byte discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:217. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: Account discriminator did not match what was expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbba"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "case": "wrong_vest_program",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3008))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3008))))",
+      "target_error_code": 3008,
+      "candidate_error_code": 3008,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115404,
+      "curve_timestamp": 1743125236,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115404,
+      "candidate_vest_timestamp_after": 1744115404,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 9991,
+      "candidate_compute_units": 4966,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest_program. Error Code: InvalidProgramId. Error Number: 3008. Error Message: Program ID was not as expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbc0"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: vest_program. Error Code: InvalidProgramId. Error Number: 3008. Error Message: Program ID was not as expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbc0"
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "case": "swapped_curve_vest",
+      "target_success": false,
+      "candidate_success": false,
+      "target_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "candidate_error": "TransactionErrorInstructionError((1, Tagged(InstructionErrorCustom(3007))))",
+      "target_error_code": 3007,
+      "candidate_error_code": 3007,
+      "outcome_equal": true,
+      "poststates_equal": true,
+      "vest_cpi_equal": true,
+      "tracked_account_count": 5,
+      "clock": 1744115404,
+      "curve_timestamp": 1743125236,
+      "target_changed": [
+        "payer"
+      ],
+      "candidate_changed": [
+        "payer"
+      ],
+      "target_vest_option_after": 0,
+      "candidate_vest_option_after": 0,
+      "target_vest_timestamp_after": 1744115404,
+      "candidate_vest_timestamp_after": 1744115404,
+      "target_vest_cpis": [],
+      "candidate_vest_cpis": [],
+      "target_lamport_fee": 5000,
+      "candidate_lamport_fee": 5000,
+      "target_compute_units": 7290,
+      "candidate_compute_units": 5829,
+      "target_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError caused by account: curve. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ],
+      "candidate_relevant_logs": [
+        "Program log: Instruction: StartVest",
+        "Program log: AnchorError thrown in src/lib.rs:196. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0xbbf"
+      ]
+    }
+  ],
+  "all_outcomes_equal": true,
+  "all_poststates_equal": true,
+  "all_vest_cpis_equal": true,
+  "positive_count": 20,
+  "rollback_count": 44,
+  "qualification": "Four exact historical instruction bytes, account orders, slots and block times; all account data are later captures. Positive cases locally reset only Vest start Option tag and use a disposable validly signing fee payer. The true source-slot pre-start Vest bytes are not archived. Pump Curve and Vest programs are pinned current executables; only the Vest CPI executes in this handler. No live transaction, funds or full-source claim."
+}

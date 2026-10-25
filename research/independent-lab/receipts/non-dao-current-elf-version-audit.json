@@ -1,0 +1,443 @@
+{
+  "counts_current_elf_local_success": {
+    "founder_dao": 6,
+    "fee_share_trader_dao": 9,
+    "pump_xyk": 9
+  },
+  "counts_current_custom_stack_local_success": {
+    "founder_dao": 6,
+    "fee_share_trader_dao": 9,
+    "pump_xyk": 9
+  },
+  "total_current_elf_local_success": 24,
+  "total_current_custom_stack_local_success": 24,
+  "rows": [
+    {
+      "program": "founder_dao",
+      "instruction": "init",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "816bc6d42ffea7d63bd7b1287589413aef04d8f7dceb34dd274a0f7872d40aa2",
+      "current_elf_last_deploy_slot": 328988984,
+      "receipt": "analysis/daos_fun/founder_dao-init-synthetic-replay.json",
+      "other_current_custom_programs_in_success": [],
+      "receipt_source_slot": 331875236,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "founder_dao",
+      "instruction": "migrate_v2",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "816bc6d42ffea7d63bd7b1287589413aef04d8f7dceb34dd274a0f7872d40aa2",
+      "current_elf_last_deploy_slot": 328988984,
+      "receipt": "analysis/daos_fun/founder-migrate-v1-candidate-probes.json",
+      "other_current_custom_programs_in_success": [],
+      "receipt_source_slot": 328989076,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "founder_dao",
+      "instruction": "start_curve",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "816bc6d42ffea7d63bd7b1287589413aef04d8f7dceb34dd274a0f7872d40aa2",
+      "current_elf_last_deploy_slot": 328988984,
+      "receipt": "analysis/daos_fun/founder-init-start-curve-sequence.json",
+      "other_current_custom_programs_in_success": [
+        {
+          "name": "pump_xyk",
+          "role": "cpi_dependency",
+          "program": "CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+          "current_elf_sha256": "2238aa5b96fc29e7693174b20d75063df2e1dfba28c26c5346338c23732e2fb9",
+          "last_deploy_slot": 328987601
+        }
+      ],
+      "receipt_source_slot": 331875236,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "founder_dao",
+      "instruction": "start_presale",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "816bc6d42ffea7d63bd7b1287589413aef04d8f7dceb34dd274a0f7872d40aa2",
+      "current_elf_last_deploy_slot": 328988984,
+      "receipt": "analysis/daos_fun/founder-init-start-presale-sequence.json",
+      "other_current_custom_programs_in_success": [
+        {
+          "name": "fundraise",
+          "role": "cpi_dependency",
+          "program": "ETK5PUmiqVDRsd1TPFqCu84bsrLNG4YySZND96PEjW97",
+          "current_elf_sha256": "00bdbee1546f2087bfa845cb4144561ebaaf00a2af231399fa3269d82c30af28",
+          "last_deploy_slot": 315501487
+        }
+      ],
+      "receipt_source_slot": 329202668,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "founder_dao",
+      "instruction": "claim_team_allo",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "816bc6d42ffea7d63bd7b1287589413aef04d8f7dceb34dd274a0f7872d40aa2",
+      "current_elf_last_deploy_slot": 328988984,
+      "receipt": "analysis/daos_fun/founder-claim-team-branch-matrix.json",
+      "other_current_custom_programs_in_success": [
+        {
+          "name": "vest",
+          "role": "cpi_dependency",
+          "program": "2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2",
+          "current_elf_sha256": "7a348374607cd000a73405c7608ab4795e14c5e42efbbe4b6fc20909b3beeb07",
+          "last_deploy_slot": 315403567
+        }
+      ],
+      "receipt_source_slot": 364894756,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "founder_dao",
+      "instruction": "start_vest",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "816bc6d42ffea7d63bd7b1287589413aef04d8f7dceb34dd274a0f7872d40aa2",
+      "current_elf_last_deploy_slot": 328988984,
+      "receipt": "analysis/daos_fun/founder-start-vest-branch-probes.json",
+      "other_current_custom_programs_in_success": [
+        {
+          "name": "vest",
+          "role": "cpi_dependency",
+          "program": "2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2",
+          "current_elf_sha256": "7a348374607cd000a73405c7608ab4795e14c5e42efbbe4b6fc20909b3beeb07",
+          "last_deploy_slot": 315403567
+        }
+      ],
+      "receipt_source_slot": null,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "fee_share_trader_dao",
+      "instruction": "claim_meteora_fees",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+      "current_elf_last_deploy_slot": 364247116,
+      "receipt": "analysis/daos_fun/fee_share_trader_dao-claim_meteora_fees-replay.json",
+      "other_current_custom_programs_in_success": [
+        {
+          "name": "meteora_cp_amm",
+          "role": "cpi_dependency",
+          "program": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+          "current_elf_sha256": "967ff9fb161eec2e62f66d2c899100739fb747c445f697b8625c86b31b9a2022",
+          "last_deploy_slot": 457080014
+        }
+      ],
+      "receipt_source_slot": 459824237,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "fee_share_trader_dao",
+      "instruction": "claim_raydium_fees",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+      "current_elf_last_deploy_slot": 364247116,
+      "receipt": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-replay.json",
+      "other_current_custom_programs_in_success": [
+        {
+          "name": "raydium_cpmm",
+          "role": "cpi_dependency",
+          "program": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C",
+          "current_elf_sha256": "b6dbea8cefc2e7d490775ce6115e34a2ba480c0853c359e0bb4043b9381ef09a",
+          "last_deploy_slot": 452376460
+        },
+        {
+          "name": "raydium_lock",
+          "role": "cpi_dependency",
+          "program": "LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE",
+          "current_elf_sha256": "efd657a986796e1b204ebae198e691d4137d5f89a401693b83f7fb1a142f802d",
+          "last_deploy_slot": 362025476
+        }
+      ],
+      "receipt_source_slot": 460469268,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "fee_share_trader_dao",
+      "instruction": "claim_meteora_dbc_fees",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+      "current_elf_last_deploy_slot": 364247116,
+      "receipt": "analysis/daos_fun/fee_share_trader_dao-claim_meteora_dbc_fees-replay.json",
+      "other_current_custom_programs_in_success": [
+        {
+          "name": "meteora_dbc",
+          "role": "cpi_dependency",
+          "program": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+          "current_elf_sha256": "e2bfc853c1a1778dd8ee40ea9a0f3edf5587442360c57c685e7e3024ad0cad47",
+          "last_deploy_slot": 457502600
+        },
+        {
+          "name": "dao_v1",
+          "role": "cpi_dependency",
+          "program": "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM",
+          "current_elf_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+          "last_deploy_slot": 370107442
+        }
+      ],
+      "receipt_source_slot": 459504317,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "fee_share_trader_dao",
+      "instruction": "collect_platform_fees",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+      "current_elf_last_deploy_slot": 364247116,
+      "receipt": "analysis/daos_fun/fee_share_trader_dao-collect_platform_fees-replay.json",
+      "other_current_custom_programs_in_success": [],
+      "receipt_source_slot": 460469268,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "fee_share_trader_dao",
+      "instruction": "initialize",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+      "current_elf_last_deploy_slot": 364247116,
+      "receipt": "analysis/daos_fun/fee-share-initialize-probes.json",
+      "other_current_custom_programs_in_success": [],
+      "receipt_source_slot": null,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "fee_share_trader_dao",
+      "instruction": "change_creator",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+      "current_elf_last_deploy_slot": 364247116,
+      "receipt": "analysis/daos_fun/fee-share-change-creator-probes.json",
+      "other_current_custom_programs_in_success": [],
+      "receipt_source_slot": null,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "fee_share_trader_dao",
+      "instruction": "redeem",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+      "current_elf_last_deploy_slot": 364247116,
+      "receipt": "analysis/daos_fun/fee-share-redeem-option-layout-matrix.json",
+      "other_current_custom_programs_in_success": [],
+      "receipt_source_slot": null,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "fee_share_trader_dao",
+      "instruction": "sell_token",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+      "current_elf_last_deploy_slot": 364247116,
+      "receipt": "analysis/daos_fun/fee-share-claim-sell-sequence.json",
+      "other_current_custom_programs_in_success": [
+        {
+          "name": "raydium_cpmm",
+          "role": "cpi_dependency",
+          "program": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C",
+          "current_elf_sha256": "b6dbea8cefc2e7d490775ce6115e34a2ba480c0853c359e0bb4043b9381ef09a",
+          "last_deploy_slot": 452376460
+        },
+        {
+          "name": "raydium_lock",
+          "role": "cpi_dependency",
+          "program": "LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE",
+          "current_elf_sha256": "efd657a986796e1b204ebae198e691d4137d5f89a401693b83f7fb1a142f802d",
+          "last_deploy_slot": 362025476
+        }
+      ],
+      "receipt_source_slot": 460469268,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "fee_share_trader_dao",
+      "instruction": "init_with_legacy",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+      "current_elf_last_deploy_slot": 364247116,
+      "receipt": "analysis/daos_fun/fee-share-init-with-legacy-matrix.json",
+      "other_current_custom_programs_in_success": [],
+      "receipt_source_slot": null,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "pump_xyk",
+      "instruction": "init",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "2238aa5b96fc29e7693174b20d75063df2e1dfba28c26c5346338c23732e2fb9",
+      "current_elf_last_deploy_slot": 328987601,
+      "receipt": "analysis/daos_fun/founder-init-start-curve-sequence.json",
+      "other_current_custom_programs_in_success": [
+        {
+          "name": "founder_dao",
+          "role": "outer_wrapper",
+          "program": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+          "current_elf_sha256": "816bc6d42ffea7d63bd7b1287589413aef04d8f7dceb34dd274a0f7872d40aa2",
+          "last_deploy_slot": 328988984
+        }
+      ],
+      "receipt_source_slot": 331875236,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "pump_xyk",
+      "instruction": "buy_token",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "2238aa5b96fc29e7693174b20d75063df2e1dfba28c26c5346338c23732e2fb9",
+      "current_elf_last_deploy_slot": 328987601,
+      "receipt": "analysis/daos_fun/pump_xyk-buy_token-synthetic-replay.json",
+      "other_current_custom_programs_in_success": [],
+      "receipt_source_slot": 414986610,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "pump_xyk",
+      "instruction": "sell_token",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "2238aa5b96fc29e7693174b20d75063df2e1dfba28c26c5346338c23732e2fb9",
+      "current_elf_last_deploy_slot": 328987601,
+      "receipt": "analysis/daos_fun/pump_xyk-sell_token-synthetic-replay.json",
+      "other_current_custom_programs_in_success": [],
+      "receipt_source_slot": 452896256,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "pump_xyk",
+      "instruction": "collect_fee",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "2238aa5b96fc29e7693174b20d75063df2e1dfba28c26c5346338c23732e2fb9",
+      "current_elf_last_deploy_slot": 328987601,
+      "receipt": "analysis/daos_fun/pump-collect-fee-matrix.json",
+      "other_current_custom_programs_in_success": [],
+      "receipt_source_slot": null,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "pump_xyk",
+      "instruction": "claim_funding",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "2238aa5b96fc29e7693174b20d75063df2e1dfba28c26c5346338c23732e2fb9",
+      "current_elf_last_deploy_slot": 328987601,
+      "receipt": "analysis/daos_fun/pump-claim-funding-matrix.json",
+      "other_current_custom_programs_in_success": [],
+      "receipt_source_slot": null,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "pump_xyk",
+      "instruction": "migrate_v2",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "2238aa5b96fc29e7693174b20d75063df2e1dfba28c26c5346338c23732e2fb9",
+      "current_elf_last_deploy_slot": 328987601,
+      "receipt": "analysis/daos_fun/pump-migrate-v2-synthetic-probes.json",
+      "other_current_custom_programs_in_success": [],
+      "receipt_source_slot": null,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "pump_xyk",
+      "instruction": "migrate_to_daos",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "2238aa5b96fc29e7693174b20d75063df2e1dfba28c26c5346338c23732e2fb9",
+      "current_elf_last_deploy_slot": 328987601,
+      "receipt": "analysis/daos_fun/pump-migrate-daos-synthetic-probes.json",
+      "other_current_custom_programs_in_success": [
+        {
+          "name": "virtual_xyk",
+          "role": "cpi_dependency",
+          "program": "5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv",
+          "current_elf_sha256": "c151c6b15b84d8bfc47a5f2e0e5b9e04babff0263a1125a9e8dcb07df6144377",
+          "last_deploy_slot": 342462122
+        }
+      ],
+      "receipt_source_slot": null,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "pump_xyk",
+      "instruction": "claim_raydium_rewards",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "2238aa5b96fc29e7693174b20d75063df2e1dfba28c26c5346338c23732e2fb9",
+      "current_elf_last_deploy_slot": 328987601,
+      "receipt": "analysis/daos_fun/pump-claim-raydium-rewards-probes.json",
+      "other_current_custom_programs_in_success": [
+        {
+          "name": "raydium_cpmm",
+          "role": "cpi_dependency",
+          "program": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C",
+          "current_elf_sha256": "b6dbea8cefc2e7d490775ce6115e34a2ba480c0853c359e0bb4043b9381ef09a",
+          "last_deploy_slot": 452376460
+        },
+        {
+          "name": "raydium_lock",
+          "role": "cpi_dependency",
+          "program": "LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE",
+          "current_elf_sha256": "efd657a986796e1b204ebae198e691d4137d5f89a401693b83f7fb1a142f802d",
+          "last_deploy_slot": 362025476
+        }
+      ],
+      "receipt_source_slot": null,
+      "source_slot_predates_current_elf": false
+    },
+    {
+      "program": "pump_xyk",
+      "instruction": "migrate_to_raydium",
+      "current_elf_local_success": true,
+      "current_custom_stack_local_success": true,
+      "current_elf_sha256": "2238aa5b96fc29e7693174b20d75063df2e1dfba28c26c5346338c23732e2fb9",
+      "current_elf_last_deploy_slot": 328987601,
+      "receipt": "analysis/daos_fun/pump-migrate-raydium-synthetic-probes.json",
+      "other_current_custom_programs_in_success": [
+        {
+          "name": "raydium_cpmm",
+          "role": "cpi_dependency",
+          "program": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C",
+          "current_elf_sha256": "b6dbea8cefc2e7d490775ce6115e34a2ba480c0853c359e0bb4043b9381ef09a",
+          "last_deploy_slot": 452376460
+        },
+        {
+          "name": "raydium_lock",
+          "role": "cpi_dependency",
+          "program": "LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE",
+          "current_elf_sha256": "efd657a986796e1b204ebae198e691d4137d5f89a401693b83f7fb1a142f802d",
+          "last_deploy_slot": 362025476
+        },
+        {
+          "name": "metaplex_metadata",
+          "role": "cpi_dependency",
+          "program": "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+          "current_elf_sha256": "31f0a627dba051a938de650464e55cc5397a4be0fd496929c1f9cf02fe5e9011",
+          "last_deploy_slot": 380725176
+        }
+      ],
+      "receipt_source_slot": null,
+      "source_slot_predates_current_elf": false
+    }
+  ],
+  "qualification": "Every selected bounded success loads the exact current-pinned ELF for its root and every other custom executable present in that local success, including a current Founder wrapper for Pump Init. This is a custom-program stack claim, not proof of full live runtime parity: System/SPL/ATA programs are LiteSVM built-ins, account prestates are later or synthetic in many rows, and dynamic branches remain untested. A source slot before the current ELF deployment is historical provenance only. Pump migrate_to_daos historical source-era replay is separate from the restored-state current-stack probe here. No full behavior, current mainnet reachability, or fund-risk conclusion is asserted."
+}

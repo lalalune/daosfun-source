@@ -1,0 +1,1451 @@
+{
+  "environment": "two isolated writable offline Surfpool ledgers; signed committed transactions",
+  "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+  "source_snapshot": "analysis/daos_fun/dao_v1-burn_dao_tokens-snapshot.json",
+  "source_snapshot_sha256": "ef07a7a0ad18ae9e7dfeff7c214344b88294f5d649b8c4836e5305a6772474d7",
+  "source_slot": 460726256,
+  "dao_mint": "5mjnuukMW8cZsWFLrg3J6gnegjMWoYSscGjRPxQLWLNR",
+  "state": "7dKRiuJ8jRpRzuV1rAqGbpUX2DDDFbH8pGL3kh5kMM46",
+  "state_ata": "DFgR8j4TKUfQdG6Wut8tQK2snzYTJkB54Ukz4cwktPE",
+  "wallet": "DQjyPZwz6Mdt1mRcFzmpJVLNZWZxsFDGD4onKK9hZVNj",
+  "dao_supply": 1099634071439976681,
+  "original_state_dao": 503047620249937113,
+  "burn_per_holder": 274908517859994170,
+  "synthetic_holder_dao_total": 549817035719988340,
+  "initial_wallet_lamports": 1000000,
+  "donation_lamports": 1000000000,
+  "holders": [
+    "5Ci9BcZ4bY95RuKW77t6naLDU7r1vhcLn4mNAbgXg2Pa",
+    "25dqU2BT7tC3xVFTC6P69phkMyuJoYXSsFT26xuYnexA"
+  ],
+  "account_provenance": {
+    "dao_program": "pinned current binary, SHA checked",
+    "state_mint_state_ata": "saved finalized bytes, State flags closed and redeeming",
+    "holder_atas": "created by signed local ATA instructions, then balances seeded locally; aggregate State plus holders remains at or below mint supply",
+    "wallet": "local System PDA, seeded with 1,000,000 lamports",
+    "donation": "signed local System transfer from disposable payer",
+    "redemption_trackers": "created or updated by current DAO binary, never injected"
+  },
+  "cases": [
+    {
+      "case": "deposit_before_snapshot",
+      "rpc": "http://127.0.0.1:19477",
+      "setup_ata_transactions": [
+        {
+          "signature_offline": "3ihvoCWetccJapbBgVfukHPKZ6YrrzhgagzESxGBkTGPh1NBdq5SQPAwYpAxgzL2AQQnyV8GjRc9KzzrFtbh4y1j",
+          "error": null,
+          "fee_lamports": 5000,
+          "units": 18850,
+          "log_tail": [
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 734 of 236677 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: InitializeAccount3",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2142 of 233606 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 18700 of 249860 compute units",
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success"
+          ]
+        },
+        {
+          "signature_offline": "4VzCosu22CegHseCnWcR8ZAf5hm9a4jd7g4TqzePmLPmf6LGg6BxFkSgBsbbGCKebaXdUMKpEPBjhes6hb2W8Vh3",
+          "error": null,
+          "fee_lamports": 5000,
+          "units": 18850,
+          "log_tail": [
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 734 of 236678 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: InitializeAccount3",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2142 of 233607 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 18700 of 249861 compute units",
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success"
+          ]
+        }
+      ],
+      "initial": {
+        "wallet_lamports": 1000000,
+        "payer_lamports": 9995841840,
+        "holder_lamports": [
+          10000000000,
+          10000000000
+        ],
+        "holder_dao": [
+          274908517859994170,
+          274908517859994170
+        ],
+        "state_dao": 503047620249937113,
+        "burn_credit": [
+          null,
+          null
+        ],
+        "burn_tracker_lamports": [
+          0,
+          0
+        ],
+        "holder_redeemed": [
+          null,
+          null
+        ],
+        "holder_redeemed_rent_lamports": [
+          0,
+          0
+        ],
+        "sol_snapshot": null,
+        "sol_snapshot_rent_lamports": 0
+      },
+      "steps": [
+        {
+          "name": "holder_1_burn",
+          "before": {
+            "wallet_lamports": 1000000,
+            "payer_lamports": 9995841840,
+            "holder_lamports": [
+              10000000000,
+              10000000000
+            ],
+            "holder_dao": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "state_dao": 503047620249937113,
+            "burn_credit": [
+              null,
+              null
+            ],
+            "burn_tracker_lamports": [
+              0,
+              0
+            ],
+            "holder_redeemed": [
+              null,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              0,
+              0
+            ],
+            "sol_snapshot": null,
+            "sol_snapshot_rent_lamports": 0
+          },
+          "execution": {
+            "signature_offline": "rNs1ztFkFMXerRLGSuSqkBeHdqFMGECw5xnXLbVgskiXUDyZeCEatoqtsXS3pQDQCkSHSnvEK7bnBTwebq69bWQ",
+            "error": null,
+            "fee_lamports": 5000,
+            "units": 35997,
+            "log_tail": [
+              "Program 11111111111111111111111111111111 invoke [2]",
+              "Program 11111111111111111111111111111111 success",
+              "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+              "Program log: Instruction: TransferChecked",
+              "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2547 of 218038 compute units",
+              "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 35847 of 249870 compute units",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+            ]
+          },
+          "after": {
+            "wallet_lamports": 1000000,
+            "payer_lamports": 9995841840,
+            "holder_lamports": [
+              9998992760,
+              10000000000
+            ],
+            "holder_dao": [
+              0,
+              274908517859994170
+            ],
+            "state_dao": 777956138109931283,
+            "burn_credit": [
+              274908517859994170,
+              null
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              0
+            ],
+            "holder_redeemed": [
+              null,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              0,
+              0
+            ],
+            "sol_snapshot": null,
+            "sol_snapshot_rent_lamports": 0
+          }
+        },
+        {
+          "name": "holder_2_burn",
+          "before": {
+            "wallet_lamports": 1000000,
+            "payer_lamports": 9995841840,
+            "holder_lamports": [
+              9998992760,
+              10000000000
+            ],
+            "holder_dao": [
+              0,
+              274908517859994170
+            ],
+            "state_dao": 777956138109931283,
+            "burn_credit": [
+              274908517859994170,
+              null
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              0
+            ],
+            "holder_redeemed": [
+              null,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              0,
+              0
+            ],
+            "sol_snapshot": null,
+            "sol_snapshot_rent_lamports": 0
+          },
+          "execution": {
+            "signature_offline": "3d5d7ffHQRwQTCuDkxy1XXZgSVmTRvuE7yCeKHn3pJ8dcPpYGaXb76zomj6hnEhvVPYQb4ZfXMWMQHHAoyWHnwUg",
+            "error": null,
+            "fee_lamports": 5000,
+            "units": 40497,
+            "log_tail": [
+              "Program 11111111111111111111111111111111 invoke [2]",
+              "Program 11111111111111111111111111111111 success",
+              "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+              "Program log: Instruction: TransferChecked",
+              "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2547 of 213539 compute units",
+              "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 40347 of 249871 compute units",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+            ]
+          },
+          "after": {
+            "wallet_lamports": 1000000,
+            "payer_lamports": 9995841840,
+            "holder_lamports": [
+              9998992760,
+              9998992760
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              null,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              0,
+              0
+            ],
+            "sol_snapshot": null,
+            "sol_snapshot_rent_lamports": 0
+          }
+        },
+        {
+          "name": "deposit_before_snapshot",
+          "before": {
+            "wallet_lamports": 1000000,
+            "payer_lamports": 9995841840,
+            "holder_lamports": [
+              9998992760,
+              9998992760
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              null,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              0,
+              0
+            ],
+            "sol_snapshot": null,
+            "sol_snapshot_rent_lamports": 0
+          },
+          "execution": {
+            "signature_offline": "2MmuNvyd22vjuaGKSGsXmxZXVLrZRLpPaeHc17VhuBYguygeNJugreBbxu41nhyoGK1U6GQBzewtazJrkZ2uDnoD",
+            "error": null,
+            "fee_lamports": 5000,
+            "units": 300,
+            "log_tail": [
+              "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+              "Program ComputeBudget111111111111111111111111111111 success",
+              "Program 11111111111111111111111111111111 invoke [1]",
+              "Program 11111111111111111111111111111111 success"
+            ]
+          },
+          "after": {
+            "wallet_lamports": 1001000000,
+            "payer_lamports": 8995836840,
+            "holder_lamports": [
+              9998992760,
+              9998992760
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              null,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              0,
+              0
+            ],
+            "sol_snapshot": null,
+            "sol_snapshot_rent_lamports": 0
+          }
+        },
+        {
+          "name": "holder_1_zero_snapshot",
+          "before": {
+            "wallet_lamports": 1001000000,
+            "payer_lamports": 8995836840,
+            "holder_lamports": [
+              9998992760,
+              9998992760
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              null,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              0,
+              0
+            ],
+            "sol_snapshot": null,
+            "sol_snapshot_rent_lamports": 0
+          },
+          "execution": {
+            "signature_offline": "5HiPkztE3pLB5gqtyMebUCoN3QJf7KCb1amZ7keXrCnAMyL1YZF21sJDxF9LJPphkYDasRiNzCqWkWP7SKu4LSkb",
+            "error": null,
+            "fee_lamports": 5000,
+            "units": 25219,
+            "log_tail": [
+              "Program 11111111111111111111111111111111 invoke [2]",
+              "Program 11111111111111111111111111111111 success",
+              "Program 11111111111111111111111111111111 invoke [2]",
+              "Program 11111111111111111111111111111111 success",
+              "Program 11111111111111111111111111111111 invoke [2]",
+              "Program 11111111111111111111111111111111 success",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 25069 of 249881 compute units",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+            ]
+          },
+          "after": {
+            "wallet_lamports": 1001000000,
+            "payer_lamports": 8995836840,
+            "holder_lamports": [
+              9996920640,
+              9998992760
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              0,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              1002240,
+              0
+            ],
+            "sol_snapshot": {
+              "initialized": 1,
+              "total_amount": 1001000000,
+              "total_distributed": 0
+            },
+            "sol_snapshot_rent_lamports": 1064880
+          }
+        },
+        {
+          "name": "holder_1_redeem",
+          "before": {
+            "wallet_lamports": 1001000000,
+            "payer_lamports": 8995836840,
+            "holder_lamports": [
+              9996920640,
+              9998992760
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              0,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              1002240,
+              0
+            ],
+            "sol_snapshot": {
+              "initialized": 1,
+              "total_amount": 1001000000,
+              "total_distributed": 0
+            },
+            "sol_snapshot_rent_lamports": 1064880
+          },
+          "execution": {
+            "signature_offline": "5ieW14nGzcFvTrmYMZjb3JuWp3D4fuo8CVW3E5VAkcWYvUswoBHsjiv4TE7pkffD7KzVC5chZQqRYrEuzJ2occ2m",
+            "error": null,
+            "fee_lamports": 5000,
+            "units": 18755,
+            "log_tail": [
+              "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+              "Program ComputeBudget111111111111111111111111111111 success",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+              "Program log: Instruction: RedeemSol",
+              "Program 11111111111111111111111111111111 invoke [2]",
+              "Program 11111111111111111111111111111111 success",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 18605 of 249890 compute units",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+            ]
+          },
+          "after": {
+            "wallet_lamports": 750750001,
+            "payer_lamports": 8995836840,
+            "holder_lamports": [
+              10247165639,
+              9998992760
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              274908517859994170,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              1002240,
+              0
+            ],
+            "sol_snapshot": {
+              "initialized": 1,
+              "total_amount": 1001000000,
+              "total_distributed": 250249999
+            },
+            "sol_snapshot_rent_lamports": 1064880
+          }
+        },
+        {
+          "name": "holder_2_redeem",
+          "before": {
+            "wallet_lamports": 750750001,
+            "payer_lamports": 8995836840,
+            "holder_lamports": [
+              10247165639,
+              9998992760
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              274908517859994170,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              1002240,
+              0
+            ],
+            "sol_snapshot": {
+              "initialized": 1,
+              "total_amount": 1001000000,
+              "total_distributed": 250249999
+            },
+            "sol_snapshot_rent_lamports": 1064880
+          },
+          "execution": {
+            "signature_offline": "5U4ZU6kvRhMJ72DU5sAQFmxt8UBh1zKy1SqAEPV87WEdgnUV4SZygvSCtWjSFCJeyZ7xGiAxhyKbcY3iDjLhwhqw",
+            "error": null,
+            "fee_lamports": 5000,
+            "units": 26606,
+            "log_tail": [
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+              "Program log: Instruction: RedeemSol",
+              "Program 11111111111111111111111111111111 invoke [2]",
+              "Program 11111111111111111111111111111111 success",
+              "Program 11111111111111111111111111111111 invoke [2]",
+              "Program 11111111111111111111111111111111 success",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 26456 of 249891 compute units",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+            ]
+          },
+          "after": {
+            "wallet_lamports": 500500002,
+            "payer_lamports": 8995836840,
+            "holder_lamports": [
+              10247165639,
+              10248235519
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "holder_redeemed_rent_lamports": [
+              1002240,
+              1002240
+            ],
+            "sol_snapshot": {
+              "initialized": 1,
+              "total_amount": 1001000000,
+              "total_distributed": 500499998
+            },
+            "sol_snapshot_rent_lamports": 1064880
+          }
+        },
+        {
+          "name": "holder_1_over_credit_reject",
+          "before": {
+            "wallet_lamports": 500500002,
+            "payer_lamports": 8995836840,
+            "holder_lamports": [
+              10247165639,
+              10248235519
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "holder_redeemed_rent_lamports": [
+              1002240,
+              1002240
+            ],
+            "sol_snapshot": {
+              "initialized": 1,
+              "total_amount": 1001000000,
+              "total_distributed": 500499998
+            },
+            "sol_snapshot_rent_lamports": 1064880
+          },
+          "execution": {
+            "signature_offline": "2apTPFCm8ceAg2wvRxtTivSBPDqWwBRMoFH5gNp65z3fUbp4ndBapgjpfx9DHSYXUhakNvTiqk9ozTazyc6oHZZ1",
+            "error": {
+              "InstructionError": [
+                1,
+                {
+                  "Custom": 6006
+                }
+              ]
+            },
+            "fee_lamports": 5000,
+            "units": 16885,
+            "log_tail": [
+              "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+              "Program ComputeBudget111111111111111111111111111111 success",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+              "Program log: Instruction: RedeemSol",
+              "Program log: AnchorError occurred. Error Code: Redeem_ExceedOwned. Error Number: 6006. Error Message: User redeemed more than they have.",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 16735 of 249900 compute units",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x1776"
+            ]
+          },
+          "after": {
+            "wallet_lamports": 500500002,
+            "payer_lamports": 8995836840,
+            "holder_lamports": [
+              10247160639,
+              10248235519
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "holder_redeemed_rent_lamports": [
+              1002240,
+              1002240
+            ],
+            "sol_snapshot": {
+              "initialized": 1,
+              "total_amount": 1001000000,
+              "total_distributed": 500499998
+            },
+            "sol_snapshot_rent_lamports": 1064880
+          }
+        }
+      ],
+      "final": {
+        "wallet_lamports": 500500002,
+        "payer_lamports": 8995836840,
+        "holder_lamports": [
+          10247160639,
+          10248235519
+        ],
+        "holder_dao": [
+          0,
+          0
+        ],
+        "state_dao": 1052864655969925453,
+        "burn_credit": [
+          274908517859994170,
+          274908517859994170
+        ],
+        "burn_tracker_lamports": [
+          1002240,
+          1002240
+        ],
+        "holder_redeemed": [
+          274908517859994170,
+          274908517859994170
+        ],
+        "holder_redeemed_rent_lamports": [
+          1002240,
+          1002240
+        ],
+        "sol_snapshot": {
+          "initialized": 1,
+          "total_amount": 1001000000,
+          "total_distributed": 500499998
+        },
+        "sol_snapshot_rent_lamports": 1064880
+      },
+      "sum_holder_payouts": 500499998,
+      "donation": 1000000000
+    },
+    {
+      "case": "deposit_after_snapshot",
+      "rpc": "http://127.0.0.1:19479",
+      "setup_ata_transactions": [
+        {
+          "signature_offline": "3ihvoCWetccJapbBgVfukHPKZ6YrrzhgagzESxGBkTGPh1NBdq5SQPAwYpAxgzL2AQQnyV8GjRc9KzzrFtbh4y1j",
+          "error": null,
+          "fee_lamports": 5000,
+          "units": 18850,
+          "log_tail": [
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 734 of 236677 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: InitializeAccount3",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2142 of 233606 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 18700 of 249860 compute units",
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success"
+          ]
+        },
+        {
+          "signature_offline": "4VzCosu22CegHseCnWcR8ZAf5hm9a4jd7g4TqzePmLPmf6LGg6BxFkSgBsbbGCKebaXdUMKpEPBjhes6hb2W8Vh3",
+          "error": null,
+          "fee_lamports": 5000,
+          "units": 18850,
+          "log_tail": [
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 734 of 236678 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: InitializeAccount3",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2142 of 233607 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 18700 of 249861 compute units",
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success"
+          ]
+        }
+      ],
+      "initial": {
+        "wallet_lamports": 1000000,
+        "payer_lamports": 9995841840,
+        "holder_lamports": [
+          10000000000,
+          10000000000
+        ],
+        "holder_dao": [
+          274908517859994170,
+          274908517859994170
+        ],
+        "state_dao": 503047620249937113,
+        "burn_credit": [
+          null,
+          null
+        ],
+        "burn_tracker_lamports": [
+          0,
+          0
+        ],
+        "holder_redeemed": [
+          null,
+          null
+        ],
+        "holder_redeemed_rent_lamports": [
+          0,
+          0
+        ],
+        "sol_snapshot": null,
+        "sol_snapshot_rent_lamports": 0
+      },
+      "steps": [
+        {
+          "name": "holder_1_burn",
+          "before": {
+            "wallet_lamports": 1000000,
+            "payer_lamports": 9995841840,
+            "holder_lamports": [
+              10000000000,
+              10000000000
+            ],
+            "holder_dao": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "state_dao": 503047620249937113,
+            "burn_credit": [
+              null,
+              null
+            ],
+            "burn_tracker_lamports": [
+              0,
+              0
+            ],
+            "holder_redeemed": [
+              null,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              0,
+              0
+            ],
+            "sol_snapshot": null,
+            "sol_snapshot_rent_lamports": 0
+          },
+          "execution": {
+            "signature_offline": "rNs1ztFkFMXerRLGSuSqkBeHdqFMGECw5xnXLbVgskiXUDyZeCEatoqtsXS3pQDQCkSHSnvEK7bnBTwebq69bWQ",
+            "error": null,
+            "fee_lamports": 5000,
+            "units": 35997,
+            "log_tail": [
+              "Program 11111111111111111111111111111111 invoke [2]",
+              "Program 11111111111111111111111111111111 success",
+              "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+              "Program log: Instruction: TransferChecked",
+              "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2547 of 218038 compute units",
+              "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 35847 of 249870 compute units",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+            ]
+          },
+          "after": {
+            "wallet_lamports": 1000000,
+            "payer_lamports": 9995841840,
+            "holder_lamports": [
+              9998992760,
+              10000000000
+            ],
+            "holder_dao": [
+              0,
+              274908517859994170
+            ],
+            "state_dao": 777956138109931283,
+            "burn_credit": [
+              274908517859994170,
+              null
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              0
+            ],
+            "holder_redeemed": [
+              null,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              0,
+              0
+            ],
+            "sol_snapshot": null,
+            "sol_snapshot_rent_lamports": 0
+          }
+        },
+        {
+          "name": "holder_2_burn",
+          "before": {
+            "wallet_lamports": 1000000,
+            "payer_lamports": 9995841840,
+            "holder_lamports": [
+              9998992760,
+              10000000000
+            ],
+            "holder_dao": [
+              0,
+              274908517859994170
+            ],
+            "state_dao": 777956138109931283,
+            "burn_credit": [
+              274908517859994170,
+              null
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              0
+            ],
+            "holder_redeemed": [
+              null,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              0,
+              0
+            ],
+            "sol_snapshot": null,
+            "sol_snapshot_rent_lamports": 0
+          },
+          "execution": {
+            "signature_offline": "3d5d7ffHQRwQTCuDkxy1XXZgSVmTRvuE7yCeKHn3pJ8dcPpYGaXb76zomj6hnEhvVPYQb4ZfXMWMQHHAoyWHnwUg",
+            "error": null,
+            "fee_lamports": 5000,
+            "units": 40497,
+            "log_tail": [
+              "Program 11111111111111111111111111111111 invoke [2]",
+              "Program 11111111111111111111111111111111 success",
+              "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+              "Program log: Instruction: TransferChecked",
+              "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2547 of 213539 compute units",
+              "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 40347 of 249871 compute units",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+            ]
+          },
+          "after": {
+            "wallet_lamports": 1000000,
+            "payer_lamports": 9995841840,
+            "holder_lamports": [
+              9998992760,
+              9998992760
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              null,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              0,
+              0
+            ],
+            "sol_snapshot": null,
+            "sol_snapshot_rent_lamports": 0
+          }
+        },
+        {
+          "name": "holder_1_zero_snapshot",
+          "before": {
+            "wallet_lamports": 1000000,
+            "payer_lamports": 9995841840,
+            "holder_lamports": [
+              9998992760,
+              9998992760
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              null,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              0,
+              0
+            ],
+            "sol_snapshot": null,
+            "sol_snapshot_rent_lamports": 0
+          },
+          "execution": {
+            "signature_offline": "2Jt5pKzjHF5nZskofUsBZSq2fJPnqDb3tXhNJ1GBtiNR89YvzM1ds88tJ7qGcy3FCVs53HozPcFevQL728jSjfh1",
+            "error": null,
+            "fee_lamports": 5000,
+            "units": 25219,
+            "log_tail": [
+              "Program 11111111111111111111111111111111 invoke [2]",
+              "Program 11111111111111111111111111111111 success",
+              "Program 11111111111111111111111111111111 invoke [2]",
+              "Program 11111111111111111111111111111111 success",
+              "Program 11111111111111111111111111111111 invoke [2]",
+              "Program 11111111111111111111111111111111 success",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 25069 of 249881 compute units",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+            ]
+          },
+          "after": {
+            "wallet_lamports": 1000000,
+            "payer_lamports": 9995841840,
+            "holder_lamports": [
+              9996920640,
+              9998992760
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              0,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              1002240,
+              0
+            ],
+            "sol_snapshot": {
+              "initialized": 1,
+              "total_amount": 1000000,
+              "total_distributed": 0
+            },
+            "sol_snapshot_rent_lamports": 1064880
+          }
+        },
+        {
+          "name": "deposit_after_snapshot",
+          "before": {
+            "wallet_lamports": 1000000,
+            "payer_lamports": 9995841840,
+            "holder_lamports": [
+              9996920640,
+              9998992760
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              0,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              1002240,
+              0
+            ],
+            "sol_snapshot": {
+              "initialized": 1,
+              "total_amount": 1000000,
+              "total_distributed": 0
+            },
+            "sol_snapshot_rent_lamports": 1064880
+          },
+          "execution": {
+            "signature_offline": "2AD3fbraaUEYiSjQ8bTf79tpWE1d21SNHsNJMdKSBf4YpjpXeJ4MhRqQZ1F7tbGXWwRka6tHxoenDf3SwkDW5PYy",
+            "error": null,
+            "fee_lamports": 5000,
+            "units": 300,
+            "log_tail": [
+              "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+              "Program ComputeBudget111111111111111111111111111111 success",
+              "Program 11111111111111111111111111111111 invoke [1]",
+              "Program 11111111111111111111111111111111 success"
+            ]
+          },
+          "after": {
+            "wallet_lamports": 1001000000,
+            "payer_lamports": 8995836840,
+            "holder_lamports": [
+              9996920640,
+              9998992760
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              0,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              1002240,
+              0
+            ],
+            "sol_snapshot": {
+              "initialized": 1,
+              "total_amount": 1000000,
+              "total_distributed": 0
+            },
+            "sol_snapshot_rent_lamports": 1064880
+          }
+        },
+        {
+          "name": "holder_1_redeem",
+          "before": {
+            "wallet_lamports": 1001000000,
+            "payer_lamports": 8995836840,
+            "holder_lamports": [
+              9996920640,
+              9998992760
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              0,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              1002240,
+              0
+            ],
+            "sol_snapshot": {
+              "initialized": 1,
+              "total_amount": 1000000,
+              "total_distributed": 0
+            },
+            "sol_snapshot_rent_lamports": 1064880
+          },
+          "execution": {
+            "signature_offline": "5ieW14nGzcFvTrmYMZjb3JuWp3D4fuo8CVW3E5VAkcWYvUswoBHsjiv4TE7pkffD7KzVC5chZQqRYrEuzJ2occ2m",
+            "error": null,
+            "fee_lamports": 5000,
+            "units": 18755,
+            "log_tail": [
+              "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+              "Program ComputeBudget111111111111111111111111111111 success",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+              "Program log: Instruction: RedeemSol",
+              "Program 11111111111111111111111111111111 invoke [2]",
+              "Program 11111111111111111111111111111111 success",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 18605 of 249890 compute units",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+            ]
+          },
+          "after": {
+            "wallet_lamports": 1000750001,
+            "payer_lamports": 8995836840,
+            "holder_lamports": [
+              9997165639,
+              9998992760
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              274908517859994170,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              1002240,
+              0
+            ],
+            "sol_snapshot": {
+              "initialized": 1,
+              "total_amount": 1000000,
+              "total_distributed": 249999
+            },
+            "sol_snapshot_rent_lamports": 1064880
+          }
+        },
+        {
+          "name": "holder_2_redeem",
+          "before": {
+            "wallet_lamports": 1000750001,
+            "payer_lamports": 8995836840,
+            "holder_lamports": [
+              9997165639,
+              9998992760
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              274908517859994170,
+              null
+            ],
+            "holder_redeemed_rent_lamports": [
+              1002240,
+              0
+            ],
+            "sol_snapshot": {
+              "initialized": 1,
+              "total_amount": 1000000,
+              "total_distributed": 249999
+            },
+            "sol_snapshot_rent_lamports": 1064880
+          },
+          "execution": {
+            "signature_offline": "5U4ZU6kvRhMJ72DU5sAQFmxt8UBh1zKy1SqAEPV87WEdgnUV4SZygvSCtWjSFCJeyZ7xGiAxhyKbcY3iDjLhwhqw",
+            "error": null,
+            "fee_lamports": 5000,
+            "units": 26606,
+            "log_tail": [
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+              "Program log: Instruction: RedeemSol",
+              "Program 11111111111111111111111111111111 invoke [2]",
+              "Program 11111111111111111111111111111111 success",
+              "Program 11111111111111111111111111111111 invoke [2]",
+              "Program 11111111111111111111111111111111 success",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 26456 of 249891 compute units",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+            ]
+          },
+          "after": {
+            "wallet_lamports": 1000500002,
+            "payer_lamports": 8995836840,
+            "holder_lamports": [
+              9997165639,
+              9998235519
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "holder_redeemed_rent_lamports": [
+              1002240,
+              1002240
+            ],
+            "sol_snapshot": {
+              "initialized": 1,
+              "total_amount": 1000000,
+              "total_distributed": 499998
+            },
+            "sol_snapshot_rent_lamports": 1064880
+          }
+        },
+        {
+          "name": "holder_1_over_credit_reject",
+          "before": {
+            "wallet_lamports": 1000500002,
+            "payer_lamports": 8995836840,
+            "holder_lamports": [
+              9997165639,
+              9998235519
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "holder_redeemed_rent_lamports": [
+              1002240,
+              1002240
+            ],
+            "sol_snapshot": {
+              "initialized": 1,
+              "total_amount": 1000000,
+              "total_distributed": 499998
+            },
+            "sol_snapshot_rent_lamports": 1064880
+          },
+          "execution": {
+            "signature_offline": "2apTPFCm8ceAg2wvRxtTivSBPDqWwBRMoFH5gNp65z3fUbp4ndBapgjpfx9DHSYXUhakNvTiqk9ozTazyc6oHZZ1",
+            "error": {
+              "InstructionError": [
+                1,
+                {
+                  "Custom": 6006
+                }
+              ]
+            },
+            "fee_lamports": 5000,
+            "units": 16885,
+            "log_tail": [
+              "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+              "Program ComputeBudget111111111111111111111111111111 success",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+              "Program log: Instruction: RedeemSol",
+              "Program log: AnchorError occurred. Error Code: Redeem_ExceedOwned. Error Number: 6006. Error Message: User redeemed more than they have.",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 16735 of 249900 compute units",
+              "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x1776"
+            ]
+          },
+          "after": {
+            "wallet_lamports": 1000500002,
+            "payer_lamports": 8995836840,
+            "holder_lamports": [
+              9997160639,
+              9998235519
+            ],
+            "holder_dao": [
+              0,
+              0
+            ],
+            "state_dao": 1052864655969925453,
+            "burn_credit": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "burn_tracker_lamports": [
+              1002240,
+              1002240
+            ],
+            "holder_redeemed": [
+              274908517859994170,
+              274908517859994170
+            ],
+            "holder_redeemed_rent_lamports": [
+              1002240,
+              1002240
+            ],
+            "sol_snapshot": {
+              "initialized": 1,
+              "total_amount": 1000000,
+              "total_distributed": 499998
+            },
+            "sol_snapshot_rent_lamports": 1064880
+          }
+        }
+      ],
+      "final": {
+        "wallet_lamports": 1000500002,
+        "payer_lamports": 8995836840,
+        "holder_lamports": [
+          9997160639,
+          9998235519
+        ],
+        "holder_dao": [
+          0,
+          0
+        ],
+        "state_dao": 1052864655969925453,
+        "burn_credit": [
+          274908517859994170,
+          274908517859994170
+        ],
+        "burn_tracker_lamports": [
+          1002240,
+          1002240
+        ],
+        "holder_redeemed": [
+          274908517859994170,
+          274908517859994170
+        ],
+        "holder_redeemed_rent_lamports": [
+          1002240,
+          1002240
+        ],
+        "sol_snapshot": {
+          "initialized": 1,
+          "total_amount": 1000000,
+          "total_distributed": 499998
+        },
+        "sol_snapshot_rent_lamports": 1064880
+      },
+      "sum_holder_payouts": 499998,
+      "donation": 1000000000
+    }
+  ],
+  "assessment": "A zero-value holder redeem_sol call fixes the shared SOL payout basis. With identical signed burns and the same signed 1 SOL deposit, moving the deposit after that first call excludes it from both subsequent holder payouts. The current redeem_sol path retains the late deposit in the wallet; an over-credit attempt fails and rolls back. This is a local late-arrival holder-access risk conditional on funds reaching a closed/redeeming wallet after the first snapshot, not evidence of a currently affected mainnet fund or an outsider drain.",
+  "limitations": "Only the DAO binary and saved account bytes are current-chain inputs. Holder DAO balances, wallet initial lamports and deposit timing are controlled local fixtures. This test covers two holders with half the supply; it does not prove all live DAO holders can burn, an authorized refund path, or current exposure. No public RPC or live transaction."
+}

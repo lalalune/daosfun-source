@@ -1,0 +1,999 @@
+{
+  "environment": "isolated-offline-surfpool",
+  "rpc": "http://127.0.0.1:19327",
+  "cases": [
+    {
+      "lane": "init_curve",
+      "cp_variant": "current",
+      "source_signature": "BE8uKLrXZvFQYAyAoyrJj1MZXbqRrghKePpCh1RpJMkauUnsgEEtmkaF6AHj15p5vSAe2Pf73RcyFhpsn6uPkTG",
+      "source_slot": 366145612,
+      "later_capture_slot": 460757910,
+      "programs": {
+        "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM": {
+          "sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+          "deploy_slot": 370107442
+        },
+        "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG": {
+          "sha256": "967ff9fb161eec2e62f66d2c899100739fb747c445f697b8625c86b31b9a2022",
+          "deploy_slot": 457080014
+        },
+        "ETK5PUmiqVDRsd1TPFqCu84bsrLNG4YySZND96PEjW97": {
+          "sha256": "00bdbee1546f2087bfa845cb4144561ebaaf00a2af231399fa3269d82c30af28",
+          "deploy_slot": 315501487
+        }
+      },
+      "signed_disposable_payer": "CYFsfATtQB3Excjsm4Cuh8ZWnPE5j6XAU3GS3RKXmUcK",
+      "account_restorations": [
+        {
+          "key": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "kind": "historical_lamports",
+          "source": 47473358984,
+          "later": 981623790
+        },
+        {
+          "key": "JAG8SjRiUpjsSekBMcDJnNjr9YT6SXL4ANDQCV2Pkxpt",
+          "kind": "synthetic_state_curve_flag_reset",
+          "offset": 191
+        },
+        {
+          "key": "JAG8SjRiUpjsSekBMcDJnNjr9YT6SXL4ANDQCV2Pkxpt",
+          "kind": "synthetic_state_admin_substitution",
+          "admin": "CYFsfATtQB3Excjsm4Cuh8ZWnPE5j6XAU3GS3RKXmUcK"
+        },
+        {
+          "key": "JAG8SjRiUpjsSekBMcDJnNjr9YT6SXL4ANDQCV2Pkxpt",
+          "kind": "historical_lamports",
+          "source": 32682660,
+          "later": 32808368
+        },
+        {
+          "key": "7HeqgxkGEmar88tFHNzhzPbFozRgncUS4CFJdmWaZTq6",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "D9cr7LM4peQpyTVKAXZfiXSjj4TRRfYsF5xM9WJ49deC",
+          "kind": "historical_token_balance",
+          "amount": 0,
+          "template": "same-mint-survivor"
+        },
+        {
+          "key": "EZVfFo3EELWwtPPtfHu4KqCgFgMaP58roedKfjPgvRf1",
+          "kind": "historical_token_balance",
+          "amount": 150000000000000000,
+          "template": "EZVfFo3EELWwtPPtfHu4KqCgFgMaP58roedKfjPgvRf1"
+        },
+        {
+          "key": "BA2xCTfsQqhkGtALXUPprUQTwaFbWsvaBha2xUQ5FPc1",
+          "kind": "historical_token_balance",
+          "amount": 420000000000,
+          "template": "BA2xCTfsQqhkGtALXUPprUQTwaFbWsvaBha2xUQ5FPc1"
+        },
+        {
+          "key": "4Vh5sTsT1QbkLXaC1TJD7bh145icoqLEGU74Tm9ER7rP",
+          "kind": "historical_token_balance",
+          "amount": 0,
+          "template": "4Vh5sTsT1QbkLXaC1TJD7bh145icoqLEGU74Tm9ER7rP"
+        },
+        {
+          "key": "C2ckYuikxJh52bhj6214graQPM7AzpwMaK4hkwRWfmeN",
+          "kind": "historical_token_balance",
+          "amount": 250000000000,
+          "template": "same-mint-survivor"
+        },
+        {
+          "key": "HADAToqNgd7UiWVg2WJKBiNFGmuiV7GrpvtWnWucCNXu",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "Fbz8Y9Yg6TkAgA7beWj8eqog3qF6XTrm8xSBuL7FphUW",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "7cV5XbzS7YvvaBMqjddCGMBznYL2X2thJAxbPGw9FS6C",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "kind": "historical_lamports",
+          "source": 3730560,
+          "later": 35565888
+        },
+        {
+          "key": "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC",
+          "kind": "historical_lamports",
+          "source": 30102128859,
+          "later": 178302327355
+        },
+        {
+          "key": "3rmHSu74h1ZcmAisVcWerTCiRDQbUrBKmcwptYGjHfet",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "So11111111111111111111111111111111111111112",
+          "kind": "historical_lamports",
+          "source": 1136082967756,
+          "later": 1856043097572
+        },
+        {
+          "key": "jaa12SAtounhHCX2mPrZSngbmXx2JtRGQ3Znh5LCqgH",
+          "kind": "synthetic_payer_ata",
+          "template": "4Vh5sTsT1QbkLXaC1TJD7bh145icoqLEGU74Tm9ER7rP",
+          "raw_amount": 0
+        },
+        {
+          "key": "3H95UPEqrWugDZ9WhttCXDH78sG4kA5jaHuyqwNjZMmY",
+          "kind": "synthetic_payer_ata",
+          "template": "C2ckYuikxJh52bhj6214graQPM7AzpwMaK4hkwRWfmeN",
+          "raw_amount": 250000000000
+        }
+      ],
+      "pre_init_redemption_probe": {
+        "error": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 6020
+            }
+          ]
+        },
+        "log_tail": [
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+          "Program log: Instruction: InitRedemption",
+          "Program log: AnchorError caused by account: state. Error Code: UnexpectedState. Error Number: 6020. Error Message: Unexpected state.",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 25445 of 200000 compute units",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x1784"
+        ],
+        "qualification": "Signed local simulation with reconstructed InitCurve fixture; no state mutation."
+      },
+      "state_before": {
+        "state_curve_initialized": 0,
+        "state_sha256": "529c3c895b71c20e4a80185fe7ecba8dd4b96c7244036f43d7711aea4c26ccc3",
+        "state_token_vault": {
+          "lamports": 2074080,
+          "data_sha256": "2bb8278b2234490d2f2e2e7c17324c5575a8d5e4a895ea41107fd466938fb79f",
+          "token_raw": 150000000000000000
+        },
+        "state_funding_vault": {
+          "lamports": 420002039280,
+          "data_sha256": "dc53f477a59d5d4b971bfc455024342b650d190ec37366ca7b458160a09e4bd7",
+          "token_raw": 420000000000
+        },
+        "signer_funding_vault": {
+          "lamports": 250002039280,
+          "data_sha256": "eecbe6df9e1b0b4443dd262c607bf41837bb8f7bdc80e2cdc88f2d5a558fd897",
+          "token_raw": 250000000000
+        },
+        "pool": null
+      },
+      "simulation_error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6067
+          }
+        ]
+      },
+      "simulation_units": 214888,
+      "simulation_log_tail": [
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2097 of 1229099 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2097 of 1203760 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 230 of 1190310 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: AnchorError thrown in programs/cp-amm/src/params/fee_parameters.rs:265. Error Code: InvalidCompoundingFeeBps. Error Number: 6067. Error Message: Invalid compounding fee bps.",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 74155 of 1259267 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG failed: custom program error: 0x17b3",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 214738 of 1399850 compute units",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x17b3"
+      ],
+      "simulation_left_accounts_unchanged": true,
+      "offline_transaction_signature": "54SjGircGyyAk6ZWuTS3AsyMDETPPVk1LghG3ZQXLw8F577H1pxUhM8yNrDRb8u3NXdF39ZVmiwWhr5Rz1RTCs68",
+      "offline_transaction_status": {
+        "slot": 31,
+        "confirmations": 1,
+        "status": {
+          "Err": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6067
+              }
+            ]
+          }
+        },
+        "err": {
+          "InstructionError": [
+            1,
+            {
+              "Custom": 6067
+            }
+          ]
+        },
+        "confirmationStatus": "confirmed"
+      },
+      "state_after": {
+        "state_curve_initialized": 0,
+        "state_sha256": "529c3c895b71c20e4a80185fe7ecba8dd4b96c7244036f43d7711aea4c26ccc3",
+        "state_token_vault": {
+          "lamports": 2074080,
+          "data_sha256": "2bb8278b2234490d2f2e2e7c17324c5575a8d5e4a895ea41107fd466938fb79f",
+          "token_raw": 150000000000000000
+        },
+        "state_funding_vault": {
+          "lamports": 420002039280,
+          "data_sha256": "dc53f477a59d5d4b971bfc455024342b650d190ec37366ca7b458160a09e4bd7",
+          "token_raw": 420000000000
+        },
+        "signer_funding_vault": {
+          "lamports": 250002039280,
+          "data_sha256": "eecbe6df9e1b0b4443dd262c607bf41837bb8f7bdc80e2cdc88f2d5a558fd897",
+          "token_raw": 250000000000
+        },
+        "pool": null
+      }
+    },
+    {
+      "lane": "init_curve",
+      "cp_variant": "source_era",
+      "source_signature": "BE8uKLrXZvFQYAyAoyrJj1MZXbqRrghKePpCh1RpJMkauUnsgEEtmkaF6AHj15p5vSAe2Pf73RcyFhpsn6uPkTG",
+      "source_slot": 366145612,
+      "later_capture_slot": 460757910,
+      "programs": {
+        "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM": {
+          "sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+          "deploy_slot": 370107442
+        },
+        "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG": {
+          "sha256": "3aaa0882b1ea0af771de9c2f96d84e4cc085cd5e59475c56fb6a7de542c56852",
+          "deploy_slot": 356917937
+        },
+        "ETK5PUmiqVDRsd1TPFqCu84bsrLNG4YySZND96PEjW97": {
+          "sha256": "00bdbee1546f2087bfa845cb4144561ebaaf00a2af231399fa3269d82c30af28",
+          "deploy_slot": 315501487
+        }
+      },
+      "signed_disposable_payer": "CYFsfATtQB3Excjsm4Cuh8ZWnPE5j6XAU3GS3RKXmUcK",
+      "account_restorations": [
+        {
+          "key": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+          "kind": "historical_lamports",
+          "source": 47473358984,
+          "later": 981623790
+        },
+        {
+          "key": "JAG8SjRiUpjsSekBMcDJnNjr9YT6SXL4ANDQCV2Pkxpt",
+          "kind": "synthetic_state_curve_flag_reset",
+          "offset": 191
+        },
+        {
+          "key": "JAG8SjRiUpjsSekBMcDJnNjr9YT6SXL4ANDQCV2Pkxpt",
+          "kind": "synthetic_state_admin_substitution",
+          "admin": "CYFsfATtQB3Excjsm4Cuh8ZWnPE5j6XAU3GS3RKXmUcK"
+        },
+        {
+          "key": "JAG8SjRiUpjsSekBMcDJnNjr9YT6SXL4ANDQCV2Pkxpt",
+          "kind": "historical_lamports",
+          "source": 32682660,
+          "later": 32808368
+        },
+        {
+          "key": "7HeqgxkGEmar88tFHNzhzPbFozRgncUS4CFJdmWaZTq6",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "D9cr7LM4peQpyTVKAXZfiXSjj4TRRfYsF5xM9WJ49deC",
+          "kind": "historical_token_balance",
+          "amount": 0,
+          "template": "same-mint-survivor"
+        },
+        {
+          "key": "EZVfFo3EELWwtPPtfHu4KqCgFgMaP58roedKfjPgvRf1",
+          "kind": "historical_token_balance",
+          "amount": 150000000000000000,
+          "template": "EZVfFo3EELWwtPPtfHu4KqCgFgMaP58roedKfjPgvRf1"
+        },
+        {
+          "key": "BA2xCTfsQqhkGtALXUPprUQTwaFbWsvaBha2xUQ5FPc1",
+          "kind": "historical_token_balance",
+          "amount": 420000000000,
+          "template": "BA2xCTfsQqhkGtALXUPprUQTwaFbWsvaBha2xUQ5FPc1"
+        },
+        {
+          "key": "4Vh5sTsT1QbkLXaC1TJD7bh145icoqLEGU74Tm9ER7rP",
+          "kind": "historical_token_balance",
+          "amount": 0,
+          "template": "4Vh5sTsT1QbkLXaC1TJD7bh145icoqLEGU74Tm9ER7rP"
+        },
+        {
+          "key": "C2ckYuikxJh52bhj6214graQPM7AzpwMaK4hkwRWfmeN",
+          "kind": "historical_token_balance",
+          "amount": 250000000000,
+          "template": "same-mint-survivor"
+        },
+        {
+          "key": "HADAToqNgd7UiWVg2WJKBiNFGmuiV7GrpvtWnWucCNXu",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "6DYYoVpCbwQqjXztKVz8WfEvQP9xYf8cGtEwyexzK4mu",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "AGp2dS1LFhzWp1W9WozhFNBX9P66ZXyd8r3Rjd1ogxMf",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "Fbz8Y9Yg6TkAgA7beWj8eqog3qF6XTrm8xSBuL7FphUW",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "FLuXAxxqMbLkKHWHHCAiX2ub8qZuoC9bb35bSRDNDMo2",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "56QaK1f2zVkN64qaP5iwMF4LLsa5eL55MSzKy2Lqtw9J",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "7cV5XbzS7YvvaBMqjddCGMBznYL2X2thJAxbPGw9FS6C",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "vxQ7bpU2BotVLD3xewTzzcxUfmELzWh7hykX7jdzJ1v",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+          "kind": "historical_lamports",
+          "source": 3730560,
+          "later": 35565888
+        },
+        {
+          "key": "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC",
+          "kind": "historical_lamports",
+          "source": 30102128859,
+          "later": 178302327355
+        },
+        {
+          "key": "3rmHSu74h1ZcmAisVcWerTCiRDQbUrBKmcwptYGjHfet",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "So11111111111111111111111111111111111111112",
+          "kind": "historical_lamports",
+          "source": 1136082967756,
+          "later": 1856043097572
+        },
+        {
+          "key": "jaa12SAtounhHCX2mPrZSngbmXx2JtRGQ3Znh5LCqgH",
+          "kind": "synthetic_payer_ata",
+          "template": "4Vh5sTsT1QbkLXaC1TJD7bh145icoqLEGU74Tm9ER7rP",
+          "raw_amount": 0
+        },
+        {
+          "key": "3H95UPEqrWugDZ9WhttCXDH78sG4kA5jaHuyqwNjZMmY",
+          "kind": "synthetic_payer_ata",
+          "template": "C2ckYuikxJh52bhj6214graQPM7AzpwMaK4hkwRWfmeN",
+          "raw_amount": 250000000000
+        }
+      ],
+      "pre_init_redemption_probe": {
+        "error": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 6020
+            }
+          ]
+        },
+        "log_tail": [
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+          "Program log: Instruction: InitRedemption",
+          "Program log: AnchorError caused by account: state. Error Code: UnexpectedState. Error Number: 6020. Error Message: Unexpected state.",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 25445 of 200000 compute units",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x1784"
+        ],
+        "qualification": "Signed local simulation with reconstructed InitCurve fixture; no state mutation."
+      },
+      "state_before": {
+        "state_curve_initialized": 0,
+        "state_sha256": "529c3c895b71c20e4a80185fe7ecba8dd4b96c7244036f43d7711aea4c26ccc3",
+        "state_token_vault": {
+          "lamports": 2074080,
+          "data_sha256": "2bb8278b2234490d2f2e2e7c17324c5575a8d5e4a895ea41107fd466938fb79f",
+          "token_raw": 150000000000000000
+        },
+        "state_funding_vault": {
+          "lamports": 420002039280,
+          "data_sha256": "dc53f477a59d5d4b971bfc455024342b650d190ec37366ca7b458160a09e4bd7",
+          "token_raw": 420000000000
+        },
+        "signer_funding_vault": {
+          "lamports": 250002039280,
+          "data_sha256": "eecbe6df9e1b0b4443dd262c607bf41837bb8f7bdc80e2cdc88f2d5a558fd897",
+          "token_raw": 250000000000
+        },
+        "pool": null
+      },
+      "simulation_error": null,
+      "simulation_units": 309065,
+      "simulation_log_tail": [
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1595 of 1112764 compute units",
+        "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb qgAAAAAAAAA=",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 734 of 1106347 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2326 of 1103276 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 18952 of 1119598 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2643 of 1098033 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 1092786 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 308915 of 1399850 compute units",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+      ],
+      "simulation_left_accounts_unchanged": true,
+      "offline_transaction_signature": "54SjGircGyyAk6ZWuTS3AsyMDETPPVk1LghG3ZQXLw8F577H1pxUhM8yNrDRb8u3NXdF39ZVmiwWhr5Rz1RTCs68",
+      "offline_transaction_status": {
+        "slot": 31,
+        "confirmations": 1,
+        "status": {
+          "Ok": null
+        },
+        "err": null,
+        "confirmationStatus": "confirmed"
+      },
+      "state_after": {
+        "state_curve_initialized": 1,
+        "state_sha256": "a4a61625279529a7fd1ef739ce5f188b48d62ee7f9a2dacb25f47267211b127e",
+        "state_token_vault": {
+          "lamports": 2074080,
+          "data_sha256": "aa3b9489ddeacb4c5858ad736bcaceaba579383f178398181e8d6fa46afef49e",
+          "token_raw": 0
+        },
+        "state_funding_vault": {
+          "lamports": 2039280,
+          "data_sha256": "932a14aec3bd15f564d10c8778523bb335ca53d3b9175d48d8c16253e23ac4f6",
+          "token_raw": 0
+        },
+        "signer_funding_vault": {
+          "lamports": 2039280,
+          "data_sha256": "f670ea7f7ba9932041a69590ece277b3ab594260e3c195f78fc291d001404f81",
+          "token_raw": 0
+        },
+        "pool": {
+          "lamports": 8630400,
+          "data_sha256": "82264bf5b40da36369395d2acdb74fb00108af762430520583b3b304e64f958d",
+          "token_raw": null
+        }
+      }
+    },
+    {
+      "lane": "migrate_bonding_to_meteora",
+      "cp_variant": "current",
+      "source_signature": "4gxqDr9a7GqtQA9WHZeJT8x6wH3i4cVQ7s33GscfqUEAX2mCnEsnnu4qNioqrU2ddrSJ9BcfcmtWyWRFPQREqPyx",
+      "source_slot": 352045106,
+      "later_capture_slot": 460764428,
+      "programs": {
+        "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM": {
+          "sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+          "deploy_slot": 370107442
+        },
+        "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG": {
+          "sha256": "967ff9fb161eec2e62f66d2c899100739fb747c445f697b8625c86b31b9a2022",
+          "deploy_slot": 457080014
+        },
+        "HedgENAip7ZEzRj6T3ZbY1PmDFXU5XKx1BFSKbxvVD7V": {
+          "sha256": "17ebadd438fae8bc6c9ea2a2731953225ba3f269a2c62c9ab380a853495e99b0",
+          "deploy_slot": 345089566
+        }
+      },
+      "signed_disposable_payer": "CYFsfATtQB3Excjsm4Cuh8ZWnPE5j6XAU3GS3RKXmUcK",
+      "account_restorations": [
+        {
+          "key": "Edf9zN5TsSnryECmpNmUuZV1QMath1cGcxg8YZpdFwd5",
+          "kind": "historical_payer_replaced"
+        },
+        {
+          "key": "BsrmAYLaR4synWJgZ47GNtDAyftkPGLrrE1DTca7qmEN",
+          "kind": "synthetic_state_curve_flag_reset",
+          "offset": 159
+        },
+        {
+          "key": "AajRiou1JG7ttj8TMXSShfhtP76ed2SHJUQL16MmtGiy",
+          "kind": "synthetic_hedge_migrated_flag_reset",
+          "offset": 121
+        },
+        {
+          "key": "GRKpysHDz2WkDET9Yr9Grk2iVT2auvQRd8KE9yp64v7H",
+          "kind": "historical_token_balance",
+          "amount": 67768070635,
+          "template": "GRKpysHDz2WkDET9Yr9Grk2iVT2auvQRd8KE9yp64v7H"
+        },
+        {
+          "key": "Hne14zmfXaRYfTN79hQLwhD6g3sWrz2FZht9P8bzZgdf",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "8xpzhnW2tRrHpLUKXiY6DHFpUmQPELCt4BsfJgdyj8Pg",
+          "kind": "historical_token_balance",
+          "amount": 0,
+          "template": "8xpzhnW2tRrHpLUKXiY6DHFpUmQPELCt4BsfJgdyj8Pg"
+        },
+        {
+          "key": "25Q1nZ4xTbEKgh2tb8XgEAhdhWWwaGCeeE94VSBg7u5N",
+          "kind": "historical_token_balance",
+          "amount": 500298506862502,
+          "template": "same-mint-survivor"
+        },
+        {
+          "key": "8PyTvhgvHngxzgyb85makkTcMeLwTCpoVyyAgEU4qfvN",
+          "kind": "historical_token_balance",
+          "amount": 0,
+          "template": "same-mint-survivor"
+        },
+        {
+          "key": "6cACDkD9vfFbKmR7AcFFNt1gZ2f2LHusMNbSKAbnejrT",
+          "kind": "historical_token_balance",
+          "amount": 200000000000000000,
+          "template": "6cACDkD9vfFbKmR7AcFFNt1gZ2f2LHusMNbSKAbnejrT"
+        },
+        {
+          "key": "C92C9mYZdZ3Qfrm4Rk2ALeTjk7V4a2ssSqhfpnfAqkfa",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "HaZ5kuR2dvKB1XKtvqogoXStULKH5YYjXqbwDX7zN4CS",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "p9mBbuQcWZBbcjkiq3e8rf6BESgxFS9sLijdmQkp1GK",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "Fbz8Y9Yg6TkAgA7beWj8eqog3qF6XTrm8xSBuL7FphUW",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "9sfPKKqgL8q2ehcPEjzfSFz3PKKvLjeH7H5mpEPxPyiw",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "4qnnQ9UphnpLYSNUfkywzcnnvy9jahZQHvK2G5rK4B12",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "8cBJRDjfbg9rtH5H4avmEmkcSFMzbmjWsAR2L5Uyw1cc",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "3fKJyAFVAaGmHxu893atsVWmrC8VyTTLmv1ytQPnKhUp",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC",
+          "kind": "historical_lamports",
+          "source": 2031607723,
+          "later": 178302459636
+        },
+        {
+          "key": "3rmHSu74h1ZcmAisVcWerTCiRDQbUrBKmcwptYGjHfet",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "So11111111111111111111111111111111111111112",
+          "kind": "historical_lamports",
+          "source": 1064385426368,
+          "later": 1856043097572
+        },
+        {
+          "key": "DPZeRZTgM2cv5QhvLonwf1M7NKgyXka6BRVfrBis5CrN",
+          "kind": "synthetic_payer_ata",
+          "template": "25Q1nZ4xTbEKgh2tb8XgEAhdhWWwaGCeeE94VSBg7u5N",
+          "raw_amount": 500298506862502
+        },
+        {
+          "key": "3H95UPEqrWugDZ9WhttCXDH78sG4kA5jaHuyqwNjZMmY",
+          "kind": "synthetic_payer_ata",
+          "template": "8PyTvhgvHngxzgyb85makkTcMeLwTCpoVyyAgEU4qfvN",
+          "raw_amount": 0
+        }
+      ],
+      "pre_init_redemption_probe": null,
+      "state_before": {
+        "state_curve_initialized": 0,
+        "state_sha256": "be1720e74de27d3cc29b58fa3604ac030983a010bf9e087be156f4bed672c9e9",
+        "hedge_migrated": 0,
+        "hedge_sha256": "6754d1e31ad0ed0e5b0589ba4e72d651777bf0af97add527b2b882fda6335f95",
+        "state_token_vault": {
+          "lamports": 2074080,
+          "data_sha256": "7ae7f4021f16c2db6d0a56b074d8ce5acdf59e03ad761c6a96841c436bd4cada",
+          "token_raw": 200000000000000000
+        },
+        "curve_funding_vault": {
+          "lamports": 67770109915,
+          "data_sha256": "d78e91c18c56e4e7391d247d76cbc38f5a82aebc525d6ebc390e395a3eaabe7f",
+          "token_raw": 67768070635
+        },
+        "payer_funding_ata": {
+          "lamports": 2039280,
+          "data_sha256": "f670ea7f7ba9932041a69590ece277b3ab594260e3c195f78fc291d001404f81",
+          "token_raw": 0
+        },
+        "pool": null
+      },
+      "simulation_error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6067
+          }
+        ]
+      },
+      "simulation_units": 226851,
+      "simulation_log_tail": [
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2097 of 1211136 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2097 of 1188797 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 230 of 1178347 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: AnchorError thrown in programs/cp-amm/src/params/fee_parameters.rs:265. Error Code: InvalidCompoundingFeeBps. Error Number: 6067. Error Message: Invalid compounding fee bps.",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 68155 of 1241304 compute units",
+        "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG failed: custom program error: 0x17b3",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 226701 of 1399850 compute units",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x17b3"
+      ],
+      "simulation_left_accounts_unchanged": true,
+      "offline_transaction_signature": "4G9ynqm17f1R9Wg9q9nqmKGk3YXZgUVue23yappnJx9WFxbuFMME7g3nzsjgd47wFsRrzfmQduFXHYvAdtzAHtQp",
+      "offline_transaction_status": {
+        "slot": 31,
+        "confirmations": 1,
+        "status": {
+          "Err": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6067
+              }
+            ]
+          }
+        },
+        "err": {
+          "InstructionError": [
+            1,
+            {
+              "Custom": 6067
+            }
+          ]
+        },
+        "confirmationStatus": "confirmed"
+      },
+      "state_after": {
+        "state_curve_initialized": 0,
+        "state_sha256": "be1720e74de27d3cc29b58fa3604ac030983a010bf9e087be156f4bed672c9e9",
+        "hedge_migrated": 0,
+        "hedge_sha256": "6754d1e31ad0ed0e5b0589ba4e72d651777bf0af97add527b2b882fda6335f95",
+        "state_token_vault": {
+          "lamports": 2074080,
+          "data_sha256": "7ae7f4021f16c2db6d0a56b074d8ce5acdf59e03ad761c6a96841c436bd4cada",
+          "token_raw": 200000000000000000
+        },
+        "curve_funding_vault": {
+          "lamports": 67770109915,
+          "data_sha256": "d78e91c18c56e4e7391d247d76cbc38f5a82aebc525d6ebc390e395a3eaabe7f",
+          "token_raw": 67768070635
+        },
+        "payer_funding_ata": {
+          "lamports": 2039280,
+          "data_sha256": "f670ea7f7ba9932041a69590ece277b3ab594260e3c195f78fc291d001404f81",
+          "token_raw": 0
+        },
+        "pool": null
+      }
+    },
+    {
+      "lane": "migrate_bonding_to_meteora",
+      "cp_variant": "source_era",
+      "source_signature": "4gxqDr9a7GqtQA9WHZeJT8x6wH3i4cVQ7s33GscfqUEAX2mCnEsnnu4qNioqrU2ddrSJ9BcfcmtWyWRFPQREqPyx",
+      "source_slot": 352045106,
+      "later_capture_slot": 460764428,
+      "programs": {
+        "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM": {
+          "sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+          "deploy_slot": 370107442
+        },
+        "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG": {
+          "sha256": "f8df16bf5d47965f0a75ec61788ec96521ba854da7672035a371da189acec145",
+          "deploy_slot": 349458350
+        },
+        "HedgENAip7ZEzRj6T3ZbY1PmDFXU5XKx1BFSKbxvVD7V": {
+          "sha256": "17ebadd438fae8bc6c9ea2a2731953225ba3f269a2c62c9ab380a853495e99b0",
+          "deploy_slot": 345089566
+        }
+      },
+      "signed_disposable_payer": "CYFsfATtQB3Excjsm4Cuh8ZWnPE5j6XAU3GS3RKXmUcK",
+      "account_restorations": [
+        {
+          "key": "Edf9zN5TsSnryECmpNmUuZV1QMath1cGcxg8YZpdFwd5",
+          "kind": "historical_payer_replaced"
+        },
+        {
+          "key": "BsrmAYLaR4synWJgZ47GNtDAyftkPGLrrE1DTca7qmEN",
+          "kind": "synthetic_state_curve_flag_reset",
+          "offset": 159
+        },
+        {
+          "key": "AajRiou1JG7ttj8TMXSShfhtP76ed2SHJUQL16MmtGiy",
+          "kind": "synthetic_hedge_migrated_flag_reset",
+          "offset": 121
+        },
+        {
+          "key": "GRKpysHDz2WkDET9Yr9Grk2iVT2auvQRd8KE9yp64v7H",
+          "kind": "historical_token_balance",
+          "amount": 67768070635,
+          "template": "GRKpysHDz2WkDET9Yr9Grk2iVT2auvQRd8KE9yp64v7H"
+        },
+        {
+          "key": "Hne14zmfXaRYfTN79hQLwhD6g3sWrz2FZht9P8bzZgdf",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "8xpzhnW2tRrHpLUKXiY6DHFpUmQPELCt4BsfJgdyj8Pg",
+          "kind": "historical_token_balance",
+          "amount": 0,
+          "template": "8xpzhnW2tRrHpLUKXiY6DHFpUmQPELCt4BsfJgdyj8Pg"
+        },
+        {
+          "key": "25Q1nZ4xTbEKgh2tb8XgEAhdhWWwaGCeeE94VSBg7u5N",
+          "kind": "historical_token_balance",
+          "amount": 500298506862502,
+          "template": "same-mint-survivor"
+        },
+        {
+          "key": "8PyTvhgvHngxzgyb85makkTcMeLwTCpoVyyAgEU4qfvN",
+          "kind": "historical_token_balance",
+          "amount": 0,
+          "template": "same-mint-survivor"
+        },
+        {
+          "key": "6cACDkD9vfFbKmR7AcFFNt1gZ2f2LHusMNbSKAbnejrT",
+          "kind": "historical_token_balance",
+          "amount": 200000000000000000,
+          "template": "6cACDkD9vfFbKmR7AcFFNt1gZ2f2LHusMNbSKAbnejrT"
+        },
+        {
+          "key": "C92C9mYZdZ3Qfrm4Rk2ALeTjk7V4a2ssSqhfpnfAqkfa",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "HaZ5kuR2dvKB1XKtvqogoXStULKH5YYjXqbwDX7zN4CS",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "p9mBbuQcWZBbcjkiq3e8rf6BESgxFS9sLijdmQkp1GK",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "Fbz8Y9Yg6TkAgA7beWj8eqog3qF6XTrm8xSBuL7FphUW",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "9sfPKKqgL8q2ehcPEjzfSFz3PKKvLjeH7H5mpEPxPyiw",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "4qnnQ9UphnpLYSNUfkywzcnnvy9jahZQHvK2G5rK4B12",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "8cBJRDjfbg9rtH5H4avmEmkcSFMzbmjWsAR2L5Uyw1cc",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "3fKJyAFVAaGmHxu893atsVWmrC8VyTTLmv1ytQPnKhUp",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC",
+          "kind": "historical_lamports",
+          "source": 2031607723,
+          "later": 178302459636
+        },
+        {
+          "key": "3rmHSu74h1ZcmAisVcWerTCiRDQbUrBKmcwptYGjHfet",
+          "kind": "historically_absent"
+        },
+        {
+          "key": "So11111111111111111111111111111111111111112",
+          "kind": "historical_lamports",
+          "source": 1064385426368,
+          "later": 1856043097572
+        },
+        {
+          "key": "DPZeRZTgM2cv5QhvLonwf1M7NKgyXka6BRVfrBis5CrN",
+          "kind": "synthetic_payer_ata",
+          "template": "25Q1nZ4xTbEKgh2tb8XgEAhdhWWwaGCeeE94VSBg7u5N",
+          "raw_amount": 500298506862502
+        },
+        {
+          "key": "3H95UPEqrWugDZ9WhttCXDH78sG4kA5jaHuyqwNjZMmY",
+          "kind": "synthetic_payer_ata",
+          "template": "8PyTvhgvHngxzgyb85makkTcMeLwTCpoVyyAgEU4qfvN",
+          "raw_amount": 0
+        }
+      ],
+      "pre_init_redemption_probe": null,
+      "state_before": {
+        "state_curve_initialized": 0,
+        "state_sha256": "be1720e74de27d3cc29b58fa3604ac030983a010bf9e087be156f4bed672c9e9",
+        "hedge_migrated": 0,
+        "hedge_sha256": "6754d1e31ad0ed0e5b0589ba4e72d651777bf0af97add527b2b882fda6335f95",
+        "state_token_vault": {
+          "lamports": 2074080,
+          "data_sha256": "7ae7f4021f16c2db6d0a56b074d8ce5acdf59e03ad761c6a96841c436bd4cada",
+          "token_raw": 200000000000000000
+        },
+        "curve_funding_vault": {
+          "lamports": 67770109915,
+          "data_sha256": "d78e91c18c56e4e7391d247d76cbc38f5a82aebc525d6ebc390e395a3eaabe7f",
+          "token_raw": 67768070635
+        },
+        "payer_funding_ata": {
+          "lamports": 2039280,
+          "data_sha256": "f670ea7f7ba9932041a69590ece277b3ab594260e3c195f78fc291d001404f81",
+          "token_raw": 0
+        },
+        "pool": null
+      },
+      "simulation_error": null,
+      "simulation_units": 321638,
+      "simulation_log_tail": [
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1595 of 1100159 compute units",
+        "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb qgAAAAAAAAA=",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 734 of 1093742 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2326 of 1090671 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 18952 of 1106993 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2643 of 1085428 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 1080183 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 321488 of 1399850 compute units",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+      ],
+      "simulation_left_accounts_unchanged": true,
+      "offline_transaction_signature": "4G9ynqm17f1R9Wg9q9nqmKGk3YXZgUVue23yappnJx9WFxbuFMME7g3nzsjgd47wFsRrzfmQduFXHYvAdtzAHtQp",
+      "offline_transaction_status": {
+        "slot": 31,
+        "confirmations": 1,
+        "status": {
+          "Ok": null
+        },
+        "err": null,
+        "confirmationStatus": "confirmed"
+      },
+      "state_after": {
+        "state_curve_initialized": 1,
+        "state_sha256": "163bde064e69675969623d071f9ce3d9093321ae3bf3c7a1fec6fa6476d1969c",
+        "hedge_migrated": 1,
+        "hedge_sha256": "92a15738c55603f6861b5e4b1225dbdb37003bf58b88a72812ad162622f76159",
+        "state_token_vault": {
+          "lamports": 2074080,
+          "data_sha256": "abd43088c4d510c7717a91b9f18b08b93188efcd3800460aa427ba9f23f14653",
+          "token_raw": 0
+        },
+        "curve_funding_vault": {
+          "lamports": 1770109900,
+          "data_sha256": "de81d6b34af97270196c1dfa4937e57e9aaf0eb837ffddcdbd8107979a1e3812",
+          "token_raw": 1768070620
+        },
+        "payer_funding_ata": {
+          "lamports": 2039280,
+          "data_sha256": "f670ea7f7ba9932041a69590ece277b3ab594260e3c195f78fc291d001404f81",
+          "token_raw": 0
+        },
+        "pool": {
+          "lamports": 8630400,
+          "data_sha256": "c146be60c49bce6daa12274f4cbf3c2f9c268c4d93e7e3dac3d1e07ffac181fc",
+          "token_raw": null
+        }
+      }
+    }
+  ],
+  "exit_route_assessment": {
+    "pre_init_redemption": "Current DAO ELF rejects InitRedemption with UnexpectedState 6020 while curve_initialized=0 in the signed local probe.",
+    "close_fund": "Recovered DAO close_fund handler only sets admin_closed_fund; it does not move state-vault or Hedgefun-vault tokens or set curve_initialized.",
+    "execute_invoke": "Recovered DAO execute_invoke signs the wallet PDA, with admin/delegate and cosigner checks; the tested funding is held by a distinct State or Hedgefun Curve authority. No vault recovery through this route is proven.",
+    "other_paths": "Fundraise, Hedgefun, DBC, token-holder, and upgrade-authority routes have not been exhaustively tested; the experiment does not establish permanent lock or live loss.",
+    "source_paths": [
+      "third_party/daosfun-source/programs/dao-v1/src/lib.rs",
+      "third_party/daosfun-source/programs/dao-v1/src/instructions/init_redemption.rs",
+      "third_party/daosfun-source/programs/dao-v1/src/instructions/close_fund.rs",
+      "third_party/daosfun-source/programs/dao-v1/src/instructions/execute_invoke.rs"
+    ]
+  },
+  "qualification": "Local Surfpool only. Historical transaction bytes and balance metadata are paired with later surviving account bytes, reset flags, and a substituted disposable signer/ATAs. Source-era CP is loaded solely as a positive ABI control. This is not an exact mainnet historical prestate, a live call, a live fund-lock proof, or a universal reachability claim."
+}

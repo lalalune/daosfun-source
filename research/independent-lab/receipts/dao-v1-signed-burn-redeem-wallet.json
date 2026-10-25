@@ -1,0 +1,273 @@
+{
+  "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+  "burn_snapshot_sha256": "ef07a7a0ad18ae9e7dfeff7c214344b88294f5d649b8c4836e5305a6772474d7",
+  "wsol_snapshot_sha256": "d885fd2ed4389d2fb36c9c31073def9571026478c46c2b7f1d788321ff0837e4",
+  "scope": "Current DAO ELF with LiteSVM signature verification enabled; finalized closed/redeeming State and mint, disposable user, locally seeded DAO holding, actual local ATA/System/Token programs for wrapped-SOL donation and accounting.",
+  "keys": {
+    "dao_mint": "5mjnuukMW8cZsWFLrg3J6gnegjMWoYSscGjRPxQLWLNR",
+    "state": "7dKRiuJ8jRpRzuV1rAqGbpUX2DDDFbH8pGL3kh5kMM46",
+    "wallet": "DQjyPZwz6Mdt1mRcFzmpJVLNZWZxsFDGD4onKK9hZVNj",
+    "user": "8ESb6S2iPPgUes97tCQJPn7PTNbkWtfQLGqKgFXyvwrr",
+    "burn_tracker": "9PvTjHc8Tq4jBg9hciQ69Sk5ccto55sfewzeL81YQS7S",
+    "wallet_wsol_ata": "9Mb3JBGPXGBqog2Q5sMkJjrHSpi9gSUQKzjHih2aMp2S",
+    "user_wsol_ata": "BnjpRmUFjC9LxKFqqmM9GMBxEkDZctrTYarCMCN3xpzG",
+    "snapshot_pda": "9o86oPGyB6AitJwHWU3HAPwDrRXxoeBenVmw1wKBboDA",
+    "redeemed_pda": "9YjAYnZzA1Yh6mmd5wyoY67dkkah999AjLEteGGhPvt9"
+  },
+  "dao_supply": 1099634071439976681,
+  "burn_credit": 100000000000000000,
+  "wsol_donation_lamports": 1000000000,
+  "ata_creation": {
+    "user_dao": {
+      "success": true,
+      "error": null,
+      "compute_units": 20061,
+      "log_tail": [
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2142 of 182364 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 20061 of 200000 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success"
+      ]
+    },
+    "wallet_wsol": {
+      "success": true,
+      "error": null,
+      "compute_units": 14982,
+      "log_tail": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 38 of 188016 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 230 of 185552 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 14982 of 200000 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success"
+      ]
+    },
+    "user_wsol": {
+      "success": true,
+      "error": null,
+      "compute_units": 13381,
+      "log_tail": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 38 of 189594 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 230 of 187132 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13381 of 200000 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success"
+      ]
+    },
+    "other_wsol": {
+      "success": true,
+      "error": null,
+      "compute_units": 13482,
+      "log_tail": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 38 of 189516 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 230 of 187052 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13482 of 200000 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success"
+      ]
+    }
+  },
+  "burn": {
+    "before": {
+      "user_dao": 100000000000000000,
+      "state_dao": 503047620249937113
+    },
+    "after": {
+      "user_dao": 0,
+      "state_dao": 603047620249937113,
+      "credit": 100000000000000000
+    },
+    "execution": {
+      "success": true,
+      "error": null,
+      "compute_units": 38847,
+      "log_tail": [
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2547 of 165168 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 38847 of 200000 compute units",
+        "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+      ]
+    }
+  },
+  "donation_transfer": {
+    "success": true,
+    "error": null,
+    "compute_units": 150,
+    "log_tail": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+    ]
+  },
+  "sync_native": {
+    "success": true,
+    "error": null,
+    "compute_units": 201,
+    "log_tail": [
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 201 of 200000 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success"
+    ]
+  },
+  "redeem_cases": [
+    {
+      "case": "zero_initializes_snapshot",
+      "requested_burn_credit": 0,
+      "before": {
+        "wallet_wsol": 1000000000,
+        "user_wsol": 0,
+        "burn_credit": 100000000000000000,
+        "redeemed": null
+      },
+      "after": {
+        "wallet_wsol": 1000000000,
+        "user_wsol": 0,
+        "burn_credit": 100000000000000000,
+        "redeemed": 0
+      },
+      "execution": {
+        "success": true,
+        "error": null,
+        "compute_units": 39673,
+        "log_tail": [
+          "Program 11111111111111111111111111111111 invoke [2]",
+          "Program 11111111111111111111111111111111 success",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 122 of 161629 compute units",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 39673 of 200000 compute units",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+        ]
+      }
+    },
+    {
+      "case": "first_partial",
+      "requested_burn_credit": 30000000000000000,
+      "before": {
+        "wallet_wsol": 1000000000,
+        "user_wsol": 0,
+        "burn_credit": 100000000000000000,
+        "redeemed": 0
+      },
+      "after": {
+        "wallet_wsol": 972718198,
+        "user_wsol": 27281802,
+        "burn_credit": 100000000000000000,
+        "redeemed": 30000000000000000
+      },
+      "execution": {
+        "success": true,
+        "error": null,
+        "compute_units": 33171,
+        "log_tail": [
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+          "Program log: Instruction: RedeemTokens",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 168121 compute units",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 33171 of 200000 compute units",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+        ]
+      }
+    },
+    {
+      "case": "second_partial",
+      "requested_burn_credit": 70000000000000000,
+      "before": {
+        "wallet_wsol": 972718198,
+        "user_wsol": 27281802,
+        "burn_credit": 100000000000000000,
+        "redeemed": 30000000000000000
+      },
+      "after": {
+        "wallet_wsol": 909060658,
+        "user_wsol": 90939342,
+        "burn_credit": 100000000000000000,
+        "redeemed": 100000000000000000
+      },
+      "execution": {
+        "success": true,
+        "error": null,
+        "compute_units": 33171,
+        "log_tail": [
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+          "Program log: Instruction: RedeemTokens",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 168121 compute units",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 33171 of 200000 compute units",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM success"
+        ]
+      }
+    },
+    {
+      "case": "one_over_credit",
+      "requested_burn_credit": 1,
+      "before": {
+        "wallet_wsol": 909060658,
+        "user_wsol": 90939342,
+        "burn_credit": 100000000000000000,
+        "redeemed": 100000000000000000
+      },
+      "after": {
+        "wallet_wsol": 909060658,
+        "user_wsol": 90939342,
+        "burn_credit": 100000000000000000,
+        "redeemed": 100000000000000000
+      },
+      "execution": {
+        "success": false,
+        "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6006))))",
+        "compute_units": 30590,
+        "log_tail": [
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM invoke [1]",
+          "Program log: Instruction: RedeemTokens",
+          "Program log: AnchorError occurred. Error Code: Redeem_ExceedOwned. Error Number: 6006. Error Message: User redeemed more than they have.",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 30590 of 200000 compute units",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x1776"
+        ]
+      }
+    },
+    {
+      "case": "wrong_source_authority",
+      "requested_burn_credit": 0,
+      "before": {
+        "wallet_wsol": 909060658,
+        "user_wsol": 90939342,
+        "burn_credit": 100000000000000000,
+        "redeemed": 100000000000000000
+      },
+      "after": {
+        "wallet_wsol": 909060658,
+        "user_wsol": 90939342,
+        "burn_credit": 100000000000000000,
+        "redeemed": 100000000000000000
+      },
+      "execution": {
+        "success": false,
+        "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(2015))))",
+        "compute_units": 27337,
+        "log_tail": [
+          "Program 11111111111111111111111111111111 invoke [2]",
+          "Program 11111111111111111111111111111111 success",
+          "Program 11111111111111111111111111111111 invoke [2]",
+          "Program 11111111111111111111111111111111 success",
+          "Program log: AnchorError occurred. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 27337 of 200000 compute units",
+          "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x7df"
+        ]
+      }
+    }
+  ],
+  "qualification": "Signer and payer keys are disposable. DAO token holding is seeded locally rather than sourced from a live holder. Closed/redeeming State and mint are later finalized bytes; wallet WSOL is donated locally. No live transaction or outsider-access claim. Zero and two partial claims prove lazy snapshot and floor payout on this fixture; other mints, donation timing, overflow, and account branches remain open."
+}

@@ -1,0 +1,1038 @@
+{
+  "captured_at": "2026-10-25T04:46:41.797793+00:00",
+  "endpoint": "https://api.mainnet-beta.solana.com",
+  "commitment": "finalized",
+  "dao_program": "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM",
+  "input": {
+    "active_wallet_snapshot": "/Users/nubs/Git/solana-research-lab-20261023/analysis/root_virtual_xyk/tr3-active-dao-wallet-authorities.json",
+    "active_wallet_snapshot_sha256": "a366daf1797efd239a68377fc1ccbe8d8bb888032333c8f5734ebbefa6da600e",
+    "closed_wallet_snapshot": "/Users/nubs/Git/solana-research-lab-20261023/analysis/root_virtual_xyk/tr3-closed-wallet-token-accounts.json",
+    "closed_wallet_snapshot_sha256": "d5e67a8d94a1147ce7f30c213381251c30e5067d081d422729bc66fc511831c4",
+    "selection": "all eight closed redemption-started wallets in prior closed-wallet receipt order, then first two non-redemption wallets in active-wallet snapshot order"
+  },
+  "slots": {
+    "initial_state_wallet": 461126832,
+    "mint_batch": 461126844,
+    "mint_json_parsed": 461126845,
+    "state_recheck": 461126845,
+    "token2022_min": 461126834,
+    "token2022_max": 461126843
+  },
+  "state_bytes_unchanged_during_capture": true,
+  "summary": {
+    "wallets": 10,
+    "redemption_started": 8,
+    "closed_funds": 8,
+    "token2022_accounts": 32,
+    "nonzero_token2022_accounts": 23,
+    "distinct_token2022_mints": 19,
+    "transfer_hook_mints": 0,
+    "states_matching_prior_sha256": 10,
+    "hook_accounts": 0,
+    "nonzero_hook_accounts": 0
+  },
+  "wallets": [
+    {
+      "source_state": "7X4YmsrM6XjTJjaXmr6KKi65oficDPuoo5GKsWNupUjG",
+      "source_mint": "26nvPnRLV2wTJfhCoUVYMFHoepg4dQPhQfyKM1VHdL97",
+      "wallet": "G4CNGC9j9oddd4uUgXJ2GHBn6Cd9n7GZeYDrH21bqu94",
+      "state": {
+        "slot": 461126832,
+        "data_sha256": "fb86c1278f1cbb271297278ebfce62c633b994a1d240f6914b9fdfa71d3f5fa6",
+        "matches_prior_data_sha256": true,
+        "closed_fund": true,
+        "redemption_started": true
+      },
+      "wallet_account": {
+        "owner_program": null,
+        "lamports": null,
+        "data_sha256": null
+      },
+      "token2022_slot": 461126834,
+      "token2022_accounts": [
+        {
+          "pubkey": "mu1ioxzMnzK4B9xk6SXpmhjNemX9wjK6pDWN7K12DJB",
+          "mint": "GeV6SB57kLbBpBksGBDcwpnm8cjuoGdUDHyFtcj6pTad",
+          "amount_atoms": 694263518,
+          "data_sha256": "08af909484d35c4cfa732ad3371189d48cecd45a0157cdb31bc5b00ad86ad414",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "426BeH3A6K6Hxi29qWDwtTHwRRmGZzrgBs5NqhaKu2c5",
+          "mint": "26nvPnRLV2wTJfhCoUVYMFHoepg4dQPhQfyKM1VHdL97",
+          "amount_atoms": 125995158422346380,
+          "data_sha256": "3610b7dea3ac2f224cca897fe434910af09d1f8f8a15db016933e846a590cede",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "6PP96YHG2qZYWiQQPvF5hNSsyAe4CRMKpzTdwV78WUCh",
+          "mint": "41efRpYgL94NCMktNH84fkVxwSFkhahJ58X4UfVC292h",
+          "amount_atoms": 688238887,
+          "data_sha256": "ef2895324d9d64e9c37845ca9db22cb3911583036f64c63960b7e0d1dcfc3d56",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "CFbM1vhbZk2vGCReAkDfrBgBmgtAvoNLW2w7q17HY9vi",
+          "mint": "78E2eW1QBg15cinNR4wfFzu9SJPsDXQKR29SNpApg78J",
+          "amount_atoms": 0,
+          "data_sha256": "eda0c00edba18ee5b81e90ee6d051b6154b07143852d08c47525b09bc3948462",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "EQT4nrt8YqxNCEehDF7ZG8QXiSQt1MKr5e3Yfie7w7KU",
+          "mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+          "amount_atoms": 0,
+          "data_sha256": "7d46438ac983bc178fd56ca0b8c52424859f11eccaf9249424473d5e305caf46",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "GuXd2Nn6wvXX1Lha8nWf8X1x4fnz42UBMdfh8mEA3F3t",
+          "mint": "27Chwv15PqiNLdnUTXMYpbv9gzdqGrp2Ue5BF7u7Bt3H",
+          "amount_atoms": 999540481,
+          "data_sha256": "73326fb8c4828ae953f7518d00887a9afc01fe204a30650a4db125ae120d4a7d",
+          "space": 170,
+          "lamports": 2074080
+        }
+      ],
+      "nonzero_token2022_accounts": 4,
+      "nonzero_hook_accounts": 0,
+      "hook_accounts": 0
+    },
+    {
+      "source_state": "BTJpcgCuGTfh85E45V4mBdRdGrJgmd14ZiTVmmjiBbWo",
+      "source_mint": "8X8LCfvJWvS3t4E5oEBBHT9uxuJ6r7mHZnm3voZyhbGf",
+      "wallet": "4UQPEDLQxV6SHUVMtTxdQQbBorhLe3cFVgTZrsw2LVB8",
+      "state": {
+        "slot": 461126832,
+        "data_sha256": "97ed3da9f2b90ea54374e8c3ac07a3f8e4163acf254d87be6060b1a9ffffcc55",
+        "matches_prior_data_sha256": true,
+        "closed_fund": true,
+        "redemption_started": true
+      },
+      "wallet_account": {
+        "owner_program": null,
+        "lamports": null,
+        "data_sha256": null
+      },
+      "token2022_slot": 461126835,
+      "token2022_accounts": [
+        {
+          "pubkey": "GUSK6LyqxrsqHXBv7EJDrVxtoVtpftDdpYPepb9eLrmd",
+          "mint": "5mWGLz43ffSD2itRWs24qnHQiumLdUdWTfZv3nHNvdbU",
+          "amount_atoms": 66653132949435,
+          "data_sha256": "588bdac20197adfa85e8028a01a83699c0878c5158c554e354a612410595c4fb",
+          "space": 170,
+          "lamports": 2074080
+        }
+      ],
+      "nonzero_token2022_accounts": 1,
+      "nonzero_hook_accounts": 0,
+      "hook_accounts": 0
+    },
+    {
+      "source_state": "3GZzUESdPSCdEFDjUTwxWXvhpX8chmqDP4Luv7sANRDK",
+      "source_mint": "3cyp4RUREwccKtQzHMm6iRJpWfmfQMJgzkukoWhE3VNn",
+      "wallet": "2ZJRzMeDcN4MxdhADKckvq6sUhfHHND8sdBCVpnKRWjX",
+      "state": {
+        "slot": 461126832,
+        "data_sha256": "ddeddd23e32e8e703fd99d7669cb2675e7d0aa7da67622563ea9c37e6d001e65",
+        "matches_prior_data_sha256": true,
+        "closed_fund": true,
+        "redemption_started": true
+      },
+      "wallet_account": {
+        "owner_program": null,
+        "lamports": null,
+        "data_sha256": null
+      },
+      "token2022_slot": 461126836,
+      "token2022_accounts": [
+        {
+          "pubkey": "966V7f44pmTZicWQXKr3JCqtZF9RW9qzvF3u3V7fmpxp",
+          "mint": "5mWGLz43ffSD2itRWs24qnHQiumLdUdWTfZv3nHNvdbU",
+          "amount_atoms": 65977226861395,
+          "data_sha256": "fe4bef5d724e70d0708dbaaec38213ecd6b8c704d48e58a4b5625d0cbdeab4af",
+          "space": 170,
+          "lamports": 2074080
+        }
+      ],
+      "nonzero_token2022_accounts": 1,
+      "nonzero_hook_accounts": 0,
+      "hook_accounts": 0
+    },
+    {
+      "source_state": "EjoTvdTgpzfAj2ou5KRvYmM8ynXRHzCpjc32xSX3Ducw",
+      "source_mint": "8GgwuVr72633UWupc26tuGK6tJ675jzkbHKuT3gDJcEf",
+      "wallet": "BGHTMR5Ywjg7LTvLPJhC4JXPnwMFrX23PeM7E3nNieXo",
+      "state": {
+        "slot": 461126832,
+        "data_sha256": "5a64f6338553b8bdd99152b6c389856395d4815a1e923eb7e4a9485a941de6f5",
+        "matches_prior_data_sha256": true,
+        "closed_fund": true,
+        "redemption_started": true
+      },
+      "wallet_account": {
+        "owner_program": "11111111111111111111111111111111",
+        "lamports": 59351685,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "token2022_slot": 461126837,
+      "token2022_accounts": [
+        {
+          "pubkey": "4Pjy38WQdjqdtR2zsy6UCtkuX4EG22YuHwcNxMBDJD3D",
+          "mint": "8GgwuVr72633UWupc26tuGK6tJ675jzkbHKuT3gDJcEf",
+          "amount_atoms": 1000000000,
+          "data_sha256": "a0357979fa491e13a52678da1ef1d2a633195f68bcaf1363fae02244a96b8a9f",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "FNgeY48bRhdcPJTMoD8F3T5W4pnDT37U9szY34zLWpft",
+          "mint": "5mWGLz43ffSD2itRWs24qnHQiumLdUdWTfZv3nHNvdbU",
+          "amount_atoms": 666666000000000,
+          "data_sha256": "0670f0f2912aee6b1dd763b394aba217ac9c698e5a856a1d38855036b2ed79f7",
+          "space": 170,
+          "lamports": 2074080
+        }
+      ],
+      "nonzero_token2022_accounts": 2,
+      "nonzero_hook_accounts": 0,
+      "hook_accounts": 0
+    },
+    {
+      "source_state": "6VEeTjkt9MHVPHUbMfCdfEJdNuey5TaVitwuhyRdWS8i",
+      "source_mint": "3yimoDa5ycXtHPf5wridsVfxvkHPrCrndjgbkLNXgooj",
+      "wallet": "CRk4b6P8p11X2eG9yp9avnt3HzELVmA6YAmUFQA1nJQf",
+      "state": {
+        "slot": 461126832,
+        "data_sha256": "d31f973c30039fbfcab51c86aa7dbc955edddff071ec9d8f70ff6e4e37d3a694",
+        "matches_prior_data_sha256": true,
+        "closed_fund": true,
+        "redemption_started": true
+      },
+      "wallet_account": {
+        "owner_program": null,
+        "lamports": null,
+        "data_sha256": null
+      },
+      "token2022_slot": 461126838,
+      "token2022_accounts": [
+        {
+          "pubkey": "43WSxAC6J5um8Q49JnWoCWvGKkeA5Xs15AeozKA1qoAg",
+          "mint": "GQQ7zcP3a5dqrMYaD7BPdPd9Ksxcm6BgkcfnBKWsqcWn",
+          "amount_atoms": 0,
+          "data_sha256": "1932ff987eccdf9f1943a1f7ef23e342557331fc0c7f0ed72b0363ddc87e4dbe",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "49D7eyuBfiHuAkkjGCeUZXJVtQJWR34kLVVGVhg11t1x",
+          "mint": "5mWGLz43ffSD2itRWs24qnHQiumLdUdWTfZv3nHNvdbU",
+          "amount_atoms": 66547070536387,
+          "data_sha256": "424691cdeaa08e6fe150989f268bf50c3cda8b5ab0a3307b15c301bc541ef189",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "4obGsT2NTaca4PC4kxtRBFM4nxck22k8zC8bTB97x13K",
+          "mint": "ByeWKwfzoZEiChnDcKp9hi8aWpanYz3ERhscqPHX8hMS",
+          "amount_atoms": 3330447446744,
+          "data_sha256": "b963b6b274492a16bbd397fafeb3761b330e57eab0bba763bee4e01e8f94245e",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "8XVKWUSXq5hd6QSSJ8WBpgTumE5H2UELA2m9vooqX5NQ",
+          "mint": "BNEovLqByufWNYTB4q4urP1F7UL3jwyEnjRcJBJ3H8Z5",
+          "amount_atoms": 10000000000000,
+          "data_sha256": "ad242c4345878f4e044ff13833ca39a469c21b22a90e4f67105b15ca2d9178fc",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "J1aqMmCMdkKL78pUWdKw3VrWW1k28XWcYSvsvti2PJwv",
+          "mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+          "amount_atoms": 0,
+          "data_sha256": "41e8e49759c4172a690431f2a2f139c485be37103c3c04024238f2b5cec7e58b",
+          "space": 170,
+          "lamports": 2074080
+        }
+      ],
+      "nonzero_token2022_accounts": 3,
+      "nonzero_hook_accounts": 0,
+      "hook_accounts": 0
+    },
+    {
+      "source_state": "4fVw5rezCsTxQcW2ubDo9KcRBa7jtbKAJHYfnvKpLqjR",
+      "source_mint": "E7MbshW4J3UJsbXgv3wTmrkdkS6y8rxeiuZMz4BkhGv5",
+      "wallet": "65dcerasH3cWPmnwBoHGY9Ra7L1yrDULCsNB5puSYjLY",
+      "state": {
+        "slot": 461126832,
+        "data_sha256": "c0e574671f48e1e3dd3a6c1b47475da40a5a7edff6ddafc6300ea77b0e7b599f",
+        "matches_prior_data_sha256": true,
+        "closed_fund": true,
+        "redemption_started": true
+      },
+      "wallet_account": {
+        "owner_program": null,
+        "lamports": null,
+        "data_sha256": null
+      },
+      "token2022_slot": 461126838,
+      "token2022_accounts": [
+        {
+          "pubkey": "DzuLkGiaVKfcAvKbPLy7SS5CVC5h87Qs1fm2t2RuPBuz",
+          "mint": "5mWGLz43ffSD2itRWs24qnHQiumLdUdWTfZv3nHNvdbU",
+          "amount_atoms": 666666000000000,
+          "data_sha256": "3893e729f81859bcf6d9347d12b8ac2a9c903b92ba6bc96873998fdadf43f06a",
+          "space": 170,
+          "lamports": 2074080
+        }
+      ],
+      "nonzero_token2022_accounts": 1,
+      "nonzero_hook_accounts": 0,
+      "hook_accounts": 0
+    },
+    {
+      "source_state": "8o25cvFGtczm98yK37ca1WiXJgDhyfy9jHu1kUajoyRV",
+      "source_mint": "95AidRJ9utCyKFqgnPnx5KfX52Bwfzg2nXprhwxrdY8w",
+      "wallet": "EVcqtzPix9BdLK6MM6H1Z3Y1LviQvFR1NDG4yke9jro8",
+      "state": {
+        "slot": 461126832,
+        "data_sha256": "cb45fac37feff42657be4df18b1fc84690bcf8185524feecef0f6bc19eebb3e5",
+        "matches_prior_data_sha256": true,
+        "closed_fund": true,
+        "redemption_started": true
+      },
+      "wallet_account": {
+        "owner_program": null,
+        "lamports": null,
+        "data_sha256": null
+      },
+      "token2022_slot": 461126840,
+      "token2022_accounts": [
+        {
+          "pubkey": "2fqUW5LK2WMY1qGjr3H2rC9EwCi6BrJFf3pBgQmUNju1",
+          "mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+          "amount_atoms": 0,
+          "data_sha256": "4543d6694ae923a3f65252b4c64b0ffbb542a5681feb4212bbb608385b4c2dc9",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "4bTEbYD4BujcCvaAEooRWC8c7tjo5SigBxiGhQSKEqn7",
+          "mint": "8X8LCfvJWvS3t4E5oEBBHT9uxuJ6r7mHZnm3voZyhbGf",
+          "amount_atoms": 69420000000000,
+          "data_sha256": "52b46fdaeb50fa84e00ca196a81cdf74faea664946ef6503373b0cb91dcd9012",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "83Srnih4cNx4eBn6k7dPXnaBzjcNfjG7BDPj4WSCfU78",
+          "mint": "9sgGR1ojAJsAZAYENYrxWm8oh5SCjSYh1tMkeyG3KLGX",
+          "amount_atoms": 69420000000000,
+          "data_sha256": "4b7a968795466aa675b4cc9414e0cfb3d33479bcfed36fe511e030b728706dde",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "GbZ4ZMkMcvGSCLaq8HepJdx8ktAbqpFXRQeGwPrp5UbJ",
+          "mint": "5mWGLz43ffSD2itRWs24qnHQiumLdUdWTfZv3nHNvdbU",
+          "amount_atoms": 66666000000000,
+          "data_sha256": "755af7f86bfcfed6cd818bfae127d418a9867f56128af531b48e8a7675d97ba5",
+          "space": 170,
+          "lamports": 2074080
+        }
+      ],
+      "nonzero_token2022_accounts": 3,
+      "nonzero_hook_accounts": 0,
+      "hook_accounts": 0
+    },
+    {
+      "source_state": "CZ2ey2S7e2dZirTfMweCwbWFEnu1umZcxdHsgebqvAG8",
+      "source_mint": "2T5NLSVjhszzW7BboAB4qbB4wqp7am5LmNtDWAHx3qjo",
+      "wallet": "4J2qXyrakLueeNrRDXU6TS8keWLqj7QUSk6Qzq1WKqQw",
+      "state": {
+        "slot": 461126832,
+        "data_sha256": "5573eb1aea96fcd0c08d153a83e77ab68b739e6a81441ef2f5898972673f4eb7",
+        "matches_prior_data_sha256": true,
+        "closed_fund": true,
+        "redemption_started": true
+      },
+      "wallet_account": {
+        "owner_program": null,
+        "lamports": null,
+        "data_sha256": null
+      },
+      "token2022_slot": 461126841,
+      "token2022_accounts": [
+        {
+          "pubkey": "6mihmbcRbb5AL9HdNsztM1PWYVgW29k7qhxtgCs6cY1T",
+          "mint": "5mWGLz43ffSD2itRWs24qnHQiumLdUdWTfZv3nHNvdbU",
+          "amount_atoms": 665573853406481,
+          "data_sha256": "d6b623fb87f66c1bac6886b7e9fa0100eb4469bf1f381077ec75fa2e14580625",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "FTpMKJDRnAB86tju3QnM43TkX2WJWEycVkdXv44Mim55",
+          "mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+          "amount_atoms": 0,
+          "data_sha256": "fcaef5f6b385e27a3c3722d6d5a1a1ce64a8b9ee2973021627f73a10e2005d5e",
+          "space": 170,
+          "lamports": 2074080
+        }
+      ],
+      "nonzero_token2022_accounts": 1,
+      "nonzero_hook_accounts": 0,
+      "hook_accounts": 0
+    },
+    {
+      "source_state": "3Xe5LjCa4BgDagqHPnnPDHs9WTadMWwfna3gNfkzF26S",
+      "source_mint": "27Chwv15PqiNLdnUTXMYpbv9gzdqGrp2Ue5BF7u7Bt3H",
+      "wallet": "rvgUdeSR7E1aEJQvMqAK53mQNYkwzDRxCfvvFmogrcZ",
+      "state": {
+        "slot": 461126832,
+        "data_sha256": "184224b7acdd4e6b1cbb83e0fb7c17338c0ada73307f27da9afd25078dd2cebf",
+        "matches_prior_data_sha256": true,
+        "closed_fund": false,
+        "redemption_started": false
+      },
+      "wallet_account": {
+        "owner_program": "11111111111111111111111111111111",
+        "lamports": 84059284,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "token2022_slot": 461126842,
+      "token2022_accounts": [
+        {
+          "pubkey": "5zfwLBLLMdb7via8e5xntXs3iU8Mh2xZTUpQs7mcmdjQ",
+          "mint": "27Chwv15PqiNLdnUTXMYpbv9gzdqGrp2Ue5BF7u7Bt3H",
+          "amount_atoms": 1000000000,
+          "data_sha256": "91af9e7b3a70a5767fe263c97a0a70bc2ecc4719a1f6771bc1f808daac0d288f",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "8MraQHrfY7bD41LLtSSpDnsCdKAEdGoE8ax8hMepV3ZG",
+          "mint": "41efRpYgL94NCMktNH84fkVxwSFkhahJ58X4UfVC292h",
+          "amount_atoms": 690000000,
+          "data_sha256": "5776655f1d8b8c8b0a930f312c6d307d437d67cb72c347bd21903f4ff32a2f5f",
+          "space": 170,
+          "lamports": 2074080
+        }
+      ],
+      "nonzero_token2022_accounts": 2,
+      "nonzero_hook_accounts": 0,
+      "hook_accounts": 0
+    },
+    {
+      "source_state": "ED1Yst3aKH5ymJMaAWdo5p9pJjnRVsXUypiLL4FQwo7w",
+      "source_mint": "AGpV2fP3xdE2hRZ1onsJYVo5mUpj8XHEPZJDDAdHkKRW",
+      "wallet": "9wcFJacoxvdLD1AhcLB8B8kz3mPHA92AfjkyJM8Xeu3h",
+      "state": {
+        "slot": 461126832,
+        "data_sha256": "4592b2faea63206f02dc99e28f1543f9748176dbcc0062b4bfd116996299ec78",
+        "matches_prior_data_sha256": true,
+        "closed_fund": false,
+        "redemption_started": false
+      },
+      "wallet_account": {
+        "owner_program": "11111111111111111111111111111111",
+        "lamports": 10820046,
+        "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "token2022_slot": 461126843,
+      "token2022_accounts": [
+        {
+          "pubkey": "4y1qtAWNk55sqep6wKujHJHLeA1mabeZEKMnH1WTGnU",
+          "mint": "3QGGLYLu251jE9Ra8jkGtuHb773xYciXeqqvUgNTGimE",
+          "amount_atoms": 0,
+          "data_sha256": "6e4c7489f2e02f696e23c549b80c2e08529467489092072bd6bb7ef8f12a5a23",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "2f8i6vGtf8VZumjLZvYbN2hmhu9eUfUkYNBptWa7GXdT",
+          "mint": "FYFq8aYYpRgwH6x9Ez4M1xEnv6aWpMrtdhYRUhbJyo43",
+          "amount_atoms": 0,
+          "data_sha256": "0250c9f3e16540ec1720ad3ace4757b04453a7106f805349f22912320231ae2f",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "2wVTczqm1YPw4NtaUns42eXgkRvkVMF1HcRsZkgPeFzi",
+          "mint": "26nvPnRLV2wTJfhCoUVYMFHoepg4dQPhQfyKM1VHdL97",
+          "amount_atoms": 777000000000,
+          "data_sha256": "c5cf98ae5dff0314d60a89a129d9a1c63df9a9b5c8af1f3bf6c482e9580737ec",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "3fh2cZRyEMzdsjyZTxcJZoRujkxmEjKzQq7ugMjxSNqm",
+          "mint": "G9d1PgcUULzaoRKpWkJEjJEs5way8YNu8zaaVuBkn86V",
+          "amount_atoms": 216450216450216,
+          "data_sha256": "8a936bcdf8865e0ff706fbe6d50d210d19646a6105580bf60dd0ade8f20ed03a",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "BwV4ScbQJR1GYqoanq15QrtC9ZuczSGoG5EZ4UFqBREF",
+          "mint": "CsZmZ4fz9bBjGRcu3Ram4tmLRMmKS6GPWqz4ZVxsxpNX",
+          "amount_atoms": 0,
+          "data_sha256": "b17771defb5cb6be36a669f9297bf4c2fdebe23aee38e73c9d7822c21e581915",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "F92hnnM35RgWF95fRFnuJJEnisrtHHv2spMXasAceR2u",
+          "mint": "AGpV2fP3xdE2hRZ1onsJYVo5mUpj8XHEPZJDDAdHkKRW",
+          "amount_atoms": 16498718289357377,
+          "data_sha256": "103e0236657690b5f023540e20376610b3cacc680b1e3dd72c09b54606a53de1",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "H7RZMCaCECphhQBVv3LDtTYNkEqNwC5wKxrMc8JRFdMS",
+          "mint": "27Chwv15PqiNLdnUTXMYpbv9gzdqGrp2Ue5BF7u7Bt3H",
+          "amount_atoms": 666000000000,
+          "data_sha256": "13670083734b22390e74e33b338ceddfc8045ee951d45e77b649941fe4cf306c",
+          "space": 170,
+          "lamports": 2074080
+        },
+        {
+          "pubkey": "HRzDMydL32zyoVKMGbFfcfzoS59tKgk3fMTC868vsTUj",
+          "mint": "G7K1HBo2tgmkJgeDic7BS3fm2hUt5fab3h4JvxYDrQMY",
+          "amount_atoms": 20544427324088340,
+          "data_sha256": "983961c5b365067b9864dfb0866ec5714c3188cc6b1ad3fa4b50c674b1936258",
+          "space": 170,
+          "lamports": 2074080
+        }
+      ],
+      "nonzero_token2022_accounts": 5,
+      "nonzero_hook_accounts": 0,
+      "hook_accounts": 0
+    }
+  ],
+  "mints": {
+    "26nvPnRLV2wTJfhCoUVYMFHoepg4dQPhQfyKM1VHdL97": {
+      "slot": 461126844,
+      "data_sha256": "f838393f1fc6cb0000a8ff1fdb65b23bf8b7cc0ea400a253663c6843b33f71bd",
+      "space": 423,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "df22def94408754ce6c48ba210886788687a49a145e250998621d6a89e1e7470"
+        },
+        {
+          "type": 19,
+          "length": 185,
+          "value_sha256": "6cc73fc349e6d912b9d9cb99d12e3c1450ee135f9ded8ea3769659365ca12110"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    },
+    "27Chwv15PqiNLdnUTXMYpbv9gzdqGrp2Ue5BF7u7Bt3H": {
+      "slot": 461126844,
+      "data_sha256": "7dc05153a5c58c44d600ddde4a0023f3e23fcce88e140b9472f60b65da04b3ac",
+      "space": 421,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "48998377731cd9884dbeb41da47aa04561d8569fb5b0b49e539b37d7b461048e"
+        },
+        {
+          "type": 19,
+          "length": 183,
+          "value_sha256": "3835575128221d54b4762cd1e5ce2dd35500d6483d8b5131ee2fcbda19313279"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    },
+    "3QGGLYLu251jE9Ra8jkGtuHb773xYciXeqqvUgNTGimE": {
+      "slot": 461126844,
+      "data_sha256": "db14af13d193921c5dca4ba8776466c47d7744732c0c71a1fbc30d7b1d932ad2",
+      "space": 432,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "46d9d69a2bca7fdb8644687092d8e1ec6ae5d296d8084c3a704f6a640f096384"
+        },
+        {
+          "type": 19,
+          "length": 194,
+          "value_sha256": "63b437e71e42f16727983bcdefd97245cff1ae3ae7bb4d9339ebf4264af34c2b"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    },
+    "41efRpYgL94NCMktNH84fkVxwSFkhahJ58X4UfVC292h": {
+      "slot": 461126844,
+      "data_sha256": "bbd5e2abbebee822abfd17b68a40d4dda512775410e8de5a7cc48788c5080fe8",
+      "space": 412,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "191afa76630b379979f2a219dd41116d2c647d4b3f4a9ddb83ac7354cea8ccd5"
+        },
+        {
+          "type": 19,
+          "length": 174,
+          "value_sha256": "6c95ca8b189ba62315efc1cddd79870e3cb04edbcbe15f78b639f41266d01af0"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    },
+    "5mWGLz43ffSD2itRWs24qnHQiumLdUdWTfZv3nHNvdbU": {
+      "slot": 461126844,
+      "data_sha256": "5b70030edc383d694da758d2333d5d14ee8fa05a493e6a30b6b5949e8f5ef55c",
+      "space": 418,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "44b969fe885402c01f92cf0865c664177897ce2248f45cbd9d2736fed53b58db"
+        },
+        {
+          "type": 19,
+          "length": 180,
+          "value_sha256": "ac70ce10466e8b9212a8d410790b6f47eae48cd28f5dc430584e53710356007a"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    },
+    "78E2eW1QBg15cinNR4wfFzu9SJPsDXQKR29SNpApg78J": {
+      "slot": 461126844,
+      "data_sha256": "af5696b150bb73f6fd0680c9342c96901f6d16340335611902d142d91ce274cc",
+      "space": 418,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "dc7461e48e22c87944322bf37171d2b19e57d521b7a5910a129424e0f2967027"
+        },
+        {
+          "type": 19,
+          "length": 180,
+          "value_sha256": "2639a30307e81a40b75238ab2ec06701c10fbd1025bf92100a86428b8670871d"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    },
+    "8GgwuVr72633UWupc26tuGK6tJ675jzkbHKuT3gDJcEf": {
+      "slot": 461126844,
+      "data_sha256": "0833f6b1807d757e603ee54821b37ca4b646c9882da0e8f4b22b0b897351beaf",
+      "space": 419,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "956b38d8f436cce3d632ade5235ee749049dd3107ed4404a4583d5bd357f76d5"
+        },
+        {
+          "type": 19,
+          "length": 181,
+          "value_sha256": "c3af8cf957bb0043eeb8678a17bcf1a345959cceb93eeedb81932f234170438b"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    },
+    "8X8LCfvJWvS3t4E5oEBBHT9uxuJ6r7mHZnm3voZyhbGf": {
+      "slot": 461126844,
+      "data_sha256": "40e00b8315143c898ee871c661873b8970aca5b7db5f6919654fb45d52cc8441",
+      "space": 418,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "fbee042e2e17c8472c1439ea934b0b66e7d6b1158611f21afc2907a5e37817e9"
+        },
+        {
+          "type": 19,
+          "length": 180,
+          "value_sha256": "74e72ae62cd9a079a113324c535b47366bb88f490ad9778c286d4efc809245c8"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    },
+    "9sgGR1ojAJsAZAYENYrxWm8oh5SCjSYh1tMkeyG3KLGX": {
+      "slot": 461126844,
+      "data_sha256": "21a82c233d2c47d3f29ec28d30032741c85c7735020d393885e731a4209094ac",
+      "space": 416,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "2bbf8c49e4572ecab93f80e424602c63dc6709b3ca6a19f0e68fb3cba4c5c39e"
+        },
+        {
+          "type": 19,
+          "length": 178,
+          "value_sha256": "2df7dfab701edc4c212614cb69537e190025568b2ed8f69944c14eac94aeadd0"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    },
+    "AGpV2fP3xdE2hRZ1onsJYVo5mUpj8XHEPZJDDAdHkKRW": {
+      "slot": 461126844,
+      "data_sha256": "53e2a0f8699618d88b6f0a75eb13be9102305de45c459b7317416b9ec74d2bb1",
+      "space": 415,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "b75b773b0a1f74bef08445fc32d34c3636f610dbbddaf8c1215bb753baf88c35"
+        },
+        {
+          "type": 19,
+          "length": 177,
+          "value_sha256": "ec598be437b26fa13df5ee52a37030862fc55a7365f2831ee77f799ddce38c3e"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    },
+    "BNEovLqByufWNYTB4q4urP1F7UL3jwyEnjRcJBJ3H8Z5": {
+      "slot": 461126844,
+      "data_sha256": "4f9f80fa9188ab927b8809312af9b93d743a1a40ff55667333feff6200d33385",
+      "space": 421,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "62487f26e62906e9ccd2fe9e675814c70fd5d833fa7c0cff7e1029254e3f308f"
+        },
+        {
+          "type": 19,
+          "length": 183,
+          "value_sha256": "bfba1f7bfd758a7319c188416a13795ddf9b32a8059814aed63ce889f0f95d18"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    },
+    "ByeWKwfzoZEiChnDcKp9hi8aWpanYz3ERhscqPHX8hMS": {
+      "slot": 461126844,
+      "data_sha256": "1c2d19b7d21607a729de7c2bcd52da2f3058bf8a7d5c0a08eb95e4c2cd050150",
+      "space": 416,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "9f1f68bd75e16a8adec68ce159d8fba9bc94c77c9dcb926e1a18c2e043a3b1b3"
+        },
+        {
+          "type": 19,
+          "length": 178,
+          "value_sha256": "2a7e31130397385643cb87ed14a3871ff6db73eaaab65b9ed473fb20447311af"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    },
+    "CsZmZ4fz9bBjGRcu3Ram4tmLRMmKS6GPWqz4ZVxsxpNX": {
+      "slot": 461126844,
+      "data_sha256": "fecaa8f76b504fe86eb98739bb356d70cb48ef59650feebbe34d893ab1c9145d",
+      "space": 408,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "4eb1ac8e3907fd7e53221c6c7e7092a670978dbbb3fe9ad3bc406c072918d33c"
+        },
+        {
+          "type": 19,
+          "length": 170,
+          "value_sha256": "2c424a2433fb75937e1c098b8c980d031b3b0dd2fa7a2682f9cd2043148260e2"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    },
+    "FYFq8aYYpRgwH6x9Ez4M1xEnv6aWpMrtdhYRUhbJyo43": {
+      "slot": 461126844,
+      "data_sha256": "32feaaaf66e1f490ece09684e513324f401a69e5af8249f2ce1725bdd502bc5f",
+      "space": 411,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "adbe01eee1298f95de570caba2f66f3d6ed0bc4556700f69e225463009090f66"
+        },
+        {
+          "type": 19,
+          "length": 173,
+          "value_sha256": "eeb78b9484a1d4d7b414cfebe7f7af9ead8052ffe3cd8951016f4ba04125f80b"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    },
+    "G7K1HBo2tgmkJgeDic7BS3fm2hUt5fab3h4JvxYDrQMY": {
+      "slot": 461126844,
+      "data_sha256": "90160a0053c58687d1eadf12b603f8bbfd4994074d20075cca25d663985e0c96",
+      "space": 408,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "85bddcfaee2be36d054f461bcd7566ab3171709de6a3f3ca2cf67ba2613e0129"
+        },
+        {
+          "type": 19,
+          "length": 170,
+          "value_sha256": "c4fdea160069ecc4a4af568ab5ebe2a56e890d0a3ed8d0678a4cca01d2db7229"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    },
+    "G9d1PgcUULzaoRKpWkJEjJEs5way8YNu8zaaVuBkn86V": {
+      "slot": 461126844,
+      "data_sha256": "8ad04fccaaa930e2d7887b1578b98d09645a14fbe2e18732464cb620fc4d285a",
+      "space": 408,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "95f562950a8cfefb157d312d3afec6d907b60b0e6be0d3643f4464800ef7d1fb"
+        },
+        {
+          "type": 19,
+          "length": 170,
+          "value_sha256": "93f2b0b227d4811b2411f692d67e0aa49fb356e9d9095350615b6a9611807088"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    },
+    "GQQ7zcP3a5dqrMYaD7BPdPd9Ksxcm6BgkcfnBKWsqcWn": {
+      "slot": 461126844,
+      "data_sha256": "928ea1c54e2952d275ddeac17abb1826919fda71b973addcbbdfbccdd8c250d0",
+      "space": 412,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "4862fc484af8c6618139fe02252f0f4e9405304378750dab0174b507203f2382"
+        },
+        {
+          "type": 19,
+          "length": 174,
+          "value_sha256": "9d78139d3efcec6497eaffa42de993e544a50bceb66831a7a246a739cd11fb3f"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    },
+    "GeV6SB57kLbBpBksGBDcwpnm8cjuoGdUDHyFtcj6pTad": {
+      "slot": 461126844,
+      "data_sha256": "f147e26f7acce558c85fa55d331bd13703fef51cd1ec083033bc4b277a521bf8",
+      "space": 415,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "6864f12c04410fb0648d55b5d8664bcfb872b993e6dcb3a2cd56ded4d2d037b4"
+        },
+        {
+          "type": 19,
+          "length": 177,
+          "value_sha256": "2400532527ed6a709bc03c18719d44655e5b2f8d2c477f521142143b67afb4b3"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    },
+    "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC": {
+      "slot": 461126844,
+      "data_sha256": "0c1ceda05146c439a683a3e8d8cbc161a552873b09012b789a183a1911e0607a",
+      "space": 408,
+      "extension_types": [
+        18,
+        19
+      ],
+      "extensions": [
+        {
+          "type": 18,
+          "length": 64,
+          "value_sha256": "2e87a9587e89fe866d02637a13fddd0ecfccb90331a559448d124fb5ac78cfdb"
+        },
+        {
+          "type": 19,
+          "length": 170,
+          "value_sha256": "f2bc310870f58fb6e04f0a7cec3b7bf12e44da33e6f8b4f755e10764abe28afe"
+        }
+      ],
+      "transfer_hook": null,
+      "rpc_json_parsed_extension_names": [
+        "metadataPointer",
+        "tokenMetadata"
+      ],
+      "rpc_json_parsed_has_transfer_hook": false
+    }
+  },
+  "qualification": "A bounded, cross-slot finalized read-only sample from prior provenance-linked DAO wallets. It does not enumerate other wallets, prove a live redemption failure, establish asset value, infer global absence, or send a transaction."
+}

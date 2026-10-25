@@ -1,0 +1,2174 @@
+{
+  "founder_binary_sha256": "816bc6d42ffea7d63bd7b1287589413aef04d8f7dceb34dd274a0f7872d40aa2",
+  "founder_last_deploy_slot": 328988984,
+  "vest_binary_sha256": "7a348374607cd000a73405c7608ab4795e14c5e42efbbe4b6fc20909b3beeb07",
+  "vest_last_deploy_slot": 315403567,
+  "static_bpf_trace": [
+    {
+      "address": "0x2f048",
+      "bytes_hex": "1801000092c507000000000000000000",
+      "mnemonic": "lddw",
+      "operands": "r1, 0x7c592"
+    },
+    {
+      "address": "0xf1e8",
+      "bytes_hex": "7924a80100000000",
+      "mnemonic": "ldxdw",
+      "operands": "r4, [r2+0x1a8]"
+    },
+    {
+      "address": "0xf1f8",
+      "bytes_hex": "0701000080510100",
+      "mnemonic": "add64",
+      "operands": "r1, 0x15180"
+    },
+    {
+      "address": "0xf230",
+      "bytes_hex": "6d15010000000000",
+      "mnemonic": "jsgt",
+      "operands": "r5, r1, +0x1"
+    },
+    {
+      "address": "0xf600",
+      "bytes_hex": "b701000075170000",
+      "mnemonic": "mov64",
+      "operands": "r1, 0x1775"
+    },
+    {
+      "address": "0x3a5d0",
+      "bytes_hex": "18010000ee2777a100000000e0cd422e",
+      "mnemonic": "lddw",
+      "operands": "r1, 0x2e42cde0a17727ee"
+    }
+  ],
+  "wait_seconds": 86400,
+  "rows": [
+    {
+      "source_slot": 355531144,
+      "source_signature": "67RgatfFfSG5maz6Uhiim9zpPXmYbZ2HkGGnjx8GsL3czoCEu1o15ndmysjZpWK1Z2ug7kmyg7CifEWxNB29GFf4",
+      "source_block_time": 1753401245,
+      "snapshot": "analysis/daos_fun/founder-start-vest-355531144-snapshot.json",
+      "snapshot_context_slot": 460731724,
+      "curve": "GKNLAqWW5iSCj4GVDowc4mEo9Qhpbpcj67nNharZcbGR",
+      "curve_timestamp_offset": 185,
+      "later_curve_timestamp": 1742864905,
+      "vest": "8TnFkSYEHzkFADihuYz7SDGMduF18EdmmvrTB4ySGUHN",
+      "later_vest_started_at_source_time": true,
+      "first_success_clock": 1742951306,
+      "last_vest_not_ready_clock": 1742951305,
+      "derived_guard": "Clock.unix_timestamp > CurveV2.timestamp + 86400",
+      "bisection_probes": 30,
+      "historical_vest_cpi": {
+        "outer_instruction_index": 2,
+        "account_keys": [
+          "8RQFgJA96cxYbc1DMZmcskbmFY6FWtGqHnGJ8jfpvsqU",
+          "8TnFkSYEHzkFADihuYz7SDGMduF18EdmmvrTB4ySGUHN"
+        ],
+        "data_hex": "ee2777a1e0cd422e000000009dc7826800000000",
+        "schedule_index_u32": 0,
+        "start_unix_timestamp_i64": 1753401245
+      },
+      "local_probes": [
+        {
+          "clock_unix_timestamp": 0,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1753401245,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1753401245,
+          "compute_units": 32402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 876700622,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1315050933,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1534226089,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1643813667,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1698607456,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1726004350,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1739702797,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1746552021,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1746552021,
+          "compute_units": 32402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743127409,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743127409,
+          "compute_units": 32402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1741415103,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742271256,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742699332,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742913370,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743020389,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743020389,
+          "compute_units": 32402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742966879,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742966879,
+          "compute_units": 32402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742940124,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742953501,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742953501,
+          "compute_units": 32402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742946812,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742950156,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742951828,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742951828,
+          "compute_units": 32402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742950992,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742951410,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742951410,
+          "compute_units": 32402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742951201,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742951305,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742951357,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742951357,
+          "compute_units": 32402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742951331,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742951331,
+          "compute_units": 32402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742951318,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742951318,
+          "compute_units": 32402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742951311,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742951311,
+          "compute_units": 32402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742951308,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742951308,
+          "compute_units": 32402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742951306,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742951306,
+          "compute_units": 32402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742951305,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742951306,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742951306,
+          "compute_units": 32402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742951307,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742951307,
+          "compute_units": 32402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": -1,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 9223372036854775807,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 9223372036854775807,
+          "compute_units": 32402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 32402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        }
+      ],
+      "synthetic_curve_field_probes": [
+        {
+          "synthetic_curve_time_at_offset_185": 1753314845,
+          "clock_unix_timestamp": 1753401245,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null
+        },
+        {
+          "synthetic_curve_time_at_offset_185": 1753314844,
+          "clock_unix_timestamp": 1753401245,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1753401245
+        }
+      ]
+    },
+    {
+      "source_slot": 336800341,
+      "source_signature": "CxUKUwTFkFiiXN3pQcdzzUioGv6sNNMXRc94TA98BGW3ocheGfa2CvTGgYevYLcnhptUK7LDxH525fNdG27kuUT",
+      "source_block_time": 1745977955,
+      "snapshot": "analysis/daos_fun/founder-start-vest-336800341-snapshot.json",
+      "snapshot_context_slot": 460731725,
+      "curve": "6NRtfQ7EpVqCxGbK2KzKauAVMf7LWHu62eCmRHpndAFg",
+      "curve_timestamp_offset": 185,
+      "later_curve_timestamp": 1742793913,
+      "vest": "1XCSDBSBDbsbug4Gah5KrwgDFLZ2wnNHrcR7DcJWaDZ",
+      "later_vest_started_at_source_time": true,
+      "first_success_clock": 1742880314,
+      "last_vest_not_ready_clock": 1742880313,
+      "derived_guard": "Clock.unix_timestamp > CurveV2.timestamp + 86400",
+      "bisection_probes": 31,
+      "historical_vest_cpi": {
+        "outer_instruction_index": 2,
+        "account_keys": [
+          "J4YHUQ9XAHU4EoA393siqnEfnS5v8eXGsQBYP7LsB39i",
+          "1XCSDBSBDbsbug4Gah5KrwgDFLZ2wnNHrcR7DcJWaDZ"
+        ],
+        "data_hex": "ee2777a1e0cd422e000000006382116800000000",
+        "schedule_index_u32": 0,
+        "start_unix_timestamp_i64": 1745977955
+      },
+      "local_probes": [
+        {
+          "clock_unix_timestamp": 0,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1745977955,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1745977955,
+          "compute_units": 27902,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27902 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 872988977,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1309483466,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1527730710,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1636854332,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1691416143,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1718697049,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1732337502,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1739157728,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742567841,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1744272898,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1744272898,
+          "compute_units": 27902,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27902 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743420369,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743420369,
+          "compute_units": 27902,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27902 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742994105,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742994105,
+          "compute_units": 27902,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27902 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742780973,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742887539,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742887539,
+          "compute_units": 27902,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27902 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742834256,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742860897,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742874218,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742880878,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742880878,
+          "compute_units": 27902,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27902 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742877548,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742879213,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742880045,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742880461,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742880461,
+          "compute_units": 27902,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27902 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742880253,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742880357,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742880357,
+          "compute_units": 27902,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27902 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742880305,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742880331,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742880331,
+          "compute_units": 27902,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27902 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742880318,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742880318,
+          "compute_units": 27902,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27902 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742880311,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742880314,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742880314,
+          "compute_units": 27902,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27902 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742880312,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742880313,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742880313,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742880314,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742880314,
+          "compute_units": 27902,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27902 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742880315,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1742880315,
+          "compute_units": 27902,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27902 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": -1,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 22251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 22251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 9223372036854775807,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 9223372036854775807,
+          "compute_units": 27902,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 177709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 27902 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        }
+      ],
+      "synthetic_curve_field_probes": [
+        {
+          "synthetic_curve_time_at_offset_185": 1745891555,
+          "clock_unix_timestamp": 1745977955,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null
+        },
+        {
+          "synthetic_curve_time_at_offset_185": 1745891554,
+          "clock_unix_timestamp": 1745977955,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1745977955
+        }
+      ]
+    },
+    {
+      "source_slot": 332107100,
+      "source_signature": "2Kpdr5EFEZkLtYaLdmuCRBSn4JeuJEuEn2YTVqenqitMMsWkCuEBZinJjmRXkRWZoHCT4EmSRpDks3seqPPtcWTZ",
+      "source_block_time": 1744115667,
+      "snapshot": "analysis/daos_fun/founder-start-vest-332107100-snapshot.json",
+      "snapshot_context_slot": 460731726,
+      "curve": "9VWhvjPeEMb8N1zXFwwJqCLf3XhQakLEkbX9WLBgdYKr",
+      "curve_timestamp_offset": 185,
+      "later_curve_timestamp": 1743082173,
+      "vest": "FdRseSWVqR7zAM3zvyvNgSTFn5Y1z75uo71rz5kLkEAX",
+      "later_vest_started_at_source_time": true,
+      "first_success_clock": 1743168574,
+      "last_vest_not_ready_clock": 1743168573,
+      "derived_guard": "Clock.unix_timestamp > CurveV2.timestamp + 86400",
+      "bisection_probes": 31,
+      "historical_vest_cpi": {
+        "outer_instruction_index": 2,
+        "account_keys": [
+          "H1ayVq2uS54fm36tkSJMK5gfXDqQmHX7NmE7H71EHdfb",
+          "FdRseSWVqR7zAM3zvyvNgSTFn5Y1z75uo71rz5kLkEAX"
+        ],
+        "data_hex": "ee2777a1e0cd422e00000000d317f56700000000",
+        "schedule_index_u32": 0,
+        "start_unix_timestamp_i64": 1744115667
+      },
+      "local_probes": [
+        {
+          "clock_unix_timestamp": 0,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1744115667,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1744115667,
+          "compute_units": 38402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 872057833,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1308086750,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1526101208,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1635108437,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1689612052,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1716863859,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1730489763,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1737302715,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1740709191,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742412429,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743264048,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743264048,
+          "compute_units": 38402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742838238,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743051143,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743157595,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743210821,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743210821,
+          "compute_units": 38402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743184208,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743184208,
+          "compute_units": 38402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743170901,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743170901,
+          "compute_units": 38402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743164248,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743167574,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743169237,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743169237,
+          "compute_units": 38402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743168405,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743168821,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743168821,
+          "compute_units": 38402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743168613,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743168613,
+          "compute_units": 38402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743168509,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743168561,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743168587,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743168587,
+          "compute_units": 38402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743168574,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743168574,
+          "compute_units": 38402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743168567,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743168570,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743168572,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743168573,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743168573,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743168574,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743168574,
+          "compute_units": 38402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743168575,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743168575,
+          "compute_units": 38402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": -1,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 28251,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 28251 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 9223372036854775807,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 9223372036854775807,
+          "compute_units": 38402,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 9073 of 171709 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 38402 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        }
+      ],
+      "synthetic_curve_field_probes": [
+        {
+          "synthetic_curve_time_at_offset_185": 1744029267,
+          "clock_unix_timestamp": 1744115667,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null
+        },
+        {
+          "synthetic_curve_time_at_offset_185": 1744029266,
+          "clock_unix_timestamp": 1744115667,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1744115667
+        }
+      ]
+    },
+    {
+      "source_slot": 332106432,
+      "source_signature": "26KGCNVduntoUxDnSFwtfJXtyaadSGQ5BN8zxBkxR9SaYTQEkCgFQcFkCfTfNAMc3agRgYWwpPNjDUwub61J9PZS",
+      "source_block_time": 1744115404,
+      "snapshot": "analysis/daos_fun/founder-start-vest-332106432-snapshot.json",
+      "snapshot_context_slot": 460731727,
+      "curve": "ASQdNzpkvCH7hQ5p9MsSSJHqsdGmvvE6n4CkhaK7E8JE",
+      "curve_timestamp_offset": 185,
+      "later_curve_timestamp": 1743125236,
+      "vest": "GnpRCcGaH5HqQe7Y5tXTvpkA7VDgVTmqZRmF69jc5ir",
+      "later_vest_started_at_source_time": true,
+      "first_success_clock": 1743211637,
+      "last_vest_not_ready_clock": 1743211636,
+      "derived_guard": "Clock.unix_timestamp > CurveV2.timestamp + 86400",
+      "bisection_probes": 30,
+      "historical_vest_cpi": {
+        "outer_instruction_index": 2,
+        "account_keys": [
+          "AscRrV1ZCf9ggpaX2tSTKHdWR7VwThvjNp4gEHJqaE4J",
+          "GnpRCcGaH5HqQe7Y5tXTvpkA7VDgVTmqZRmF69jc5ir"
+        ],
+        "data_hex": "ee2777a1e0cd422e00000000cc16f56700000000",
+        "schedule_index_u32": 0,
+        "start_unix_timestamp_i64": 1744115404
+      },
+      "local_probes": [
+        {
+          "clock_unix_timestamp": 0,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1744115404,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1744115404,
+          "compute_units": 20462,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 872057702,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1308086553,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1526100978,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1635108191,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1689611797,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1716863600,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1730489502,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1737302453,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1740708928,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742412166,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743263785,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743263785,
+          "compute_units": 20462,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1742837975,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743050880,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743157332,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743210558,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743237171,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743237171,
+          "compute_units": 20462,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743223864,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743223864,
+          "compute_units": 20462,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743217211,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743217211,
+          "compute_units": 20462,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743213884,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743213884,
+          "compute_units": 20462,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743212221,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743212221,
+          "compute_units": 20462,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743211389,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743211805,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743211805,
+          "compute_units": 20462,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743211597,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743211701,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743211701,
+          "compute_units": 20462,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743211649,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743211649,
+          "compute_units": 20462,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743211623,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743211636,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743211642,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743211642,
+          "compute_units": 20462,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743211639,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743211639,
+          "compute_units": 20462,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743211637,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743211637,
+          "compute_units": 20462,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743211636,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743211637,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743211637,
+          "compute_units": 20462,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 1743211638,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1743211638,
+          "compute_units": 20462,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        },
+        {
+          "clock_unix_timestamp": -1,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null,
+          "compute_units": 14759,
+          "log_tail": [
+            "Program log: Instruction: StartVest",
+            "Program log: AnchorError thrown in programs/founder_dao/src/instructions/start_vest.rs:16. Error Code: VestNotReady. Error Number: 6005. Error Message: Vest cannot yet begin.",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 14759 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS failed: custom program error: 0x1775"
+          ]
+        },
+        {
+          "clock_unix_timestamp": 9223372036854775807,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 9223372036854775807,
+          "compute_units": 20462,
+          "log_tail": [
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 consumed 4573 of 185201 compute units",
+            "Program 2GhmcVV5MUwmfaChwMtJJQjPrWCTTrkYdvvVhVRvudX2 success",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS consumed 20462 of 200000 compute units",
+            "Program Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS success"
+          ]
+        }
+      ],
+      "synthetic_curve_field_probes": [
+        {
+          "synthetic_curve_time_at_offset_185": 1744029004,
+          "clock_unix_timestamp": 1744115404,
+          "success": false,
+          "error": "TransactionErrorInstructionError((0, Tagged(InstructionErrorCustom(6005))))",
+          "vest_start_timestamp_after": null
+        },
+        {
+          "synthetic_curve_time_at_offset_185": 1744029003,
+          "clock_unix_timestamp": 1744115404,
+          "success": true,
+          "error": null,
+          "vest_start_timestamp_after": 1744115404
+        }
+      ]
+    }
+  ],
+  "qualification": "Founder BPF instructions pin a signed greater-than check after adding 86400 to a Curve field, and a VestNotReady 6005 return. Four later captured Curve accounts map that field to serialized offset 185; local bisection on hypothetical unstarted Vest accounts establishes first success at offset185+86401 on all four. Two synthetic Curve-field equality/one-unit-above controls per fixture isolate offset185. Historical Vest inner CPI data independently pins schedule index 0 and the source block time. Signed alternate-payer reachability and account guards are in founder-start-vest-authority-matrix.json. The historical pre-start Vest bytes are not archived, and no live transaction or direct token transfer is claimed."
+}

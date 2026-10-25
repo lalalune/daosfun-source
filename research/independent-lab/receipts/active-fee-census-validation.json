@@ -1,0 +1,31 @@
+{
+  "snapshot_sha256": "0868cce7bc5f4cd0f7aaded4fb6803b967e07b7f7d9a7c492de6b9b8afe77876",
+  "binary_sha256": "c151c6b15b84d8bfc47a5f2e0e5b9e04babff0263a1125a9e8dcb07df6144377",
+  "verified_rows": 48,
+  "verified_summary": {
+    "active_curves": 48,
+    "with_positive_available_fee": 45,
+    "sum_available_funding_base_units": 319466808380,
+    "sum_curve_F_base_units": 212296600465,
+    "sum_curve_V_base_units": 551469000000,
+    "sum_funding_vault_base_units": 754847961363,
+    "fee_authority_owner_program_counts": {
+      "11111111111111111111111111111111": 13,
+      "8qQwPgMtbjKUcPo8YVh8kbHSgK82P66bTjiGTZ6WPQBK": 35
+    },
+    "fee_authority_pda_kind_counts": {
+      "other": 13,
+      "legacy_fee": 35
+    },
+    "fee_authority_atas_missing": 1,
+    "funding_vaults_with_shortfall": 0,
+    "sum_funding_vault_shortfall_base_units": 0,
+    "funding_vaults_with_surplus": 15,
+    "sum_funding_vault_surplus_base_units": 223084552518,
+    "funding_vaults_equal_F_V_available": 26,
+    "funding_vaults_below_F_V_available": 22,
+    "funding_vaults_above_F_V_available": 0,
+    "sum_excess_above_F_V_available_base_units": 0
+  },
+  "qualification": "Offline integrity/derivation/accounting verification of saved finalized RPC records. The capture script performed a later Curve recheck; only its saved boolean is available here. Cross-slot vault changes after the capture, signer authority, economic meaning of V, and live redeemability are not proved by this offline check."
+}

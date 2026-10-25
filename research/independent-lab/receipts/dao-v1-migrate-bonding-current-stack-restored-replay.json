@@ -1,0 +1,207 @@
+{
+  "source_signature": "4gxqDr9a7GqtQA9WHZeJT8x6wH3i4cVQ7s33GscfqUEAX2mCnEsnnu4qNioqrU2ddrSJ9BcfcmtWyWRFPQREqPyx",
+  "source_slot": 352045106,
+  "variant": "baseline",
+  "source_block_time": 1752021458,
+  "source_cu": 334686,
+  "origin_scan": "analysis/daos_fun/dao-cp-pool-origin-scan.json",
+  "current_capture": "analysis/daos_fun/dao-v1-migrate-bonding-current-snapshot.json",
+  "programs": {
+    "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM": {
+      "sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+      "upgrade_slot": 370107442
+    },
+    "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG": {
+      "sha256": "967ff9fb161eec2e62f66d2c899100739fb747c445f697b8625c86b31b9a2022",
+      "upgrade_slot": 457080014
+    },
+    "HedgENAip7ZEzRj6T3ZbY1PmDFXU5XKx1BFSKbxvVD7V": {
+      "sha256": "17ebadd438fae8bc6c9ea2a2731953225ba3f269a2c62c9ab380a853495e99b0",
+      "upgrade_slot": 345089566
+    }
+  },
+  "dao_historical_binary": false,
+  "restored_hedge_migration_flag": true,
+  "named_accounts": {
+    "payer": "Edf9zN5TsSnryECmpNmUuZV1QMath1cGcxg8YZpdFwd5",
+    "funding_mint": "So11111111111111111111111111111111111111112",
+    "token_mint": "4gVStoka3i7nDmQLUp2mV8ehmsAdtxoH5H4QxGjFdaos",
+    "state": "BsrmAYLaR4synWJgZ47GNtDAyftkPGLrrE1DTca7qmEN",
+    "hedgefun_curve": "AajRiou1JG7ttj8TMXSShfhtP76ed2SHJUQL16MmtGiy",
+    "curve_funding_vault": "GRKpysHDz2WkDET9Yr9Grk2iVT2auvQRd8KE9yp64v7H",
+    "wallet": "Hne14zmfXaRYfTN79hQLwhD6g3sWrz2FZht9P8bzZgdf",
+    "wallet_funding_ata": "8xpzhnW2tRrHpLUKXiY6DHFpUmQPELCt4BsfJgdyj8Pg",
+    "payer_token_ata": "25Q1nZ4xTbEKgh2tb8XgEAhdhWWwaGCeeE94VSBg7u5N",
+    "payer_funding_ata": "8PyTvhgvHngxzgyb85makkTcMeLwTCpoVyyAgEU4qfvN",
+    "state_token_vault": "6cACDkD9vfFbKmR7AcFFNt1gZ2f2LHusMNbSKAbnejrT",
+    "pool_token_vault": "C92C9mYZdZ3Qfrm4Rk2ALeTjk7V4a2ssSqhfpnfAqkfa",
+    "pool_funding_vault": "HaZ5kuR2dvKB1XKtvqogoXStULKH5YYjXqbwDX7zN4CS",
+    "fee_authority": "9YRCNDgRF7o71aDvjKVMSgzgUqxLWqvP5DSKscu2UHwA",
+    "fee_nft_account": "p9mBbuQcWZBbcjkiq3e8rf6BESgxFS9sLijdmQkp1GK",
+    "meteora_authority": "Fbz8Y9Yg6TkAgA7beWj8eqog3qF6XTrm8xSBuL7FphUW",
+    "pool_config": "CtnY6H6AYJJ3WxN5MSY2NQAqrzPY4qTW1gb5ySzvPhaE",
+    "pool_authority": "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC",
+    "pool": "9sfPKKqgL8q2ehcPEjzfSFz3PKKvLjeH7H5mpEPxPyiw",
+    "position_nft_mint": "4qnnQ9UphnpLYSNUfkywzcnnvy9jahZQHvK2G5rK4B12",
+    "position_nft_account": "8cBJRDjfbg9rtH5H4avmEmkcSFMzbmjWsAR2L5Uyw1cc",
+    "position": "3fKJyAFVAaGmHxu893atsVWmrC8VyTTLmv1ytQPnKhUp",
+    "damm_event_authority": "3rmHSu74h1ZcmAisVcWerTCiRDQbUrBKmcwptYGjHfet",
+    "hedgefun_curve_program": "HedgENAip7ZEzRj6T3ZbY1PmDFXU5XKx1BFSKbxvVD7V",
+    "token_2022_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "dao_token_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "funding_token_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+    "associated_token_program": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+    "system_program": "11111111111111111111111111111111",
+    "rent": "SysvarRent111111111111111111111111111111111",
+    "amm_program": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG"
+  },
+  "synthetic_restorations": [
+    {
+      "index": 0,
+      "key": "Edf9zN5TsSnryECmpNmUuZV1QMath1cGcxg8YZpdFwd5",
+      "kind": "historical_system_fee_payer",
+      "lamports": 4917244347,
+      "later_account_absent": true
+    },
+    {
+      "index": 1,
+      "key": "BsrmAYLaR4synWJgZ47GNtDAyftkPGLrrE1DTca7qmEN",
+      "kind": "state_curve_initialized_flag",
+      "offset": 159,
+      "later": 1,
+      "local_prestate": 0
+    },
+    {
+      "index": 2,
+      "key": "AajRiou1JG7ttj8TMXSShfhtP76ed2SHJUQL16MmtGiy",
+      "kind": "hedgefun_curve_migrated_flag",
+      "offset": 121,
+      "later": 1,
+      "local_prestate": 0
+    },
+    {
+      "index": 3,
+      "key": "GRKpysHDz2WkDET9Yr9Grk2iVT2auvQRd8KE9yp64v7H",
+      "kind": "historical_token_balance",
+      "amount": 67768070635,
+      "lamports": 67770109915,
+      "later_account_absent": false
+    },
+    {
+      "index": 4,
+      "key": "Hne14zmfXaRYfTN79hQLwhD6g3sWrz2FZht9P8bzZgdf",
+      "kind": "historically_absent"
+    },
+    {
+      "index": 5,
+      "key": "8xpzhnW2tRrHpLUKXiY6DHFpUmQPELCt4BsfJgdyj8Pg",
+      "kind": "historical_token_balance",
+      "amount": 0,
+      "lamports": 2039280,
+      "later_account_absent": false
+    },
+    {
+      "index": 6,
+      "key": "25Q1nZ4xTbEKgh2tb8XgEAhdhWWwaGCeeE94VSBg7u5N",
+      "kind": "historical_token_balance",
+      "amount": 500298506862502,
+      "lamports": 2074080,
+      "later_account_absent": true
+    },
+    {
+      "index": 7,
+      "key": "8PyTvhgvHngxzgyb85makkTcMeLwTCpoVyyAgEU4qfvN",
+      "kind": "historical_token_balance",
+      "amount": 0,
+      "lamports": 2039280,
+      "later_account_absent": true
+    },
+    {
+      "index": 8,
+      "key": "6cACDkD9vfFbKmR7AcFFNt1gZ2f2LHusMNbSKAbnejrT",
+      "kind": "historical_token_balance",
+      "amount": 200000000000000000,
+      "lamports": 2074080,
+      "later_account_absent": false
+    },
+    {
+      "index": 9,
+      "key": "C92C9mYZdZ3Qfrm4Rk2ALeTjk7V4a2ssSqhfpnfAqkfa",
+      "kind": "historically_absent"
+    },
+    {
+      "index": 10,
+      "key": "HaZ5kuR2dvKB1XKtvqogoXStULKH5YYjXqbwDX7zN4CS",
+      "kind": "historically_absent"
+    },
+    {
+      "index": 11,
+      "key": "p9mBbuQcWZBbcjkiq3e8rf6BESgxFS9sLijdmQkp1GK",
+      "kind": "historically_absent"
+    },
+    {
+      "index": 13,
+      "key": "9sfPKKqgL8q2ehcPEjzfSFz3PKKvLjeH7H5mpEPxPyiw",
+      "kind": "historically_absent"
+    },
+    {
+      "index": 14,
+      "key": "4qnnQ9UphnpLYSNUfkywzcnnvy9jahZQHvK2G5rK4B12",
+      "kind": "historically_absent"
+    },
+    {
+      "index": 15,
+      "key": "8cBJRDjfbg9rtH5H4avmEmkcSFMzbmjWsAR2L5Uyw1cc",
+      "kind": "historically_absent"
+    },
+    {
+      "index": 16,
+      "key": "3fKJyAFVAaGmHxu893atsVWmrC8VyTTLmv1ytQPnKhUp",
+      "kind": "historically_absent"
+    },
+    {
+      "index": 31,
+      "key": "SysvarRent111111111111111111111111111111111",
+      "kind": "historical_rent_sysvar",
+      "later_lamports_per_byte": 5080,
+      "local_source_inferred_lamports_per_byte": 6960,
+      "basis": "Historical created-account post balances are (128 + data_length) * 6960"
+    }
+  ],
+  "qualification": "Historical transaction metadata with later surviving account bytes; current CP AMM binary loaded for compatibility test; Hedgefun binary predates source. This is a synthetic restoration, not the exact historical prestate. No live transaction.",
+  "local_success": false,
+  "local_error": "TransactionErrorInstructionError((2, Tagged(InstructionErrorCustom(6067))))",
+  "local_cu": 219796,
+  "lamport_checks": {},
+  "token_checks": {},
+  "state_post": {},
+  "alternate_payer": null,
+  "alternate_payer_post": {},
+  "log_tail": [
+    "Program 11111111111111111111111111111111 success",
+    "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+    "Program log: Instruction: InitializeAccount3",
+    "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2097 of 1218191 compute units",
+    "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+    "Program 11111111111111111111111111111111 invoke [3]",
+    "Program 11111111111111111111111111111111 success",
+    "Program 11111111111111111111111111111111 invoke [3]",
+    "Program 11111111111111111111111111111111 success",
+    "Program 11111111111111111111111111111111 invoke [3]",
+    "Program 11111111111111111111111111111111 success",
+    "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+    "Program log: Instruction: InitializeAccount3",
+    "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2097 of 1195852 compute units",
+    "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+    "Program 11111111111111111111111111111111 invoke [3]",
+    "Program 11111111111111111111111111111111 success",
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 230 of 1185402 compute units",
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+    "Program log: AnchorError thrown in programs/cp-amm/src/params/fee_parameters.rs:265. Error Code: InvalidCompoundingFeeBps. Error Number: 6067. Error Message: Invalid compounding fee bps.",
+    "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 68155 of 1248359 compute units",
+    "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG failed: custom program error: 0x17b3",
+    "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM consumed 219496 of 1399700 compute units",
+    "Program 4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM failed: custom program error: 0x17b3"
+  ]
+}

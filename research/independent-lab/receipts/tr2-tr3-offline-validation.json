@@ -1,0 +1,19 @@
+{
+  "saved_input_sha256": {
+    "tr2-current-cosigner-census.json": "65a5a8848d9cfa9a16bad5326627517b72e29a478857df8d49030e890f2b13eb",
+    "tr2-cosigner-sol-local.json": "5e6cdf5eeb7ad4df8d2512c31e3416d1170e27312557a132f57fb4c2809fe1df",
+    "tr3-active-dao-wallet-authorities.json": "a366daf1797efd239a68377fc1ccbe8d8bb888032333c8f5734ebbefa6da600e",
+    "tr3-closed-wallet-token-accounts.json": "d5e67a8d94a1147ce7f30c213381251c30e5067d081d422729bc66fc511831c4",
+    "tr3-closed-wallet-query-cache.json": "f8932da7b850a3cd74f50bd677145845749d33ca7c39d426dd1223d98ae81dff"
+  },
+  "dao_binary_sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+  "tr2_cosigner_lamports": 3910061294,
+  "tr2_real_cosigner_token_accounts": 0,
+  "tr2_valid_local_sol_transfer_controls": 3,
+  "tr3_active_dao_wallets_screened": 35,
+  "tr3_closed_wallets_fully_token_owner_enumerated": 8,
+  "tr3_closed_wallet_token_accounts": 202,
+  "tr3_closed_wallet_delegate_count": 0,
+  "tr3_closed_wallet_close_authority_count": 0,
+  "qualification": "Offline verification of saved finalized RPC records and signed local test receipts. RPC account-owner enumeration and State recheck flags are trusted as captured; future balances, arbitrary program authority rights, other DAO wallets, cosigning policy and mint-token economic values are outside this check."
+}

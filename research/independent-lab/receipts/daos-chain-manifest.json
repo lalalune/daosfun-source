@@ -1,0 +1,57 @@
+[
+  {
+    "name": "dao_v1",
+    "program": "4FqThZWv3QKWkSyXCDmATpWkpEiCHq5yhkdGWpSEDAZM",
+    "programdata": "DorEUwsw12hyhPGW95LrFMZTsAVi9pnjERcjQap3p7G2",
+    "capture_slot": 460723204,
+    "last_deploy_slot": 370107442,
+    "upgrade_authority": "8CaTuoD1r6CzR1mu6ueTDvjNpLj7sq5nWafDLymkQ4jH",
+    "sha256": "5020271255ea678fc110fed4671a86b1b7268acad04f990c590decd92091143d",
+    "bytes": 1120784,
+    "path": "inputs/daos_fun/dao_v1-mainnet.so"
+  },
+  {
+    "name": "fee_share_trader_dao",
+    "program": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+    "programdata": "AiH1jNgepfneAfrwA6LMua1srjPpwazf8NFx7yn3gJQ6",
+    "capture_slot": 460723204,
+    "last_deploy_slot": 364247116,
+    "upgrade_authority": "8CaTuoD1r6CzR1mu6ueTDvjNpLj7sq5nWafDLymkQ4jH",
+    "sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+    "bytes": 522216,
+    "path": "inputs/daos_fun/fee_share_trader_dao-mainnet.so"
+  },
+  {
+    "name": "founder_dao",
+    "program": "Daosz93P15uZ1aTFTrBUAJyU1KERmZm3XQ5u4hbfHVQS",
+    "programdata": "HVoNP1tFYtwyMFo6bngo3MxNXi5vJSQDMunc6GwwoobP",
+    "capture_slot": 460723204,
+    "last_deploy_slot": 328988984,
+    "upgrade_authority": "8CaTuoD1r6CzR1mu6ueTDvjNpLj7sq5nWafDLymkQ4jH",
+    "sha256": "816bc6d42ffea7d63bd7b1287589413aef04d8f7dceb34dd274a0f7872d40aa2",
+    "bytes": 574360,
+    "path": "inputs/daos_fun/founder_dao-mainnet.so"
+  },
+  {
+    "name": "pump_xyk",
+    "program": "CurvyB2V1gJVsSb7Zb112ScicJbUmQ7jyHLn8UHNYf6B",
+    "programdata": "8NxzwFZRHfwA9Dd3X2edxzjur2YPCJygQAMRNdGS5b4Q",
+    "capture_slot": 460723204,
+    "last_deploy_slot": 328987601,
+    "upgrade_authority": "8CaTuoD1r6CzR1mu6ueTDvjNpLj7sq5nWafDLymkQ4jH",
+    "sha256": "2238aa5b96fc29e7693174b20d75063df2e1dfba28c26c5346338c23732e2fb9",
+    "bytes": 684304,
+    "path": "inputs/daos_fun/pump_xyk-mainnet.so"
+  },
+  {
+    "name": "virtual_xyk",
+    "program": "5jnapfrAN47UYkLkEf7HnprPPBCQLvkYWGZDeKkaP5hv",
+    "programdata": "8ET7G9kFYX4MiLoezd9iiHHZ1wgoE4HUv6vF2RwvYoJU",
+    "capture_slot": 460723204,
+    "last_deploy_slot": 342462122,
+    "upgrade_authority": "8CaTuoD1r6CzR1mu6ueTDvjNpLj7sq5nWafDLymkQ4jH",
+    "sha256": "c151c6b15b84d8bfc47a5f2e0e5b9e04babff0263a1125a9e8dcb07df6144377",
+    "bytes": 645800,
+    "path": "inputs/daos_fun/virtual_xyk-mainnet.so"
+  }
+]

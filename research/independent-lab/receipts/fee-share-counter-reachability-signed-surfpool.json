@@ -1,0 +1,2678 @@
+{
+  "offline_only": true,
+  "signature_verification_enabled": true,
+  "pinned_fee_share_elf_sha256": "88df1b4ddb152d4159b41b9eba68ab74e6f0e14c1930bad5828c44a14a3ca4f8",
+  "pinned_cp_elf_sha256": "967ff9fb161eec2e62f66d2c899100739fb747c445f697b8625c86b31b9a2022",
+  "idl_path": "inputs/daos_fun/fee_share_trader_dao-Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk.json",
+  "idl_sha256": "de0c53fe65476674dcd2b417f3bdafd571a74185ca63c6645ef199cdd6a38243",
+  "idl_selector_inventory": [
+    {
+      "name": "change_creator",
+      "discriminator": "7add455a50ea6f34",
+      "account_names": [
+        "signer",
+        "new_creator",
+        "fee_share_state"
+      ]
+    },
+    {
+      "name": "claim_meteora_dbc_fees",
+      "discriminator": "d2cf0c9d7776c287",
+      "account_names": [
+        "signer",
+        "funding_mint",
+        "token_mint",
+        "fee_share_state",
+        "funding_ata",
+        "token_ata",
+        "pool",
+        "meteora_authority",
+        "meteora_authority_funding_ata",
+        "meteora_authority_token_ata",
+        "dbc_config",
+        "pool_token_vault",
+        "pool_funding_vault",
+        "pool_authority",
+        "dbc_event_authority",
+        "dao_v1_program",
+        "dbc_program",
+        "associated_token_program",
+        "funding_token_program",
+        "dao_token_program",
+        "token_program_2022"
+      ]
+    },
+    {
+      "name": "claim_meteora_fees",
+      "discriminator": "15cfb24082d31f64",
+      "account_names": [
+        "signer",
+        "funding_mint",
+        "token_mint",
+        "fee_share_state",
+        "fee_nft_account",
+        "position_nft_mint",
+        "funding_ata",
+        "token_ata",
+        "pool",
+        "position",
+        "pool_token_vault",
+        "pool_funding_vault",
+        "pool_authority",
+        "damm_event_authority",
+        "amm_program",
+        "associated_token_program",
+        "funding_token_program",
+        "dao_token_program",
+        "token_program_2022"
+      ]
+    },
+    {
+      "name": "claim_raydium_fees",
+      "discriminator": "a77372bbbd1eb899",
+      "account_names": [
+        "signer",
+        "funding_mint",
+        "token_mint",
+        "fee_share_state",
+        "fee_nft_mint",
+        "funding_ata",
+        "token_ata",
+        "authority",
+        "fee_nft_account",
+        "locked_liquidity",
+        "cp_authority",
+        "pool_state",
+        "lp_mint",
+        "pool_funding_vault",
+        "pool_token_vault",
+        "locked_lp_vault",
+        "cp_swap_program",
+        "cp_lock_program",
+        "associated_token_program",
+        "funding_token_program",
+        "dao_token_program",
+        "token_program",
+        "token_program_2022",
+        "memo_program"
+      ]
+    },
+    {
+      "name": "collect_platform_fees",
+      "discriminator": "bf99dba405419930",
+      "account_names": [
+        "funding_mint",
+        "token_mint",
+        "fee_share_state",
+        "platform_funding_ata",
+        "vault_funding_ata",
+        "token_program",
+        "associated_token_program"
+      ]
+    },
+    {
+      "name": "init_with_legacy",
+      "discriminator": "ff10c05eec09747b",
+      "account_names": [
+        "payer",
+        "token_mint",
+        "legacy_fee_share_state",
+        "fee_share_state",
+        "system_program"
+      ]
+    },
+    {
+      "name": "initialize",
+      "discriminator": "afaf6d1f0d989bed",
+      "account_names": [
+        "payer",
+        "dao_mint",
+        "funding_mint",
+        "fee_share_state",
+        "system_program"
+      ]
+    },
+    {
+      "name": "redeem",
+      "discriminator": "b80c569546c461e1",
+      "account_names": [
+        "signer",
+        "funding_mint",
+        "token_mint",
+        "fee_share_state",
+        "signer_funding_ata",
+        "vault_funding_ata",
+        "token_program",
+        "associated_token_program"
+      ]
+    },
+    {
+      "name": "sell_token",
+      "discriminator": "6d3d28bbe6b087ae",
+      "account_names": [
+        "signer",
+        "funding_mint",
+        "token_mint",
+        "fee_share_state",
+        "funding_ata",
+        "token_ata",
+        "amm_config",
+        "authority",
+        "pool_state",
+        "observation_state",
+        "pool_funding_vault",
+        "pool_token_vault",
+        "cp_swap_program",
+        "associated_token_program",
+        "funding_token_program",
+        "token_program"
+      ]
+    }
+  ],
+  "no_account_injection_after_scenario_setup": true,
+  "scenarios": {
+    "creation": {
+      "genesis_hash": "HHjGXitmtXbgBxCVAed94KTkAyRrAXRduQTsDsmhyqLY",
+      "source_legacy_counter_values": [
+        3555584609839,
+        0,
+        3925753738438
+      ],
+      "source_snapshot": "analysis/daos_fun/fee-share-init-legacy-account-snapshot.json",
+      "source_snapshot_sha256": "d722105305c97e258afbcc25487ab560732ec79b5a74e6988a15b1dcd3c6888f",
+      "source_legacy_total_fees": 7901299132977,
+      "new_mint_is_disposable_local_account": true,
+      "addresses": {
+        "legacy_source": "4zBPNmDCbRCFAaqcKzPrQ3oeHT7XSyKBV68hL5LVaqMr",
+        "imported_state": "ATcKXyYVrMc7DwyDuWHL3xdZYVGDnYuGQpgnWu7TnKjd",
+        "fresh_state": "EYzmjgmpEAbDSeS9dsG9Gjvvg1z1jG4AxGDe1h5VgDYS"
+      },
+      "transactions": [
+        {
+          "case": "signed_init_with_legacy",
+          "signature": "2BCRST6ycoVWoCveg3UH76twsGMtJ1PTaQX4dbSHbFTcUiwkw29vCB2zk1rA7bCX719xj6s2CdnZbXr11LUj17gQ",
+          "signature_verified": true,
+          "signed_transaction_base64": "ATrPeKzSxYk/BLHVQrrhRN3sni5QQ/WK1Kv69XXJwqNcqhrrFBi1+cClR0V699JUHDyU6uy9kzP2ZY7UiIO4vQUBAAUHUqU5SU4+rS+0qVT0eL4LVRgJejt36Tg8Ey2PrmwnLJaMijglQpFUJmgTxrM8K54oO5Aj6bEmylyB9X33skYhGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwZGb+UhFzL/7K26csOb57yM5bvF9xJrLEObOkAAAAA7OOj+lbe7A4DxTT+/UIdnK1AH4FahyaXJWBuu6ZtVwdmn+5zn0AaqeXDKXdM0Ij8lhZZK0HgczDZ/Or+9TfZx90vh12q5psK+SZlmP8ag4Zl0AA6DbvMMW2KG9CwCD4cGhoWdOMgKlyFIGEFpF+C/j8oVfkZPmMz9D/qd+EfcEQIDAAUC8X4OAAUFAAYEAQII/xDAXuwJdHs=",
+          "simulation_error": null,
+          "committed_error": null,
+          "ledger_error": null,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: InitWithLegacy",
+            "Program 11111111111111111111111111111111 invoke [2]",
+            "Program 11111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 13113 of 949851 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+          ],
+          "before": {
+            "legacy_source": {
+              "owner": "8qQwPgMtbjKUcPo8YVh8kbHSgK82P66bTjiGTZ6WPQBK",
+              "lamports": 2060161,
+              "data_sha256": "5b494e254cf6a6a51382a027965ed3dc7eca5c24ad1f4da303436b894a162c15",
+              "data_len": 168
+            },
+            "imported_state": null,
+            "fresh_state": null
+          },
+          "after": {
+            "legacy_source": {
+              "owner": "8qQwPgMtbjKUcPo8YVh8kbHSgK82P66bTjiGTZ6WPQBK",
+              "lamports": 2060161,
+              "data_sha256": "5b494e254cf6a6a51382a027965ed3dc7eca5c24ad1f4da303436b894a162c15",
+              "data_len": 168
+            },
+            "imported_state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067120,
+              "data_sha256": "394f6dd872553f19bbdd012b66619cd60580cc2f02da0246a926f92d288eb2bf",
+              "data_len": 169,
+              "state": {
+                "total_fees": 0,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+                "creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+                "referrer_tag": 1,
+                "referrer": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+                "counter_offset": 145,
+                "creator_distributed": 0,
+                "referrer_distributed": 0,
+                "platform_distributed": 0,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "fresh_state": null
+          }
+        },
+        {
+          "case": "signed_initialize_distinct_referrer",
+          "signature": "38XzVXKRWW84BbzqYzUrFwaKcY1PSMCTsGhma7MLqepGtFHbHSUMqFJ6vVeTYxvyczbxnT3JFoxbNveNkUwca4Kv",
+          "signature_verified": true,
+          "signed_transaction_base64": "AmqIBHvIH2JXgf/BMzYPz6RtaEaHurrAi88ZvptwudNg1UOo6Ul7lhcI9sWAYPHofualTXnPlXtNHswgwi2nIw2BcyOgaMFpYlScYno2zhv9T1lBYJmmyklD/Xagr0DlPWap4fegp/Yaf4/RNHYJPLciw0MQ6j6vr2V5mxJA1PkOAgEEB1KlOUlOPq0vtKlU9Hi+C1UYCXo7d+k4PBMtj65sJyyW/JR3MPSesBQnpm4FBzMpTZ5SDlRceicSWngGNOCGCifJWkHh0ib6qOHUG2O1I6FYA2rJXYNUli4ULZV7dmbgJwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwZGb+UhFzL/7K26csOb57yM5bvF9xJrLEObOkAAAAAGm4hX/quBhPtof2NGGMA12sQ53BrrO1WYoPAAAAAAAdmn+5zn0AaqeXDKXdM0Ij8lhZZK0HgczDZ/Or+9TfZxBoaFnTjICpchSBhBaRfgv4/KFX5GT5jM/Q/6nfhH29oCBAAFAvJ+DgAGBQABBQIDSa+vbR8NmJvtUqU5SU4+rS+0qVT0eL4LVRgJejt36Tg8Ey2PrmwnLJYB1O7Bhp+xuKToF1Fq1akxVXy1aAXD6xbo86gD1kffeGk=",
+          "simulation_error": null,
+          "committed_error": null,
+          "ledger_error": null,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Initialize",
+            "Program 11111111111111111111111111111111 invoke [2]",
+            "Program 11111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 11153 of 949852 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+          ],
+          "before": {
+            "legacy_source": {
+              "owner": "8qQwPgMtbjKUcPo8YVh8kbHSgK82P66bTjiGTZ6WPQBK",
+              "lamports": 2060161,
+              "data_sha256": "5b494e254cf6a6a51382a027965ed3dc7eca5c24ad1f4da303436b894a162c15",
+              "data_len": 168
+            },
+            "imported_state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067120,
+              "data_sha256": "394f6dd872553f19bbdd012b66619cd60580cc2f02da0246a926f92d288eb2bf",
+              "data_len": 169,
+              "state": {
+                "total_fees": 0,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+                "creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+                "referrer_tag": 1,
+                "referrer": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+                "counter_offset": 145,
+                "creator_distributed": 0,
+                "referrer_distributed": 0,
+                "platform_distributed": 0,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "fresh_state": null
+          },
+          "after": {
+            "legacy_source": {
+              "owner": "8qQwPgMtbjKUcPo8YVh8kbHSgK82P66bTjiGTZ6WPQBK",
+              "lamports": 2060161,
+              "data_sha256": "5b494e254cf6a6a51382a027965ed3dc7eca5c24ad1f4da303436b894a162c15",
+              "data_len": 168
+            },
+            "imported_state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067120,
+              "data_sha256": "394f6dd872553f19bbdd012b66619cd60580cc2f02da0246a926f92d288eb2bf",
+              "data_len": 169,
+              "state": {
+                "total_fees": 0,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+                "creator": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+                "referrer_tag": 1,
+                "referrer": "FQ1W4266r3EJ83NmkEgoCoJThvMiyJzYU5b5RFe5GyYA",
+                "counter_offset": 145,
+                "creator_distributed": 0,
+                "referrer_distributed": 0,
+                "platform_distributed": 0,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "fresh_state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067120,
+              "data_sha256": "687ea3d75ac0e436e7e8d617d2b4abb3c23d56b6a494d5e18945fb759b0e9902",
+              "data_len": 169,
+              "state": {
+                "total_fees": 0,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "Hzy3XXUm8mQBTLW2oWmHSYVKHBGVPZrwM5DjPzLQhUxN",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 1,
+                "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+                "counter_offset": 145,
+                "creator_distributed": 0,
+                "referrer_distributed": 0,
+                "platform_distributed": 0,
+                "trailing_padding_nonzero": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    "distinct_referrer": {
+      "genesis_hash": "DvFfeb33SgsbemT6MP2Hs11UgDVX5p9wSpMKrgeWZAea",
+      "snapshot": "analysis/daos_fun/fee_share_trader_dao-claim_raydium_fees-snapshot.json",
+      "source_snapshot_sha256": "b68231ac95753ff27c6117a5681e467958d7b1facb1c2714c0397cd18916a155",
+      "source_slot": 460726261,
+      "local_edits": [
+        "creator key",
+        "distinct configured referrer key",
+        "canonical disposable recipient ATAs"
+      ],
+      "addresses": {
+        "state": "ATcKXyYVrMc7DwyDuWHL3xdZYVGDnYuGQpgnWu7TnKjd",
+        "vault": "HfafGQp3hqXbt8AteEXSFyYdFmTuGUN89Rn9wdvpexuW",
+        "creator": "2tRR23nD7PU691b997x7UA8RhzJexNtMjWhh8u1wo5vD",
+        "referrer": "CnsWx5aQXTm2PLF4xU393atMZ5jdnUYNoWEfNyexJWms",
+        "platform": "DKuEjbHP3kyvaKvCKcdd7S3Y2WUf11mtq5hmvUQN3ckS"
+      },
+      "initial": {
+        "state": {
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "lamports": 2067121,
+          "data_sha256": "fa3f89b10d7f75d209b380e563218883a4038e72d428fbb0ac590e5c0ae1de40",
+          "data_len": 169,
+          "state": {
+            "total_fees": 876081870188,
+            "funding_mint": "So11111111111111111111111111111111111111112",
+            "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+            "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+            "referrer_tag": 1,
+            "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+            "counter_offset": 145,
+            "creator_distributed": 429118181496,
+            "referrer_distributed": 0,
+            "platform_distributed": 438040935094,
+            "trailing_padding_nonzero": false
+          }
+        },
+        "vault": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 8924792878,
+          "data_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+          "data_len": 165,
+          "token_amount": 8922753598
+        },
+        "creator": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+          "data_len": 165,
+          "token_amount": 0
+        },
+        "referrer": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "data_sha256": "375c71c3fd677665535ac9db9a364895a2e14d8e08033239eab1f7deee3fbb95",
+          "data_len": 165,
+          "token_amount": 0
+        },
+        "platform": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+          "data_len": 165,
+          "token_amount": 0
+        }
+      },
+      "transactions": [
+        {
+          "case": "referrer_redeem_entity_0",
+          "signature": "2cKUtU445SaDb5w2ym4G1BLn6dS8EJ4xJn6AqagCEg6uuwg8XQSDbSLaD6nUUG8Y3GUW4WL4Zpm3fN9TucCnfesb",
+          "signature_verified": true,
+          "signed_transaction_base64": "AVB5dXJvIjfx665clOwJ/Wf2fUPdk3Vyf26fklxiIaFTZ0rcren5zpKpsL+pemvyR672+n5NAkTncPz0vX4/mAoBAAYK1O7Bhp+xuKToF1Fq1akxVXy1aAXD6xbo86gD1kffeGmMijglQpFUJmgTxrM8K54oO5Aj6bEmylyB9X33skYhGK8wz8fbs1pe6H70UhVFNRwzIuL1C+RlPYBV5Kg8lzj2950e6tmbun2qK4lwhmhLSQZQSIUucwBEaABwEfFhKHkDBkZv5SEXMv/srbpyw5vnvIzlu8X3EmssQ5s6QAAAAAabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABBt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKmMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4Wdmn+5zn0AaqeXDKXdM0Ij8lhZZK0HgczDZ/Or+9TfZx90vh12q5psK+SZlmP8ag4Zl0AA6DbvMMW2KG9CwCD4cGhoWdOMgKlyFIGEFpF+C/j8oVfkZPmMz9D/qd+EfcEQIEAAUC834OAAgIAAUJAQIDBgcKuAxWlUbEYeEAAA==",
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:14. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22429 of 949853 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+          ],
+          "before": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067121,
+              "data_sha256": "fa3f89b10d7f75d209b380e563218883a4038e72d428fbb0ac590e5c0ae1de40",
+              "data_len": 169,
+              "state": {
+                "total_fees": 876081870188,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 1,
+                "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+                "counter_offset": 145,
+                "creator_distributed": 429118181496,
+                "referrer_distributed": 0,
+                "platform_distributed": 438040935094,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 8924792878,
+              "data_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+              "data_len": 165,
+              "token_amount": 8922753598
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "referrer": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "375c71c3fd677665535ac9db9a364895a2e14d8e08033239eab1f7deee3fbb95",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          },
+          "after": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067121,
+              "data_sha256": "fa3f89b10d7f75d209b380e563218883a4038e72d428fbb0ac590e5c0ae1de40",
+              "data_len": 169,
+              "state": {
+                "total_fees": 876081870188,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 1,
+                "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+                "counter_offset": 145,
+                "creator_distributed": 429118181496,
+                "referrer_distributed": 0,
+                "platform_distributed": 438040935094,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 8924792878,
+              "data_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+              "data_len": 165,
+              "token_amount": 8922753598
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "referrer": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "375c71c3fd677665535ac9db9a364895a2e14d8e08033239eab1f7deee3fbb95",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          }
+        },
+        {
+          "case": "referrer_redeem_entity_1",
+          "signature": "3e3DPSZ8ueatmZ3fyV1qYpq51FARGNQD39g9UhkjpCt2phevXuZk5BSLPYxHHC6CnWxkLN4UsGPix2vKyNmXgeTt",
+          "signature_verified": true,
+          "signed_transaction_base64": "AYP5bAGfs9n+8l7s1y7v049M9RizlKNAXDG+zPrdmxOuULQ37uJO26k28DLpuUPEiCYF2mJ3j3Lixcl/Jko41wMBAAYK1O7Bhp+xuKToF1Fq1akxVXy1aAXD6xbo86gD1kffeGmMijglQpFUJmgTxrM8K54oO5Aj6bEmylyB9X33skYhGK8wz8fbs1pe6H70UhVFNRwzIuL1C+RlPYBV5Kg8lzj2950e6tmbun2qK4lwhmhLSQZQSIUucwBEaABwEfFhKHkDBkZv5SEXMv/srbpyw5vnvIzlu8X3EmssQ5s6QAAAAAabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABBt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKmMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4Wdmn+5zn0AaqeXDKXdM0Ij8lhZZK0HgczDZ/Or+9TfZx90vh12q5psK+SZlmP8ag4Zl0AA6DbvMMW2KG9CwCD4cGhoWdOMgKlyFIGEFpF+C/j8oVfkZPmMz9D/qd+Efb2gIEAAUC9H4OAAgIAAUJAQIDBgcKuAxWlUbEYeEBAA==",
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:14. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22413 of 949854 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+          ],
+          "before": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067121,
+              "data_sha256": "fa3f89b10d7f75d209b380e563218883a4038e72d428fbb0ac590e5c0ae1de40",
+              "data_len": 169,
+              "state": {
+                "total_fees": 876081870188,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 1,
+                "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+                "counter_offset": 145,
+                "creator_distributed": 429118181496,
+                "referrer_distributed": 0,
+                "platform_distributed": 438040935094,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 8924792878,
+              "data_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+              "data_len": 165,
+              "token_amount": 8922753598
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "referrer": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "375c71c3fd677665535ac9db9a364895a2e14d8e08033239eab1f7deee3fbb95",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          },
+          "after": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067121,
+              "data_sha256": "fa3f89b10d7f75d209b380e563218883a4038e72d428fbb0ac590e5c0ae1de40",
+              "data_len": 169,
+              "state": {
+                "total_fees": 876081870188,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 1,
+                "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+                "counter_offset": 145,
+                "creator_distributed": 429118181496,
+                "referrer_distributed": 0,
+                "platform_distributed": 438040935094,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 8924792878,
+              "data_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+              "data_len": 165,
+              "token_amount": 8922753598
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "referrer": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "375c71c3fd677665535ac9db9a364895a2e14d8e08033239eab1f7deee3fbb95",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          }
+        },
+        {
+          "case": "referrer_redeem_entity_2",
+          "signature": "3iqNCmCrV1G5cpHhwWSisq3ovTm18SnwPcs391Jq8U86K9cPQMHrCqvGX6jAKhcynUr676oX7grrJVCubTvUELEL",
+          "signature_verified": true,
+          "signed_transaction_base64": "AYgcJf4mJ3qLkhdZ8wooVwFEYA7/5NML2+HH0VTFDwQ5UEbotlYfWoCtkyBRYgMPBBJY4x7n8xG9wPZ/uZW+jQkBAAYK1O7Bhp+xuKToF1Fq1akxVXy1aAXD6xbo86gD1kffeGmMijglQpFUJmgTxrM8K54oO5Aj6bEmylyB9X33skYhGK8wz8fbs1pe6H70UhVFNRwzIuL1C+RlPYBV5Kg8lzj2950e6tmbun2qK4lwhmhLSQZQSIUucwBEaABwEfFhKHkDBkZv5SEXMv/srbpyw5vnvIzlu8X3EmssQ5s6QAAAAAabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABBt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKmMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4Wdmn+5zn0AaqeXDKXdM0Ij8lhZZK0HgczDZ/Or+9TfZx90vh12q5psK+SZlmP8ag4Zl0AA6DbvMMW2KG9CwCD4cGhoWdOMgKlyFIGEFpF+C/j8oVfkZPmMz9D/qd+Efb2wIEAAUC9X4OAAgIAAUJAQIDBgcKuAxWlUbEYeECAA==",
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:14. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22413 of 949855 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+          ],
+          "before": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067121,
+              "data_sha256": "fa3f89b10d7f75d209b380e563218883a4038e72d428fbb0ac590e5c0ae1de40",
+              "data_len": 169,
+              "state": {
+                "total_fees": 876081870188,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 1,
+                "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+                "counter_offset": 145,
+                "creator_distributed": 429118181496,
+                "referrer_distributed": 0,
+                "platform_distributed": 438040935094,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 8924792878,
+              "data_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+              "data_len": 165,
+              "token_amount": 8922753598
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "referrer": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "375c71c3fd677665535ac9db9a364895a2e14d8e08033239eab1f7deee3fbb95",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          },
+          "after": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067121,
+              "data_sha256": "fa3f89b10d7f75d209b380e563218883a4038e72d428fbb0ac590e5c0ae1de40",
+              "data_len": 169,
+              "state": {
+                "total_fees": 876081870188,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 1,
+                "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+                "counter_offset": 145,
+                "creator_distributed": 429118181496,
+                "referrer_distributed": 0,
+                "platform_distributed": 438040935094,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 8924792878,
+              "data_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+              "data_len": 165,
+              "token_amount": 8922753598
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "referrer": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "375c71c3fd677665535ac9db9a364895a2e14d8e08033239eab1f7deee3fbb95",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          }
+        },
+        {
+          "case": "referrer_redeem_entity_255",
+          "signature": "2dPPT2ia1FobvkdWvgSiaEYnidtyi61Fpunpcb2G1XFGCcjHcLzBPRSQ733DZtYQLyo8AoP7YzNgqhy8xu8EJLPE",
+          "signature_verified": true,
+          "signed_transaction_base64": "AVFlF3m3aG2M+igWAzXDhgZtcYhv/1p0/xEgmURyixnkhHH8e74XrolvkiGEXEdXGcli3pYeCqDF8+4smJ1Wyg0BAAYK1O7Bhp+xuKToF1Fq1akxVXy1aAXD6xbo86gD1kffeGmMijglQpFUJmgTxrM8K54oO5Aj6bEmylyB9X33skYhGK8wz8fbs1pe6H70UhVFNRwzIuL1C+RlPYBV5Kg8lzj2950e6tmbun2qK4lwhmhLSQZQSIUucwBEaABwEfFhKHkDBkZv5SEXMv/srbpyw5vnvIzlu8X3EmssQ5s6QAAAAAabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABBt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKmMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4Wdmn+5zn0AaqeXDKXdM0Ij8lhZZK0HgczDZ/Or+9TfZx90vh12q5psK+SZlmP8ag4Zl0AA6DbvMMW2KG9CwCD4cGhoWdOMgKlyFIGEFpF+C/j8oVfkZPmMz9D/qd+Efb3AIEAAUC9n4OAAgIAAUJAQIDBgcKuAxWlUbEYeH/AA==",
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:14. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 22413 of 949856 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+          ],
+          "before": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067121,
+              "data_sha256": "fa3f89b10d7f75d209b380e563218883a4038e72d428fbb0ac590e5c0ae1de40",
+              "data_len": 169,
+              "state": {
+                "total_fees": 876081870188,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 1,
+                "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+                "counter_offset": 145,
+                "creator_distributed": 429118181496,
+                "referrer_distributed": 0,
+                "platform_distributed": 438040935094,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 8924792878,
+              "data_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+              "data_len": 165,
+              "token_amount": 8922753598
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "referrer": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "375c71c3fd677665535ac9db9a364895a2e14d8e08033239eab1f7deee3fbb95",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          },
+          "after": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067121,
+              "data_sha256": "fa3f89b10d7f75d209b380e563218883a4038e72d428fbb0ac590e5c0ae1de40",
+              "data_len": 169,
+              "state": {
+                "total_fees": 876081870188,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 1,
+                "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+                "counter_offset": 145,
+                "creator_distributed": 429118181496,
+                "referrer_distributed": 0,
+                "platform_distributed": 438040935094,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 8924792878,
+              "data_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+              "data_len": 165,
+              "token_amount": 8922753598
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "referrer": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "375c71c3fd677665535ac9db9a364895a2e14d8e08033239eab1f7deee3fbb95",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          }
+        },
+        {
+          "case": "referrer_change_creator",
+          "signature": "4cQzbDVaSr1Ya6erC8ZjjJWXX3Eenrq7zZod8eHM6qdmuxNC878bZS129vFRcXvdUoYH1g4eshQFaLqgTeHWLUAe",
+          "signature_verified": true,
+          "signed_transaction_base64": "AbSXJIPxfXok1zwhwxJ7vQYlyNxHAboS5wJ5MzjGwz/54ZbqB+LlMPxrmldPUvreNpJGb4jrYGd9YwXb54fCvgMBAAIE1O7Bhp+xuKToF1Fq1akxVXy1aAXD6xbo86gD1kffeGmMijglQpFUJmgTxrM8K54oO5Aj6bEmylyB9X33skYhGAMGRm/lIRcy/+ytunLDm+e8jOW7xfcSayxDmzpAAAAA2af7nOfQBqp5cMpd0zQiPyWFlkrQeBzMNn86v71N9nEGhoWdOMgKlyFIGEFpF+C/j8oVfkZPmMz9D/qd+Efb3QICAAUC934OAAMDAAABCHrdRVpQ6m80",
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6001
+              }
+            ]
+          },
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: ChangeCreator",
+            "Program log: AnchorError caused by account: signer. Error Code: Unauthorized. Error Number: 6001. Error Message: Unauthorized.",
+            "Program log: Left:",
+            "Program log: FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+            "Program log: Right:",
+            "Program log: 6ZNfAtWS1C1aPQkrgyPrkWmXuFgnNRTSNYjyxgu5yU7D",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 5427 of 949857 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1771"
+          ],
+          "before": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067121,
+              "data_sha256": "fa3f89b10d7f75d209b380e563218883a4038e72d428fbb0ac590e5c0ae1de40",
+              "data_len": 169,
+              "state": {
+                "total_fees": 876081870188,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 1,
+                "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+                "counter_offset": 145,
+                "creator_distributed": 429118181496,
+                "referrer_distributed": 0,
+                "platform_distributed": 438040935094,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 8924792878,
+              "data_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+              "data_len": 165,
+              "token_amount": 8922753598
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "referrer": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "375c71c3fd677665535ac9db9a364895a2e14d8e08033239eab1f7deee3fbb95",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          },
+          "after": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067121,
+              "data_sha256": "fa3f89b10d7f75d209b380e563218883a4038e72d428fbb0ac590e5c0ae1de40",
+              "data_len": 169,
+              "state": {
+                "total_fees": 876081870188,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 1,
+                "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+                "counter_offset": 145,
+                "creator_distributed": 429118181496,
+                "referrer_distributed": 0,
+                "platform_distributed": 438040935094,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 8924792878,
+              "data_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+              "data_len": 165,
+              "token_amount": 8922753598
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "referrer": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "375c71c3fd677665535ac9db9a364895a2e14d8e08033239eab1f7deee3fbb95",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          }
+        },
+        {
+          "case": "redirect_platform_to_referrer_ata",
+          "signature": "gyjnZoaskQJE8JHNKm2guQ2fLeEQCpnxF3fazFwuc3KD8nGvGugohtbkz3oMBgBcrGptmP7H6YbuCEAAQLNXyzP",
+          "signature_verified": true,
+          "signed_transaction_base64": "ASJ5yFXNBq4a50u0EXTEBfO8pjidJA9U8i/y02eZS48Ga8JC4nFP2CeKVMr+d5hN+cPd80v5XEMq/C6a1MyMoAABAAYK1O7Bhp+xuKToF1Fq1akxVXy1aAXD6xbo86gD1kffeGmMijglQpFUJmgTxrM8K54oO5Aj6bEmylyB9X33skYhGK8wz8fbs1pe6H70UhVFNRwzIuL1C+RlPYBV5Kg8lzj2950e6tmbun2qK4lwhmhLSQZQSIUucwBEaABwEfFhKHkDBkZv5SEXMv/srbpyw5vnvIzlu8X3EmssQ5s6QAAAAAabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABBt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKmMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4Wdmn+5zn0AaqeXDKXdM0Ij8lhZZK0HgczDZ/Or+9TfZx90vh12q5psK+SZlmP8ag4Zl0AA6DbvMMW2KG9CwCD4cGhoWdOMgKlyFIGEFpF+C/j8oVfkZPmMz9D/qd+Efb3gIEAAUC+H4OAAgHBQkBAgMGBwm/mdukBUGZMAA=",
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 2015
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 2015
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 2015
+              }
+            ]
+          },
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: CollectPlatformFees",
+            "Program log: AnchorError caused by account: platform_funding_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+            "Program log: Left:",
+            "Program log: FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+            "Program log: Right:",
+            "Program log: 8CaTuoD1r6CzR1mu6ueTDvjNpLj7sq5nWafDLymkQ4jH",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 14142 of 949858 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x7df"
+          ],
+          "before": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067121,
+              "data_sha256": "fa3f89b10d7f75d209b380e563218883a4038e72d428fbb0ac590e5c0ae1de40",
+              "data_len": 169,
+              "state": {
+                "total_fees": 876081870188,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 1,
+                "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+                "counter_offset": 145,
+                "creator_distributed": 429118181496,
+                "referrer_distributed": 0,
+                "platform_distributed": 438040935094,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 8924792878,
+              "data_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+              "data_len": 165,
+              "token_amount": 8922753598
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "referrer": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "375c71c3fd677665535ac9db9a364895a2e14d8e08033239eab1f7deee3fbb95",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          },
+          "after": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067121,
+              "data_sha256": "fa3f89b10d7f75d209b380e563218883a4038e72d428fbb0ac590e5c0ae1de40",
+              "data_len": 169,
+              "state": {
+                "total_fees": 876081870188,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 1,
+                "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+                "counter_offset": 145,
+                "creator_distributed": 429118181496,
+                "referrer_distributed": 0,
+                "platform_distributed": 438040935094,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 8924792878,
+              "data_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+              "data_len": 165,
+              "token_amount": 8922753598
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "referrer": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "375c71c3fd677665535ac9db9a364895a2e14d8e08033239eab1f7deee3fbb95",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          }
+        },
+        {
+          "case": "creator_claim_full_available",
+          "signature": "38f3gfnHxSGfd6p86EM2LN98Jkoj368QhzU3yuWPdPXCv6XfWRrcCthdGwbiov74itaymhdBqh8VzXMnuYZi4fXX",
+          "signature_verified": true,
+          "signed_transaction_base64": "AWqi3vrehQxmm+mT36mO6qAFKVEcKbgSfsOnM537Q64xcvMHtRnwFYAAwjez9d0QFWfLeCUULASNxij+ngP4rQoBAAYKUqU5SU4+rS+0qVT0eL4LVRgJejt36Tg8Ey2PrmwnLJYcB+nOX9d1aqqIOVpMiZrgCA9yBfta3PtT6nh/FThfroyKOCVCkVQmaBPGszwrnig7kCPpsSbKXIH1ffeyRiEY950e6tmbun2qK4lwhmhLSQZQSIUucwBEaABwEfFhKHkDBkZv5SEXMv/srbpyw5vnvIzlu8X3EmssQ5s6QAAAAAabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABBt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKmMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4Wdmn+5zn0AaqeXDKXdM0Ij8lhZZK0HgczDZ/Or+9TfZx90vh12q5psK+SZlmP8ag4Zl0AA6DbvMMW2KG9CwCD4cGhoWdOMgKlyFIGEFpF+C/j8oVfkZPmMz9D/qd+Efb3wIEAAUC+X4OAAgIAAUJAgEDBgcSuAxWlUbEYeEAAT5q1hMCAAAA",
+          "simulation_error": null,
+          "committed_error": null,
+          "ledger_error": null,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 929985 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20964 of 949859 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+          ],
+          "before": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067121,
+              "data_sha256": "fa3f89b10d7f75d209b380e563218883a4038e72d428fbb0ac590e5c0ae1de40",
+              "data_len": 169,
+              "state": {
+                "total_fees": 876081870188,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 1,
+                "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+                "counter_offset": 145,
+                "creator_distributed": 429118181496,
+                "referrer_distributed": 0,
+                "platform_distributed": 438040935094,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 8924792878,
+              "data_sha256": "aa0815ad35b1b3010ca6813409d15d003b4f71b38d24a6f09d06ca446f969bb1",
+              "data_len": 165,
+              "token_amount": 8922753598
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "referrer": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "375c71c3fd677665535ac9db9a364895a2e14d8e08033239eab1f7deee3fbb95",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          },
+          "after": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067121,
+              "data_sha256": "6c8cc8f9ef858f463d1e605a6d9b9338430c031abba04d62cd6050921b5cff56",
+              "data_len": 169,
+              "state": {
+                "total_fees": 876081870188,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 1,
+                "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+                "counter_offset": 145,
+                "creator_distributed": 438040935094,
+                "referrer_distributed": 0,
+                "platform_distributed": 438040935094,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "5afadbd7219819ca98805c1bbda84e9baf75454f68cea839ee908feecb045d02",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 8924792878,
+              "data_sha256": "e456bc308594d6a2748334ba80cc16038a9fa993fb8ff7514a8d39fd63c41578",
+              "data_len": 165,
+              "token_amount": 8922753598
+            },
+            "referrer": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "375c71c3fd677665535ac9db9a364895a2e14d8e08033239eab1f7deee3fbb95",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          }
+        }
+      ],
+      "final": {
+        "state": {
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "lamports": 2067121,
+          "data_sha256": "6c8cc8f9ef858f463d1e605a6d9b9338430c031abba04d62cd6050921b5cff56",
+          "data_len": 169,
+          "state": {
+            "total_fees": 876081870188,
+            "funding_mint": "So11111111111111111111111111111111111111112",
+            "token_mint": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+            "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+            "referrer_tag": 1,
+            "referrer": "FLCbA5rPHLmgEeQSg1CiewVizRGw6Gy5MXc1m17HyxUG",
+            "counter_offset": 145,
+            "creator_distributed": 438040935094,
+            "referrer_distributed": 0,
+            "platform_distributed": 438040935094,
+            "trailing_padding_nonzero": false
+          }
+        },
+        "vault": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "data_sha256": "5afadbd7219819ca98805c1bbda84e9baf75454f68cea839ee908feecb045d02",
+          "data_len": 165,
+          "token_amount": 0
+        },
+        "creator": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 8924792878,
+          "data_sha256": "e456bc308594d6a2748334ba80cc16038a9fa993fb8ff7514a8d39fd63c41578",
+          "data_len": 165,
+          "token_amount": 8922753598
+        },
+        "referrer": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "data_sha256": "375c71c3fd677665535ac9db9a364895a2e14d8e08033239eab1f7deee3fbb95",
+          "data_len": 165,
+          "token_amount": 0
+        },
+        "platform": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+          "data_len": 165,
+          "token_amount": 0
+        }
+      }
+    },
+    "positive_claim_and_payout": {
+      "genesis_hash": "F35mEiaGGhb1rv2msz5PGMWwU4c2oTzF8nCnV47VP3Ka",
+      "snapshot": "analysis/daos_fun/fee_share_trader_dao-claim_meteora_fees-snapshot.json",
+      "source_snapshot_sha256": "e055e289fb78b096bd48556123c2ffc00f120028008e8e175d7361a3fa3f9227",
+      "source_slot": 460726261,
+      "local_edits": {
+        "source_snapshot_slot": 460726261,
+        "source_snapshot_sha256": "e055e289fb78b096bd48556123c2ffc00f120028008e8e175d7361a3fa3f9227",
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "substituted_creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+        "disposable_claim_signer": "7AVBigBGtFyyoXUYapJ4dhpjV2Ec9bg9mgvwry9f6gHS",
+        "recipient_atas": {
+          "creator_ata": "2tRR23nD7PU691b997x7UA8RhzJexNtMjWhh8u1wo5vD",
+          "platform_ata": "DKuEjbHP3kyvaKvCKcdd7S3Y2WUf11mtq5hmvUQN3ckS",
+          "outsider_ata": "HXEcgWbvULcqMwxfexYsetgtU1vgFqmbUHuTUgGDEHqJ"
+        },
+        "native_rent_reserve": 2039280
+      },
+      "synthetic_near_u64_max_state": false,
+      "addresses": {
+        "state": "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V",
+        "vault": "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq",
+        "pool_vault": "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw",
+        "creator": "2tRR23nD7PU691b997x7UA8RhzJexNtMjWhh8u1wo5vD",
+        "platform": "DKuEjbHP3kyvaKvCKcdd7S3Y2WUf11mtq5hmvUQN3ckS",
+        "outsider": "HXEcgWbvULcqMwxfexYsetgtU1vgFqmbUHuTUgGDEHqJ"
+      },
+      "initial": {
+        "state": {
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "lamports": 2067120,
+          "data_sha256": "31749460df277fd80c18aad7b3e20d8d57490a918db1d79bb1c06947c32ea93f",
+          "data_len": 169,
+          "state": {
+            "total_fees": 1618680370361,
+            "funding_mint": "So11111111111111111111111111111111111111112",
+            "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+            "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+            "referrer_tag": 0,
+            "referrer": null,
+            "counter_offset": 113,
+            "creator_distributed": 809340185180,
+            "referrer_distributed": 0,
+            "platform_distributed": 809340185180,
+            "trailing_padding_nonzero": false
+          }
+        },
+        "vault": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039281,
+          "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+          "data_len": 165,
+          "token_amount": 1
+        },
+        "pool_vault": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 211132214311,
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "data_len": 165,
+          "token_amount": 211130175027
+        },
+        "creator": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+          "data_len": 165,
+          "token_amount": 0
+        },
+        "platform": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+          "data_len": 165,
+          "token_amount": 0
+        },
+        "outsider": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "data_sha256": "4227b667cd273baf96b16cfccd1f49fb552e6b168affad100d8f55cb1ae7bf15",
+          "data_len": 165,
+          "token_amount": 0
+        }
+      },
+      "transactions": [
+        {
+          "case": "positive_cp_claim",
+          "signature": "5vNtJXMaCgFvUTUptGZVcDtA1xnXc4rvEqnUevm8joG2BEDaR6NtFqFkHTrkhzH6X2ttJKsbfygPkpPgd6JxJgoi",
+          "signature_verified": true,
+          "signed_transaction_base64": "AfYZO7kpgbuCCbK90cJHWBehur+v4zGH3pb2ro8kaNmlC0ittPGlkJvajHG+8WIvRrjZWN0kBF8T4/LpOzl4tgkBAAwUW5Q3rer/vo9BsT2W7UnS9RzWwmbNjswoSwVS7EkSuN0N0mwUAEeJ97z0TQYVqmcQnf8ilQnfCT2kxdXTnWlAgU2BE3zCjDx885plR9gmOPANY5g69tiuZ3Iaxqfzs2WYZGsfThMXVmKbxjSn3G+s1L+KuPu5SYdLU4njrNJsyFCIZbl9SIy3CEbRw8MVkhHKqgebuJpWvlwMNWa2WsanGpsVLuxfJpEE9WG6a8cii2S2r5fb/42wOtXdEpHuSSycp/TyIIEfGxdfl5Vg373wjuS2A/Vhq31RSczjKKO8uE7VHQmBBByf5T07mN0eCqnTsgXzHkWEUFrDiD8PNSR/bQMGRm/lIRcy/+ytunLDm+e8jOW7xfcSayxDmzpAAAAABpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQbd9uHudY/eGEJdvORszdq2GvxNg7kNJ/69+SjYoYv8CS0hNWV6FZwrh9S2anDbjpdSOJ/3aq8gbO0GOjj5Wu0qduezRGQKHPxZTIvK0KCRARysfdFWv4OoM/siCOt3rTzRTqx1IrVWlmcLnJublaDVEhla7r2RYBr91TDF/B2RicYRvIR3ZyUMkamD8tBQphZQ/vq9RBVahPmJDPkzrmKMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4Wdmn+5zn0AaqeXDKXdM0Ij8lhZZK0HgczDZ/Or+9TfZx4AyTavsHU6in+/JFPAk+3z09GfxKhgcouR4LKlhuMxLyzNU1rKXxc2rIIt0Hc+TZL72KWbKUA1AClakBHHOp5QaGhZ04yAqXIUgYQWkX4L+PyhV+Rk+YzP0P+p34R9wRAggABQL6fg4AERMACRIGDw4EAwcBAgUTDQwQCgsLCBXPskCC0x9k",
+          "simulation_error": null,
+          "committed_error": null,
+          "ledger_error": null,
+          "log_tail": [
+            "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [2]",
+            "Program log: Instruction: ClaimPositionFee",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 880447 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [3]",
+            "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 81 of 877971 compute units",
+            "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+            "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 18597 of 895662 compute units",
+            "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 75649 of 949860 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+          ],
+          "before": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067120,
+              "data_sha256": "31749460df277fd80c18aad7b3e20d8d57490a918db1d79bb1c06947c32ea93f",
+              "data_len": 169,
+              "state": {
+                "total_fees": 1618680370361,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 0,
+                "referrer": null,
+                "counter_offset": 113,
+                "creator_distributed": 809340185180,
+                "referrer_distributed": 0,
+                "platform_distributed": 809340185180,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039281,
+              "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+              "data_len": 165,
+              "token_amount": 1
+            },
+            "pool_vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 211132214311,
+              "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+              "data_len": 165,
+              "token_amount": 211130175027
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "outsider": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "4227b667cd273baf96b16cfccd1f49fb552e6b168affad100d8f55cb1ae7bf15",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          },
+          "after": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067120,
+              "data_sha256": "7c9e509b131e0f7a59ae97583df991988871ac0d31f465b6fd4bd160a1e40608",
+              "data_len": 169,
+              "state": {
+                "total_fees": 1618760199006,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 0,
+                "referrer": null,
+                "counter_offset": 113,
+                "creator_distributed": 809340185180,
+                "referrer_distributed": 0,
+                "platform_distributed": 809340185180,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 81867926,
+              "data_sha256": "98fc4ab3bb8df89321c0c6a02988af7fb52e5559dbd543acc77619646aed4c5d",
+              "data_len": 165,
+              "token_amount": 79828646
+            },
+            "pool_vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 211052385666,
+              "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+              "data_len": 165,
+              "token_amount": 211050346382
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "outsider": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "4227b667cd273baf96b16cfccd1f49fb552e6b168affad100d8f55cb1ae7bf15",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          }
+        },
+        {
+          "case": "creator_above_cap",
+          "signature": "2rEhKHN61nFE1CfK5QaABuAfvEUcuj5EYj6M1LpbaVom63ix3guGEBcNYCuxK95CB1w2gbubF3Cc8GXqtUw3DKRN",
+          "signature_verified": true,
+          "signed_transaction_base64": "AVx58s+hmZXwichfxVZ+4a7Fiqfxw72q9wX+jqccds3D2HqgympZMa6yvhqpwKeaq476I7Iqwtp3rAMRokmfFg0BAAYKUqU5SU4+rS+0qVT0eL4LVRgJejt36Tg8Ey2PrmwnLJYcB+nOX9d1aqqIOVpMiZrgCA9yBfta3PtT6nh/FThfrohluX1IjLcIRtHDwxWSEcqqB5u4mla+XAw1ZrZaxqcap/TyIIEfGxdfl5Vg373wjuS2A/Vhq31RSczjKKO8uE4DBkZv5SEXMv/srbpyw5vnvIzlu8X3EmssQ5s6QAAAAAabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABBt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKmMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4Wdmn+5zn0AaqeXDKXdM0Ij8lhZZK0HgczDZ/Or+9TfZx4AyTavsHU6in+/JFPAk+3z09GfxKhgcouR4LKlhuMxIGhoWdOMgKlyFIGEFpF+C/j8oVfkZPmMz9D/qd+Efb2gIEAAUC+34OAAgIAAUJAwECBgcSuAxWlUbEYeEAAVQLYQIAAAAA",
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:29. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19304 of 949861 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+          ],
+          "before": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067120,
+              "data_sha256": "7c9e509b131e0f7a59ae97583df991988871ac0d31f465b6fd4bd160a1e40608",
+              "data_len": 169,
+              "state": {
+                "total_fees": 1618760199006,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 0,
+                "referrer": null,
+                "counter_offset": 113,
+                "creator_distributed": 809340185180,
+                "referrer_distributed": 0,
+                "platform_distributed": 809340185180,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 81867926,
+              "data_sha256": "98fc4ab3bb8df89321c0c6a02988af7fb52e5559dbd543acc77619646aed4c5d",
+              "data_len": 165,
+              "token_amount": 79828646
+            },
+            "pool_vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 211052385666,
+              "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+              "data_len": 165,
+              "token_amount": 211050346382
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "outsider": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "4227b667cd273baf96b16cfccd1f49fb552e6b168affad100d8f55cb1ae7bf15",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          },
+          "after": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067120,
+              "data_sha256": "7c9e509b131e0f7a59ae97583df991988871ac0d31f465b6fd4bd160a1e40608",
+              "data_len": 169,
+              "state": {
+                "total_fees": 1618760199006,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 0,
+                "referrer": null,
+                "counter_offset": 113,
+                "creator_distributed": 809340185180,
+                "referrer_distributed": 0,
+                "platform_distributed": 809340185180,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 81867926,
+              "data_sha256": "98fc4ab3bb8df89321c0c6a02988af7fb52e5559dbd543acc77619646aed4c5d",
+              "data_len": 165,
+              "token_amount": 79828646
+            },
+            "pool_vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 211052385666,
+              "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+              "data_len": 165,
+              "token_amount": 211050346382
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "outsider": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "4227b667cd273baf96b16cfccd1f49fb552e6b168affad100d8f55cb1ae7bf15",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          }
+        },
+        {
+          "case": "creator_partial",
+          "signature": "3jAzgFe3PRA6uAHCWLWf8Yym1K7EUYaS2p71hcijURtkBEie2RAW3kC1askLx2qNX2mnKGEFY7T9QNtvzpNhKsi6",
+          "signature_verified": true,
+          "signed_transaction_base64": "AYhm3ItnpuoWneHL0tLPjyprOtYTqO5fxlv7ZrBiRzh6YUwgqlEBvPOc0lrlSAAqQ2uAj2y4dWgrc/RDYlXADQcBAAYKUqU5SU4+rS+0qVT0eL4LVRgJejt36Tg8Ey2PrmwnLJYcB+nOX9d1aqqIOVpMiZrgCA9yBfta3PtT6nh/FThfrohluX1IjLcIRtHDwxWSEcqqB5u4mla+XAw1ZrZaxqcap/TyIIEfGxdfl5Vg373wjuS2A/Vhq31RSczjKKO8uE4DBkZv5SEXMv/srbpyw5vnvIzlu8X3EmssQ5s6QAAAAAabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABBt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKmMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4Wdmn+5zn0AaqeXDKXdM0Ij8lhZZK0HgczDZ/Or+9TfZx4AyTavsHU6in+/JFPAk+3z09GfxKhgcouR4LKlhuMxIGhoWdOMgKlyFIGEFpF+C/j8oVfkZPmMz9D/qd+Efb2wIEAAUC/H4OAAgIAAUJAwECBgcSuAxWlUbEYeEAAVILYQIAAAAA",
+          "simulation_error": null,
+          "committed_error": null,
+          "ledger_error": null,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 930263 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20641 of 949862 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+          ],
+          "before": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067120,
+              "data_sha256": "7c9e509b131e0f7a59ae97583df991988871ac0d31f465b6fd4bd160a1e40608",
+              "data_len": 169,
+              "state": {
+                "total_fees": 1618760199006,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 0,
+                "referrer": null,
+                "counter_offset": 113,
+                "creator_distributed": 809340185180,
+                "referrer_distributed": 0,
+                "platform_distributed": 809340185180,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 81867926,
+              "data_sha256": "98fc4ab3bb8df89321c0c6a02988af7fb52e5559dbd543acc77619646aed4c5d",
+              "data_len": 165,
+              "token_amount": 79828646
+            },
+            "pool_vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 211052385666,
+              "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+              "data_len": 165,
+              "token_amount": 211050346382
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "outsider": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "4227b667cd273baf96b16cfccd1f49fb552e6b168affad100d8f55cb1ae7bf15",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          },
+          "after": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067120,
+              "data_sha256": "c2334007e8f252f7c9fddcc43b042d213dabd50ccee140fa0e6bb3ede790df70",
+              "data_len": 169,
+              "state": {
+                "total_fees": 1618760199006,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 0,
+                "referrer": null,
+                "counter_offset": 113,
+                "creator_distributed": 809380099502,
+                "referrer_distributed": 0,
+                "platform_distributed": 809340185180,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 41953604,
+              "data_sha256": "127dd188ee85c40a44040fe2c1b6d2a66f68fdaf38e49cfa57195acae4007c54",
+              "data_len": 165,
+              "token_amount": 39914324
+            },
+            "pool_vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 211052385666,
+              "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+              "data_len": 165,
+              "token_amount": 211050346382
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 41953602,
+              "data_sha256": "8ec5f2a84d69e9ed517e8de8890c0a7d28cbe0f299126b38b0436a2d0e358e8e",
+              "data_len": 165,
+              "token_amount": 39914322
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "outsider": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "4227b667cd273baf96b16cfccd1f49fb552e6b168affad100d8f55cb1ae7bf15",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          }
+        },
+        {
+          "case": "creator_remainder",
+          "signature": "3YAZmDc35DHVQ5SNdea1R187jTp4SLbrFeoekjAezhyMqHppSUP2xJFFDv9Px5FUe76rKRsqs9QWWdGC18y6opvb",
+          "signature_verified": true,
+          "signed_transaction_base64": "AX7o0KHuqXKJF68NJcKYPoWaf4VoFzYW6vjDvdpt2Kdb7OyO1WsXc4SH1BIjhzE0GmtszU6chBlpFdH5cwMxagABAAYKUqU5SU4+rS+0qVT0eL4LVRgJejt36Tg8Ey2PrmwnLJYcB+nOX9d1aqqIOVpMiZrgCA9yBfta3PtT6nh/FThfrohluX1IjLcIRtHDwxWSEcqqB5u4mla+XAw1ZrZaxqcap/TyIIEfGxdfl5Vg373wjuS2A/Vhq31RSczjKKO8uE4DBkZv5SEXMv/srbpyw5vnvIzlu8X3EmssQ5s6QAAAAAabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABBt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKmMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4Wdmn+5zn0AaqeXDKXdM0Ij8lhZZK0HgczDZ/Or+9TfZx4AyTavsHU6in+/JFPAk+3z09GfxKhgcouR4LKlhuMxIGhoWdOMgKlyFIGEFpF+C/j8oVfkZPmMz9D/qd+Efb3AIEAAUC/X4OAAgIAAUJAwECBgcSuAxWlUbEYeEAAQEAAAAAAAAA",
+          "simulation_error": null,
+          "committed_error": null,
+          "ledger_error": null,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 930264 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 20641 of 949863 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+          ],
+          "before": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067120,
+              "data_sha256": "c2334007e8f252f7c9fddcc43b042d213dabd50ccee140fa0e6bb3ede790df70",
+              "data_len": 169,
+              "state": {
+                "total_fees": 1618760199006,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 0,
+                "referrer": null,
+                "counter_offset": 113,
+                "creator_distributed": 809380099502,
+                "referrer_distributed": 0,
+                "platform_distributed": 809340185180,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 41953604,
+              "data_sha256": "127dd188ee85c40a44040fe2c1b6d2a66f68fdaf38e49cfa57195acae4007c54",
+              "data_len": 165,
+              "token_amount": 39914324
+            },
+            "pool_vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 211052385666,
+              "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+              "data_len": 165,
+              "token_amount": 211050346382
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 41953602,
+              "data_sha256": "8ec5f2a84d69e9ed517e8de8890c0a7d28cbe0f299126b38b0436a2d0e358e8e",
+              "data_len": 165,
+              "token_amount": 39914322
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "outsider": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "4227b667cd273baf96b16cfccd1f49fb552e6b168affad100d8f55cb1ae7bf15",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          },
+          "after": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067120,
+              "data_sha256": "bf14c627e866d98d2a8597b3db9779478093778dfcf72ed874fc6276c59d27ee",
+              "data_len": 169,
+              "state": {
+                "total_fees": 1618760199006,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 0,
+                "referrer": null,
+                "counter_offset": 113,
+                "creator_distributed": 809380099503,
+                "referrer_distributed": 0,
+                "platform_distributed": 809340185180,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 41953603,
+              "data_sha256": "12130a8cf8caacba5026564371fabc9b0edce83194092b3f8a13e5c1822c68c9",
+              "data_len": 165,
+              "token_amount": 39914323
+            },
+            "pool_vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 211052385666,
+              "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+              "data_len": 165,
+              "token_amount": 211050346382
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 41953603,
+              "data_sha256": "f90e34539f97ff3085c71ac461de75eb2e3d5131f8640da626233091e1553b46",
+              "data_len": 165,
+              "token_amount": 39914323
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "outsider": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "4227b667cd273baf96b16cfccd1f49fb552e6b168affad100d8f55cb1ae7bf15",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          }
+        },
+        {
+          "case": "creator_repeat",
+          "signature": "4UBLh1LjN45oJ1aYankJPcGuCkr7vv9zPVhQmCavzaQiM1qReAtKZyKXeMzo3w4x2EXjcjK6EFG9CyFVkPrftcKL",
+          "signature_verified": true,
+          "signed_transaction_base64": "Aa19DmQtMlLlg+k4ACjqxXJk6GitGkmzNOejKGFi1MbcC41Oao1CwyZ7lBJ3pBN3j3f2CbUg/VjBMHbsKQi1RwsBAAYKUqU5SU4+rS+0qVT0eL4LVRgJejt36Tg8Ey2PrmwnLJYcB+nOX9d1aqqIOVpMiZrgCA9yBfta3PtT6nh/FThfrohluX1IjLcIRtHDwxWSEcqqB5u4mla+XAw1ZrZaxqcap/TyIIEfGxdfl5Vg373wjuS2A/Vhq31RSczjKKO8uE4DBkZv5SEXMv/srbpyw5vnvIzlu8X3EmssQ5s6QAAAAAabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABBt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKmMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4Wdmn+5zn0AaqeXDKXdM0Ij8lhZZK0HgczDZ/Or+9TfZx4AyTavsHU6in+/JFPAk+3z09GfxKhgcouR4LKlhuMxIGhoWdOMgKlyFIGEFpF+C/j8oVfkZPmMz9D/qd+Efb3QIEAAUC/n4OAAgIAAUJAwECBgcSuAxWlUbEYeEAAQEAAAAAAAAA",
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 6002
+              }
+            ]
+          },
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: Redeem",
+            "Program log: AnchorError thrown in programs/fee_share_trader_dao/src/instructions/redeem.rs:29. Error Code: InsufficientFunds. Error Number: 6002. Error Message: Redeem amount exceeds available fees.",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 19304 of 949864 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: custom program error: 0x1772"
+          ],
+          "before": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067120,
+              "data_sha256": "bf14c627e866d98d2a8597b3db9779478093778dfcf72ed874fc6276c59d27ee",
+              "data_len": 169,
+              "state": {
+                "total_fees": 1618760199006,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 0,
+                "referrer": null,
+                "counter_offset": 113,
+                "creator_distributed": 809380099503,
+                "referrer_distributed": 0,
+                "platform_distributed": 809340185180,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 41953603,
+              "data_sha256": "12130a8cf8caacba5026564371fabc9b0edce83194092b3f8a13e5c1822c68c9",
+              "data_len": 165,
+              "token_amount": 39914323
+            },
+            "pool_vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 211052385666,
+              "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+              "data_len": 165,
+              "token_amount": 211050346382
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 41953603,
+              "data_sha256": "f90e34539f97ff3085c71ac461de75eb2e3d5131f8640da626233091e1553b46",
+              "data_len": 165,
+              "token_amount": 39914323
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "outsider": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "4227b667cd273baf96b16cfccd1f49fb552e6b168affad100d8f55cb1ae7bf15",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          },
+          "after": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067120,
+              "data_sha256": "bf14c627e866d98d2a8597b3db9779478093778dfcf72ed874fc6276c59d27ee",
+              "data_len": 169,
+              "state": {
+                "total_fees": 1618760199006,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 0,
+                "referrer": null,
+                "counter_offset": 113,
+                "creator_distributed": 809380099503,
+                "referrer_distributed": 0,
+                "platform_distributed": 809340185180,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 41953603,
+              "data_sha256": "12130a8cf8caacba5026564371fabc9b0edce83194092b3f8a13e5c1822c68c9",
+              "data_len": 165,
+              "token_amount": 39914323
+            },
+            "pool_vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 211052385666,
+              "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+              "data_len": 165,
+              "token_amount": 211050346382
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 41953603,
+              "data_sha256": "f90e34539f97ff3085c71ac461de75eb2e3d5131f8640da626233091e1553b46",
+              "data_len": 165,
+              "token_amount": 39914323
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "outsider": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "4227b667cd273baf96b16cfccd1f49fb552e6b168affad100d8f55cb1ae7bf15",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          }
+        },
+        {
+          "case": "platform_claim",
+          "signature": "2WUbeSHK3dZhAP1vCzG6iQT6yPLmottffK2XRk2w9DqUZv5DNA2AfWo8AMuV9jJYvFttFLy31mce2RNbnGri2GQd",
+          "signature_verified": true,
+          "signed_transaction_base64": "AUtvkh5TRS5mClndwCoNuvoNKJqJGmPkDF7wuxl0v9oICHya0jYAfMUS3w1JY3uMy3MnqxrQWONxAvoV+2ZMEg4BAAYKW5Q3rer/vo9BsT2W7UnS9RzWwmbNjswoSwVS7EkSuN2IZbl9SIy3CEbRw8MVkhHKqgebuJpWvlwMNWa2WsanGqf08iCBHxsXX5eVYN+98I7ktgP1Yat9UUnM4yijvLhOtyPDE39HFZTsy+0dLbxbEB7g83We3S30rNeUlfUFnwMDBkZv5SEXMv/srbpyw5vnvIzlu8X3EmssQ5s6QAAAAAabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABBt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKmMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4Wdmn+5zn0AaqeXDKXdM0Ij8lhZZK0HgczDZ/Or+9TfZx4AyTavsHU6in+/JFPAk+3z09GfxKhgcouR4LKlhuMxIGhoWdOMgKlyFIGEFpF+C/j8oVfkZPmMz9D/qd+Efb3gIEAAUC/34OAAgHBQkCAwEGBxG/mdukBUGZMAFTC2ECAAAAAA==",
+          "simulation_error": null,
+          "committed_error": null,
+          "ledger_error": null,
+          "log_tail": [
+            "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "Program ComputeBudget111111111111111111111111111111 success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk invoke [1]",
+            "Program log: Instruction: CollectPlatformFees",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 929068 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 21818 of 949865 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk success"
+          ],
+          "before": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067120,
+              "data_sha256": "bf14c627e866d98d2a8597b3db9779478093778dfcf72ed874fc6276c59d27ee",
+              "data_len": 169,
+              "state": {
+                "total_fees": 1618760199006,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 0,
+                "referrer": null,
+                "counter_offset": 113,
+                "creator_distributed": 809380099503,
+                "referrer_distributed": 0,
+                "platform_distributed": 809340185180,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 41953603,
+              "data_sha256": "12130a8cf8caacba5026564371fabc9b0edce83194092b3f8a13e5c1822c68c9",
+              "data_len": 165,
+              "token_amount": 39914323
+            },
+            "pool_vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 211052385666,
+              "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+              "data_len": 165,
+              "token_amount": 211050346382
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 41953603,
+              "data_sha256": "f90e34539f97ff3085c71ac461de75eb2e3d5131f8640da626233091e1553b46",
+              "data_len": 165,
+              "token_amount": 39914323
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "outsider": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "4227b667cd273baf96b16cfccd1f49fb552e6b168affad100d8f55cb1ae7bf15",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          },
+          "after": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067120,
+              "data_sha256": "fdac2c87575d5d54f5840483293828d48cf33f647d5e9261db358d596a7ea6d8",
+              "data_len": 169,
+              "state": {
+                "total_fees": 1618760199006,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 0,
+                "referrer": null,
+                "counter_offset": 113,
+                "creator_distributed": 809380099503,
+                "referrer_distributed": 0,
+                "platform_distributed": 809380099503,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "774010f1fa828b0ba4640c9e70488942f2655d0d82bc78a4d15daaeb1c1b18e4",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "pool_vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 211052385666,
+              "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+              "data_len": 165,
+              "token_amount": 211050346382
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 41953603,
+              "data_sha256": "f90e34539f97ff3085c71ac461de75eb2e3d5131f8640da626233091e1553b46",
+              "data_len": 165,
+              "token_amount": 39914323
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 41953603,
+              "data_sha256": "c63ff8ac1c500a547f08c2e517d95b97a527745f70258755615903e5aa648e48",
+              "data_len": 165,
+              "token_amount": 39914323
+            },
+            "outsider": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "4227b667cd273baf96b16cfccd1f49fb552e6b168affad100d8f55cb1ae7bf15",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          }
+        }
+      ],
+      "final": {
+        "state": {
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "lamports": 2067120,
+          "data_sha256": "fdac2c87575d5d54f5840483293828d48cf33f647d5e9261db358d596a7ea6d8",
+          "data_len": 169,
+          "state": {
+            "total_fees": 1618760199006,
+            "funding_mint": "So11111111111111111111111111111111111111112",
+            "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+            "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+            "referrer_tag": 0,
+            "referrer": null,
+            "counter_offset": 113,
+            "creator_distributed": 809380099503,
+            "referrer_distributed": 0,
+            "platform_distributed": 809380099503,
+            "trailing_padding_nonzero": false
+          }
+        },
+        "vault": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "data_sha256": "774010f1fa828b0ba4640c9e70488942f2655d0d82bc78a4d15daaeb1c1b18e4",
+          "data_len": 165,
+          "token_amount": 0
+        },
+        "pool_vault": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 211052385666,
+          "data_sha256": "3fec0bd71b2addb37279af6c30e19771e75be2476466efc24f3757f55b6c4af1",
+          "data_len": 165,
+          "token_amount": 211050346382
+        },
+        "creator": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 41953603,
+          "data_sha256": "f90e34539f97ff3085c71ac461de75eb2e3d5131f8640da626233091e1553b46",
+          "data_len": 165,
+          "token_amount": 39914323
+        },
+        "platform": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 41953603,
+          "data_sha256": "c63ff8ac1c500a547f08c2e517d95b97a527745f70258755615903e5aa648e48",
+          "data_len": 165,
+          "token_amount": 39914323
+        },
+        "outsider": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "data_sha256": "4227b667cd273baf96b16cfccd1f49fb552e6b168affad100d8f55cb1ae7bf15",
+          "data_len": 165,
+          "token_amount": 0
+        }
+      }
+    },
+    "synthetic_u64_overflow": {
+      "genesis_hash": "39FbPJLDUV3PDo1BUDAHbZLV1kdUdxjvZYckfSMv9PHS",
+      "snapshot": "analysis/daos_fun/fee_share_trader_dao-claim_meteora_fees-snapshot.json",
+      "source_snapshot_sha256": "e055e289fb78b096bd48556123c2ffc00f120028008e8e175d7361a3fa3f9227",
+      "source_slot": 460726261,
+      "local_edits": {
+        "source_snapshot_slot": 460726261,
+        "source_snapshot_sha256": "e055e289fb78b096bd48556123c2ffc00f120028008e8e175d7361a3fa3f9227",
+        "original_creator": "JArZ9Ge87UDen1tRFiwQBxYbFUkBpM52zXeGNgPdTfZ5",
+        "substituted_creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+        "disposable_claim_signer": "7AVBigBGtFyyoXUYapJ4dhpjV2Ec9bg9mgvwry9f6gHS",
+        "recipient_atas": {
+          "creator_ata": "2tRR23nD7PU691b997x7UA8RhzJexNtMjWhh8u1wo5vD",
+          "platform_ata": "DKuEjbHP3kyvaKvCKcdd7S3Y2WUf11mtq5hmvUQN3ckS",
+          "outsider_ata": "HXEcgWbvULcqMwxfexYsetgtU1vgFqmbUHuTUgGDEHqJ"
+        },
+        "native_rent_reserve": 2039280
+      },
+      "synthetic_near_u64_max_state": true,
+      "addresses": {
+        "state": "CJdiaTFq9PESdumPhDquedXjMHs4xXs1TQCY4vUG5n4V",
+        "vault": "ABSQw3wBbuWks2moDYgxYPf5k1AHfn9W2PBSAmkfVQtq",
+        "pool_vault": "BSNvp1F5qCbKtTKTipHGt4piXqz7jfLNHWjchuXx7Yzw",
+        "creator": "2tRR23nD7PU691b997x7UA8RhzJexNtMjWhh8u1wo5vD",
+        "platform": "DKuEjbHP3kyvaKvCKcdd7S3Y2WUf11mtq5hmvUQN3ckS",
+        "outsider": "HXEcgWbvULcqMwxfexYsetgtU1vgFqmbUHuTUgGDEHqJ"
+      },
+      "initial": {
+        "state": {
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "lamports": 2067120,
+          "data_sha256": "dd557369c8bbbcb93e40c9337558758f94d3dc44a940badca4ff25962862d4a6",
+          "data_len": 169,
+          "state": {
+            "total_fees": 18446744073709551605,
+            "funding_mint": "So11111111111111111111111111111111111111112",
+            "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+            "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+            "referrer_tag": 0,
+            "referrer": null,
+            "counter_offset": 113,
+            "creator_distributed": 9223372036854775802,
+            "referrer_distributed": 0,
+            "platform_distributed": 9223372036854775802,
+            "trailing_padding_nonzero": false
+          }
+        },
+        "vault": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039281,
+          "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+          "data_len": 165,
+          "token_amount": 1
+        },
+        "pool_vault": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 211132214311,
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "data_len": 165,
+          "token_amount": 211130175027
+        },
+        "creator": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+          "data_len": 165,
+          "token_amount": 0
+        },
+        "platform": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+          "data_len": 165,
+          "token_amount": 0
+        },
+        "outsider": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "data_sha256": "4227b667cd273baf96b16cfccd1f49fb552e6b168affad100d8f55cb1ae7bf15",
+          "data_len": 165,
+          "token_amount": 0
+        }
+      },
+      "transactions": [
+        {
+          "case": "overflow_claim",
+          "signature": "5NAZChcWHDmyEf5eCa2nXJAQLNuhSPsmaCMEXMmiKcBsTWzAwh2ByXk8RBBd2aoq8KspgG1TrYXKE2CpNgNx2ftg",
+          "signature_verified": true,
+          "signed_transaction_base64": "AdpR1aN7XNL347ZvmCJ3ZzrNN09UgcDZWHES8nLTZP8XR2E13io4ZlI383DmdAH9Y5nNuXgEeY9EyjM/rj9O9wUBAAwUW5Q3rer/vo9BsT2W7UnS9RzWwmbNjswoSwVS7EkSuN0N0mwUAEeJ97z0TQYVqmcQnf8ilQnfCT2kxdXTnWlAgU2BE3zCjDx885plR9gmOPANY5g69tiuZ3Iaxqfzs2WYZGsfThMXVmKbxjSn3G+s1L+KuPu5SYdLU4njrNJsyFCIZbl9SIy3CEbRw8MVkhHKqgebuJpWvlwMNWa2WsanGpsVLuxfJpEE9WG6a8cii2S2r5fb/42wOtXdEpHuSSycp/TyIIEfGxdfl5Vg373wjuS2A/Vhq31RSczjKKO8uE7VHQmBBByf5T07mN0eCqnTsgXzHkWEUFrDiD8PNSR/bQMGRm/lIRcy/+ytunLDm+e8jOW7xfcSayxDmzpAAAAABpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQbd9uHudY/eGEJdvORszdq2GvxNg7kNJ/69+SjYoYv8CS0hNWV6FZwrh9S2anDbjpdSOJ/3aq8gbO0GOjj5Wu0qduezRGQKHPxZTIvK0KCRARysfdFWv4OoM/siCOt3rTzRTqx1IrVWlmcLnJublaDVEhla7r2RYBr91TDF/B2RicYRvIR3ZyUMkamD8tBQphZQ/vq9RBVahPmJDPkzrmKMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4Wdmn+5zn0AaqeXDKXdM0Ij8lhZZK0HgczDZ/Or+9TfZx4AyTavsHU6in+/JFPAk+3z09GfxKhgcouR4LKlhuMxLyzNU1rKXxc2rIIt0Hc+TZL72KWbKUA1AClakBHHOp5QaGhZ04yAqXIUgYQWkX4L+PyhV+Rk+YzP0P+p34R9wRAggABQIAfw4AERMACRIGDw4EAwcBAgUTDQwQCgsLCBXPskCC0x9k",
+          "simulation_error": {
+            "InstructionError": [
+              1,
+              "ProgramFailedToComplete"
+            ]
+          },
+          "committed_error": {
+            "InstructionError": [
+              1,
+              "ProgramFailedToComplete"
+            ]
+          },
+          "ledger_error": {
+            "InstructionError": [
+              1,
+              "ProgramFailedToComplete"
+            ]
+          },
+          "log_tail": [
+            "Program log: Instruction: ClaimPositionFee",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 880453 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [3]",
+            "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 81 of 877977 compute units",
+            "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+            "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG consumed 18597 of 895668 compute units",
+            "Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success",
+            "Program log: panicked at programs/fee_share_trader_dao/src/instructions/claim_meteora_fees.rs:52:5:\nattempt to add with overflow",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk consumed 76218 of 949866 compute units",
+            "Program Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk failed: SBF program panicked"
+          ],
+          "before": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067120,
+              "data_sha256": "dd557369c8bbbcb93e40c9337558758f94d3dc44a940badca4ff25962862d4a6",
+              "data_len": 169,
+              "state": {
+                "total_fees": 18446744073709551605,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 0,
+                "referrer": null,
+                "counter_offset": 113,
+                "creator_distributed": 9223372036854775802,
+                "referrer_distributed": 0,
+                "platform_distributed": 9223372036854775802,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039281,
+              "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+              "data_len": 165,
+              "token_amount": 1
+            },
+            "pool_vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 211132214311,
+              "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+              "data_len": 165,
+              "token_amount": 211130175027
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "outsider": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "4227b667cd273baf96b16cfccd1f49fb552e6b168affad100d8f55cb1ae7bf15",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          },
+          "after": {
+            "state": {
+              "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+              "lamports": 2067120,
+              "data_sha256": "dd557369c8bbbcb93e40c9337558758f94d3dc44a940badca4ff25962862d4a6",
+              "data_len": 169,
+              "state": {
+                "total_fees": 18446744073709551605,
+                "funding_mint": "So11111111111111111111111111111111111111112",
+                "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+                "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+                "referrer_tag": 0,
+                "referrer": null,
+                "counter_offset": 113,
+                "creator_distributed": 9223372036854775802,
+                "referrer_distributed": 0,
+                "platform_distributed": 9223372036854775802,
+                "trailing_padding_nonzero": false
+              }
+            },
+            "vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039281,
+              "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+              "data_len": 165,
+              "token_amount": 1
+            },
+            "pool_vault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 211132214311,
+              "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+              "data_len": 165,
+              "token_amount": 211130175027
+            },
+            "creator": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "platform": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+              "data_len": 165,
+              "token_amount": 0
+            },
+            "outsider": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "data_sha256": "4227b667cd273baf96b16cfccd1f49fb552e6b168affad100d8f55cb1ae7bf15",
+              "data_len": 165,
+              "token_amount": 0
+            }
+          }
+        }
+      ],
+      "final": {
+        "state": {
+          "owner": "Fee33nMZNbbC7Zm6Yx7tiHa9KH2Ao8fWTH3HNMkLMzWk",
+          "lamports": 2067120,
+          "data_sha256": "dd557369c8bbbcb93e40c9337558758f94d3dc44a940badca4ff25962862d4a6",
+          "data_len": 169,
+          "state": {
+            "total_fees": 18446744073709551605,
+            "funding_mint": "So11111111111111111111111111111111111111112",
+            "token_mint": "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
+            "creator": "6ZcZFFZ83EUUvEPbv9svyTvaHZJKFYZBj5BQus6Fvgi9",
+            "referrer_tag": 0,
+            "referrer": null,
+            "counter_offset": 113,
+            "creator_distributed": 9223372036854775802,
+            "referrer_distributed": 0,
+            "platform_distributed": 9223372036854775802,
+            "trailing_padding_nonzero": false
+          }
+        },
+        "vault": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039281,
+          "data_sha256": "3c97c96ecaff308debd83b6fc9a2c2a79b401f710e44850a75c7a15cc8db3f1e",
+          "data_len": 165,
+          "token_amount": 1
+        },
+        "pool_vault": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 211132214311,
+          "data_sha256": "6b5ffaedd27de4a8c572774d0ffdebe0517c311920013c629114b315928e4e56",
+          "data_len": 165,
+          "token_amount": 211130175027
+        },
+        "creator": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "data_sha256": "2716552221a8c638467730c2bf7c7d89000934db5ed895e0e19ca4507dd4abb9",
+          "data_len": 165,
+          "token_amount": 0
+        },
+        "platform": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "data_sha256": "575c27a1eb2c0c6a9a2fa1b0061fecb069a1c8392b7734023002e666fdc8e906",
+          "data_len": 165,
+          "token_amount": 0
+        },
+        "outsider": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "data_sha256": "4227b667cd273baf96b16cfccd1f49fb552e6b168affad100d8f55cb1ae7bf15",
+          "data_len": 165,
+          "token_amount": 0
+        }
+      }
+    }
+  },
+  "qualification": "Four independent fresh, writable --offline Surfpool ledgers with valid local signatures. Current pinned FeeShare and CP AMM ELFs; captured later account bytes anchor the claim/referrer/legacy scenarios. Disposable signers and ATAs replace unavailable historical keys. All setup account injection precedes each scenario's first transaction; committed sends and post-state reads establish bounded paths. Both Initialize and InitWithLegacy create zero counters; legitimate positive CP claim increases total fees, bounded creator/platform payouts conserve tokens and never make creator_distributed exceed floor(total_fees/2); near-u64-max synthetic state rolls back on addition overflow. The configured referrer cannot redeem tested entities 0/1/2/255, change creator, or redirect CollectPlatformFees to its ATA. The nine-selector IDL has no separate referrer payout selector; that interface observation does not prove hidden handler behavior or a live trapped referrer allocation. No public RPC or mainnet transaction."
+}
